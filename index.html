@@ -3,9 +3,8 @@
   <head>
     <title>Slides</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <link rel="stylesheet" type="text/css" href="css/light.css">
+    <link rel="stylesheet" type="text/css" href="remark-css/light.css">
     <style type="text/css">
-      /* Slideshow styles */
     </style>
   </head>
   <body>
@@ -18,13 +17,17 @@
       // var slideshow = remark.create();/* Use this as inline markdown source*/
 
       var slideshow = remark.create({
-        sourceUrl: "markdown.md"
+        ratio: '4:3',
+        sourceUrl: "remark-markdowns/example.md"
       });
 
       // Setup MathJax
       MathJax.Hub.Config({
           tex2jax: {
-          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+            processEscapes: true
           }
       });
       MathJax.Hub.Queue(function() {

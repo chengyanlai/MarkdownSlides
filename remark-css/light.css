@@ -1,15 +1,14 @@
 
+/* NOTE: Find a replacement fot this remote font */
 @import url(https://fonts.googleapis.com/css?family=Droid+Serif);
 
 body {
   font-family: 'Droid Serif';
-  /*background: url(images/dots_bg.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;*/
 }
 
+/*********************************************
+ * HEADERS
+ *********************************************/
 h1 {
   font-family: 'Philosopher', sans-serif;
   font-weight: 300;
@@ -67,7 +66,9 @@ h6 {
   color: rgb(230, 50, 50);
 }
 
-/* Some custom styles to use */
+/*********************************************
+ * Some custom color/size to use
+ *********************************************/
 .red { color: rgb(250, 0, 0); }
 .blue { color: rgb(0, 0, 250); }
 .green { color: rgb(0, 220, 0); }
@@ -101,12 +102,12 @@ h6 {
   padding: 1px 20px;
   height: 90px;
   width: 120px;
-  -moz-box-shadow: 0 0 10px #777;
-  -webkit-box-shadow: 0 0 10px #777;
-  box-shadow: 0 0 10px #777;
+  -moz-box-shadow: 0 0 10px rgb(119, 119, 119);
+  -webkit-box-shadow: 0 0 10px rgb(119, 119, 119);
+  box-shadow: 0 0 10px rgb(119, 119, 119);
 }
 #slide-how .slides .first {
-  background: #fff;
+  background: rgb(255, 255, 255);
   position: absolute;
   top: 20%;
   left: 20%;
@@ -114,14 +115,14 @@ h6 {
 }
 #slide-how .slides .second {
   position: relative;
-  background: #fff;
+  background: rgb(255, 255, 255);
   z-index: 0;
 }
 
 
 /* Two-column layout */
 .left-column {
-  color: #777;
+  color: rgb(119, 119, 119);
   width: 20%;
   height: 92%;
   float: left;
@@ -137,6 +138,12 @@ h6 {
   float: right;
   padding-top: 1em;
 }
+
+
+/*********************************************
+ * Other class to be used
+ *    Usually is the slide styles
+ *********************************************/
 
 /* inverse class */
 .inverse {
@@ -154,8 +161,17 @@ h6 {
   line-height: 0.8em;
 }
 
-/* Title Class*/
-/*.title-page {
-  background: url(images/dots_bg.jpg) no-repeat center center fixed;
+/* BlueEdge Class */
+.BlueEdge {
+  background: url(../images/bg-BlueEdge.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
-}*/
+}
+
+/* RainbowBar */
+.RainbowBar {
+  background: url('../images/RainbowBar.png') bottom center no-repeat;
+  background-color: rgb(255, 255, 255);
+}

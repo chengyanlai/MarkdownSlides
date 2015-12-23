@@ -1,7 +1,7 @@
 
-class: center, middle
-background-image: url(images/dots_bg.jpg)
-# My Talk Titel with `\(\LaTeX{}\)` in remark
+class: center, middle, BlueEdge
+
+# My Talk Title with `\(\LaTeX{}\)` in remark
 
 ### Chen-Yen Lai
 #### University of California Merced
@@ -43,6 +43,8 @@ light `\(\Rightarrow\)` .lightblue[lightblue] and .lightred[lightred] and .light
 .huge[huge] to .large[large] to .medium[medium] to .small[small] to .tiny[tiny]
 
 ---
+class: RainbowBar
+
 # Two Column Layout
 
 .left-column[
@@ -55,6 +57,8 @@ light `\(\Rightarrow\)` .lightblue[lightblue] and .lightred[lightred] and .light
 ]
 
 ---
+class: RainbowBar
+
 # Two Column Layout
 
 .left-column[

@@ -1,0 +1,161 @@
+
+@import url(https://fonts.googleapis.com/css?family=Droid+Serif);
+
+body {
+  font-family: 'Droid Serif';
+  /*background: url(images/dots_bg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;*/
+}
+
+h1 {
+  font-family: 'Philosopher', sans-serif;
+  font-weight: 300;
+  font-size: 28pt;
+}
+.remark-slide-content h1 {
+  color: rgb(20, 160, 190);
+  line-height: 0.8em;
+}
+
+h2 {
+  font-family: 'Noteworthy', sans-serif;
+  font-weight: 300;
+  font-size: 22pt;
+}
+.remark-slide-content h2 {
+  color: rgb(0, 80, 190);
+  line-height: 0.8em;
+}
+
+h3 {
+  font-family: 'Cochin', sans-serif;
+  font-weight: 300;
+  font-size: 22pt;
+}
+.remark-slide-content h3 {
+  color: rgb(90 ,90 ,70);
+  text-decoration: underline;
+}
+/* NOTE: Find a font to replace Skia */
+h4 {
+  font-family: 'Skia', serif;
+  font-weight: 600;
+  font-size: 20pt;
+}
+.remark-slide-content h4 {
+  color: rgb(50 ,150 ,70);
+}
+
+h5 {
+  font-family: 'Skia', serif;
+  font-weight: 300;
+  font-size: 18pt;
+}
+.remark-slide-content h5 {
+  color: rgb(230, 50, 50);
+}
+
+h6 {
+  font-family: 'Skia', serif;
+  font-weight: 300;
+  font-size: 18pt;
+}
+.remark-slide-content h6 {
+  color: rgb(230, 50, 50);
+}
+
+/* Some custom styles to use */
+.red { color: rgb(250, 0, 0); }
+.blue { color: rgb(0, 0, 250); }
+.green { color: rgb(0, 220, 0); }
+.lightred { color: rgb(255, 120, 120); }
+.lightblue { color: rgb(100, 170, 255); }
+.lightgreen { color: rgb(130, 255, 130); }
+.darkred { color: rgb(170, 0, 0); }
+.darkblue { color: rgb(0, 0, 170); }
+.darkgreen { color: rgb(0, 90, 0); }
+.huge { font-size: 2.5em; }
+.large { font-size: 2em; }
+.medium { font-size: 1.5em; }
+.small { font-size: 0.8em; }
+.tiny { font-size: 0.5em; }
+
+/* Slide-specific styling */
+#slide-inverse .footnote {
+  bottom: 12px;
+  left: 20px;
+}
+#slide-how .slides {
+  font-size: 0.9em;
+  position: absolute;
+  top:  151px;
+  right: 140px;
+}
+/*#slide-how .slides h3 {
+  margin-top: 0.2em;
+}*/
+#slide-how .slides .first, #slide-how .slides .second {
+  padding: 1px 20px;
+  height: 90px;
+  width: 120px;
+  -moz-box-shadow: 0 0 10px #777;
+  -webkit-box-shadow: 0 0 10px #777;
+  box-shadow: 0 0 10px #777;
+}
+#slide-how .slides .first {
+  background: #fff;
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  z-index: 1;
+}
+#slide-how .slides .second {
+  position: relative;
+  background: #fff;
+  z-index: 0;
+}
+
+
+/* Two-column layout */
+.left-column {
+  color: #777;
+  width: 20%;
+  height: 92%;
+  float: left;
+}
+  .left-column h2, .left-column h3 {
+    color: rgba(90, 90, 70, 0.5);
+  }
+  .left-column h2:last-of-type, .left-column h3:last-child {
+    color: rgba(90, 90, 90, 0.9);
+  }
+.right-column {
+  width: 75%;
+  float: right;
+  padding-top: 1em;
+}
+
+/* inverse class */
+.inverse {
+  background: rgb(39, 40, 34);
+  color: rgb(119, 120, 114);
+  text-shadow: 0 0 20px rgb(51, 51, 51);
+}
+.inverse h1 {
+  color: rgb(251, 247, 249);
+  line-height: 0.8em;
+}
+
+.inverse h2 {
+  color: rgb(200, 20, 100);
+  line-height: 0.8em;
+}
+
+/* Title Class*/
+/*.title-page {
+  background: url(images/dots_bg.jpg) no-repeat center center fixed;
+  background-size: cover;
+}*/

@@ -16,6 +16,7 @@
 
 		<link rel="stylesheet" href="../engine/reveal/css/reveal.css">
 		<link rel="stylesheet" href="../engine/reveal/css/theme/black.css" id="theme">
+		<link rel="stylesheet" href="../remark-css/two-columns.css">
 
 		<!-- Code syntax highlighting -->
 		<link rel="stylesheet" href="../engine/reveal/lib/css/zenburn.css">
@@ -375,13 +376,29 @@ Reveal.addEventListener( 'customevent', function() {
 					</p>
 				</section>
 
+				<section>
+					<h1>Two Columns working??</h1>
+					<div class="left-column">
+						<ul>
+							<li>Model</li>
+							<li>Method</li>
+						</ul>
+					</div>
+					<div class="right-column">
+						MathJax is working?
+						$$
+						\mathcal{H}=-t\sum_{\langle ij\rangle} c^\dagger_ic_j+h.c.
+						$$
+					</div>
+				</section>
+
 			</div>
 
 		</div>
 
 		<script src="../engine/reveal/lib/js/head.min.js"></script>
 		<script src="../engine/reveal/js/reveal.js"></script>
-
+		<script src="../engine/MathJax/MathJax.js?config=TeX-AMS_HTML&delayStartupUntil=configured" type="text/javascript"></script>
 		<script>
 
 			// Full list of configuration options available at:
@@ -405,6 +422,23 @@ Reveal.addEventListener( 'customevent', function() {
 				]
 			});
 
+
+      // Setup MathJax
+      MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+            processEscapes: true
+          }
+      });
+      MathJax.Hub.Queue(function() {
+          $(MathJax.Hub.getAllJax()).map(function(index, elem) {
+              return(elem.SourceElement());
+          }).parent().addClass('has-jax');
+      });
+
+      MathJax.Hub.Configured();
 		</script>
 
 	</body>

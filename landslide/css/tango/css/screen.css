@@ -56,7 +56,7 @@ div.slides.nocontext {
 }
 
 div.slide {
-  background: url('../../../images/RainbowBar.png') bottom center no-repeat;
+  background: url('../../../../images/RainbowBar.png') bottom center no-repeat;
   display: none;
   position: absolute;
   overflow: hidden;

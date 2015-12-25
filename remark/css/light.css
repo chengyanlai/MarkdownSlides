@@ -84,41 +84,6 @@ h6 {
 .small { font-size: 0.8em; }
 .tiny { font-size: 0.5em; }
 
-/* Slide-specific styling */
-#slide-inverse .footnote {
-  bottom: 12px;
-  left: 20px;
-}
-#slide-how .slides {
-  font-size: 0.9em;
-  position: absolute;
-  top:  151px;
-  right: 140px;
-}
-/*#slide-how .slides h3 {
-  margin-top: 0.2em;
-}*/
-#slide-how .slides .first, #slide-how .slides .second {
-  padding: 1px 20px;
-  height: 90px;
-  width: 120px;
-  -moz-box-shadow: 0 0 10px rgb(119, 119, 119);
-  -webkit-box-shadow: 0 0 10px rgb(119, 119, 119);
-  box-shadow: 0 0 10px rgb(119, 119, 119);
-}
-#slide-how .slides .first {
-  background: rgb(255, 255, 255);
-  position: absolute;
-  top: 20%;
-  left: 20%;
-  z-index: 1;
-}
-#slide-how .slides .second {
-  position: relative;
-  background: rgb(255, 255, 255);
-  z-index: 0;
-}
-
 /*********************************************
  * Other class to be used
  *    Usually is the slide styles
@@ -142,7 +107,7 @@ h6 {
 
 /* BlueEdge Class */
 .BlueEdge {
-  background: url(../images/bg-BlueEdge.jpg);
+  background: url('../../images/bg-BlueEdge.jpg');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -151,6 +116,6 @@ h6 {
 
 /* RainbowBar */
 .RainbowBar {
-  background: url('../images/RainbowBar.png') bottom center no-repeat;
+  background: url('../../images/RainbowBar.png') bottom center no-repeat;
   background-color: rgb(255, 255, 255);
 }

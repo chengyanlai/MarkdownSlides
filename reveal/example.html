@@ -15,8 +15,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
     <link rel="stylesheet" href="../engine/reveal/css/reveal.css">
-    <link rel="stylesheet" href="../engine/reveal/css/theme/black.css" id="theme">
+    <!-- <link rel="stylesheet" href="../engine/reveal/css/theme/black.css" id="theme"> -->
+    <link rel="stylesheet" href="css/light.css" id="theme">
     <link rel="stylesheet" href="../css/two-columns.css">
+    <link rel="stylesheet" href="../css/color.css">
 
     <!-- Code syntax highlighting -->
     <link rel="stylesheet" href="../engine/reveal/lib/css/zenburn.css">
@@ -42,18 +44,26 @@
       <!-- Any section element inside of this container is displayed as a slide -->
       <div class="slides">
         <section>
-          <h1>Reveal.js</h1>
-          <h3>The HTML Presentation Framework</h3>
-          <p>
-            <small>Created by <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small>
-          </p>
+          <h1>My Title with $\LaTeX{}$ support</h1>
+          <br>
+          <h3>Chen-Yen Lai</h3>
+          <br>
+          <h4>University of California Merced</h4>
+          <br>
+          <h6>2016 March Meeting, Baltimore, MD</h6>
+          <!-- <p> -->
+            <!-- <small>Created by <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small> -->
+          <!-- </p> -->
         </section>
 
         <section>
-          <h2>Hello There</h2>
-          <p>
-            reveal.js enables you to create beautiful interactive slide decks using HTML. This presentation will show you examples of what it can do.
-          </p>
+          <h1>Title 1</h1>
+          <h2>Title 2</h2>
+          <h3>Title 3</h3>
+          <h4>Title 4</h4>
+          <h5>Title 5</h5>
+          <h6>Title 6</h6>
+          <p>Paragraph</p>
         </section>
 
         <!-- Example of nested vertical slides -->
@@ -390,6 +400,25 @@ Reveal.addEventListener( 'customevent', function() {
             \mathcal{H}=-t\sum_{\langle ij\rangle} c^\dagger_ic_j+h.c.
             $$
           </div>
+        </section>
+
+        <section>
+          <h2>Defined colors and font size</h2>
+          <p style="font-size: 2.5em;">
+            <span class="red">H</span><span class="lightred">u</span><span class="darkred">ge</span>
+          </p>
+          <p style="font-size: 2em;">
+            <span class="green">La</span><span class="lightgreen">r</span><span class="darkgreen">ge</span>
+          </p>
+          <p style="font-size: 1.2em;">
+            <span class="blue">Me</span><span class="lightblue">di</span><span class="darkblue">um</span>
+          </p>
+          <p style="font-size: 0.9em;">
+            <span class="darkred">S</span><span class="darkgreen">ma</span><span class="darkblue">ll</span>
+          </p>
+          <p style="font-size: 0.6em;">
+            <span class="red">Ti</span><span class="green">n</span><span class="blue">y</span>
+          </p>
         </section>
 
       </div>

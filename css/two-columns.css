@@ -1,7 +1,7 @@
 /***************************
  * Two-column layout
  ****************************/
-.left-column {
+.left-column-20-75 {
   color: rgb(119, 119, 119);
   width: 20%;
   height: 92%;
@@ -13,8 +13,34 @@
   .left-column h2:last-of-type, .left-column h3:last-child {
     color: rgba(90, 90, 90, 0.9);
   }
-.right-column {
+.right-column-20-75 {
   width: 75%;
+  float: right;
+  padding-top: 1em;
+}
+
+.lc-45-45 {
+  width: 48%;
+  height: 92%;
+  float: left;
+  padding-top: 1em;
+}
+.rc-45-45 {
+  width: 48%;
+  height: 92%;
+  float: right;
+  padding-top: 1em;
+}
+
+.lc-70-25 {
+  width: 70%;
+  height: 92%;
+  float: left;
+  padding-top: 1em;
+}
+.rc-70-25 {
+  width: 25%;
+  height: 92%;
   float: right;
   padding-top: 1em;
 }

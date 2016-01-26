@@ -4,9 +4,9 @@
   <head>
     <meta charset="utf-8">
 
-    <title>March Meetiing 2016</title>
+    <title>NCTS Feb. 01 2016</title>
 
-    <meta name="description" content="Talk Title">
+    <meta name="description" content="Talk in ??">
     <meta name="author" content="Chen-Yen Lai">
 
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -14,21 +14,21 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
-    <link rel="stylesheet" href="../engine/reveal/css/reveal.css">
+    <link rel="stylesheet" href="/Volumes/Files/GitHub/reveal/css/reveal.css">
     <!-- <link rel="stylesheet" href="../engine/reveal/css/theme/black.css" id="theme"> -->
-    <link rel="stylesheet" href="css/light.css" id="theme">
-    <link rel="stylesheet" href="../css/two-columns.css">
-    <link rel="stylesheet" href="../css/color.css">
+    <link rel="stylesheet" href="/Volumes/Files/GitRepo/MarkdownSlides/reveal/css/light.css" id="theme">
+    <link rel="stylesheet" href="/Volumes/Files/GitRepo/MarkdownSlides/css/two-columns.css">
+    <link rel="stylesheet" href="/Volumes/Files/GitRepo/MarkdownSlides/css/color.css">
 
     <!-- Code syntax highlighting -->
-    <!-- <link rel="stylesheet" href="../engine/reveal/lib/css/zenburn.css"> -->
+    <link rel="stylesheet" href="/Volumes/Files/GitHub/reveal/lib/css/zenburn.css">
 
     <!-- Printing and PDF exports -->
     <script>
       var link = document.createElement( 'link' );
       link.rel = 'stylesheet';
       link.type = 'text/css';
-      link.href = window.location.search.match( /print-pdf/gi ) ? '../engine/reveal/css/print/pdf.css' : '../engine/reveal/css/print/paper.css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? '/Volumes/Files/GitHub/reveal/css/print/pdf.css' : '/Volumes/Files/GitHub/reveal/css/print/paper.css';
       document.getElementsByTagName( 'head' )[0].appendChild( link );
     </script>
 
@@ -44,13 +44,13 @@
       <!-- Any section element inside of this container is displayed as a slide -->
       <div class="slides">
         <section>
-          <h1 style="font-size: 1.5em">Memory effects in noninteracting isolated systems from dynamical geometry transformations in ultracold quantum gases</h1>
+          <h1 style="font-size: 1.5em">Title</h1>
           <br>
           <h3 style="font-size: 1.2em">Chen-Yen Lai</h3>
           <!-- <br> -->
           <h4 style="font-size: 1.1em">University of California Merced</h4>
           <!-- <br> -->
-          <h6 style="font-size: 0.8em">2016 March Meeting, Baltimore, MD</h6>
+          <h6 style="font-size: 0.8em">Event, Date</h6>
           <!-- <p> -->
             <!-- <small>Created by <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small> -->
           <!-- </p> -->
@@ -58,13 +58,36 @@
 
       </div>
 
-    </div>
+    </div><!-- class="reveal" -->
 
-    <script src="../engine/reveal/lib/js/head.min.js"></script>
-    <script src="../engine/reveal/js/reveal.js"></script>
-    <script src="../engine/MathJax/MathJax.js?config=TeX-AMS_HTML&delayStartupUntil=configured" type="text/javascript"></script>
     <script>
-
+      // return date-location
+      function date_location(location)
+      {
+        var monthNamesLong = [
+          "January", "February", "March",
+          "April", "May", "June", "July",
+          "August", "September", "October",
+          "November", "December"
+        ];
+        var monthNames = [
+          "Jan", "Feb", "Mar",
+          "Apr", "May", "Jun", "Jul",
+          "Aug", "Sep", "Oct",
+          "Nov", "Dec"
+        ];
+        var date = new Date();
+        var day = date.getDate();
+        var monthIndex = date.getMonth();
+        var year = date.getFullYear();
+        var my_date = monthNames[monthIndex] + ' ' + day + ' ' + year;
+        document.getElementById('date-location').innerHTML = my_date + " @ " + location;
+      }
+    </script>
+    <script src="/Volumes/Files/GitHub/reveal/lib/js/head.min.js"></script>
+    <script src="/Volumes/Files/GitHub/reveal/js/reveal.js"></script>
+    <script src="/Volumes/Files/GitHub/MathJax/MathJax.js?config=TeX-AMS_HTML&delayStartupUntil=configured" type="text/javascript"></script>
+    <script>
       // Full list of configuration options available at:
       // https://github.com/hakimel/reveal.js#configuration
       Reveal.initialize({
@@ -77,12 +100,12 @@
 
         // Optional reveal.js plugins
         dependencies: [
-          { src: '../engine/reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } },
-          { src: '../engine/reveal/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-          { src: '../engine/reveal/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-          { src: '../engine/reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-          { src: '../engine/reveal/plugin/zoom-js/zoom.js', async: true },
-          { src: '../engine/reveal/plugin/notes/notes.js', async: true }
+          { src: '/Volumes/Files/GitHub/reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: '/Volumes/Files/GitHub/reveal/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: '/Volumes/Files/GitHub/reveal/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: '/Volumes/Files/GitHub/reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: '/Volumes/Files/GitHub/reveal/plugin/zoom-js/zoom.js', async: true },
+          { src: '/Volumes/Files/GitHub/reveal/plugin/notes/notes.js', async: true }
         ]
       });
 

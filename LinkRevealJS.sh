@@ -1,10 +1,10 @@
 #!/bin/bash
 
-ln -s /Volumes/Files/PublicRepo/reveal.js/css ./css
-ln -s /Volumes/Files/PublicRepo/reveal.js/js ./js
-ln -s /Volumes/Files/PublicRepo/reveal.js/lib ./lib
-ln -s /Volumes/Files/PublicRepo/reveal.js/plugin ./plugin
-ln -s /Volumes/Files/PublicRepo/reveal.js/package.json ./package.json
-ln -s /Volumes/Files/PublicRepo/reveal.js/Gruntfile.js ./Gruntfile.js
-ln -s /Volumes/Files/PublicRepo/reveal.js/node_modules ./node_modules
-ln -s /Volumes/Files/PublicRepo/MathJax ./MathJax
+ln -s $_GITREPO_PATH/reveal.js/css ./css
+ln -s $_GITREPO_PATH/reveal.js/js ./js
+ln -s $_GITREPO_PATH/reveal.js/lib ./lib
+ln -s $_GITREPO_PATH/reveal.js/plugin ./plugin
+ln -s $_GITREPO_PATH/reveal.js/package.json ./package.json
+ln -s $_GITREPO_PATH/reveal.js/Gruntfile.js ./Gruntfile.js
+ln -s $_GITREPO_PATH/reveal.js/node_modules ./node_modules
+ln -s $_GITREPO_PATH/MathJax ./MathJax

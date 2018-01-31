@@ -1,0 +1,75 @@
+/***************************
+ * Two-column layout
+ ****************************/
+.left-column-20-75 {
+  color: rgb(119, 119, 119);
+  width: 20%;
+  height: 92%;
+  float: left;
+}
+.right-column-20-75 {
+  width: 75%;
+  float: right;
+  padding-top: 1em;
+}
+
+.lc-30-60 {
+  width: 33%;
+  height: 92%;
+  float: left;
+  padding-top: 1em;
+}
+.rc-30-60 {
+  width: 66%;
+  height: 92%;
+  float: right;
+  padding-top: 1em;
+}
+
+.lc-45-45 {
+  width: 48%;
+  height: 92%;
+  float: left;
+  padding-top: 1em;
+}
+.rc-45-45 {
+  width: 48%;
+  height: 92%;
+  float: right;
+  padding-top: 1em;
+}
+
+.lc-70-25 {
+  width: 60%;
+  height: 92%;
+  float: left;
+  padding-top: 1em;
+}
+.rc-70-25 {
+  width: 37%;
+  height: 92%;
+  float: left;
+  padding-top: 1em;
+}
+
+/* Three-column layout */
+.lc-30 {
+  width: 33%;
+  height: 90%;
+  float: left;
+  padding-top: 1em;
+}
+.cc-30 {
+  width: 34%;
+  height: 90%;
+  display: inline-block;
+  padding-top: 1em;
+  margin-left: 33%;
+}
+.rc-30 {
+  width: 33%;
+  height: 90%;
+  right: 0;
+  float: right;
+  padding-top: 1em;
+}

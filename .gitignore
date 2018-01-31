@@ -1,2 +1,11 @@
 engine
 presentation.html
+
+Gruntfile.js
+MathJax
+css
+js
+lib
+node_modules
+package.json
+plugin

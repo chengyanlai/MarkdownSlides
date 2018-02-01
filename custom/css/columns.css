@@ -1,0 +1,51 @@
+/***************************
+ * Column layouts
+ * Example:
+    <div class="row">
+      <div class="column half" style="background-color:#aaa;">
+        <h2>Column 1</h2>
+        <p>Some text..</p>
+      </div>
+      <div class="column half" style="background-color:#bbb;">
+        <h2>Column 2</h2>
+        <p>Some text..</p>
+      </div>
+    </div>
+ ****************************/
+ /* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.seventy {
+  width: 70%;
+}
+
+.sixty {
+  width: 60%;
+}
+
+.half {
+  width: 50%;
+}
+
+.forty {
+  width: 40%;
+}
+
+.thirty {
+  width: 30%;
+}
+
+.quarter {
+  width: 25%;
+}
+

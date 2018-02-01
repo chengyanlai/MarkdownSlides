@@ -15,7 +15,11 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+		<!-- <link rel="stylesheet" href="css/theme/solarized.css" id="theme"> -->
+		<!-- <link rel="stylesheet" href="custom/theme/light.css" id="theme"> -->
+		<link rel="stylesheet" href="custom/theme/sky.css" id="theme">
+		<link rel="stylesheet" href="custom/css/color.css">
+		<link rel="stylesheet" href="custom/css/columns.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -40,43 +44,89 @@
 
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
-				<section>
-					<h1>Reveal.js</h1>
-					<h3>The HTML Presentation Framework</h3>
-					<p>
-						<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> and <a href="https://github.com/hakimel/reveal.js/graphs/contributors">contributors</a></small>
-					</p>
-				</section>
+				<!-- <section>
+					<h1>Los Alamos National Laboratory</h1>
+					<h2>Los Alamos National Laboratory</h2>
+					<h3>Los Alamos National Laboratory</h3>
+					<h4>Los Alamos National Laboratory</h4>
+					<h5>Los Alamos National Laboratory</h5>
+					<h6>Los Alamos National Laboratory</h6>
+					<p>Los Alamos National Laboratory</p>
+				</section> -->
 
 				<section>
-					<h2>Hello There</h2>
+					<h1 style="font-size: 1.2em">Time-resolved x-ray spectroscopy in one-dimensional strongly correlated systems</h1>
+					<h4>(TR-XAS)</h4>
+					<h5>Chen-Yen Lai</h5>
+					<h6>Los Alamos National Laboratory</h6>
 					<p>
-						reveal.js enables you to create beautiful interactive slide decks using HTML. This presentation will show you examples of what it can do.
+						<small>Collaborator: Jian-Xin Zhu</small>
 					</p>
 				</section>
 
 				<!-- Example of nested vertical slides -->
 				<section>
 					<section>
-						<h2>Vertical Slides</h2>
-						<p>Slides can be nested inside of each other.</p>
-						<p>Use the <em>Space</em> key to navigate through all slides.</p>
-						<br>
-						<a href="#" class="navigate-down">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
+						<!-- <h2>Model and Method</h2> -->
+						<h4>Single band model with single X-ray photon event</h4>
+
 					</section>
 					<section>
-						<h2>Basement Level 1</h2>
-						<p>Nested slides are useful for adding additional detail underneath a high level horizontal slide.</p>
+						<h2>Model  of  XAS</h2>
+						<h4 style="text-align: left; font-size: 0.9em">Effective Hamiltonian</h4>
+						<p style="font-size: 0.7em">$\mathcal{H}_0=-t\sum_{\langle ij \rangle,\sigma}(c^\dagger_{i\sigma}c_{j\sigma}+h.c.)+U_0\sum_in_{i\uparrow}n_{i\downarrow}$</p>
+						<p style="font-size: 0.7em; color: red">$\mathcal{H}_{\text{ch}}=V_{\text{ch}}n_p + U_{\text{ch}} n_{p\uparrow}n_{p\downarrow}$</p>
+						<p style="font-size: 0.7em">$\mathcal{H}(t)=\mathcal{H}_0+\mathcal{H}_{\text{ch}}$</p>
+						<h4 style="text-align: left; font-size: 0.9em">XAS spectrum</h4>
+						<p style="font-size: 0.7em">
+							\begin{eqnarray}
+								I_{\text{XAS}}(\omega)&\propto&\sum_f\langle i\vert c_p \frac{1}{\omega -H - E_0 +i\Gamma} c^\dagger_p \vert i \rangle \\
+								&=&\int_0^\infty d\omega e^{i(\omega-E_0)t-\Gamma t} \langle i\vert c_p e^{-i\mathcal{H}t} c^\dagger_p \vert i \rangle
+							\end{eqnarray}
+						</p>
 					</section>
 					<section>
-						<h2>Basement Level 2</h2>
-						<p>That's it, time to go back up.</p>
-						<br>
-						<a href="#/2">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="transform: rotate(180deg); -webkit-transform: rotate(180deg);">
-						</a>
+						<h2>Time-resolved  XAS</h2>
+						<h4 style="text-align: left; font-size: 0.9em">Pump pulse before X-ray photon</h4>
+						<p style="font-size: 0.7em">$\mathcal{H}_{\text{pump}}=-t\sum_{\langle ij \rangle,\sigma}$(<span style="color: red">$e^{iA(t)}$</span>$c^\dagger_{i\sigma}c_{j\sigma}+h.c.)+U_0\sum_in_{i\uparrow}n_{i\downarrow}$</p>
+						<div class="row">
+							<div class="column half"><!-- </div> style="background-color:#aaa;"> -->
+								<h5>Pulse</h5>
+								<p style="font-size: 0.6em">$A(t)=A_0e^{-(t-t_d)^2/\tau^2}\cos[\Omega(t-t_d)+\phi]$</p>
+								<p>the frequency, amplitude, and width of the pulse are variables to fit the experiments.</p>
+							</div>
+							<div class="column half"><!-- </div> style="background-color:#bbb;"> -->
+								<h5>Green's function</h5>
+								<!-- <p>Some text..</p> -->
+							</div>
+						</div>
+						<!-- <h5></h5> -->
+						<!-- <table style="font-size: 0.7em">
+							<thead>
+								<tr>
+									<th></th>
+									<th>XAS</th>
+									<th>TR-XAS</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>$\vert i \rangle$</td>
+									<td>$\vert G\rangle$</td>
+									<td>$e^{-i(\mathcal{H}_{\text{pump}})t}\vert G\rangle$</td>
+								</tr>
+								<tr>
+									<td>Lemonade</td>
+									<td>$2</td>
+									<td>18</td>
+								</tr>
+								<tr>
+									<td>Bread</td>
+									<td>$3</td>
+									<td>2</td>
+								</tr>
+							</tbody>
+						</table> -->
 					</section>
 				</section>
 
@@ -392,6 +442,12 @@ Reveal.addEventListener( 'customevent', function() {
 
 				transition: 'slide', // none/fade/slide/convex/concave/zoom
 
+				math: {
+					mathjax: 'MathJax/MathJax.js',
+					// mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+					config: 'TeX-AMS_HTML-full'  // See http://docs.mathjax.org/en/latest/config-files.html
+				},
+
 				// More info https://github.com/hakimel/reveal.js#dependencies
 				dependencies: [
 					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
@@ -400,7 +456,8 @@ Reveal.addEventListener( 'customevent', function() {
 					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
 					{ src: 'plugin/search/search.js', async: true },
 					{ src: 'plugin/zoom-js/zoom.js', async: true },
-					{ src: 'plugin/notes/notes.js', async: true }
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/math/math.js', async: true }
 				]
 			});
 

@@ -74,23 +74,23 @@
 					<section>
 						<h2>Model  of  XAS</h2>
 						<h4 style="text-align: left; font-size: 0.9em">Effective Hamiltonian</h4>
-						<p style="font-size: 0.7em">$\mathcal{H}_0=-t\sum_{\langle ij \rangle,\sigma}(d^\dagger_{i\sigma}d_{j\sigma}+h.c.)+U_0\sum_in_{i\uparrow}n_{i\downarrow}$</p>
-						<p style="font-size: 0.7em; color: red">$\mathcal{H}_{\text{ch}}=V_{\text{ch}}n_p + U_{\text{ch}} n_{p\uparrow}n_{p\downarrow}$</p>
-						<p style="font-size: 0.7em">$\mathcal{H}(t)=\mathcal{H}_0+\mathcal{H}_{\text{ch}}$</p>
+						<p style="font-size: 0.7em">$\mathcal{H}_{\text{FHM}}=-t\sum_{\langle ij \rangle,\sigma}(d^\dagger_{i\sigma}d_{j\sigma}+h.c.)+U_0\sum_in_{i\uparrow}n_{i\downarrow}$</p>
+						<p style="font-size: 0.7em">$\mathcal{H}(t)=\mathcal{H}_{\text{FHM}}+\mathcal{H}_{\text{ch}}$, where <span style="color: lightcoral">$\mathcal{H}_{\text{ch}}=V_{\text{ch}}n_p + U_{\text{ch}} n_{p\uparrow}n_{p\downarrow}$</span>.</p>
+						<!-- <p style="font-size: 0.7em">$\mathcal{H}(t)=\mathcal{H}_0+\mathcal{H}_{\text{ch}}$</p> -->
 						<h4 style="text-align: left; font-size: 0.9em">XAS spectrum</h4>
-						<p style="font-size: 0.7em">
+						<p style="font-size: 0.6em">
 							\begin{eqnarray}
-								I_{\text{XAS}}(\omega)&\propto&\sum_\sigma\sum_f \vert\langle f \vert d_{i\sigma}^\dagger \vert i \rangle\vert^2 \delta(E_f-E_i-\hbar\omega)\\
-								&=& \frac{1}{\pi}\sum_\sigma\text{Im}\left[ -i\int_0^\infty dt e^{i(\hbar\omega+E_i)t}e^{-\Gamma t}\langle i \vert d_{p\sigma} U_m(t,0) d_{p\sigma}^\dagger \vert i \rangle \right].
+								I_{\text{XAS}}(\omega)&\propto&\sum_\sigma\sum_f \vert\langle f \vert d_{i\sigma}^\dagger \vert 0 \rangle\vert^2 \delta(E_f-E_0-\hbar\omega)\\
+								&=& \frac{1}{\pi}\sum_\sigma\text{Im}\left[ -i\int_0^\infty dt e^{i(\hbar\omega+E_0)t}e^{-\Gamma t}\color{green}{\langle 0 \vert d_{p\sigma} }\color{blue}{e^{-i\mathcal{H}t} d_{p\sigma}^\dagger \vert 0 \rangle} \right].
 							\end{eqnarray}
 						</p>
-						<p>Equilibrium $\vert i\rangle=\vert G.S.\rangle$.</p>
+						<!-- <p style="font-size: 0.8em">Equilibrium $\vert i\rangle=\vert G.S.\rangle$ of $\mathcal{H}_0$.</p> -->
 					</section>
 					<section>
 						<h2>Time-resolved  XAS</h2>
 						<h4 style="text-align: left; font-size: 0.9em">Pump pulse before X-ray photon</h4>
 						<eq>$\mathcal{H}_{\text{pump}}=-t\sum_{\langle ij \rangle,\sigma}$(<span style="color: red">$e^{iA(t)}$</span>$c^\dagger_{i\sigma}c_{j\sigma}+h.c.)+U_0\sum_in_{i\uparrow}n_{i\downarrow}$</eq>
-						<p style="padding-top: 0.3em"></p>
+						<p style="padding-top: 0em"></p>
 						<div class="row">
 							<div class="column half"><!-- </div> style="background-color:#aaa;"> -->
 								<h5>Pulse</h5>
@@ -100,7 +100,7 @@
 							</div>
 							<div class="column half"><!-- </div> style="background-color:#bbb;"> -->
 								<h5>Green's function</h5>
-								<eq>$\vert i \rangle = \vert \Psi(t=0)\rangle = \mathcal{T}\int dt^\prime e^{i\mathcal{H}_{\text{pump}}t^\prime}\vert G.S.\rangle$</eq>
+								<eq>$\vert i \rangle = \vert \Psi(t=0)\rangle = e^{i\mathcal{H}_{\text{pump}}t^\prime}\vert G.S.\rangle$</eq>
 								<img src="figures/GreensFunc.png" alt="Greens Function" width="55%">
 							</div>
 						</div>

@@ -34,10 +34,26 @@ body {
   background: #134674;
   text-shadow: none; }
 
-.reveal .slides > section,
+/* .reveal .slides > section,
 .reveal .slides > section > section {
   line-height: 1.2;
   font-weight: inherit;
+} */
+
+.reveal .slides {
+  height: 80% !important;
+  top: 0 !important;
+  margin-top: 15px !important;
+}
+
+.reveal .slides > section {
+  min-height: 80% !important;
+  top: auto !important;
+}
+
+.reveal .slides > section > section {
+  min-height: 80% !important;
+  top: auto !important;
 }
 
 /*********************************************
@@ -269,8 +285,11 @@ body {
 .reveal section img {
   margin: 15px 0px;
   background: rgba(255, 255, 255, 0);
-  border: 2px solid rgb(16, 0, 73);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); }
+  border: 0;
+  /* border: 2px solid rgb(16, 0, 73); */
+  /* box-shadow: 0 0 0; */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
 
 .reveal section img.plain {
   border: 0;

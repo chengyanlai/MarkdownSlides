@@ -55,41 +55,78 @@
 				</section> -->
 
 				<section>
-					<h1 style="font-size: 1.2em">Time-resolved x-ray spectroscopy in one-dimensional strongly correlated systems</h1>
+					<h1 style="font-size: 1.2em; margin-top: 1.5em">Time-resolved x-ray spectroscopy in one-dimensional strongly correlated systems</h1>
 					<h4 style="margin-bottom: 30px">(TR-XAS)</h4>
 					<h5 style="margin-bottom: 30px">Chen-Yen Lai</h5>
 					<h6 style="margin-bottom: 30px">Los Alamos National Laboratory</h6>
-					<p style="margin-bottom: 30px">
+					<!-- <p style="margin-bottom: 30px">
 						<small>Collaborator: Jian-Xin Zhu</small>
-					</p>
+					</p> -->
+					<img src="figures/CINT.gif" alt="ToOneBand-2" style="border:0px; box-shadow: 0 0 0" height="80px">
+					<img src="figures/LANL.png" alt="ToOneBand-2" style="border:0px; box-shadow: 0 0 0" height="80px">
+					<img src="figures/DOE.png" alt="ToOneBand-2" style="border:0px; box-shadow: 0 0 0" height="80px">
 				</section>
 
 				<!-- Example of nested vertical slides -->
 				<section>
-					<section>
-						<!-- <h2>Model and Method</h2> -->
+					<section style="margin: 0" data-transition="fade-in none-out">
 						<h4>Single band model with single X-ray photon event</h4>
+						<img src="figures/OneBandIllu-0.png" alt="ToOneBand-1" style="border:0px" width="90%">
+					</section>
+					<section data-transition="none-in none-out">
+						<h4>Single band model with single X-ray photon event</h4>
+						<img src="figures/OneBandIllu-1.png" alt="ToOneBand-1" style="border:0px" width="90%">
+					</section>
+					<section data-transition="none-in none-out">
+						<h4>Single band model with single X-ray photon event</h4>
+						<img src="figures/OneBandIllu-2.png" alt="ToOneBand-2" style="border:0px" width="90%">
+						<ul class="fragment" style="font-size: 0.7em">
+							<li>Fermi Hubbard model in 1D
+								<p style="font-size: 0.7em">$\mathcal{H}_{\text{FHM}}=-J\sum_{\langle ij \rangle,\sigma}(c^\dagger_{i\sigma}c_{j\sigma}+h.c.)+U\sum_in_{i\uparrow}n_{i\downarrow}\quad\Rightarrow\quad\mathcal{H}_{\text{FHM}}\vert GS\rangle=E_0\vert GS\rangle$</p>
+							</li>
+							<li>X-ray photon excites one electron from valance band to conduction band, and the vacancy acts as core hole which has effective attractive potential.
+								<p style="font-size: 0.7em">$\vert\Psi(t=0)\rangle=c^\dagger_{ch}\vert GS\rangle;\quad\quad\mathcal{H}(t\geq0)=\mathcal{H}_{\text{FHM}}+\mathcal{H}_{\text{ch}}$, where <span style="color: lightcoral">$\mathcal{H}_{\text{ch}}=-V_{\text{ch}}n_{ch}$</span>.</p>
+							</li>
+						</ul>
+					</section>
 
-					</section>
 					<section>
-						<h2>Model  of  XAS</h2>
-						<h4 style="text-align: left; font-size: 0.9em">Effective Hamiltonian</h4>
-						<p style="font-size: 0.7em">$\mathcal{H}_{\text{FHM}}=-t\sum_{\langle ij \rangle,\sigma}(d^\dagger_{i\sigma}d_{j\sigma}+h.c.)+U_0\sum_in_{i\uparrow}n_{i\downarrow}$</p>
-						<p style="font-size: 0.7em">$\mathcal{H}(t)=\mathcal{H}_{\text{FHM}}+\mathcal{H}_{\text{ch}}$, where <span style="color: lightcoral">$\mathcal{H}_{\text{ch}}=V_{\text{ch}}n_p + U_{\text{ch}} n_{p\uparrow}n_{p\downarrow}$</span>.</p>
-						<!-- <p style="font-size: 0.7em">$\mathcal{H}(t)=\mathcal{H}_0+\mathcal{H}_{\text{ch}}$</p> -->
-						<h4 style="text-align: left; font-size: 0.9em">XAS spectrum</h4>
-						<p style="font-size: 0.6em">
-							\begin{eqnarray}
-								I_{\text{XAS}}(\omega)&\propto&\sum_\sigma\sum_f \vert\langle f \vert d_{i\sigma}^\dagger \vert 0 \rangle\vert^2 \delta(E_f-E_0-\hbar\omega)\\
-								&=& \frac{1}{\pi}\sum_\sigma\text{Im}\left[ -i\int_0^\infty dt e^{i(\hbar\omega+E_0)t}e^{-\Gamma t}\color{green}{\langle 0 \vert d_{p\sigma} }\color{blue}{e^{-i\mathcal{H}t} d_{p\sigma}^\dagger \vert 0 \rangle} \right].
-							\end{eqnarray}
-						</p>
-						<!-- <p style="font-size: 0.8em">Equilibrium $\vert i\rangle=\vert G.S.\rangle$ of $\mathcal{H}_0$.</p> -->
+						<h3>How to calculate XAS?</h2>
+						<div class="fragment" style="margin-top: 1em">
+							<h4 style="text-align: left; font-size: 0.9em">Effective one band model in 1D</h4>
+							<p style="font-size: 0.7em">$\mathcal{H}_{\text{FHM}}\vert GS\rangle=E_0\vert GS\rangle\quad$ obtained by DMRG(MPS).</p>
+							<p style="font-size: 0.7em">$\vert\Psi(t=0)\rangle=c^\dagger_{ch}\vert GS\rangle\quad$ can be done in MPS formula.</p>
+							<p style="font-size: 0.7em">$\mathcal{H}(t)=-J\sum_{\langle ij \rangle,\sigma}(c^\dagger_{i\sigma}c_{j\sigma}+h.c.)+U\sum_in_{i\uparrow}n_{i\downarrow}-V_{\text{ch}}n_{ch}$</p>
+						</div>
+						<div class="fragment" style="margin-top: 0.5em">
+							<h4 style="text-align: left; font-size: 0.9em">XAS spectrum</h4>
+							<p style="font-size: 0.6em">
+								\begin{eqnarray}
+									I_{\text{XAS}}(\omega)&\propto&\sum_\sigma\sum_f \vert\langle f \vert c_{ch,\sigma}^\dagger \vert 0 \rangle\vert^2 \delta(E_f-E_0-\hbar\omega)\\
+									&=& \frac{1}{\pi}\sum_\sigma\text{Im}\left[ -i\int_0^\infty dt e^{i(\hbar\omega+E_0)t}e^{-\color{red}\Gamma t} A(t) \right]\\
+									\text{, where }A(t)&=&\color{green}{\langle GS \vert c_{ch,\sigma} }\color{blue}{e^{-i\mathcal{H}t} c_{ch,\sigma}^\dagger \vert GS \rangle}\text{ solved by real time dynamics!}
+								\end{eqnarray}
+							</p>
+						</div>
 					</section>
+
+					<section>
+						<h3>XAS for equilibrium state</h3>
+					</section>
+				</section>
+
+				<section>
 					<section>
 						<h2>Time-resolved  XAS</h2>
-						<h4 style="text-align: left; font-size: 0.9em">Pump pulse before X-ray photon</h4>
-						<eq>$\mathcal{H}_{\text{pump}}=-t\sum_{\langle ij \rangle,\sigma}$(<span style="color: red">$e^{iA(t)}$</span>$c^\dagger_{i\sigma}c_{j\sigma}+h.c.)+U_0\sum_in_{i\uparrow}n_{i\downarrow}$</eq>
+						<h4 style="text-align: left; font-size: 0.9em; margin-top: 0.8em">Pump pulse before X-ray photon</h4>
+						<div class="row">
+							<div class="column quarter">
+								<img src="figures/Cartoon.png" alt="cartoon" width="90%">
+							</div>
+							<div class="column seventy" style="padding-top: 25px">
+								<eq>$\mathcal{H}_{\text{pump}}=-J\sum_{\langle ij \rangle,\sigma}$(<span style="color: red">$e^{iA(t)}$</span>$c^\dagger_{i\sigma}c_{j\sigma}+h.c.)+U\sum_in_{i\uparrow}n_{i\downarrow}$</eq>
+							</div>
+						</div>
 						<p style="padding-top: 0em"></p>
 						<div class="row">
 							<div class="column half"><!-- </div> style="background-color:#aaa;"> -->
@@ -99,8 +136,8 @@
 								<img src="figures/Pulse.png" alt="Pulse" width="70%">
 							</div>
 							<div class="column half"><!-- </div> style="background-color:#bbb;"> -->
-								<h5>Green's function</h5>
-								<eq>$\vert i \rangle = \vert \Psi(t=0)\rangle = e^{i\mathcal{H}_{\text{pump}}t^\prime}\vert G.S.\rangle$</eq>
+								<h5>XAS</h5>
+								<eq>$\vert \Psi(t=0)\rangle = c^\dagger_{ch}e^{i\mathcal{H}_{\text{pump}}t^\prime}\vert G.S.\rangle$</eq>
 								<img src="figures/GreensFunc.png" alt="Greens Function" width="55%">
 							</div>
 						</div>
@@ -134,6 +171,14 @@
 					</section>
 				</section>
 
+				<section>
+					<h2>Conclusion and outlook</h2>
+					<h4>Acknowledgements</h4>
+					<p style="font-size: 0.6em; text-align: left">Collaborator: Jian-Xin Zhu (LANL), Jhih-Shih You(TU Dresden), Marton Kanasz-Nagy, and Eugene Demler(Harvard).</p>
+					<p style="font-size: 0.6em; text-align: left">Funding: The center for integrated nanotechnologies (CINT), a DOE BES user facility.</p>
+					<p style="font-size: 0.6em; text-align: left">Computational resources: LANL Institutional Computing (IC) program.</p>
+				</section>
+
 			</div>
 
 		</div>
@@ -148,7 +193,7 @@
 				controls: true,
 				progress: true,
 				history: true,
-				center: true,
+				center: false,
 				width: 960,// 16:9 aspect ratio
 				height: 540,
 

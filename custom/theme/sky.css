@@ -41,18 +41,18 @@ body {
 } */
 
 .reveal .slides {
-  height: 80% !important;
+  height: 85% !important;
   top: 0 !important;
-  margin-top: 15px !important;
+  margin-top: 10px !important;
 }
 
 .reveal .slides > section {
-  min-height: 80% !important;
+  min-height: 85% !important;
   top: auto !important;
 }
 
 .reveal .slides > section > section {
-  min-height: 80% !important;
+  min-height: 85% !important;
   top: auto !important;
 }
 
@@ -149,7 +149,8 @@ body {
 .reveal ul {
   display: inline-block;
   text-align: left;
-  margin: 0 0 0 1em; }
+  margin: 0 0 0 1em;
+}
 
 .reveal ol {
   list-style-type: decimal; }
@@ -169,6 +170,11 @@ body {
 .reveal ol ul {
   display: block;
   margin-left: 40px; }
+
+.reveal ol li,
+.reveal ul li {
+  padding-top: 10px;
+}
 
 .reveal dt {
   font-weight: bold; }

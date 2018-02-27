@@ -55,26 +55,39 @@
 				</section> -->
 
 				<section>
-					<h1 style="font-size: 1.2em; margin-top: 1.5em">Time-resolved x-ray spectroscopy in one-dimensional strongly correlated systems</h1>
+					<h1 style="font-size: 1.2em; margin-top: 0.5em">Time-resolved x-ray spectroscopy in one-dimensional strongly correlated systems</h1>
 					<h4 style="margin-bottom: 30px">(TR-XAS)</h4>
 					<h5 style="margin-bottom: 30px">Chen-Yen Lai</h5>
 					<h6 style="margin-bottom: 30px">Los Alamos National Laboratory</h6>
 					<!-- <p style="margin-bottom: 30px">
 						<small>Collaborator: Jian-Xin Zhu</small>
 					</p> -->
-					<img src="figures/CINT.gif" alt="ToOneBand-2" style="border:0px; box-shadow: 0 0 0" height="80px">
-					<img src="figures/LANL.png" alt="ToOneBand-2" style="border:0px; box-shadow: 0 0 0" height="80px">
-					<img src="figures/DOE.png" alt="ToOneBand-2" style="border:0px; box-shadow: 0 0 0" height="80px">
+					<img src="figures/CINT.gif" alt="ToOneBand-2" style="border:0px; box-shadow: 0 0 0; margin: 0 40px 0 40px" height="80px">
+					<img src="figures/LANL.png" alt="ToOneBand-2" style="border:0px; box-shadow: 0 0 0; margin: 0 40px 0 40px" height="80px">
+					<img src="figures/DOE.png" alt="ToOneBand-2" style="border:0px; box-shadow: 0 0 0; margin: 0 40px 0 40px" height="80px">
 				</section>
 
-				<!-- Example of nested vertical slides -->
 				<section>
+					<section>
+						<h2>X-ray absorption spectrum (XAS)</h2>
+					</section>
+
+					<section>
+						<h2>Pump-probe technique</h2>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2 style="padding-top: 200px">Equilibrium XAS</h2>
+					</section>
+
 					<section style="margin: 0" data-transition="fade-in none-out">
-						<h4>Single band model with single X-ray photon event</h4>
+						<h4>Original Two band model</h4>
 						<img src="figures/OneBandIllu-0.png" alt="ToOneBand-1" style="border:0px" width="90%">
 					</section>
 					<section data-transition="none-in none-out">
-						<h4>Single band model with single X-ray photon event</h4>
+						<h4>Original Two band model</h4>
 						<img src="figures/OneBandIllu-1.png" alt="ToOneBand-1" style="border:0px" width="90%">
 					</section>
 					<section data-transition="none-in none-out">
@@ -84,7 +97,7 @@
 							<li>Fermi Hubbard model in 1D
 								<p style="font-size: 0.7em">$\mathcal{H}_{\text{FHM}}=-J\sum_{\langle ij \rangle,\sigma}(c^\dagger_{i\sigma}c_{j\sigma}+h.c.)+U\sum_in_{i\uparrow}n_{i\downarrow}\quad\Rightarrow\quad\mathcal{H}_{\text{FHM}}\vert GS\rangle=E_0\vert GS\rangle$</p>
 							</li>
-							<li>X-ray photon excites one electron from valance band to conduction band, and the vacancy acts as core hole which has effective attractive potential.
+							<li>X-ray photon excites one electron from valance band to conduction band, and create a core hole which has effective attractive potential.
 								<p style="font-size: 0.7em">$\vert\Psi(t=0)\rangle=c^\dagger_{ch}\vert GS\rangle;\quad\quad\mathcal{H}(t\geq0)=\mathcal{H}_{\text{FHM}}+\mathcal{H}_{\text{ch}}$, where <span style="color: lightcoral">$\mathcal{H}_{\text{ch}}=-V_{\text{ch}}n_{ch}$</span>.</p>
 							</li>
 						</ul>
@@ -93,19 +106,24 @@
 					<section>
 						<h3>How to calculate XAS?</h2>
 						<div class="fragment" style="margin-top: 1em">
-							<h4 style="text-align: left; font-size: 0.9em">Effective one band model in 1D</h4>
-							<p style="font-size: 0.7em">$\mathcal{H}_{\text{FHM}}\vert GS\rangle=E_0\vert GS\rangle\quad$ obtained by DMRG(MPS).</p>
-							<p style="font-size: 0.7em">$\vert\Psi(t=0)\rangle=c^\dagger_{ch}\vert GS\rangle\quad$ can be done in MPS formula.</p>
-							<p style="font-size: 0.7em">$\mathcal{H}(t)=-J\sum_{\langle ij \rangle,\sigma}(c^\dagger_{i\sigma}c_{j\sigma}+h.c.)+U\sum_in_{i\uparrow}n_{i\downarrow}-V_{\text{ch}}n_{ch}$</p>
+							<h4 style="text-align: left; font-size: 0.7em">Effective one band model in 1D</h4>
+							<p style="font-size: 0.5em">$\mathcal{H}_{\text{FHM}}\vert GS\rangle=E_0\vert GS\rangle\quad$ obtained by DMRG(MPS).</p>
+							<p style="font-size: 0.5em">$\vert\Psi(t=0)\rangle=c^\dagger_{ch}\vert GS\rangle\quad$ can be done in MPS formula.</p>
+							<p style="font-size: 0.5em">$\mathcal{H}(t)=-J\sum_{\langle ij \rangle,\sigma}(c^\dagger_{i\sigma}c_{j\sigma}+h.c.)+U\sum_in_{i\uparrow}n_{i\downarrow}-V_{\text{ch}}n_{ch}$</p>
 						</div>
 						<div class="fragment" style="margin-top: 0.5em">
-							<h4 style="text-align: left; font-size: 0.9em">XAS spectrum</h4>
+							<h4 style="text-align: left; font-size: 0.7em">XAS spectrum</h4>
 							<p style="font-size: 0.6em">
-								\begin{eqnarray}
-									I_{\text{XAS}}(\omega)&\propto&\sum_\sigma\sum_f \vert\langle f \vert c_{ch,\sigma}^\dagger \vert 0 \rangle\vert^2 \delta(E_f-E_0-\hbar\omega)\\
-									&=& \frac{1}{\pi}\sum_\sigma\text{Im}\left[ -i\int_0^\infty dt e^{i(\hbar\omega+E_0)t}e^{-\color{red}\Gamma t} A(t) \right]\\
-									\text{, where }A(t)&=&\color{green}{\langle GS \vert c_{ch,\sigma} }\color{blue}{e^{-i\mathcal{H}t} c_{ch,\sigma}^\dagger \vert GS \rangle}\text{ solved by real time dynamics!}
-								\end{eqnarray}
+									<!-- \begin{eqnarray}
+										I_{\text{XAS}}(\omega)&\propto&\sum_\sigma\sum_f \vert\langle f \vert c_{ch,\sigma}^\dagger \vert 0 \rangle\vert^2 \delta(E_f-E_0-\hbar\omega)\\
+										&=& \frac{1}{\pi}\sum_\sigma\text{Im}\left[ -i\int_0^\infty dt e^{i(\hbar\omega+E_0)t}e^{-\color{red}\Gamma t} A(t) \right]\\
+										\text{, where }A(t)&=&\color{green}{\langle GS \vert c_{ch,\sigma} }\color{blue}{e^{-i\mathcal{H}t} c_{ch,\sigma}^\dagger \vert GS \rangle}\text{ solved by real time dynamics!}
+									\end{eqnarray} -->
+									\begin{eqnarray}
+										I_{\text{XAS}}(\omega)&\propto&\sum_\sigma\sum_f \vert\langle f \vert c_{ch,\sigma}^\dagger \vert 0 \rangle\vert^2 \delta(E_f-E_0-\hbar\omega)\\
+										&=& \frac{1}{\pi}\sum_\sigma\text{Im}\left[ -i\int_0^\infty dt e^{i(\hbar\omega+E_0)t}e^{-\color{red}\Gamma t} \color{green}{\langle GS \vert c_{ch,\sigma} }\color{blue}{e^{-i\mathcal{H}t} c_{ch,\sigma}^\dagger \vert GS \rangle} \right].
+									\end{eqnarray}
+									<span style="color: brown">Non-equilibrium quench dynamics can be solved by time-dependent DMRG!</span>
 							</p>
 						</div>
 					</section>
@@ -117,63 +135,59 @@
 
 				<section>
 					<section>
-						<h2>Time-resolved  XAS</h2>
+						<h2 style="padding-top: 200px">Time-resolved XAS</h2>
+						<h3 style="font-size: 1em; padding-top: 100px">Far-from-equilibrium XAS</h3>
+					</section>
+					<section>
 						<h4 style="text-align: left; font-size: 0.9em; margin-top: 0.8em">Pump pulse before X-ray photon</h4>
 						<div class="row">
-							<div class="column quarter">
+							<div class="column thirty-five">
 								<img src="figures/Cartoon.png" alt="cartoon" width="90%">
+								<img src="figures/Pulse.png" alt="Pulse" width="90%">
 							</div>
-							<div class="column seventy" style="padding-top: 25px">
+							<div class="column sixty-five" style="padding-top: 25px">
+								<h5 style="font-size: 0.9em; margin-bottom: 0.5em">Pump pulse Hamiltonian</h5>
 								<eq>$\mathcal{H}_{\text{pump}}=-J\sum_{\langle ij \rangle,\sigma}$(<span style="color: red">$e^{iA(t)}$</span>$c^\dagger_{i\sigma}c_{j\sigma}+h.c.)+U\sum_in_{i\uparrow}n_{i\downarrow}$</eq>
-							</div>
-						</div>
-						<p style="padding-top: 0em"></p>
-						<div class="row">
-							<div class="column half"><!-- </div> style="background-color:#aaa;"> -->
-								<h5>Pulse</h5>
+								<br>
+								<br>
 								<eq>$A(t)=A_0e^{-(t-t_d)^2/\tau^2}\cos[\Omega(t-t_d)+\phi]$</eq>
-								<!-- <p>the frequency, amplitude, and width of the pulse are variables to fit the experiments.</p> -->
-								<img src="figures/Pulse.png" alt="Pulse" width="70%">
-							</div>
-							<div class="column half"><!-- </div> style="background-color:#bbb;"> -->
-								<h5>XAS</h5>
-								<eq>$\vert \Psi(t=0)\rangle = c^\dagger_{ch}e^{i\mathcal{H}_{\text{pump}}t^\prime}\vert G.S.\rangle$</eq>
-								<img src="figures/GreensFunc.png" alt="Greens Function" width="55%">
+								<h5 style="font-size: 0.9em; margin-top: 1.0em; margin-bottom: 0.5em">XAS</h5>
+								<eq>$\vert \Psi(t=0)\rangle = c^\dagger_{ch}e^{i\mathcal{H}_{\text{pump}}t^\prime}\vert GS\rangle$</eq>
 							</div>
 						</div>
-						<!-- <h5></h5> -->
-						<!-- <table style="font-size: 0.7em">
-							<thead>
-								<tr>
-									<th></th>
-									<th>XAS</th>
-									<th>TR-XAS</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>$\vert i \rangle$</td>
-									<td>$\vert G\rangle$</td>
-									<td>$e^{-i(\mathcal{H}_{\text{pump}})t}\vert G\rangle$</td>
-								</tr>
-								<tr>
-									<td>Lemonade</td>
-									<td>$2</td>
-									<td>18</td>
-								</tr>
-								<tr>
-									<td>Bread</td>
-									<td>$3</td>
-									<td>2</td>
-								</tr>
-							</tbody>
-						</table> -->
+						<p style="font-size: 0.9em;color:chocolate">Different frequency and strength of influence. </p>
 					</section>
+
+					<section>
+						<h3>Dilute limit</h3>
+					</section>
+
+					<section>
+							<h3>Half-filling</h3>
+							<div class="row">
+								<div class="column half">
+									<img src="figures/HalfFilled.png" alt="HalfFilled">
+								</div>
+								<div class="column half">
+									<p style="font-size: 0.6em">$\tau=2t_0$, $\Omega t_0=3$, and $V_{ch}=-3J$.</p>
+									<ul style="font-size: 0.7em">
+										<li style="padding-top:20px">In Eqm., the strongest signal $\omega$ is corresponding to the doubly occupied (charge gap).</li>
+										<li style="padding-top:20px">The weight of the doubly occupied peak are diminished by the pump pulse.</li>
+										<li style="padding-top:20px">Under the same influence, the charge gap gets destroyed easier as coupling becomes stronger.</li>
+									</ul>
+								</div>
+							</div>
+						</section>
 				</section>
 
 				<section>
 					<h2>Conclusion and outlook</h2>
-					<h4>Acknowledgements</h4>
+					<ul style="font-size: 0.6em; margin-top: 1em">
+						<li>(Far-from-)Equilibrium X-ray absorption spectrum (XAS) in 1D strongly correlated systems can be studied by MPS in time domain.</li>
+						<li>Equilibrium XAS reveals the one particle excitation and the existence of charge gap at the half-filling.</li>
+						<li>Far-from-equilibrium XAS under different influence are studied.</li>
+					</ul>
+					<h4 style="margin-top: 1em">Acknowledgements</h4>
 					<p style="font-size: 0.6em; text-align: left">Collaborator: Jian-Xin Zhu (LANL), Jhih-Shih You(TU Dresden), Marton Kanasz-Nagy, and Eugene Demler(Harvard).</p>
 					<p style="font-size: 0.6em; text-align: left">Funding: The center for integrated nanotechnologies (CINT), a DOE BES user facility.</p>
 					<p style="font-size: 0.6em; text-align: left">Computational resources: LANL Institutional Computing (IC) program.</p>

@@ -70,6 +70,7 @@ body {
   letter-spacing: -0.05em;
   text-shadow: none;
   word-wrap: break-word;
+  padding-top: 10px;
 }
 
 .reveal h1 {
@@ -115,19 +116,12 @@ body {
   color: rgb(20, 113, 150);
 }
 
-.revel cite {
-  font-family: 'Voltaire', sans-serif;
-  font-weight: 200;
-  font-size: 0.7em;
-  color: rgba(0, 0, 0, 0.3);
-}
-
 /*********************************************
  * OTHER
  *********************************************/
 .reveal p {
-  margin: 20px 0;
-  font-size: 0.95em;
+  margin: 10px 0;
+  font-size: 0.6em;
   line-height: 1.3; }
 
 /* Ensure certain elements are never larger than the slide itself */
@@ -358,8 +352,15 @@ body {
 /*********************************************
  * Personal Stuff
  *********************************************/
- .reveal eq {
+.reveal eq {
   margin: 10px 0;
   font-size: 0.6em;
   line-height: 1.3;
- }
+}
+
+.reveal ref {
+  font-family: 'Voltaire', sans-serif;
+  font-weight: 200;
+  font-size: 0.5em;
+  color: rgba(0, 0, 0, 0.6);
+}

@@ -72,21 +72,21 @@
 					<section>
 						<h2>X-ray absorption spectroscopy (XAS)</h2>
 						<div class="row">
-							<div class="fragment column twenty" data-fragment-index="1" style="padding-top: 60px">
+							<div class="column twenty" data-fragment-index="1" style="padding-top: 60px">
 								<img src="figures/intro/XAS.png" alt="xas_illu">
 								<ref>RMP <b>83</b>, 705 (2011)</ref>
 							</div>
 							<div class="column seventy-five">
-								<h6 class="fragment" data-fragment-index="1" style="padding-top: 20px">Core-level Photoemission Spectroscopy</h6>
-								<ul class="fragment" data-fragment-index="1" style="padding-top: 20px; font-size: 0.7em">
+								<h6 class="" data-fragment-index="1" style="padding-top: 20px">Core-level Photoemission Spectroscopy</h6>
+								<ul class="" data-fragment-index="1" style="padding-top: 20px; font-size: 0.7em">
 									Measurements of the local electronic properties
 									<li style="margin-left: 20px">Local Chemical Shift</li>
 									<li style="margin-left: 20px">Many-body Interactions</li>
 									<li style="margin-left: 20px">Magnetic Exchange</li>
 									<li style="margin-left: 20px">Spin-Orbit</li>
 								</ul>
-								<h5 class="fragment" data-fragment-index="2" style="padding-top: 20px">Families:</h6>
-								<ul class="fragment" data-fragment-index="2" style="padding-top: 10px; font-size: 0.7em">
+								<h5 class="fragment" data-fragment-index="2" style="padding-top: 15px">Families:</h6>
+								<ul class="fragment" data-fragment-index="2" style="padding-top: 5px; font-size: 0.7em">
 										<li style="margin-left: 20px">X-ray emission spectroscopy (XES)</li>
 										<li style="margin-left: 20px">Nonresonant inelastic x-ray scattering (NIXS)</li>
 										<li style="margin-left: 20px">Resonant inelastic x-ray scattering (RIXS)</li>
@@ -107,7 +107,7 @@
 
 								<div class="row">
 									<div class="column half">
-										<img src="figures/intro/PerovskiteManganite.png" alt="PerovskiteManganite" width="60%">
+										<img src="figures/intro/PerovskiteManganite.png" alt="PerovskiteManganite" width="65%">
 									</div>
 									<div class="column half" style="padding-top: 15px">
 										<span style="font-size: 0.5em">Photo-induced insulator–metal dynamics in PCMO.</span>
@@ -117,14 +117,15 @@
 
 							</div>
 							<div class="column half">
-								<img class="fragment" data-fragment-index="2" src="figures/intro/TantalumDisulfide.png" alt="TaS2" width="60%">
+								<img class="fragment" data-fragment-index="2" src="figures/intro/TantalumDisulfide.png" alt="TaS2" width="55%">
 								<p class="fragment" data-fragment-index="2" style="padding: 0 0 0 0; margin-top: 0">
 									<span style="font-size: 0.75em">Hidden order of 1T-TaS$_2$</span>
-									<ref>Science <b>344</b>, 177 (2015)</ref>
+									<ref>Science <b>344</b>, 177 (2014)</ref>
 								</p>
 								<h6 class="fragment" data-fragment-index="3" style="font-size: 0.8em">Dynamics of electronic properties!</h6>
 							</div>
 						</div>
+						<aside class="notes">quasi-2d chalcogenide crystal.</aside>
 					</section>
 				</section>
 
@@ -156,13 +157,13 @@
 
 					<section>
 						<h3>How to calculate XAS?</h2>
-						<div class="fragment" style="margin-top: 1em">
+						<div class="fragment" style="margin-top: 0.2em">
 							<h4 style="text-align: left; font-size: 0.7em">Effective one band model in 1D</h4>
 							<p style="font-size: 0.5em">$\mathcal{H}_{\text{FHM}}\vert GS\rangle=E_0\vert GS\rangle\quad$ obtained by DMRG (MPS)</p>
 							<p style="font-size: 0.5em">$\vert\Psi(t=0)\rangle=c^\dagger_{ch}\vert GS\rangle\quad$ can be done in MPS formula</p>
 							<p style="font-size: 0.5em">$\mathcal{H}(t)=-J\sum_{\langle ij \rangle,\sigma}(c^\dagger_{i\sigma}c_{j\sigma}+h.c.)+U\sum_in_{i\uparrow}n_{i\downarrow}-V_{\text{ch}}n_{ch}$</p>
 						</div>
-						<div class="fragment" style="margin-top: 0.5em">
+						<div class="fragment" style="margin-top: 0.2em">
 							<h4 style="text-align: left; font-size: 0.7em">XAS spectrum</h4>
 							<p style="font-size: 0.6em">
 									\begin{eqnarray}
@@ -174,7 +175,7 @@
 						</div>
 					</section>
 
-					<section data-transition="fade-in none-out">
+					<!-- <section data-transition="fade-in none-out">
 						<h3>XAS for equilibrium state</h3>
 						<img src="figures/EqmXAS.png" alt="EqmXAS" width="85%">
 					</section>
@@ -183,6 +184,23 @@
 						<img src="figures/EqmXAS-1.png" alt="EqmXAS" width="85%">
 						<p><span style="color: red">Doubly occupied - $\omega=U-2V_{ch}$</span>; <span style="color: blue">One particle - $\omega=V_{ch}$</span>; Empty - $\omega=0$</p>
 						<p>The doubly occupied signal gets stringer as filling closed to one-half - charge gap!</p>
+					</section> -->
+					<section>
+						<div class="row">
+							<div class="column thirty-five">
+								<img src="figures/EqmXAS-2.png" alt="EqmXAS">
+							</div>
+							<div class="column sixty">
+								<h3>XAS for equilibrium state</h3>
+								<ul style="font-size: 0.7em">
+									<li style="padding-top: 25px; line-height: 1.4em;color: blue">Single particle $\omega\sim -V_{ch}$ core hole effect!</li>
+									<li style="padding-top: 15px; line-height: 1.4em;color: red">Doubly occupied $\omega\sim U-2V_{ch}$.</li>
+									<li style="padding-top: 15px; line-height: 1.4em;">Empty $\omega\sim0$.</li>
+									<li style="padding-top: 15px; line-height: 1.4em;">Away from half-filling: strongest signal at single particle.</li>
+									<li style="padding-top: 15px; line-height: 1.4em;">The doubly occupied signal gets stronger as filling closed to one-half - charge gap!</li>
+								</ul>
+							</div>
+						</div>
 					</section>
 				</section>
 
@@ -199,12 +217,11 @@
 								<img src="figures/Pulse.png" alt="Pulse" width="90%">
 							</div>
 							<div class="column sixty-five" style="padding-top: 25px">
-								<h5 style="font-size: 0.9em; margin-bottom: 0.5em">Pump pulse Hamiltonian</h5>
-								<eq>$\mathcal{H}_{\text{pump}}=-J\sum_{\langle ij \rangle,\sigma}$(<span style="color: red">$e^{iA(t)}$</span>$c^\dagger_{i\sigma}c_{j\sigma}+h.c.)+U\sum_in_{i\uparrow}n_{i\downarrow}$</eq>
-								<br>
-								<br>
+								<h5 style="font-size: 0.9em; margin-bottom: 0.2em">Pump pulse Hamiltonian</h5>
+								<eq style="font-size: 0.55em">$\mathcal{H}_{\text{pump}}=-J\sum_{\langle ij \rangle,\sigma}$(<span style="color: red">$e^{iA(t)}$</span>$c^\dagger_{i\sigma}c_{j\sigma}+h.c.)+U\sum_in_{i\uparrow}n_{i\downarrow}$</eq>
+								<h5 style="font-size: 0.8em">Gaussian pulse</h5>
 								<eq>$A(t)=A_0e^{-(t-t_d)^2/\tau^2}\cos[\Omega(t-t_d)+\phi]$</eq>
-								<h5 style="font-size: 0.9em; margin-top: 1.0em; margin-bottom: 0.5em">XAS</h5>
+								<h5 style="font-size: 0.9em; margin-top: 0.50em; margin-bottom: 0.5em">TR-XAS</h5>
 								<eq>$\vert \Psi(t=0)\rangle = c^\dagger_{ch}e^{i\mathcal{H}_{\text{pump}}t^\prime}\vert GS\rangle$</eq>
 							</div>
 						</div>
@@ -223,15 +240,16 @@
 								<p style="text-align: left; padding-left: 10px; padding-top: 10px">Both peaks of doubly-occupied and single particle diminished.</p>
 							</div>
 						</div>
+						<aside class="notes">J=1eV, t0=16fs</aside>
 					</section>
 
 					<section>
 							<h3>Half-filling : $\bar{n}_f=1/2$</h3>
 							<div class="row">
-								<div class="column half">
-									<img src="figures/HalfFilled.png" alt="HalfFilled" width="72%">
+								<div class="column forty">
+									<img src="figures/HalfFilled.png" alt="HalfFilled" width="90%">
 								</div>
-								<div class="column half">
+								<div class="column sixty">
 									<p style="font-size: 0.6em">$\tau=2t_0$, $\Omega t_0=3$, and $V_{ch}=3J$.</p>
 									<ul style="font-size: 0.7em">
 										<li style="padding-top:20px">In Eqm., the strongest signal $\omega$ is corresponding to the doubly occupied (charge gap).</li>

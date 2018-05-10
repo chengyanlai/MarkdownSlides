@@ -17,7 +17,7 @@
 		<link rel="stylesheet" href="css/reveal.css">
 		<!-- <link rel="stylesheet" href="css/theme/solarized.css" id="theme"> -->
 		<!-- <link rel="stylesheet" href="custom/theme/light.css" id="theme"> -->
-		<link rel="stylesheet" href="custom/theme/sky.css" id="theme">
+		<link rel="stylesheet" href="custom/theme/light.css" id="theme">
 		<link rel="stylesheet" href="custom/css/color.css">
 		<link rel="stylesheet" href="custom/css/columns.css">
 
@@ -44,7 +44,7 @@
 
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
-				<!-- <section>
+				<section>
 					<h1>Los Alamos National Laboratory</h1>
 					<h2>Los Alamos National Laboratory</h2>
 					<h3>Los Alamos National Laboratory</h3>
@@ -52,51 +52,31 @@
 					<h5>Los Alamos National Laboratory</h5>
 					<h6>Los Alamos National Laboratory</h6>
 					<p>Los Alamos National Laboratory</p>
-				</section> -->
+				</section>
 
 				<section>
-					<h1 style="font-size: 1.2em; margin-top: 0.em">Time-resolved x-ray absorption spectroscopy in one-dimensional strongly correlated systems</h1>
-					<h4 style="margin-bottom: 30px">(TR-XAS)</h4>
+					<h1 style="font-size: 1.2em; margin-top: 0.em">Dynamics of Holstein model in strong coupling and high temperature: diffusion or localization?</h1>
+					<!-- <h4 style="margin-bottom: 30px">(TR-XAS)</h4> -->
 					<h5 style="margin-bottom: 30px">Chen-Yen Lai</h5>
-					<h6 style="margin-bottom: 30px">Los Alamos National Laboratory</h6>
+					<h6 style="margin-bottom: 30px">T-4 & Center for Integrated Nanotechnologies</h6>
 					<!-- <p style="margin-bottom: 30px">
 						<small>Collaborator: Jian-Xin Zhu</small>
 					</p> -->
+					<ref>LA-UR-17-29749</ref>
+					<br>
 					<img src="figures/logos/CINT.gif" alt="ToOneBand-2" style="border:0px; box-shadow: 0 0 0; margin: 0 40px 0 40px" height="80px">
 					<img src="figures/logos/LANL.png" alt="ToOneBand-2" style="border:0px; box-shadow: 0 0 0; margin: 0 40px 0 40px" height="80px">
 					<img src="figures/logos/DOE.png" alt="ToOneBand-2" style="border:0px; box-shadow: 0 0 0; margin: 0 40px 0 40px" height="80px">
-					<ref>LA-UR-17-29749</ref>
 				</section>
 
 				<section>
 					<section>
-						<h2>X-ray absorption spectroscopy (XAS)</h2>
-						<div class="row">
-							<div class="column twenty" data-fragment-index="1" style="padding-top: 60px">
-								<img src="figures/intro/XAS.png" alt="xas_illu">
-								<ref>RMP <b>83</b>, 705 (2011)</ref>
-							</div>
-							<div class="column seventy-five">
-								<h6 class="" data-fragment-index="1" style="padding-top: 20px">Core-level Photoemission Spectroscopy</h6>
-								<ul class="" data-fragment-index="1" style="padding-top: 20px; font-size: 0.7em">
-									Measurements of the local electronic properties
-									<li style="margin-left: 20px">Local Chemical Shift</li>
-									<li style="margin-left: 20px">Many-body Interactions</li>
-									<li style="margin-left: 20px">Magnetic Exchange</li>
-									<li style="margin-left: 20px">Spin-Orbit</li>
-								</ul>
-								<h5 class="fragment" data-fragment-index="2" style="padding-top: 15px">Families:</h6>
-								<ul class="fragment" data-fragment-index="2" style="padding-top: 5px; font-size: 0.7em">
-										<li style="margin-left: 20px">X-ray emission spectroscopy (XES)</li>
-										<li style="margin-left: 20px">Nonresonant inelastic x-ray scattering (NIXS)</li>
-										<li style="margin-left: 20px">Resonant inelastic x-ray scattering (RIXS)</li>
-									</ul>
-							</div>
-						</div>
+						<h2>Anderson localization</h2>
+						<!-- <h2>Many-body localization (MBL)</h2> -->
 					</section>
 
 					<section>
-						<h2>Why time-resolved?</h2>
+						<!-- <h2>Why time-resolved?</h2>
 						<div class="row">
 							<div class="fragment column half" data-fragment-index="1">
 								<img src="figures/intro/TR_RIXS.png" alt="tr-rixs">
@@ -125,79 +105,25 @@
 								<h6 class="fragment" data-fragment-index="3" style="font-size: 0.8em">Dynamics of electronic properties!</h6>
 							</div>
 						</div>
-						<aside class="notes">quasi-2d chalcogenide crystal.</aside>
-					</section>
-				</section>
-
-				<section>
-					<section>
-						<h2 style="padding-top: 200px">Equilibrium XAS</h2>
-					</section>
-
-					<section style="margin: 0" data-transition="fade-in none-out">
-						<h4>Original two-band model</h4>
-						<img src="figures/OneBandIllu-0.png" alt="ToOneBand-1" style="border:0px" width="90%">
-					</section>
-					<section data-transition="none-in none-out">
-						<h4>Original two-band model</h4>
-						<img src="figures/OneBandIllu-1.png" alt="ToOneBand-1" style="border:0px" width="90%">
-					</section>
-					<section data-transition="none-in none-out">
-						<h4>Single band model with single X-ray photon event</h4>
-						<img src="figures/OneBandIllu-2.png" alt="ToOneBand-2" style="border:0px" width="90%">
-						<ul class="fragment" style="font-size: 0.7em">
-							<li>Fermi Hubbard model in 1D
-								<p style="font-size: 0.8em">$\mathcal{H}_{\text{FHM}}=-J\sum_{\langle ij \rangle,\sigma}(c^\dagger_{i\sigma}c_{j\sigma}+h.c.)+U\sum_in_{i\uparrow}n_{i\downarrow}\quad\Rightarrow\quad\mathcal{H}_{\text{FHM}}\vert GS\rangle=E_0\vert GS\rangle$</p>
-							</li>
-							<li>X-ray photon excites one electron from valance band to conduction band, and create a core hole which has effective attractive potential.
-								<p style="font-size: 0.8em">$\vert\Psi(t=0)\rangle=c^\dagger_{ch}\vert GS\rangle;\quad\quad\mathcal{H}(t\geq0)=\mathcal{H}_{\text{FHM}}$<span style="color: lightcoral">$-V_{\text{ch}}n_{ch}$</span>.</p>
-							</li>
-						</ul>
+						<aside class="notes">quasi-2d chalcogenide crystal.</aside> -->
 					</section>
 
 					<section>
-						<h3>How to calculate XAS?</h2>
-						<div class="fragment" style="margin-top: 0.2em">
-							<h4 style="text-align: left; font-size: 0.7em">Effective one band model in 1D</h4>
-							<p style="font-size: 0.5em">$\mathcal{H}_{\text{FHM}}\vert GS\rangle=E_0\vert GS\rangle\quad$ obtained by DMRG (MPS)</p>
-							<p style="font-size: 0.5em">$\vert\Psi(t=0)\rangle=c^\dagger_{ch}\vert GS\rangle\quad$ can be done in MPS formula</p>
-							<p style="font-size: 0.5em">$\mathcal{H}(t)=-J\sum_{\langle ij \rangle,\sigma}(c^\dagger_{i\sigma}c_{j\sigma}+h.c.)+U\sum_in_{i\uparrow}n_{i\downarrow}-V_{\text{ch}}n_{ch}$</p>
-						</div>
-						<div class="fragment" style="margin-top: 0.2em">
-							<h4 style="text-align: left; font-size: 0.7em">XAS spectrum</h4>
-							<p style="font-size: 0.6em">
-									\begin{eqnarray}
-										I_{\text{XAS}}(\omega)&\propto&\sum_\sigma\sum_f \vert\langle f \vert c_{ch,\sigma}^\dagger \vert 0 \rangle\vert^2 \delta(E_f-E_0-\hbar\omega)\\
-										&=& \frac{1}{\pi}\sum_\sigma\text{Im}\left[ -i\int_0^\infty dt e^{i(\hbar\omega+E_0)t}e^{-\color{red}\Gamma t} \color{green}{\langle GS \vert c_{ch,\sigma} }\color{blue}{e^{-i\mathcal{H}t} c_{ch,\sigma}^\dagger \vert GS \rangle} \right].
-									\end{eqnarray}
-									<span style="color: brown">Non-equilibrium quench dynamics can be solved by TEBD (tDMRG)!</span>
-							</p>
-						</div>
-					</section>
-
-					<!-- <section data-transition="fade-in none-out">
-						<h3>XAS for equilibrium state</h3>
-						<img src="figures/EqmXAS.png" alt="EqmXAS" width="85%">
-					</section>
-					<section data-transition="none-in fade-out">
-						<h3>XAS for equilibrium state</h3>
-						<img src="figures/EqmXAS-1.png" alt="EqmXAS" width="85%">
-						<p><span style="color: red">Doubly occupied - $\omega=U-2V_{ch}$</span>; <span style="color: blue">One particle - $\omega=V_{ch}$</span>; Empty - $\omega=0$</p>
-						<p>The doubly occupied signal gets stringer as filling closed to one-half - charge gap!</p>
-					</section> -->
-					<section>
+						<h3>Holstein Model</h3>
+						<br>
+						<eq>\begin{equation}
+							H=-\overline{t}\sum_{\langle ij\rangle}(c^\dagger_ic_j+c^\dagger_jc_i)+\Omega\sum_ia^\dagger_ia_i+\lambda\sum_ic^\dagger_ic_i(a^\dagger_i+a_i)
+						\end{equation}</eq>
 						<div class="row">
-							<div class="column thirty-five">
-								<img src="figures/EqmXAS-2.png" alt="EqmXAS">
+							<div class="column forty">
+								<img src="figures/Holstein.png" alt="Holstein">
 							</div>
 							<div class="column sixty">
-								<h3>XAS for equilibrium state</h3>
-								<ul style="font-size: 0.7em">
-									<li style="padding-top: 25px; line-height: 1.4em;color: blue">Single particle $\omega\sim -V_{ch}$ core hole effect!</li>
-									<li style="padding-top: 15px; line-height: 1.4em;color: red">Doubly occupied $\omega\sim U-2V_{ch}$.</li>
-									<li style="padding-top: 15px; line-height: 1.4em;">Empty $\omega\sim0$.</li>
-									<li style="padding-top: 15px; line-height: 1.4em;">Away from half-filling: strongest signal at single particle.</li>
-									<li style="padding-top: 15px; line-height: 1.4em;">The doubly occupied signal gets stronger as filling closed to one-half - charge gap!</li>
+								<ul>
+									<li>Local optical phonons with single frequency</li>
+									<li>High temperature $\Rightarrow$ $N_p\hbar\Omega\approx k_bT$</li>
+									<li>Strong coupling $\Rightarrow$ Lot of phonon modes required</li>
+									<li><span class="blue">Only one electron (itinerant particle) in the system</span></li>
 								</ul>
 							</div>
 						</div>
@@ -206,59 +132,223 @@
 
 				<section>
 					<section>
-						<h2 style="padding-top: 150px">Time-resolved XAS</h2>
-						<h3 style="font-size: 1em; padding-top: 100px">Far-from-equilibrium XAS</h3>
-					</section>
-					<section>
-						<h4 style="text-align: left; font-size: 0.9em; margin-top: 0">Pump pulse before X-ray photon</h4>
-						<div class="row">
-							<div class="column thirty-five">
-								<img src="figures/Cartoon.png" alt="cartoon" width="90%">
-								<img src="figures/Pulse.png" alt="Pulse" width="90%">
-							</div>
-							<div class="column sixty-five" style="padding-top: 25px">
-								<h5 style="font-size: 0.9em; margin-bottom: 0.2em">Pump pulse Hamiltonian</h5>
-								<eq style="font-size: 0.55em">$\mathcal{H}_{\text{pump}}=-J\sum_{\langle ij \rangle,\sigma}$(<span style="color: red">$e^{iA(t)}$</span>$c^\dagger_{i\sigma}c_{j\sigma}+h.c.)+U\sum_in_{i\uparrow}n_{i\downarrow}$</eq>
-								<h5 style="font-size: 0.8em">Gaussian pulse</h5>
-								<eq>$A(t)=A_0e^{-(t-t_d)^2/\tau^2}\cos[\Omega(t-t_d)+\phi]$</eq>
-								<h5 style="font-size: 0.9em; margin-top: 0.50em; margin-bottom: 0.5em">TR-XAS</h5>
-								<eq>$\vert \Psi(t=0)\rangle = c^\dagger_{ch}e^{i\mathcal{H}_{\text{pump}}t^\prime}\vert GS\rangle$</eq>
-							</div>
-						</div>
-						<p style="font-size: 0.9em;color:chocolate">Different frequency and strength of influence. </p>
+						<h2 style="padding-top: 200px">The walking of the itinerant particle</h2>
 					</section>
 
 					<section>
-						<h3>Dilute gas : $\bar{n}_f=1/6$</h3>
+						<h3>Classical Toy Model</h3>
 						<div class="row">
-							<div class="column sixty">
-								<img src="figures/trXAS16.png" alt="trxas16">
-							</div>
 							<div class="column forty">
-								<p style="text-align: left; padding-left: 10px; padding-top: 30px">More weight to excitation continuum for weak coupling.</p>
-								<p style="text-align: left; padding-left: 10px; padding-top: 10px">Stronger influence is needed for strong coupling.</p>
-								<p style="text-align: left; padding-left: 10px; padding-top: 10px">Both peaks of doubly-occupied and single particle diminished.</p>
+								<img class="fragment current-visible" data-fragment-index="2" src="figures/Holstein.png" width=80% alt="Holstein">
+								<img class="fragment current-visible" data-fragment-index="3" style="position:absolute; margin-left: 5px; margin-right: 400px; left: 0; right: 0; width: 38%" src="figures/TwoVs-0.png" alt="2vs-0">
+								<img class="fragment current-visible" data-fragment-index="4" style="position:absolute; margin-left: 5px; margin-right: 400px; left: 0; right: 0; width: 38%" src="figures/TwoVs-1.png" alt="2vs-1">
+								<img class="fragment current-visible" data-fragment-index="5" style="position:absolute; margin-left: 5px; margin-right: 400px; left: 0; right: 0; width: 38%" src="figures/TwoVs-2.png" alt="2vs-2">
+								<img class="fragment current-visible" data-fragment-index="6" style="position:absolute; margin-left: 5px; margin-right: 400px; left: 0; right: 0; width: 38%" src="figures/TwoVs-3.png" alt="2vs-3">
+								<img class="fragment" data-fragment-index="7" style="position:absolute; margin-left: 5px; margin-right: 400px; left: 0; right: 0; width: 38%" src="figures/TwoVs-4.png" alt="2vs-4">
+							</div>
+							<div class="column sixty">
+								<ul>
+									<li class="fragment" data-fragment-index="1">Itinerant particle $\Rightarrow$<br> Classical object move through the lattice.</li>
+									<!-- <li class="fragment" data-fragment-index="2">Phonons ($a^\dagger_i\!+\!a_i\!=\!\hat{X})$ $\Rightarrow$ Local harmonic potential <br>$V_i(t)\!=\!\color{blue}{A_i}\cos(\frac{2\pi}{T_p}\color{red}t+\color{blue}{\phi_i})$ where period $T_p\!=\!2\pi/\Omega$.</li> -->
+									<li class="fragment" data-fragment-index="2">Phonons $\Rightarrow$ Local harmonic potential <br>$V_i(t)\!=\!\color{blue}{A_i}\cos(\frac{2\pi}{T_p}\color{red}t+\color{blue}{\phi_i})$ where period $T_p\!=\!2\pi/\Omega$.</li>
+									<li class="fragment" data-fragment-index="3">Itinerant particle sees on-site and neighboring time-dependent potentials.</li>
+								</ul>
 							</div>
 						</div>
-						<aside class="notes">J=1eV, t0=16fs</aside>
+						<ul style="padding-top: 40px">
+							<li class="fragment" data-fragment-index="4">In adiabatic limit, hopping $\overline{t}$ causes <span class="darkred">avoided crossing</span>.</li>
+							<li class="fragment" data-fragment-index="5">Itinerant particle jumps to the neighboring site as soon as avoided crossing occurs despite there is another crossing in the near future.</li>
+							<li class="fragment" data-fragment-index="6">Any two potentials, the next crossing is <span class="darkred">$T_p/2$</span> away, $t_3\!=\!t_1+T_p/2$!</li>
+							<li class="fragment" data-fragment-index="7"><span class="darkred">Never</span> jumps back if there is another neighbor.</li>
+						</ul>
 					</section>
 
 					<section>
-							<h3>Half-filling : $\bar{n}_f=1/2$</h3>
-							<div class="row">
-								<div class="column forty">
-									<img src="figures/HalfFilled.png" alt="HalfFilled" width="90%">
-								</div>
-								<div class="column sixty">
-									<p style="font-size: 0.6em">$\tau=2t_0$, $\Omega t_0=3$, and $V_{ch}=3J$.</p>
-									<ul style="font-size: 0.7em">
-										<li style="padding-top:20px">In Eqm., the strongest signal $\omega$ is corresponding to the doubly occupied (charge gap).</li>
-										<li style="padding-top:20px">The weight of the doubly occupied peak are diminished by the pump pulse.</li>
-										<li style="padding-top:20px">Under the same influence, the charge gap gets destroyed easier as coupling becomes stronger.</li>
-									</ul>
-								</div>
+						<h3>One dimensional (1D) periodic chain</h3>
+						<br>
+						<div class="row">
+							<div class="column half">
+								<iframe width=700px height=350px src="movies/ThreeSite.html"></iframe>
 							</div>
-						</section>
+							<div class="column half">
+								<ul>
+									<li>Particle jumps to neighboring site due to the avoided crossing.</li>
+									<li>Travel along the same line style, solid, dashed, or dash-dotted.</li>
+									<li>Track the site index over time gives the <span style="color: darkblue">repeating position string (RPS).</span><br>
+											For example: $\color{red}0\!-\!\color{blue}1\!-\!\color{green}2\!-\!\color{red}0\!-\!\color{blue}1\!-\!\color{green}2\cdots$</li>
+									<li>Jumps made back to starting point is system size <span class="darkred">$N_s\!=\!L$.</span></li>
+									<li>RPS is determined by initial conditions.</li>
+								</ul>
+							</div>
+						</div>
+						<p style="font-size: 110%; color: mediumpurple">Q: Time taken to circulate entire chain?</p>
+					</section>
+
+					<section style="text-align: left;">
+						<h6>Two-site problem</h6>
+						<div class="row">
+							<div class="column forty">
+								<img class="fragment current-visible" data-fragment-index="1" style="position:absolute; margin-left: 5px; margin-right: 400px; left: 0; right: 0; width: 38%" src="figures/A1A2-1.png" alt="A1A2-1">
+								<img class="fragment current-visible" data-fragment-index="2" style="position:absolute; margin-left: 5px; margin-right: 400px; left: 0; right: 0; width: 38%" src="figures/A1A2-2.png" alt="A1A2-2">
+								<img class="fragment current-visible" data-fragment-index="3" style="position:absolute; margin-left: 5px; margin-right: 400px; left: 0; right: 0; width: 38%" src="figures/A1A2-3.png" alt="A1A2-3">
+								<img class="fragment" data-fragment-index="4" style="position:absolute; margin-left: 5px; margin-right: 400px; left: 0; right: 0; width: 38%" src="figures/A1A2-4.png" alt="A1A2-4">
+							</div>
+							<div class="column sixty" style="padding-left: 400px">
+								<p class="eq blue">$V_1\!=\!A_1\cos(\Omega t)$</p>
+								<p class="eq red">$V_2\!=\!A_2\cos(\Omega t \!-\! \phi)$</p>
+								<p class="fragment" data-fragment-index="1" style="font-size: 90%; color: mediumpurple">Q: Particle starts from site-1, what is the distribution function of $t_1$ v.s $\phi$?</p>
+								<p class="fragment" data-fragment-index="6" style="font-size: 90%; color: mediumorchid">A: Exactly like density of states of free electron in 1D lattice!</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="column threequarter">
+								<p class="fragment" data-fragment-index="2" style="padding-top: 20px">$A_1\!=\!A_2$, it is <span class="darkblue">uniform</span>, because we use uniform distributed $\phi\in[0,2\pi)$.</p>
+								<p class="fragment" data-fragment-index="3">$A_1\!>>\!A_2$, <span class="darkblue">delta function</span>-like peak at $T_p/4$.</p>
+								<p class="fragment" data-fragment-index="4">$A_1\!\gtrsim\!A_2$, there are forbidden region (shaded) to make jump.</p>
+								<p class="fragment" data-fragment-index="5" style="padding-left: 120px">$t_1^\lessgtr\!=\!\Omega^{-1}\arccos(\pm A_2/A_1)$</p>
+								<p class="fragment darkred" data-fragment-index="5" style="padding-left: 120px">$\mathcal{D}(t)=\int_0^{2\pi}\delta(V_1-V_2(\phi))d\phi,$</p>
+							</div>
+							<div class="column quarter">
+								<img class="fragment" data-fragment-index="6" src="figures/Dt.png" alt="Dt">
+							</div>
+						</div>
+					</section>
+
+					<section>
+						<h3>Distribution of amplitudes $A_i$</h3>
+						<div class="row">
+							<div class="column half">
+								<h5>Time between jumps - $\Delta T$</h5>
+								<img src="figures/1DdT.png" alt="1DdT">
+							</div>
+							<div class="column half">
+								<h5>Duration to circulate - $T_s$</h5>
+								<img src="figures/1DTs.png" alt="1DTs">
+							</div>
+						</div>
+						<div class="row">
+							<div class="column quarter">
+								<p>Thermal distribution</p>
+								<eq>$\sqrt{\frac{2}{\pi}}\frac{x^2e^{-x^2/(2a^2)}}{a^3}$</eq><br>
+								<eq>$a\sim\sqrt{T}$</eq>
+							</div>
+							<div class="column threequarter" style="text-align: left;">
+								<p>$A_1\!=\!A_2$: <span class="red">uniform</span> distributed $\Delta T$ and smaller $T_s$ statistically!</p>
+								<p>$A_1\!\neq\!A_2$: <span class="red">non-analytic</span> $\Delta T$ distribution due to forbidden region for jumps and larger $T_s$ statistically!</p>
+								<p>Thermal distribution has analytic $\Delta T$ distribution, and small variances ($a$) are similar to uniform.</p>
+							</div>
+						</div>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2 style="padding-top: 200px">Semiclassical approach</h2>
+					</section>
+
+					<section style="text-align: left;">
+						<h3>Itinerant particle as quantum wavefunction</h3>
+						<br>
+						<eq>
+							\begin{equation}
+								H=-\overline{t}\sum_{\langle ij\rangle}(c^\dagger_ic_j+c^\dagger_jc_i)+\sum_iV_i(t)c^\dagger_ic_i
+							\end{equation}
+						</eq>
+						<div style="font-size: 110%">
+							<p>$V_i(t)\!=\!\color{blue}{A_i}\cos(\frac{2\pi}{T_p}t+\color{blue}{\phi_i})$ where period $T_p\!=\!2\pi/\Omega$ and $\phi_i\in[0,2\pi)$.</p>
+							<p>$H(t+T_p)\!=\!H(t)$ $\Rightarrow$ periodic driving system <span class="darkblue">(Floquet)</span>.</p>
+							<p>Given initial wavefunction, the dynamics are solved by $i\partial_t\psi=H\psi$.</p>
+							<p>Temperature and coupling are embedded in <span class="darkblue">$A^\text{rms}\gg\overline{t}$ for strong coupling and high temperature.</span></p>
+							<p>Small time step $\delta t\!=\!10^{-3}t_0$ and large phonon period $T_p$ as adiabatic limit.</p>
+							<ul style="padding-left: 30px">
+								<li>No restriction on <span class="green">jumping back</span>.</li>
+								<li>Effects on very close crossing of potentials.</li>
+							</ul>
+						</div>
+					</section>
+
+					<section style="text-align: left">
+						<h5 style="padding-left: 10px">12-site periodic chain</h5>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2 style="padding-top: 200px">Fully quantum mechanics</h2>
+					</section>
+
+					<section>
+						<h3>Holstein model</h3>
+						<br>
+						<eq>\begin{equation}
+							H=-\overline{t}\sum_{\langle ij\rangle}(c^\dagger_ic_j+c^\dagger_jc_i)+\Omega\sum_ia^\dagger_ia_i+\lambda\sum_ic^\dagger_ic_i(a^\dagger_i+a_i)
+						\end{equation}</eq>
+						<ul>
+							<li>Temperature $T\!\sim\!\langle N_p\rangle\frac{\hbar\Omega}{k_b}$ and coupling $\lambda$ are independent.</li>
+							<li>Eigenstates and dynamics are simulated by Lanczos-based algorithm.</li>
+							<li>Small system size and <span class="blue">maximum phonon quanta $N^\text{max}_p$</span> due to unbounded phonon Hilbert space.</li>
+						</ul>
+						<ol>
+							<li class="darkblue">Dynamics from excited states:
+								<p style="font-size: 90%">$\vert\Psi(t\!=\!0)\rangle\!=\!\frac{1}{\sqrt{2}}(\vert \psi_m\rangle \!+\! \vert\psi_n\rangle)$ where $H\vert\psi_m\rangle\!=\!E_m\vert\psi_m\rangle$
+								</p>
+							</li>
+							<li class="darkgreen">Dynamics from phonon coherent states:
+								<p style="font-size: 90%">$\vert\Psi(t=0)\rangle=\vert i_F;\alpha_0, \alpha_1, \alpha_2\rangle$ where $a\vert\alpha_i\rangle\!=\!\alpha_i\vert\alpha_i\rangle$</p>
+							</li>
+						</ol>
+					</section>
+
+					<section>
+						<h3>Phonon Coherent State</h3>
+					</section>
+
+					<section>
+						<h3>Excited States</h3>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2 style="padding-top: 200px">Beyond 1D Chain</h2>
+					</section>
+
+					<section>
+						<h3>Chain of polygons</h3>
+						<div class="row">
+							<div class="column forty" style="text-align: left;">
+								<img class="fragment current-visible" data-fragment-index="1" style="position:absolute; margin-left: 5px; margin-right: 400px; left: 0; right: 0; width: 38%" src="figures/Polygons-1.png" alt="Polygons-1">
+								<img class="fragment" data-fragment-index="3" style="position:absolute; margin-left: 5px; margin-right: 400px; left: 0; right: 0; width: 38%" src="figures/Polygons-2.png" alt="Polygons-2">
+								<p class="fragment" data-fragment-index="1" style="padding-top: 100px">$L_{uc}$: Number of unit cells.</p>
+								<p class="fragment" data-fragment-index="1">$S_{uc}$: Size of unit cell.</p>
+								<p class="fragment" data-fragment-index="3" style="color: rgb(28,108,171)">Open boundary conditions and particle starts at edge.</p>
+								<p class="fragment" data-fragment-index="3" style="color: rgb(255,155,1)">Decision making at the vertex.</p>
+								<p class="fragment darkblue" data-fragment-index="3">Close trajectory in single unit cell!</p>
+							</div>
+							<div class="column sixty">
+								<p class="fragment" data-fragment-index="2" style="font-size: 90%; color: mediumpurple">Q: Can the particle close and repeat the same trajectory?</p>
+								<p class="fragment" data-fragment-index="4" style="color:cornflowerblue;font-size: 90%">Prediction: $p(\tilde{N}_s+1)\!=\!\frac{1}{2}p(\tilde{N}_s)$?</p>
+							</div>
+						</div>
+					</section>
+
+					<section>
+						<h3>$N$-leg ladder</h3>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2 style="padding-top: 200px">Two dimensional (2D) lattice</h2>
+					</section>
+
+					<section>
+						<h3>Infinite trajectory?</h3>
+					</section>
+
+					<section>
+						<h3>Fractals?</h3>
+					</section>
 				</section>
 
 				<section>
@@ -269,7 +359,7 @@
 						<li>Far-from-equilibrium XAS under different influence are studied.</li>
 					</ul>
 					<h4 style="margin-top: 1em">Acknowledgements</h4>
-					<p style="font-size: 0.6em; text-align: left">Collaborator: Jian-Xin Zhu (LANL), Jhih-Shih You (TU Dresden), Marton Kanasz-Nagy, and Eugene Demler (Harvard).</p>
+					<p style="font-size: 0.6em; text-align: left">Collaborator: S. A. Trugman (LANL).</p>
 					<p style="font-size: 0.6em; text-align: left">Funding: The center for integrated nanotechnologies (CINT), a DOE BES user facility.</p>
 					<p style="font-size: 0.6em; text-align: left">Computational resources: LANL Institutional Computing (IC) program.</p>
 				</section>

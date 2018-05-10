@@ -25,6 +25,10 @@
   clear: both;
 }
 
+.threequarter {
+  width: 75%;
+}
+
 .seventy {
   width: 70%;
 }
@@ -39,6 +43,10 @@
 
 .half {
   width: 50%;
+}
+
+.forty-five {
+  width: 45%;
 }
 
 .forty {

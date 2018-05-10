@@ -6,6 +6,7 @@
 
  /* NOTE: Find a replacement fot this remote font */
  @import url(https://fonts.googleapis.com/css?family=Droid+Serif);
+ @import url('https://fonts.googleapis.com/css?family=Alice|Architects+Daughter|Ruda|Josefin+Sans|Kalam|Voltaire|Quicksand|Fira+Sans');
 
  /*********************************************
   * GLOBAL STYLES
@@ -22,7 +23,7 @@
  }
 
  .reveal {
-   font-family: 'Droid Serif', sans-serif;
+   font-family: 'Fira Sans', sans-serif;
    font-size: 36px;
    font-weight: normal;
    color: #333;
@@ -35,76 +36,95 @@
  }
 
 
-.reveal .slides > section,
+/* .reveal .slides > section,
 .reveal .slides > section > section {
   line-height: 1.3;
   font-weight: inherit;
+} */
+
+.reveal .slides {
+  height: 85% !important;
+  top: 0 !important;
+  margin-top: 10px !important;
+}
+
+.reveal .slides > section {
+  min-height: 85% !important;
+  top: auto !important;
+}
+
+.reveal .slides > section > section {
+  min-height: 85% !important;
+  top: auto !important;
 }
 
 /*********************************************
  * HEADERS
  *********************************************/
- .reveal h1,
- .reveal h2,
- .reveal h3,
- .reveal h4,
- .reveal h5,
- .reveal h6 {
-   margin: 0 0 20px 0;
-   font-weight: normal;
-   line-height: 1.2;
-   letter-spacing: normal;
- }
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+  /* margin: 0 0 20px 0; *//* Define from top right bottom left. */
+  font-weight: normal;
+  letter-spacing: -0.05em;
+  text-shadow: none;
+  word-wrap: break-word;
+  padding-top: 10px;
+}
 
 .reveal h1 {
-  font-family: 'Philosopher', sans-serif;
-  font-size: 2.5em;
-  color: rgb(20, 160, 190);
-  text-transform: capitalize;
-  /*text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 20px 20px rgba(0, 0, 0, 0.15);*/
+  /* only for title */
+  margin-bottom: 35px;
+  line-height: 1.2;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.5em;
+  color: rgb(220, 15, 85);
+  text-shadow: none;
 }
 
 .reveal h2 {
-  font-family: 'Noteworthy', sans-serif;
-  font-size: 2.11em;
-  color: rgb(0, 80, 190);
+  font-family: 'Alice', serif;
+  font-size: 1.4em;
+  color: rgb(10, 105, 97);
+  /* line-height: 100%; */
 }
 
 .reveal h3 {
-  font-family: 'Cochin', sans-serif;
-  font-size: 1.55em;
-  color: rgb(90 ,90 ,70);
-  text-decoration: underline;
-}
-/* NOTE: Find a font to replace Skia */
-.reveal h4 {
   font-family: 'Skia', serif;
-  font-weight: bold;
-  font-size: 1.25em;
-  color: rgb(50 ,150 ,70);
+  font-size: 1.3em;
+  color: rgb(180, 141, 11);
+}
+
+.reveal h4 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.1em;
+  color: rgb(20, 50, 110);
 }
 
 .reveal h5 {
-  font-family: 'Skia', serif;
-  font-weight: bold;
-  font-size: 1.05em;
-  color: rgb(230, 50, 50);
+  font-family: 'Kalam', cursive;
+  font-weight: normal;
+  font-size: 1.1em;
+  color: rgb(20, 150, 50);
 }
 
 .reveal h6 {
-  font-family: 'Skia', serif;
+  font-family: 'Architects Daughter', cursive;
   font-weight: normal;
-  font-size: 1.05em;
-  color: rgb(230, 50, 50);
+  font-size: 1.0em;
+  color: rgb(20, 113, 150);
 }
 
 /*********************************************
- * OTHER
- *********************************************/
+* OTHER
+*********************************************/
 .reveal p {
-  margin: 20px 0;
+  margin: 10px 0;
+  font-size: 0.6em;
   line-height: 1.3;
-  padding-top: 0.1em;
 }
 
 /* Ensure certain elements are never larger than the slide itself */
@@ -130,6 +150,7 @@
   display: inline-block;
   text-align: left;
   margin: 0 0 0 1em;
+  font-size: 0.7em;
 }
 
 .reveal ol {
@@ -296,8 +317,8 @@
 .reveal section img {
   margin: 15px 0px;
   background: rgba(255, 255, 255, 0.12);
-  border: 4px solid #333;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  border: 0px solid #333;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
 }
 
 .reveal section img.plain {
@@ -368,4 +389,21 @@
   -webkit-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
   -moz-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
   transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+}
+
+
+/*********************************************
+ * Personal Stuff
+ *********************************************/
+ .reveal eq {
+  margin: 10px 0;
+  font-size: 0.6em;
+  line-height: 1.3;
+}
+
+.reveal ref {
+  font-family: 'Voltaire', sans-serif;
+  font-weight: 200;
+  font-size: 0.5em;
+  color: rgba(0, 0, 0, 0.6);
 }

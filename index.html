@@ -4,9 +4,9 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>MM18 - TR-XAS</title>
+		<title>BLAS - HTP</title>
 
-		<meta name="description" content="MM18 - TR-XAS">
+		<meta name="description" content="BLAS - HTP">
 		<meta name="author" content="Chen-Yen Lai">
 
 		<meta name="apple-mobile-web-app-capable" content="yes">
@@ -55,7 +55,7 @@
 				</section>
 
 				<section>
-					<h1 style="font-size: 1.2em; margin-top: 0.em">Dynamics of Holstein model in strong coupling and high temperature: diffusion or localization?</h1>
+					<h1 style="font-size: 1.2em; margin-top: 0.em">Dynamics of Holstein model in strong coupling and high temperature: diffusion or not?</h1>
 					<!-- <h4 style="margin-bottom: 30px">(TR-XAS)</h4> -->
 					<h5 style="margin-bottom: 30px">Chen-Yen Lai</h5>
 					<h6 style="margin-bottom: 30px">T-4 & Center for Integrated Nanotechnologies</h6>
@@ -76,6 +76,7 @@
 					</section>
 
 					<section>
+						<h2>Diffusion</h2>
 						<!-- <h2>Why time-resolved?</h2>
 						<div class="row">
 							<div class="fragment column half" data-fragment-index="1">
@@ -159,85 +160,31 @@
 							<li class="fragment" data-fragment-index="4">In adiabatic limit, hopping $\overline{t}$ causes <span class="darkred">avoided crossing</span>.</li>
 							<li class="fragment" data-fragment-index="5">Itinerant particle jumps to the neighboring site as soon as avoided crossing occurs despite there is another crossing in the near future.</li>
 							<li class="fragment" data-fragment-index="6">Any two potentials, the next crossing is <span class="darkred">$T_p/2$</span> away, $t_3\!=\!t_1+T_p/2$!</li>
-							<li class="fragment" data-fragment-index="7"><span class="darkred">Never</span> jumps back if there is another neighbor.</li>
 						</ul>
+						<p class="fragment red" data-fragment-index="7" style="font-size: 100%;font-style: italic">Never jumps back if there is another neighbor.</li>
 					</section>
 
 					<section>
 						<h3>One dimensional (1D) periodic chain</h3>
-						<br>
-						<div class="row">
+						<div class="row" style="padding-top: 15px">
 							<div class="column half">
-								<iframe width=700px height=350px src="movies/ThreeSite.html"></iframe>
+								<!-- <video src="movies/ThreeSite.mp4"></video> -->
+								<!-- <iframe width=700px height=350px src="movies/ThreeSite.html"></iframe> -->
+								<img src="movies/ThreeSite.gif" alt="three-site-movie">
 							</div>
 							<div class="column half">
 								<ul>
 									<li>Particle jumps to neighboring site due to the avoided crossing.</li>
 									<li>Travel along the same line style, solid, dashed, or dash-dotted.</li>
 									<li>Track the site index over time gives the <span style="color: darkblue">repeating position string (RPS).</span><br>
-											For example: $\color{red}0\!-\!\color{blue}1\!-\!\color{green}2\!-\!\color{red}0\!-\!\color{blue}1\!-\!\color{green}2\cdots$</li>
+											For example: $\color{blue}1\!-\!\color{green}2\!-\!\color{red}0\!-\!\color{blue}1\!-\!\color{green}2\!-\!\color{red}0\!-\!\cdots$</li>
 									<li>Jumps made back to starting point is system size <span class="darkred">$N_s\!=\!L$.</span></li>
 									<li>RPS is determined by initial conditions.</li>
 								</ul>
+								<p class="fragment" style="font-size: 115%; color: mediumpurple;font-style: italic;padding-top: 20px">This is NOT diffusion!!</p>
 							</div>
 						</div>
-						<p style="font-size: 110%; color: mediumpurple">Q: Time taken to circulate entire chain?</p>
-					</section>
-
-					<section style="text-align: left;">
-						<h6>Two-site problem</h6>
-						<div class="row">
-							<div class="column forty">
-								<img class="fragment current-visible" data-fragment-index="1" style="position:absolute; margin-left: 5px; margin-right: 400px; left: 0; right: 0; width: 38%" src="figures/A1A2-1.png" alt="A1A2-1">
-								<img class="fragment current-visible" data-fragment-index="2" style="position:absolute; margin-left: 5px; margin-right: 400px; left: 0; right: 0; width: 38%" src="figures/A1A2-2.png" alt="A1A2-2">
-								<img class="fragment current-visible" data-fragment-index="3" style="position:absolute; margin-left: 5px; margin-right: 400px; left: 0; right: 0; width: 38%" src="figures/A1A2-3.png" alt="A1A2-3">
-								<img class="fragment" data-fragment-index="4" style="position:absolute; margin-left: 5px; margin-right: 400px; left: 0; right: 0; width: 38%" src="figures/A1A2-4.png" alt="A1A2-4">
-							</div>
-							<div class="column sixty" style="padding-left: 400px">
-								<p class="eq blue">$V_1\!=\!A_1\cos(\Omega t)$</p>
-								<p class="eq red">$V_2\!=\!A_2\cos(\Omega t \!-\! \phi)$</p>
-								<p class="fragment" data-fragment-index="1" style="font-size: 90%; color: mediumpurple">Q: Particle starts from site-1, what is the distribution function of $t_1$ v.s $\phi$?</p>
-								<p class="fragment" data-fragment-index="6" style="font-size: 90%; color: mediumorchid">A: Exactly like density of states of free electron in 1D lattice!</p>
-							</div>
-						</div>
-						<div class="row">
-							<div class="column threequarter">
-								<p class="fragment" data-fragment-index="2" style="padding-top: 20px">$A_1\!=\!A_2$, it is <span class="darkblue">uniform</span>, because we use uniform distributed $\phi\in[0,2\pi)$.</p>
-								<p class="fragment" data-fragment-index="3">$A_1\!>>\!A_2$, <span class="darkblue">delta function</span>-like peak at $T_p/4$.</p>
-								<p class="fragment" data-fragment-index="4">$A_1\!\gtrsim\!A_2$, there are forbidden region (shaded) to make jump.</p>
-								<p class="fragment" data-fragment-index="5" style="padding-left: 120px">$t_1^\lessgtr\!=\!\Omega^{-1}\arccos(\pm A_2/A_1)$</p>
-								<p class="fragment darkred" data-fragment-index="5" style="padding-left: 120px">$\mathcal{D}(t)=\int_0^{2\pi}\delta(V_1-V_2(\phi))d\phi,$</p>
-							</div>
-							<div class="column quarter">
-								<img class="fragment" data-fragment-index="6" src="figures/Dt.png" alt="Dt">
-							</div>
-						</div>
-					</section>
-
-					<section>
-						<h3>Distribution of amplitudes $A_i$</h3>
-						<div class="row">
-							<div class="column half">
-								<h5>Time between jumps - $\Delta T$</h5>
-								<img src="figures/1DdT.png" alt="1DdT">
-							</div>
-							<div class="column half">
-								<h5>Duration to circulate - $T_s$</h5>
-								<img src="figures/1DTs.png" alt="1DTs">
-							</div>
-						</div>
-						<div class="row">
-							<div class="column quarter">
-								<p>Thermal distribution</p>
-								<eq>$\sqrt{\frac{2}{\pi}}\frac{x^2e^{-x^2/(2a^2)}}{a^3}$</eq><br>
-								<eq>$a\sim\sqrt{T}$</eq>
-							</div>
-							<div class="column threequarter" style="text-align: left;">
-								<p>$A_1\!=\!A_2$: <span class="red">uniform</span> distributed $\Delta T$ and smaller $T_s$ statistically!</p>
-								<p>$A_1\!\neq\!A_2$: <span class="red">non-analytic</span> $\Delta T$ distribution due to forbidden region for jumps and larger $T_s$ statistically!</p>
-								<p>Thermal distribution has analytic $\Delta T$ distribution, and small variances ($a$) are similar to uniform.</p>
-							</div>
-						</div>
+						<!-- <p style="font-size: 110%; color: mediumpurple">Q: Time taken to circulate entire chain?</p> -->
 					</section>
 				</section>
 
@@ -364,6 +311,63 @@
 					<p style="font-size: 0.6em; text-align: left">Computational resources: LANL Institutional Computing (IC) program.</p>
 				</section>
 
+
+				<section style="text-align: left;">
+					<h6>Two-site problem</h6>
+					<div class="row">
+						<div class="column forty">
+							<img class="fragment current-visible" data-fragment-index="1" style="position:absolute; margin-left: 5px; margin-right: 400px; left: 0; right: 0; width: 38%" src="figures/A1A2-1.png" alt="A1A2-1">
+							<img class="fragment current-visible" data-fragment-index="2" style="position:absolute; margin-left: 5px; margin-right: 400px; left: 0; right: 0; width: 38%" src="figures/A1A2-2.png" alt="A1A2-2">
+							<img class="fragment current-visible" data-fragment-index="3" style="position:absolute; margin-left: 5px; margin-right: 400px; left: 0; right: 0; width: 38%" src="figures/A1A2-3.png" alt="A1A2-3">
+							<img class="fragment" data-fragment-index="4" style="position:absolute; margin-left: 5px; margin-right: 400px; left: 0; right: 0; width: 38%" src="figures/A1A2-4.png" alt="A1A2-4">
+						</div>
+						<div class="column sixty" style="padding-left: 400px">
+							<p class="eq blue">$V_1\!=\!A_1\cos(\Omega t)$</p>
+							<p class="eq red">$V_2\!=\!A_2\cos(\Omega t \!-\! \phi)$</p>
+							<p class="fragment" data-fragment-index="1" style="font-size: 90%; color: mediumpurple">Q: Particle starts from site-1, what is the distribution function of $t_1$ v.s $\phi$?</p>
+							<p class="fragment" data-fragment-index="6" style="font-size: 90%; color: mediumorchid">A: Exactly like density of states of free electron in 1D lattice!</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="column threequarter">
+							<p class="fragment" data-fragment-index="2" style="padding-top: 20px">$A_1\!=\!A_2$, it is <span class="darkblue">uniform</span>, because we use uniform distributed $\phi\in[0,2\pi)$.</p>
+							<p class="fragment" data-fragment-index="3">$A_1\!>>\!A_2$, <span class="darkblue">delta function</span>-like peak at $T_p/4$.</p>
+							<p class="fragment" data-fragment-index="4">$A_1\!\gtrsim\!A_2$, there are forbidden region (shaded) to make jump.</p>
+							<p class="fragment" data-fragment-index="5" style="padding-left: 120px">$t_1^\lessgtr\!=\!\Omega^{-1}\arccos(\pm A_2/A_1)$</p>
+							<p class="fragment darkred" data-fragment-index="5" style="padding-left: 120px">$\mathcal{D}(t)=\int_0^{2\pi}\delta(V_1-V_2(\phi))d\phi,$</p>
+						</div>
+						<div class="column quarter">
+							<img class="fragment" data-fragment-index="6" src="figures/Dt.png" alt="Dt">
+						</div>
+					</div>
+				</section>
+
+				<section>
+					<h3>Distribution of amplitudes $A_i$</h3>
+					<div class="row">
+						<div class="column half">
+							<h5>Time between jumps - $\Delta T$</h5>
+							<img src="figures/1DdT.png" alt="1DdT">
+						</div>
+						<div class="column half">
+							<h5>Duration to circulate - $T_s$</h5>
+							<img src="figures/1DTs.png" alt="1DTs">
+						</div>
+					</div>
+					<div class="row">
+						<div class="column quarter">
+							<p>Thermal distribution</p>
+							<eq>$\sqrt{\frac{2}{\pi}}\frac{x^2e^{-x^2/(2a^2)}}{a^3}$</eq><br>
+							<eq>$a\sim\sqrt{T}$</eq>
+						</div>
+						<div class="column threequarter" style="text-align: left;">
+							<p>$A_1\!=\!A_2$: <span class="red">uniform</span> distributed $\Delta T$ and smaller $T_s$ statistically!</p>
+							<p>$A_1\!\neq\!A_2$: <span class="red">non-analytic</span> $\Delta T$ distribution due to forbidden region for jumps and larger $T_s$ statistically!</p>
+							<p>Thermal distribution has analytic $\Delta T$ distribution, and small variances ($a$) are similar to uniform.</p>
+						</div>
+					</div>
+				</section>
+<!-- End of slides -->
 			</div>
 
 		</div>

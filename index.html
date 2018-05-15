@@ -168,9 +168,10 @@
 						<h3>One dimensional (1D) periodic chain</h3>
 						<div class="row" style="padding-top: 15px">
 							<div class="column half">
-								<!-- <video src="movies/ThreeSite.mp4"></video> -->
-								<!-- <iframe width=700px height=350px src="movies/ThreeSite.html"></iframe> -->
-								<img src="movies/ThreeSite.gif" alt="three-site-movie">
+								<!-- <video class="stretch" width=700px height=350px data-src="movies/ThreeSite.mp4"></video> -->
+								<!-- <iframe width=700px height=350px src="movies/ThreeSite.mp4"></iframe> -->
+								<!-- <img src="movies/ThreeSite.gif" alt="three-site-movie"> -->
+								<img src="movies/ThreeSite.mp4" alt="three-site-movie">
 							</div>
 							<div class="column half">
 								<ul>
@@ -216,6 +217,17 @@
 
 					<section style="text-align: left">
 						<h5 style="padding-left: 10px">12-site periodic chain</h5>
+						<div class="row">
+							<div class="column thirty">
+								<!-- <img class="fragment" src="movies/12SiteChain-20.mp4" alt="Semi movie 20"> -->
+								<video  style="height: 200px" src="movies/12SiteChain-20.mp4" alt="Semi movie 20"></video>
+							</div>
+							<div class="column thirty">
+								<!-- <img class="fragment" src="movies/12SiteChain-20.mp4" alt="Semi movie 20"> -->
+							</div>
+							<div class="column thirty-five">
+							</div>
+						</div>
 					</section>
 				</section>
 
@@ -261,26 +273,35 @@
 					</section>
 
 					<section>
-						<h3>Chain of polygons</h3>
-						<div class="row">
-							<div class="column forty" style="text-align: left;">
-								<img class="fragment current-visible" data-fragment-index="1" style="position:absolute; margin-left: 5px; margin-right: 400px; left: 0; right: 0; width: 38%" src="figures/Polygons-1.png" alt="Polygons-1">
-								<img class="fragment" data-fragment-index="3" style="position:absolute; margin-left: 5px; margin-right: 400px; left: 0; right: 0; width: 38%" src="figures/Polygons-2.png" alt="Polygons-2">
-								<p class="fragment" data-fragment-index="1" style="padding-top: 100px">$L_{uc}$: Number of unit cells.</p>
-								<p class="fragment" data-fragment-index="1">$S_{uc}$: Size of unit cell.</p>
-								<p class="fragment" data-fragment-index="3" style="color: rgb(28,108,171)">Open boundary conditions and particle starts at edge.</p>
-								<p class="fragment" data-fragment-index="3" style="color: rgb(255,155,1)">Decision making at the vertex.</p>
-								<p class="fragment darkblue" data-fragment-index="3">Close trajectory in single unit cell!</p>
+						<div class="row" style="padding-top: 20px">
+							<div class="column half">
+								<h3>$N$-leg ladder</h3>
+								<img src="figures/Ladder.png" alt="Ladder System">
+								<p>$L_x\!\gg\!L_y$ with PBC in both directions.</p>
+								<p class="fragment" style="font-size: 80%; color:mediumpurple">Q: Finite trajectory?</p>
+								<p class="fragment" style="font-size: 80%; color:cadetblue;padding-left: 50px">A: Yes.</p>
+								<p class="fragment" style="font-size: 80%; color:mediumpurple">Q: Repeat the same trajectory?</p>
+								<p class="fragment" style="font-size: 80%; color:cadetblue;padding-left: 50px">A: Yes.</p>
 							</div>
-							<div class="column sixty">
-								<p class="fragment" data-fragment-index="2" style="font-size: 90%; color: mediumpurple">Q: Can the particle close and repeat the same trajectory?</p>
-								<p class="fragment" data-fragment-index="4" style="color:cornflowerblue;font-size: 90%">Prediction: $p(\tilde{N}_s+1)\!=\!\frac{1}{2}p(\tilde{N}_s)$?</p>
+							<div class="column half">
+								<h3 class="fragment">Semiclassical</h3>
+								<img src="movies/Ladder.gif" alt="ladder movie">
 							</div>
 						</div>
 					</section>
 
 					<section>
-						<h3>$N$-leg ladder</h3>
+						<h3>Classical</h3>
+						<p class="fragment" style="font-size: 80%; color:mediumpurple">Q: Probability of taking $N_s$ jumps to close trajectory $p(N_s)$?</p>
+						<p class="fragment" style="font-size: 70%; color:cadetblue;padding-left: 50px">$P(N)\!=\!\int_N^{N^\text{max}}p(N_s)dN_s$</p>
+						<div class="row">
+							<div class="column half">
+								<h4 class="fragment">v.s $L_x$ with $L_y\!=\!3$</h4>
+							</div>
+							<div class="column half">
+								<h4 class="fragment">v.s $L_y$ with $L_x\!=\!100$</h4>
+							</div>
+						</div>
 					</section>
 				</section>
 
@@ -290,7 +311,27 @@
 					</section>
 
 					<section>
-						<h3>Infinite trajectory?</h3>
+						<h3>Semiclassical</h3>
+						<div class="row">
+							<div class="column half">
+								<img src="movies/2D.gif" width=80% height=80% alt="2D-animation">
+							</div>
+							<div class="column half" style="text-align: left">
+								<p>Density contour $N_f(i,t)$ on an $6\times6$ square lattice.</p>
+								<p>Red marks are classical results.</p>
+								<p style="color: rgb(28,108,171);font-size: 100%;text-align: center">Repeatedly close trajectory matches the classical results!</p>
+							</div>
+						</div>
+					</section>
+
+					<section>
+						<h3>Infinite trajectory in thermodynamic limit?</h3>
+						<div class="row">
+							<div class="column half">
+							</div>
+							<div class="column half">
+							</div>
+						</div>
 					</section>
 
 					<section>
@@ -299,17 +340,19 @@
 				</section>
 
 				<section>
-					<h2>Conclusion and outlook</h2>
+					<h2>Conclusion</h2>
 					<ul style="font-size: 0.6em; margin-top: 1em">
-						<li>(Far-from-)Equilibrium X-ray absorption spectrum (XAS) in 1D strongly correlated systems can be studied by MPS in time domain.</li>
-						<li>Equilibrium XAS reveals the one particle excitation and the existence of charge gap at the half-filling.</li>
-						<li>Far-from-equilibrium XAS under different influence are studied.</li>
+						<li>The dynamics of Holstein model in strong coupling and high temperature is <span style="color:crimson">NOT diffusion!</span></li>
+						<li>In 1D, <span style="color: crimson">charge pumping</span> dynamics!. Beyond 1D, <span style="color: crimson">circulation</span>.</li>
+						<li>Finite trajectory in 2D in the thermodynamic limit and it is <span style="color: crimson;">fractal</span>.</li>
 					</ul>
 					<h4 style="margin-top: 1em">Acknowledgements</h4>
 					<p style="font-size: 0.6em; text-align: left">Collaborator: S. A. Trugman (LANL).</p>
 					<p style="font-size: 0.6em; text-align: left">Funding: The center for integrated nanotechnologies (CINT), a DOE BES user facility.</p>
 					<p style="font-size: 0.6em; text-align: left">Computational resources: LANL Institutional Computing (IC) program.</p>
 				</section>
+
+
 
 
 				<section style="text-align: left;">
@@ -364,6 +407,28 @@
 							<p>$A_1\!=\!A_2$: <span class="red">uniform</span> distributed $\Delta T$ and smaller $T_s$ statistically!</p>
 							<p>$A_1\!\neq\!A_2$: <span class="red">non-analytic</span> $\Delta T$ distribution due to forbidden region for jumps and larger $T_s$ statistically!</p>
 							<p>Thermal distribution has analytic $\Delta T$ distribution, and small variances ($a$) are similar to uniform.</p>
+						</div>
+					</div>
+				</section>
+
+				<section>
+					<h3>Chain of polygons</h3>
+					<div class="row">
+						<div class="column forty" style="text-align: left;">
+							<img class="fragment current-visible" data-fragment-index="1" style="position:absolute; margin-left: 5px; margin-right: 400px; left: 0; right: 0; width: 38%" src="figures/Polygons-1.png" alt="Polygons-1">
+							<img class="fragment" data-fragment-index="3" style="position:absolute; margin-left: 5px; margin-right: 400px; left: 0; right: 0; width: 38%" src="figures/Polygons-2.png" alt="Polygons-2">
+							<p class="fragment" data-fragment-index="1" style="padding-top: 100px">$L_{uc}$: Number of unit cells.</p>
+							<p class="fragment" data-fragment-index="1">$S_{uc}$: Size of unit cell.</p>
+							<p class="fragment" data-fragment-index="3" style="color: rgb(28,108,171)">Open boundary conditions and particle starts at edge.</p>
+							<p class="fragment" data-fragment-index="3" style="color: rgb(255,155,1)">Decision making at the vertex.</p>
+							<p class="fragment" data-fragment-index="4" style="font-size: 80%; color: mediumpurple">Q: Can the particle close and repeat the same trajectory?</p>
+							<p class="fragment" data-fragment-index="5" style="font-size: 80%; color:cadetblue">A: Close trajectory in $\tilde{N}_s$ unit cells!</p>
+						</div>
+						<div class="column sixty">
+							<p class="fragment" data-fragment-index="7" style="color:cornflowerblue;font-size: 80%">Prediction: $p(\tilde{N}_s+1)\!=\!\frac{1}{2}p(\tilde{N}_s)$?!</p>
+							<p class="fragment" data-fragment-index="8">$P(\tilde{N})=\int_{\tilde{N}}^{\tilde{N}^{max}_s} p(\tilde{N}_s) d\tilde{N}_s$</p>
+							<img class="fragment" data-fragment-index="8" width="100%" src="figures/Polygons-Data.png" alt="Polygon Data">
+							<p class="fragment" data-fragment-index="8" style="font-size: 80%; color:crimson">$P(\tilde{N})\sim e^{-\ln2\tilde{N}}$</p>
 						</div>
 					</div>
 				</section>

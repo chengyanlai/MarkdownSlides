@@ -168,10 +168,7 @@
 						<h3>One dimensional (1D) periodic chain</h3>
 						<div class="row" style="padding-top: 15px">
 							<div class="column half">
-								<!-- <video class="stretch" width=700px height=350px data-src="movies/ThreeSite.mp4"></video> -->
-								<!-- <iframe width=700px height=350px src="movies/ThreeSite.mp4"></iframe> -->
-								<!-- <img src="movies/ThreeSite.gif" alt="three-site-movie"> -->
-								<img src="movies/ThreeSite.mp4" alt="three-site-movie">
+								<img data-src="movies/ThreeSite.mp4" alt="three-site-movie">
 							</div>
 							<div class="column half">
 								<ul>
@@ -218,16 +215,20 @@
 					<section style="text-align: left">
 						<h5 style="padding-left: 10px">12-site periodic chain</h5>
 						<div class="row">
-							<div class="column thirty">
-								<!-- <img class="fragment" src="movies/12SiteChain-20.mp4" alt="Semi movie 20"> -->
-								<video  style="height: 200px" src="movies/12SiteChain-20.mp4" alt="Semi movie 20"></video>
+							<div class="fragment column thirty" style="padding-left: 30px">
+								<h6 style="font-size: 90%;text-align: center">$A^\text{rms}\!=\!3.8\bar{t}$</h6>
+								<img data-src="movies/12SiteChain-2.mp4" alt="Semi movie 2">
 							</div>
-							<div class="column thirty">
-								<!-- <img class="fragment" src="movies/12SiteChain-20.mp4" alt="Semi movie 20"> -->
+							<div class="fragment column thirty" style="padding-left: 30px">
+								<h6 style="font-size: 90%;text-align: center">$A^\text{rms}\!=\!6.7\bar{t}$</h6>
+								<img data-src="movies/12SiteChain-5.mp4" alt="Semi movie 5">
 							</div>
-							<div class="column thirty-five">
+							<div class="fragment column thirty" style="padding-left: 30px">
+								<h6 style="font-size: 90%;text-align: center">$A^\text{rms}\!=\!21.8\bar{t}$</h6>
+								<img data-src="movies/12SiteChain-20.mp4" alt="Semi movie 20">
 							</div>
 						</div>
+						<p class="fragment" style="font-size: 115%; color: mediumpurple;font-style: italic;padding-top: 5px">This is NOT diffusion in some parameter regimes!!</p>
 					</section>
 				</section>
 
@@ -249,21 +250,21 @@
 						</ul>
 						<ol>
 							<li class="darkblue">Dynamics from excited states:
-								<p style="font-size: 90%">$\vert\Psi(t\!=\!0)\rangle\!=\!\frac{1}{\sqrt{2}}(\vert \psi_m\rangle \!+\! \vert\psi_n\rangle)$ where $H\vert\psi_m\rangle\!=\!E_m\vert\psi_m\rangle$
+								<p style="font-size: 90%">$\vert\Psi(t\!=\!0)\rangle\!=\!\frac{1}{\sqrt{2}}(\vert \psi_m\rangle \!+\! \vert\psi_n\rangle)$ where $H\vert\psi_m\rangle\!=\!E_m\vert\psi_m\rangle$.
 								</p>
 							</li>
 							<li class="darkgreen">Dynamics from phonon coherent states:
-								<p style="font-size: 90%">$\vert\Psi(t=0)\rangle=\vert i_F;\alpha_0, \alpha_1, \alpha_2\rangle$ where $a\vert\alpha_i\rangle\!=\!\alpha_i\vert\alpha_i\rangle$</p>
+								<p style="font-size: 90%">$\vert\Psi(t=0)\rangle=\vert i_F;\alpha_0, \alpha_1, \alpha_2\rangle$ where $a\vert\alpha_i\rangle\!=\!\alpha_i\vert\alpha_i\rangle$, $\alpha_i\in C$.</p>
 							</li>
 						</ol>
 					</section>
 
 					<section>
-						<h3>Phonon Coherent State</h3>
+						<h3>Excited States</h3>
 					</section>
 
 					<section>
-						<h3>Excited States</h3>
+						<h3>Phonon Coherent State</h3>
 					</section>
 				</section>
 
@@ -273,19 +274,21 @@
 					</section>
 
 					<section>
-						<div class="row" style="padding-top: 20px">
+						<div class="row" style="padding-top: 5px">
 							<div class="column half">
 								<h3>$N$-leg ladder</h3>
 								<img src="figures/Ladder.png" alt="Ladder System">
 								<p>$L_x\!\gg\!L_y$ with PBC in both directions.</p>
 								<p class="fragment" style="font-size: 80%; color:mediumpurple">Q: Finite trajectory?</p>
-								<p class="fragment" style="font-size: 80%; color:cadetblue;padding-left: 50px">A: Yes.</p>
+								<p class="fragment" style="font-size: 80%; color:cadetblue;padding-left: 50px">A: Yes, $N_s^\text{max}\!=\!2\!\times\!N_\text{bonds}$.</p>
 								<p class="fragment" style="font-size: 80%; color:mediumpurple">Q: Repeat the same trajectory?</p>
-								<p class="fragment" style="font-size: 80%; color:cadetblue;padding-left: 50px">A: Yes.</p>
+								<p class="fragment" style="font-size: 80%; color:cadetblue;padding-left: 50px">A: Yes, past and future.</p>
 							</div>
-							<div class="column half">
-								<h3 class="fragment">Semiclassical</h3>
-								<img src="movies/Ladder.gif" alt="ladder movie">
+							<div class="fragment column half">
+								<h3>Semiclassical</h3>
+								<img height="450px" data-src="movies/Ladder.mp4" alt="ladder movie">
+								<!-- <iframe height="450px" data-src="movies/Ladder.mp4" alt="ladder movie"></iframe> -->
+								<!-- <video height="450px" src="movies/Ladder.mp4" alt="ladder movie"> -->
 							</div>
 						</div>
 					</section>
@@ -293,13 +296,17 @@
 					<section>
 						<h3>Classical</h3>
 						<p class="fragment" style="font-size: 80%; color:mediumpurple">Q: Probability of taking $N_s$ jumps to close trajectory $p(N_s)$?</p>
-						<p class="fragment" style="font-size: 70%; color:cadetblue;padding-left: 50px">$P(N)\!=\!\int_N^{N^\text{max}}p(N_s)dN_s$</p>
+						<p class="fragment" style="font-size: 70%; color:cadetblue;padding-left: 50px">$P(N)\!=\!\int_N^{N_s^\text{max}}p(N_s)dN_s$</p>
 						<div class="row">
-							<div class="column half">
-								<h4 class="fragment">v.s $L_x$ with $L_y\!=\!3$</h4>
+							<div class="fragment column half">
+								<h4 class="">v.s $L_x$ with $L_y\!=\!3$</h4>
+								<img src="figures/Ladder-Lx.png" alt="Ladder Lx">
+								<p>Short range trajectory: $P(N)\sim e^{-0.01N}$</p>
 							</div>
-							<div class="column half">
-								<h4 class="fragment">v.s $L_y$ with $L_x\!=\!100$</h4>
+							<div class="fragment column half">
+								<h4 class="">v.s $L_y$ with $L_x\!=\!100$</h4>
+								<img src="figures/Ladder-Ly.png" alt="Ladder Ly">
+								<p>$N^\text{avg}_s\sim L_y^{1.69}$</p>
 							</div>
 						</div>
 					</section>
@@ -314,7 +321,7 @@
 						<h3>Semiclassical</h3>
 						<div class="row">
 							<div class="column half">
-								<img src="movies/2D.gif" width=80% height=80% alt="2D-animation">
+								<img data-src="movies/2D.gif" width=80% height=80% alt="2D-animation">
 							</div>
 							<div class="column half" style="text-align: left">
 								<p>Density contour $N_f(i,t)$ on an $6\times6$ square lattice.</p>
@@ -326,25 +333,81 @@
 
 					<section>
 						<h3>Infinite trajectory in thermodynamic limit?</h3>
-						<div class="row">
+						<div class="row" style="text-align: left;padding-top: 50px">
 							<div class="column half">
+								<img class="fragment" data-fragment-index="1" src="figures/2DClassical.png" alt="2D Classical data">
 							</div>
 							<div class="column half">
+								<ul>
+									<li class="fragment" data-fragment-index="1">$N_s^\text{avg}\!=\!L^{1.6}$ power law!</li>
+									<li class="fragment" data-fragment-index="2">$\lim_{L\rightarrow\infty}P(L^2)\!\approx\!0$<span style="color: deepskyblue">$\Rightarrow$ Finite trajectory!!</span></li>
+									<li class="fragment" data-fragment-index="3">$P(N)\sim N^{-0.07}$ decays as <span style="color: deepskyblue">power law</span> initially with faster decay tail (finite size effect)!</li>
+									<li class="fragment" data-fragment-index="4">System is very close to <span style="color: deepskyblue">critical</span> point!</li>
+								</ul>
 							</div>
 						</div>
 					</section>
 
 					<section>
-						<h3>Fractals?</h3>
+						<h3>Fractals? (complexity)</h3>
+						<div class="row">
+							<div class="fragment column quarter" data-fragment-index="1">
+								<h6 style="font-size: 80%">Coast of Britain</h6>
+								<ref style="margin-top: 0; padding-top: 0;font-size: 30%">Benoit Mandelbrot, Science <b>156</b>, 636 (1967).</ref>
+								<img src="figures/intro/Britain.jpg" alt="Britain">
+								<p>
+									Unit $\rightarrow 0$ <br>
+									$\Downarrow$ <br>
+									Length $\rightarrow\infty$
+								</p>
+							</div>
+							<div class="fragment column quarter" data-fragment-index="2">
+								<h6 style="font-size: 80%">Koch Snowflake</h6>
+								<ref style="margin-top: 0; padding-top: 0;font-size: 30%">Credit: Larry Riddle, Agnes Scott College.</ref>
+								<img src="figures/intro/Koch.gif" alt="Koch Snowflake">
+							</div>
+							<div class="column half">
+								<h6 class="fragment" data-fragment-index="3">Quantum Hall</h6>
+								<img class="fragment" data-fragment-index="3" src="figures/intro/QHE.png" alt="QHE">
+								<h6 class="fragment" data-fragment-index="4">Others ......</h6>
+								<ul class="fragment" data-fragment-index="4">
+									<li>2D percolation cluster (1.8958)</li>
+									<li>Self avoiding walk (4/3)</li>
+									<li>Broccoli, Cauliflower ($\sim$2.7)</li>
+									<li>$\cdots$</li>
+								</ul>
+							</div>
+						</div>
+					</section>
+
+					<section>
+						<h3>Are the trajectories fractals?</h3>
+						<div class="row">
+							<div class="column half">
+								<img class="fragment" data-fragment-index="2" src="figures/Trajectory.png" height="220px" alt="trajectories">
+								<img class="fragment" data-fragment-index="4" src="figures/Fractal.png"  height="220px" alt="fractal">
+							</div>
+							<div class="column half">
+								<ul>
+									<li class="fragment" data-fragment-index="1">Square: (Area)$\sim (\frac{\text{Perimeter}}{4})^{\color{red}2}$</li>
+									<li class="fragment" data-fragment-index="2">Trajectory can fit inside $L_\text{F}\times L_\text{F}$ square box.</li>
+									<li class="fragment" data-fragment-index="3">Given $N_s$, average box size.</li>
+									<li class="fragment" data-fragment-index="3" style="color: coral">$L_\text{F}\sim\frac{N_s}{4}$??</li>
+									<li class="fragment" data-fragment-index="4" style="padding-top: 20px">$L_\text{F}\sim N_s^{\color{red}{0.6}}$</li>
+									<li class="fragment" data-fragment-index="5">(Sites visited)$\sim N_s^{\color{red}{0.89}}$</li>
+								</ul>
+								<p class="fragment" data-fragment-index="6" style="color: deepskyblue;padding-top: 50px;font-size: 100%">trajectories are fractals!!</p>
+							</div>
+						</div>
 					</section>
 				</section>
 
 				<section>
 					<h2>Conclusion</h2>
 					<ul style="font-size: 0.6em; margin-top: 1em">
-						<li>The dynamics of Holstein model in strong coupling and high temperature is <span style="color:crimson">NOT diffusion!</span></li>
-						<li>In 1D, <span style="color: crimson">charge pumping</span> dynamics!. Beyond 1D, <span style="color: crimson">circulation</span>.</li>
-						<li>Finite trajectory in 2D in the thermodynamic limit and it is <span style="color: crimson;">fractal</span>.</li>
+						<li>In certain parameter regimes, the dynamics of Holstein model in strong coupling and high temperature is <span style="color:crimson">NOT diffusion!</span></li>
+						<li>In 1D, <span style="color: crimson">charge pumping</span> dynamics!. Beyond 1D, <span style="color: crimson">circulation (localization?)</span>.</li>
+						<li>Finite trajectory in 2D in the thermodynamic limit, system is critical and trajectories are <span style="color: crimson;">fractals</span>.</li>
 					</ul>
 					<h4 style="margin-top: 1em">Acknowledgements</h4>
 					<p style="font-size: 0.6em; text-align: left">Collaborator: S. A. Trugman (LANL).</p>
@@ -428,7 +491,7 @@
 							<p class="fragment" data-fragment-index="7" style="color:cornflowerblue;font-size: 80%">Prediction: $p(\tilde{N}_s+1)\!=\!\frac{1}{2}p(\tilde{N}_s)$?!</p>
 							<p class="fragment" data-fragment-index="8">$P(\tilde{N})=\int_{\tilde{N}}^{\tilde{N}^{max}_s} p(\tilde{N}_s) d\tilde{N}_s$</p>
 							<img class="fragment" data-fragment-index="8" width="100%" src="figures/Polygons-Data.png" alt="Polygon Data">
-							<p class="fragment" data-fragment-index="8" style="font-size: 80%; color:crimson">$P(\tilde{N})\sim e^{-\ln2\tilde{N}}$</p>
+							<p class="fragment" data-fragment-index="8" style="font-size: 80%; color:crimson">$P(\tilde{N})\sim e^{-\tilde{N}\ln2}$</p>
 						</div>
 					</div>
 				</section>

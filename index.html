@@ -16,13 +16,13 @@
 
 		<link rel="stylesheet" href="css/reveal.css">
 		<!-- <link rel="stylesheet" href="css/theme/solarized.css" id="theme"> -->
-		<!-- <link rel="stylesheet" href="custom/theme/light.css" id="theme"> -->
-		<link rel="stylesheet" href="custom/theme/light.css" id="theme">
+		 <!-- <link rel="stylesheet" href="custom/theme/sky.css" id="theme"> -->
+		 <link rel="stylesheet" href="custom/theme/light.css" id="theme">
 		<link rel="stylesheet" href="custom/css/color.css">
 		<link rel="stylesheet" href="custom/css/columns.css">
 
 		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+		<!-- <link rel="stylesheet" href="lib/css/zenburn.css"> -->
 
 		<!-- Printing and PDF exports -->
 		<script>
@@ -44,7 +44,7 @@
 
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
-				<section>
+				<!-- <section>
 					<h1>Los Alamos National Laboratory</h1>
 					<h2>Los Alamos National Laboratory</h2>
 					<h3>Los Alamos National Laboratory</h3>
@@ -52,17 +52,13 @@
 					<h5>Los Alamos National Laboratory</h5>
 					<h6>Los Alamos National Laboratory</h6>
 					<p>Los Alamos National Laboratory</p>
-				</section>
+				</section> -->
 
 				<section>
-					<h1 style="font-size: 1.2em; margin-top: 0.em">Dynamics of Holstein model in strong coupling and high temperature: diffusion or not?</h1>
-					<!-- <h4 style="margin-bottom: 30px">(TR-XAS)</h4> -->
+					<h1 style="font-size: 1.2em; margin-top: 0.em">Dynamics of Holstein model in strong coupling and high temperature: diffusion or localization?</h1>
 					<h5 style="margin-bottom: 30px">Chen-Yen Lai</h5>
 					<h6 style="margin-bottom: 30px">T-4 & Center for Integrated Nanotechnologies</h6>
-					<!-- <p style="margin-bottom: 30px">
-						<small>Collaborator: Jian-Xin Zhu</small>
-					</p> -->
-					<ref>LA-UR-17-29749</ref>
+					<!-- <ref>LA-UR-17-29749</ref> -->
 					<br>
 					<img src="figures/logos/CINT.gif" alt="ToOneBand-2" style="border:0px; box-shadow: 0 0 0; margin: 0 40px 0 40px" height="80px">
 					<img src="figures/logos/LANL.png" alt="ToOneBand-2" style="border:0px; box-shadow: 0 0 0; margin: 0 40px 0 40px" height="80px">
@@ -111,10 +107,10 @@
 
 					<section>
 						<h3>Holstein Model</h3>
-						<br>
-						<eq>\begin{equation}
+						<p>
+						\begin{equation}
 							H=-\overline{t}\sum_{\langle ij\rangle}(c^\dagger_ic_j+c^\dagger_jc_i)+\Omega\sum_ia^\dagger_ia_i+\lambda\sum_ic^\dagger_ic_i(a^\dagger_i+a_i)
-						\end{equation}</eq>
+						\end{equation}</p>
 						<div class="row">
 							<div class="column forty">
 								<img src="figures/Holstein.png" alt="Holstein">
@@ -149,15 +145,15 @@
 							</div>
 							<div class="column sixty">
 								<ul>
-									<li class="fragment" data-fragment-index="1">Itinerant particle $\Rightarrow$<br> Classical object move through the lattice.</li>
+									<li class="fragment" data-fragment-index="1">Itinerant particle $\Rightarrow$ Classical object.</li>
 									<!-- <li class="fragment" data-fragment-index="2">Phonons ($a^\dagger_i\!+\!a_i\!=\!\hat{X})$ $\Rightarrow$ Local harmonic potential <br>$V_i(t)\!=\!\color{blue}{A_i}\cos(\frac{2\pi}{T_p}\color{red}t+\color{blue}{\phi_i})$ where period $T_p\!=\!2\pi/\Omega$.</li> -->
 									<li class="fragment" data-fragment-index="2">Phonons $\Rightarrow$ Local harmonic potential <br>$V_i(t)\!=\!\color{blue}{A_i}\cos(\frac{2\pi}{T_p}\color{red}t+\color{blue}{\phi_i})$ where period $T_p\!=\!2\pi/\Omega$.</li>
 									<li class="fragment" data-fragment-index="3">Itinerant particle sees on-site and neighboring time-dependent potentials.</li>
+									<li class="fragment" data-fragment-index="4">In adiabatic limit, hopping $\overline{t}$ causes <span class="darkred">avoided crossing</span>.</li>
 								</ul>
 							</div>
 						</div>
-						<ul style="padding-top: 40px">
-							<li class="fragment" data-fragment-index="4">In adiabatic limit, hopping $\overline{t}$ causes <span class="darkred">avoided crossing</span>.</li>
+						<ul style="padding-top: 5px">
 							<li class="fragment" data-fragment-index="5">Itinerant particle jumps to the neighboring site as soon as avoided crossing occurs despite there is another crossing in the near future.</li>
 							<li class="fragment" data-fragment-index="6">Any two potentials, the next crossing is <span class="darkred">$T_p/2$</span> away, $t_3\!=\!t_1+T_p/2$!</li>
 						</ul>
@@ -168,7 +164,8 @@
 						<h3>One dimensional (1D) periodic chain</h3>
 						<div class="row" style="padding-top: 15px">
 							<div class="column half">
-								<img data-src="movies/ThreeSite.mp4" alt="three-site-movie">
+								 <iframe data-src="movies/ThreeSite.mp4" height="400px" width="400px" alt="three-site-movie"></iframe>
+								<!-- <img data-src="movies/ThreeSite.mp4" alt="three-site-movie"> -->
 							</div>
 							<div class="column half">
 								<ul>
@@ -176,7 +173,7 @@
 									<li>Travel along the same line style, solid, dashed, or dash-dotted.</li>
 									<li>Track the site index over time gives the <span style="color: darkblue">repeating position string (RPS).</span><br>
 											For example: $\color{blue}1\!-\!\color{green}2\!-\!\color{red}0\!-\!\color{blue}1\!-\!\color{green}2\!-\!\color{red}0\!-\!\cdots$</li>
-									<li>Jumps made back to starting point is system size <span class="darkred">$N_s\!=\!L$.</span></li>
+									<li>Jumps made back to starting point is system size <span class="darkred" style="font-size: 80%">$N_s\!=\!L$.</span></li>
 									<li>RPS is determined by initial conditions.</li>
 								</ul>
 								<p class="fragment" style="font-size: 115%; color: mediumpurple;font-style: italic;padding-top: 20px">This is NOT diffusion!!</p>
@@ -193,12 +190,11 @@
 
 					<section style="text-align: left;">
 						<h3>Itinerant particle as quantum wavefunction</h3>
-						<br>
-						<eq>
+						<p style="paddin-top: 50px">
 							\begin{equation}
 								H=-\overline{t}\sum_{\langle ij\rangle}(c^\dagger_ic_j+c^\dagger_jc_i)+\sum_iV_i(t)c^\dagger_ic_i
 							\end{equation}
-						</eq>
+						</p>
 						<div style="font-size: 110%">
 							<p>$V_i(t)\!=\!\color{blue}{A_i}\cos(\frac{2\pi}{T_p}t+\color{blue}{\phi_i})$ where period $T_p\!=\!2\pi/\Omega$ and $\phi_i\in[0,2\pi)$.</p>
 							<p>$H(t+T_p)\!=\!H(t)$ $\Rightarrow$ periodic driving system <span class="darkblue">(Floquet)</span>.</p>
@@ -217,15 +213,18 @@
 						<div class="row">
 							<div class="fragment column thirty" style="padding-left: 30px">
 								<h6 style="font-size: 90%;text-align: center">$A^\text{rms}\!=\!3.8\bar{t}$</h6>
-								<img data-src="movies/12SiteChain-2.mp4" alt="Semi movie 2">
+								<iframe data-src="movies/12SiteChain-2.mp4" height="340px" width="450px" alt="Semi movie 2"></iframe>
+								<!-- <img data-src="movies/12SiteChain-2.mp4" alt="Semi movie 2"> -->
 							</div>
 							<div class="fragment column thirty" style="padding-left: 30px">
 								<h6 style="font-size: 90%;text-align: center">$A^\text{rms}\!=\!6.7\bar{t}$</h6>
-								<img data-src="movies/12SiteChain-5.mp4" alt="Semi movie 5">
+								<iframe data-src="movies/12SiteChain-5.mp4" height="340px" width="450px" alt="Semi movie 5"></iframe>
+								<!-- <img data-src="movies/12SiteChain-5.mp4" alt="Semi movie 5"> -->
 							</div>
 							<div class="fragment column thirty" style="padding-left: 30px">
 								<h6 style="font-size: 90%;text-align: center">$A^\text{rms}\!=\!21.8\bar{t}$</h6>
-								<img data-src="movies/12SiteChain-20.mp4" alt="Semi movie 20">
+								<iframe data-src="movies/12SiteChain-20.mp4" height="340px" width="450px" alt="Semi movie 20"></iframe>
+								 <!-- <img data-src="movies/12SiteChain-20.mp4" alt="Semi movie 20"> -->
 							</div>
 						</div>
 						<p class="fragment" style="font-size: 115%; color: mediumpurple;font-style: italic;padding-top: 5px">This is NOT diffusion in some parameter regimes!!</p>
@@ -239,10 +238,10 @@
 
 					<section>
 						<h3>Holstein model</h3>
-						<br>
-						<eq>\begin{equation}
+						<p>
+						\begin{equation}
 							H=-\overline{t}\sum_{\langle ij\rangle}(c^\dagger_ic_j+c^\dagger_jc_i)+\Omega\sum_ia^\dagger_ia_i+\lambda\sum_ic^\dagger_ic_i(a^\dagger_i+a_i)
-						\end{equation}</eq>
+						\end{equation}</p>
 						<ul>
 							<li>Temperature $T\!\sim\!\langle N_p\rangle\frac{\hbar\Omega}{k_b}$ and coupling $\lambda$ are independent.</li>
 							<li>Eigenstates and dynamics are simulated by Lanczos-based algorithm.</li>
@@ -286,8 +285,8 @@
 							</div>
 							<div class="fragment column half">
 								<h3>Semiclassical</h3>
-								<img height="450px" data-src="movies/Ladder.mp4" alt="ladder movie">
-								<!-- <iframe height="450px" data-src="movies/Ladder.mp4" alt="ladder movie"></iframe> -->
+								   <iframe height="450px" width="225px" data-src="movies/Ladder.mp4" alt="ladder movie"></iframe>
+								<!-- <img height="450px" data-src="movies/Ladder.mp4" alt="ladder movie"> -->
 								<!-- <video height="450px" src="movies/Ladder.mp4" alt="ladder movie"> -->
 							</div>
 						</div>
@@ -463,8 +462,8 @@
 					<div class="row">
 						<div class="column quarter">
 							<p>Thermal distribution</p>
-							<eq>$\sqrt{\frac{2}{\pi}}\frac{x^2e^{-x^2/(2a^2)}}{a^3}$</eq><br>
-							<eq>$a\sim\sqrt{T}$</eq>
+							<p>$\sqrt{\frac{2}{\pi}}\frac{x^2e^{-x^2/(2a^2)}}{a^3}$</p>
+							<p>$a\sim\sqrt{T}$</p>
 						</div>
 						<div class="column threequarter" style="text-align: left;">
 							<p>$A_1\!=\!A_2$: <span class="red">uniform</span> distributed $\Delta T$ and smaller $T_s$ statistically!</p>
@@ -504,7 +503,6 @@
 		<script src="js/reveal.js"></script>
 
 		<script>
-
 			// More info https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
 				controls: true,
@@ -520,6 +518,7 @@
 					mathjax: 'MathJax/MathJax.js',
 					// mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
 					config: 'TeX-AMS_HTML-full'  // See http://docs.mathjax.org/en/latest/config-files.html
+					// config: 'TeX-AMS_HTML'
 				},
 
 				// More info https://github.com/hakimel/reveal.js#dependencies

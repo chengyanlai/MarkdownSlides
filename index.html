@@ -68,42 +68,11 @@
 				<section>
 					<section>
 						<h2>Anderson localization</h2>
-						<!-- <h2>Many-body localization (MBL)</h2> -->
 					</section>
 
-					<section>
-						<h2>Diffusion</h2>
-						<!-- <h2>Why time-resolved?</h2>
-						<div class="row">
-							<div class="fragment column half" data-fragment-index="1">
-								<img src="figures/intro/TR_RIXS.png" alt="tr-rixs">
-								<p style="padding: 0 0 0 0; margin-top: 0">
-									<span style="font-size: 0.9em">Time-resolved RIXS on Sr$_2$IrO$_4$</span>
-									<ref>Nat. Mat. <b>15</b>, 601 (2016).</ref>
-								</p>
-
-								<div class="row">
-									<div class="column half">
-										<img src="figures/intro/PerovskiteManganite.png" alt="PerovskiteManganite" width="65%">
-									</div>
-									<div class="column half" style="padding-top: 15px">
-										<span style="font-size: 0.5em">Photo-induced insulator–metal dynamics in PCMO.</span>
-										<ref style="font-size: 0.4em">Nat. Mat. <b>6</b>, 643 (2007)</ref>
-									</div>
-								</div>
-
-							</div>
-							<div class="column half">
-								<img class="fragment" data-fragment-index="2" src="figures/intro/TantalumDisulfide.png" alt="TaS2" width="55%">
-								<p class="fragment" data-fragment-index="2" style="padding: 0 0 0 0; margin-top: 0">
-									<span style="font-size: 0.75em">Hidden order of 1T-TaS$_2$</span>
-									<ref>Science <b>344</b>, 177 (2014)</ref>
-								</p>
-								<h6 class="fragment" data-fragment-index="3" style="font-size: 0.8em">Dynamics of electronic properties!</h6>
-							</div>
-						</div>
-						<aside class="notes">quasi-2d chalcogenide crystal.</aside> -->
-					</section>
+					 <!-- <section>
+						 <h2>Diffusion</h2>
+					 </section>  -->
 
 					<section>
 						<h3>Holstein Model</h3>
@@ -146,7 +115,6 @@
 							<div class="column sixty">
 								<ul>
 									<li class="fragment" data-fragment-index="1">Itinerant particle $\Rightarrow$ Classical object.</li>
-									<!-- <li class="fragment" data-fragment-index="2">Phonons ($a^\dagger_i\!+\!a_i\!=\!\hat{X})$ $\Rightarrow$ Local harmonic potential <br>$V_i(t)\!=\!\color{blue}{A_i}\cos(\frac{2\pi}{T_p}\color{red}t+\color{blue}{\phi_i})$ where period $T_p\!=\!2\pi/\Omega$.</li> -->
 									<li class="fragment" data-fragment-index="2">Phonons $\Rightarrow$ Local harmonic potential <br>$V_i(t)\!=\!\color{blue}{A_i}\cos(\frac{2\pi}{T_p}\color{red}t+\color{blue}{\phi_i})$ where period $T_p\!=\!2\pi/\Omega$.</li>
 									<li class="fragment" data-fragment-index="3">Itinerant particle sees on-site and neighboring time-dependent potentials.</li>
 									<li class="fragment" data-fragment-index="4">In adiabatic limit, hopping $\overline{t}$ causes <span class="darkred">avoided crossing</span>.</li>
@@ -157,15 +125,14 @@
 							<li class="fragment" data-fragment-index="5">Itinerant particle jumps to the neighboring site as soon as avoided crossing occurs despite there is another crossing in the near future.</li>
 							<li class="fragment" data-fragment-index="6">Any two potentials, the next crossing is <span class="darkred">$T_p/2$</span> away, $t_3\!=\!t_1+T_p/2$!</li>
 						</ul>
-						<p class="fragment red" data-fragment-index="7" style="font-size: 100%;font-style: italic">Never jumps back if there is another neighbor.</li>
+						<p class="fragment red" data-fragment-index="7" style="font-size: 35px;font-style: italic">Never jumps back if there is another neighbor.</li>
 					</section>
 
-					<section>
+					 <section>
 						<h3>One dimensional (1D) periodic chain</h3>
 						<div class="row" style="padding-top: 15px">
 							<div class="column half">
-								 <iframe data-src="movies/ThreeSite.mp4" height="400px" width="400px" alt="three-site-movie"></iframe>
-								<!-- <img data-src="movies/ThreeSite.mp4" alt="three-site-movie"> -->
+								<iframe data-src="movies/ThreeSite.mp4" height="400px" width="400px" alt="three-site-movie"></iframe>
 							</div>
 							<div class="column half">
 								<ul>
@@ -173,13 +140,12 @@
 									<li>Travel along the same line style, solid, dashed, or dash-dotted.</li>
 									<li>Track the site index over time gives the <span style="color: darkblue">repeating position string (RPS).</span><br>
 											For example: $\color{blue}1\!-\!\color{green}2\!-\!\color{red}0\!-\!\color{blue}1\!-\!\color{green}2\!-\!\color{red}0\!-\!\cdots$</li>
-									<li>Jumps made back to starting point is system size <span class="darkred" style="font-size: 80%">$N_s\!=\!L$.</span></li>
+									<li>Jumps made back to starting point is system size <span class="darkred" style="font-size: 30px">$N_s\!=\!L$.</span></li>
 									<li>RPS is determined by initial conditions.</li>
 								</ul>
-								<p class="fragment" style="font-size: 115%; color: mediumpurple;font-style: italic;padding-top: 20px">This is NOT diffusion!!</p>
+								<p class="fragment" style="font-size: 40px; color: mediumpurple;font-style: italic;padding-top: 20px">This is NOT diffusion!!</p>
 							</div>
 						</div>
-						<!-- <p style="font-size: 110%; color: mediumpurple">Q: Time taken to circulate entire chain?</p> -->
 					</section>
 				</section>
 
@@ -195,7 +161,7 @@
 								H=-\overline{t}\sum_{\langle ij\rangle}(c^\dagger_ic_j+c^\dagger_jc_i)+\sum_iV_i(t)c^\dagger_ic_i
 							\end{equation}
 						</p>
-						<div style="font-size: 110%">
+						<div style="font-size: 40px">
 							<p>$V_i(t)\!=\!\color{blue}{A_i}\cos(\frac{2\pi}{T_p}t+\color{blue}{\phi_i})$ where period $T_p\!=\!2\pi/\Omega$ and $\phi_i\in[0,2\pi)$.</p>
 							<p>$H(t+T_p)\!=\!H(t)$ $\Rightarrow$ periodic driving system <span class="darkblue">(Floquet)</span>.</p>
 							<p>Given initial wavefunction, the dynamics are solved by $i\partial_t\psi=H\psi$.</p>
@@ -208,24 +174,21 @@
 						</div>
 					</section>
 
-					<section style="text-align: left">
+					<section>
 						<h5 style="padding-left: 10px">12-site periodic chain</h5>
 						<div class="row">
 							<div class="fragment column thirty" style="padding-left: 30px">
 								<h6 style="font-size: 90%;text-align: center">$A^\text{rms}\!=\!3.8\bar{t}$</h6>
 								<iframe data-src="movies/12SiteChain-2.mp4" height="340px" width="450px" alt="Semi movie 2"></iframe>
-								<!-- <img data-src="movies/12SiteChain-2.mp4" alt="Semi movie 2"> -->
-							</div>
+							   </div>
 							<div class="fragment column thirty" style="padding-left: 30px">
 								<h6 style="font-size: 90%;text-align: center">$A^\text{rms}\!=\!6.7\bar{t}$</h6>
 								<iframe data-src="movies/12SiteChain-5.mp4" height="340px" width="450px" alt="Semi movie 5"></iframe>
-								<!-- <img data-src="movies/12SiteChain-5.mp4" alt="Semi movie 5"> -->
-							</div>
+							 </div>
 							<div class="fragment column thirty" style="padding-left: 30px">
 								<h6 style="font-size: 90%;text-align: center">$A^\text{rms}\!=\!21.8\bar{t}$</h6>
 								<iframe data-src="movies/12SiteChain-20.mp4" height="340px" width="450px" alt="Semi movie 20"></iframe>
-								 <!-- <img data-src="movies/12SiteChain-20.mp4" alt="Semi movie 20"> -->
-							</div>
+							 </div>
 						</div>
 						<p class="fragment" style="font-size: 115%; color: mediumpurple;font-style: italic;padding-top: 5px">This is NOT diffusion in some parameter regimes!!</p>
 					</section>
@@ -288,11 +251,11 @@
 								   <iframe height="450px" width="225px" data-src="movies/Ladder.mp4" alt="ladder movie"></iframe>
 								<!-- <img height="450px" data-src="movies/Ladder.mp4" alt="ladder movie"> -->
 								<!-- <video height="450px" src="movies/Ladder.mp4" alt="ladder movie"> -->
-							</div>
+							 </div>
 						</div>
 					</section>
 
-					<section>
+					 <section>
 						<h3>Classical</h3>
 						<p class="fragment" style="font-size: 80%; color:mediumpurple">Q: Probability of taking $N_s$ jumps to close trajectory $p(N_s)$?</p>
 						<p class="fragment" style="font-size: 70%; color:cadetblue;padding-left: 50px">$P(N)\!=\!\int_N^{N_s^\text{max}}p(N_s)dN_s$</p>
@@ -332,7 +295,7 @@
 
 					<section>
 						<h3>Infinite trajectory in thermodynamic limit?</h3>
-						<div class="row" style="text-align: left;padding-top: 50px">
+						<div class="row" style="text-align: left;padding-top: 30px">
 							<div class="column half">
 								<img class="fragment" data-fragment-index="1" src="figures/2DClassical.png" alt="2D Classical data">
 							</div>
@@ -363,7 +326,7 @@
 							<div class="fragment column quarter" data-fragment-index="2">
 								<h6 style="font-size: 80%">Koch Snowflake</h6>
 								<ref style="margin-top: 0; padding-top: 0;font-size: 30%">Credit: Larry Riddle, Agnes Scott College.</ref>
-								<img src="figures/intro/Koch.gif" alt="Koch Snowflake">
+								<img src="figures/intro/Koch.gif" height="360px" alt="Koch Snowflake">
 							</div>
 							<div class="column half">
 								<h6 class="fragment" data-fragment-index="3">Quantum Hall</h6>
@@ -372,8 +335,7 @@
 								<ul class="fragment" data-fragment-index="4">
 									<li>2D percolation cluster (1.8958)</li>
 									<li>Self avoiding walk (4/3)</li>
-									<li>Broccoli, Cauliflower ($\sim$2.7)</li>
-									<li>$\cdots$</li>
+									<li>Broccoli, Cauliflower (2.7)</li>
 								</ul>
 							</div>
 						</div>
@@ -496,7 +458,6 @@
 				</section>
 <!-- End of slides -->
 			</div>
-
 		</div>
 
 		<script src="lib/js/head.min.js"></script>

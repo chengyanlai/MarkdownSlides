@@ -53,52 +53,122 @@
 					<h6>Los Alamos National Laboratory</h6>
 					<p>Los Alamos National Laboratory</p>
 				</section> -->
-
 				<section>
-					<h1 style="font-size: 1.2em; margin-top: 0.em">Dynamics of Holstein model in strong coupling and high temperature: diffusion or localization?</h1>
-					<h5 style="margin-bottom: 30px">Chen-Yen Lai</h5>
-					<h6 style="margin-bottom: 30px">T-4 & Center for Integrated Nanotechnologies</h6>
-					<!-- <ref>LA-UR-17-29749</ref> -->
-					<br>
-					<img src="figures/logos/CINT.gif" alt="ToOneBand-2" style="border:0px; box-shadow: 0 0 0; margin: 0 40px 0 40px" height="80px">
-					<img src="figures/logos/LANL.png" alt="ToOneBand-2" style="border:0px; box-shadow: 0 0 0; margin: 0 40px 0 40px" height="80px">
-					<img src="figures/logos/DOE.png" alt="ToOneBand-2" style="border:0px; box-shadow: 0 0 0; margin: 0 40px 0 40px" height="80px">
+					<!-- <section> -->
+						<h1 style="font-size: 1.2em; margin-top: 0.em">Dynamics of Holstein model in strong coupling and high temperature: diffusion or localization?</h1>
+						<h5 style="margin-bottom: 30px">Chen-Yen Lai</h5>
+						<h6 style="margin-bottom: 30px">T-4 & Center for Integrated Nanotechnologies</h6>
+						<ref>LA-UR-18-24308</ref>
+						<div style="padding-top: 50px"></div>
+						<img src="figures/logos/CINT.gif" alt="ToOneBand-2" style="border:0px; box-shadow: 0 0 0; margin: 0 40px 0 40px" height="80px">
+						<img src="figures/logos/LANL.png" alt="ToOneBand-2" style="border:0px; box-shadow: 0 0 0; margin: 0 40px 0 40px" height="80px">
+						<img src="figures/logos/DOE.png" alt="ToOneBand-2" style="border:0px; box-shadow: 0 0 0; margin: 0 40px 0 40px" height="80px">
+					<!-- </section> -->
 				</section>
 
 				<section>
 					<section>
-						<h2>Anderson localization</h2>
+						<h2>Diffusion</h2>
+						<div class="row">
+							<div class="column half">
+								<img src="figures/intro/diffusion.jpg" alt="diffusion">
+								<p>Fick's law: $J=-D\nabla\psi$</p>
+								<p>$\langle x^2 \rangle = q_iDt$</p>
+							</div>
+							<div class="column half">
+								<img src="figures/intro/adiffusion.png" alt="Anomalous diffusion">
+							</div>
+						</div>
+						<p class="fragment" style="color: cornflowerblue;font-size: 30px">The distribution of the particles tends to be uniform in time.</p>
 					</section>
 
-					 <!-- <section>
-						 <h2>Diffusion</h2>
-					 </section>  -->
-
 					<section>
-						<h3>Holstein Model</h3>
-						<p>
-						\begin{equation}
-							H=-\overline{t}\sum_{\langle ij\rangle}(c^\dagger_ic_j+c^\dagger_jc_i)+\Omega\sum_ia^\dagger_ia_i+\lambda\sum_ic^\dagger_ic_i(a^\dagger_i+a_i)
-						\end{equation}</p>
+						<h2>Anderson localization</h2>
 						<div class="row">
-							<div class="column forty">
-								<img src="figures/Holstein.png" alt="Holstein">
+							<div class="fragment column half">
+								<img src="figures/intro/Anderson.jpg" alt="localization">
+								<ref>Credit: Akira Furusaki (RIKEN).</ref>
+								<p>Disorder: particles in <span style="color: cornflowerblue">random potentials</span>.</p>
 							</div>
-							<div class="column sixty">
+							<div class="fragment column half">
+								<img src="figures/intro/exp1.png" height="160px" alt="exp1">
+								<img src="figures/intro/exp2.png" height="160px" alt="exp2">
+								<ref>Juliette Billy et al., Science <b>453</b>, 891 (2008).</ref>
+								<p style="font-size: 35px">Known results:</p>
 								<ul>
-									<li>Local optical phonons with single frequency</li>
-									<li>High temperature $\Rightarrow$ $N_p\hbar\Omega\approx k_bT$</li>
-									<li>Strong coupling $\Rightarrow$ Lot of phonon modes required</li>
-									<li><span class="blue">Only one electron (itinerant particle) in the system</span></li>
+									<li>$d\!=\!1,2$: localized</li>
+									<li>$d\geq3$: localized in strong disorder, diffusion otherwise.</li>
 								</ul>
 							</div>
 						</div>
 					</section>
+
+					<section>
+						<h2>Quantum Hall system</h2>
+						<div class="row">
+							<div class="column half">
+								<img class="fragment" data-fragment-index="1" src="figures/intro/QHE.png" alt="QHE">
+								<img class="fragment" data-fragment-index="2" width="200px" src="figures/intro/qhe.gif" alt="qhe">
+								<img class="fragment" data-fragment-index="2" width="200px" src="figures/intro/lines.png" alt="qhe lines">
+								<br>
+								<ref class="fragment" data-fragment-index="2">Credit: David Tong, Univ. of Cambridge.</ref>
+							</div>
+							<div class="column half" style="padding-top: 40px;text-align: left;">
+								<p class="fragment" data-fragment-index="2" style="font-size: 30px">It is disorder system - Gaussian <span style="color: cornflowerblue">random potentials</span>.</p>
+								<p class="fragment" data-fragment-index="2" style="font-size: 30px">Equal potential lines - ponds, islands.</p>
+								<p class="fragment" data-fragment-index="3" style="font-size: 30px">In the presence of magnetic field - helical motion.</p>
+								<p class="fragment" data-fragment-index="4" style="color:crimson;font-size: 30px">Electrons has helical-like motion along equal potential lines.</p>
+							</div>
+						</div>
+					</section>
+					<section>
+						<div class="row">
+							<div class="column half">
+								<h2>Holstein Model</h2>
+								<ref>T. Holstein, Ann. of Phys., <b>8</b>, 325 (1959).</ref>
+								<p style="padding-top: 20px">\begin{eqnarray}
+									H&=&-\overline{t}\sum_{\langle ij\rangle}(c^\dagger_ic_j+c^\dagger_jc_i)+\Omega\sum_ia^\dagger_ia_i\\
+									&&-\lambda\sum_ic^\dagger_ic_i(a^\dagger_i+a_i)
+								\end{eqnarray}</p>
+							</div>
+							<div class="column half">
+								<img src="figures/Holstein.png" alt="Holstein">
+							</div>
+						</div>
+						<ul>
+							<li>Itinerant particle <span style="color: rgb(208,34,36)">$\bar{t}$</span>.</li>
+							<li>Local optical phonons with single frequency <span style="color: rgb(141, 71, 153)">$\Omega$</span></li>
+							<li>Coupling <span style="color: rgb(68,165,65)">$\lambda$</span> to local fermion density $n_i$, ${X}_i\!\sim\!a^\dagger_i+a_i$ (SHM).</li>
+							<li><span class="blue">Only one itinerant particle in the system</span> (Polaron problem).</li>
+						</ul>
+					</section>
+
+					<section>
+						<div class="row">
+							<div class="column half">
+								<h3>Self-Trapping</h3>
+								<img src="figures/intro/SelfTrap.png" alt="SelfTrp">
+								<ref>Eric Jeckelmann and Steven R. White, PRB <b>57</b>, 6376 (1998).</ref>
+								<p>$\chi_{10,j}\!=\!\langle n_{10}(a^\dagger_j+a_j)\rangle/\langle n_{10} \rangle$</p>
+								<ul>
+									<li>Weak coupling: lattice deformation extends.</li>
+									<li>Strong coupling: localized</li>
+								</ul>
+							</div>
+							<div class="fragment column half">
+								<h3>Dynamics</h3>
+								<img src="figures/intro/PolaronDyn.png" height="280px" alt="Polaron dynamics"><br>
+								<ref>A. S. Mishchenko et al., PRL <b>114</b>, 146401 (2015).</ref>
+								<p>The transport features display a strong $\lambda$ and $T$ dependence.</p>
+							</div>
+						</div>
+
+					</section>
 				</section>
 
 				<section>
 					<section>
-						<h2 style="padding-top: 200px">The walking of the itinerant particle</h2>
+						<h2 style="padding-top: 200px">The walk of the itinerant particle</h2>
 					</section>
 
 					<section>
@@ -147,6 +217,39 @@
 							</div>
 						</div>
 					</section>
+
+					<section>
+						<h4>Compare to random walk</h4>
+						<div style="padding-top: 50px"></div>
+						<table class="fragment">
+							<tr>
+								<th></th>
+								<th>Random Walk</th>
+								<th>Our model</th>
+							</tr>
+							<tr>
+								<td style="font-size: 30px">Probability of jumping back</td>
+								<td>$\neq0$</td>
+								<td><span style="color: crimson">$=0$</span></td>
+							</tr>
+							<tr>
+								<td style="font-size: 30px">Visiting origin after N jumps</td>
+								<td>Distribution</td>
+								<td style="font-size: 29px"><span style="color: crimson">Exactly system size</span></td>
+							</tr>
+							<tr>
+								<td style="font-size: 30px">Position after N jumps</td>
+								<td style="font-size: 29px">$\langle x \rangle\!=\!0$; $\langle x^2 \rangle\!=\!N$</td>
+								<td style="font-size: 29px"><span style="color: crimson">$\langle x \rangle\!=\!N$</span></td>
+							</tr>
+							<tr>
+								<td style="font-size: 30px">Diffusion?</td>
+								<td style="font-size: 29px">Yes</td>
+								<td style="font-size: 29px"><span style="color: crimson">No</span></td>
+							</tr>
+						</table>
+						<p class="fragment" style="color:cornflowerblue; font-size: 40px;padding-top: 40px">Maybe: self avoiding walk?</p>
+					</section>
 				</section>
 
 				<section>
@@ -167,7 +270,7 @@
 							<p>Given initial wavefunction, the dynamics are solved by $i\partial_t\psi=H\psi$.</p>
 							<p>Temperature and coupling are embedded in <span class="darkblue">$A^\text{rms}\gg\overline{t}$ for strong coupling and high temperature.</span></p>
 							<p>Small time step $\delta t\!=\!10^{-3}t_0$ and large phonon period $T_p$ as adiabatic limit.</p>
-							<ul style="padding-left: 30px">
+							<ul class="fragment" style="padding-left: 30px">
 								<li>No restriction on <span class="green">jumping back</span>.</li>
 								<li>Effects on very close crossing of potentials.</li>
 							</ul>
@@ -190,7 +293,7 @@
 								<iframe data-src="movies/12SiteChain-20.mp4" height="340px" width="450px" alt="Semi movie 20"></iframe>
 							 </div>
 						</div>
-						<p class="fragment" style="font-size: 115%; color: mediumpurple;font-style: italic;padding-top: 5px">This is NOT diffusion in some parameter regimes!!</p>
+						<p class="fragment" style="font-size: 115%; color: mediumpurple;font-style: italic;padding-top: 5px">Charge pumping in some parameter regimes!!</p>
 					</section>
 				</section>
 
@@ -203,10 +306,10 @@
 						<h3>Holstein model</h3>
 						<p>
 						\begin{equation}
-							H=-\overline{t}\sum_{\langle ij\rangle}(c^\dagger_ic_j+c^\dagger_jc_i)+\Omega\sum_ia^\dagger_ia_i+\lambda\sum_ic^\dagger_ic_i(a^\dagger_i+a_i)
+							H=-\overline{t}\sum_{\langle ij\rangle}(c^\dagger_ic_j+c^\dagger_jc_i)+\Omega\sum_ia^\dagger_ia_i-\lambda\sum_ic^\dagger_ic_i(a^\dagger_i+a_i)
 						\end{equation}</p>
 						<ul>
-							<li>Temperature $T\!\sim\!\langle N_p\rangle\frac{\hbar\Omega}{k_b}$ and coupling $\lambda$ are independent.</li>
+							<li>Temperature $k_BT\!\sim\!\langle N_p\rangle\hbar\Omega$ and coupling $\lambda$ are independent.</li>
 							<li>Eigenstates and dynamics are simulated by Lanczos-based algorithm.</li>
 							<li>Small system size and <span class="blue">maximum phonon quanta $N^\text{max}_p$</span> due to unbounded phonon Hilbert space.</li>
 						</ul>
@@ -226,7 +329,21 @@
 					</section>
 
 					<section>
-						<h3>Phonon Coherent State</h3>
+						<h3>Phonon Coherent States</h3>
+						<div class="row">
+							<div class="fragment column half" data-fragment-index="1">
+								<img src="figures/Coherent-1.png" alt="Coherent State 1">
+							</div>
+							<div class="fragment column half" data-fragment-index="1">
+								<img src="figures/Coherent-2.png" alt="Coherent State 2">
+							</div>
+						</div>
+						<ul>
+							<li class="fragment" data-fragment-index="1">$\Omega t_0\!=\!0.6$, $\lambda\!=\!1.1\bar{t}$, and $\langle N_p\rangle\sim14$.</li>
+							<li class="fragment" data-fragment-index="2">Maximum density from site to site <span style="color:crimson">repeatedly</span>.</li>
+							<li class="fragment" data-fragment-index="2">Current densities have the <span style="color:crimson">same directions</span>.</li>
+						</ul>
+						<p class="fragment" style="font-size: 115%; color: mediumpurple;font-style: italic;padding-top: 5px">This is NOT diffusion in some parameter regimes!!</p>
 					</section>
 				</section>
 
@@ -285,7 +402,7 @@
 							<div class="column half">
 								<img data-src="movies/2D.gif" width=80% height=80% alt="2D-animation">
 							</div>
-							<div class="column half" style="text-align: left">
+							<div class="column half" style="text-align: left; padding-top: 80px">
 								<p>Density contour $N_f(i,t)$ on an $6\times6$ square lattice.</p>
 								<p>Red marks are classical results.</p>
 								<p style="color: rgb(28,108,171);font-size: 100%;text-align: center">Repeatedly close trajectory matches the classical results!</p>
@@ -353,9 +470,9 @@
 									<li class="fragment" data-fragment-index="1">Square: (Area)$\sim (\frac{\text{Perimeter}}{4})^{\color{red}2}$</li>
 									<li class="fragment" data-fragment-index="2">Trajectory can fit inside $L_\text{F}\times L_\text{F}$ square box.</li>
 									<li class="fragment" data-fragment-index="3">Given $N_s$, average box size.</li>
-									<li class="fragment" data-fragment-index="3" style="color: coral">$L_\text{F}\sim\frac{N_s}{4}$??</li>
-									<li class="fragment" data-fragment-index="4" style="padding-top: 20px">$L_\text{F}\sim N_s^{\color{red}{0.6}}$</li>
-									<li class="fragment" data-fragment-index="5">(Sites visited)$\sim N_s^{\color{red}{0.89}}$</li>
+									<li class="fragment" data-fragment-index="3"><span style="color: coral">$L_\text{F}\sim\frac{N_s}{4}$??</span> If yes, not fractal.</li>
+									<li class="fragment" data-fragment-index="5" style="padding-top: 20px">$L_\text{F}\sim N_s^{\color{red}{0.6}}$</li>
+									<li class="fragment" data-fragment-index="6">(Sites visited)$\sim N_s^{\color{red}{0.89}}$</li>
 								</ul>
 								<p class="fragment" data-fragment-index="6" style="color: deepskyblue;padding-top: 50px;font-size: 100%">trajectories are fractals!!</p>
 							</div>
@@ -366,9 +483,9 @@
 				<section>
 					<h2>Conclusion</h2>
 					<ul style="font-size: 0.6em; margin-top: 1em">
-						<li>In certain parameter regimes, the dynamics of Holstein model in strong coupling and high temperature is <span style="color:crimson">NOT diffusion!</span></li>
-						<li>In 1D, <span style="color: crimson">charge pumping</span> dynamics!. Beyond 1D, <span style="color: crimson">circulation (localization?)</span>.</li>
-						<li>Finite trajectory in 2D in the thermodynamic limit, system is critical and trajectories are <span style="color: crimson;">fractals</span>.</li>
+						<li style="padding-top: 10px;line-height: 30px">In certain parameter regimes, the dynamics of Holstein model in strong coupling and high temperature is <span style="color:crimson">NOT diffusion!</span></li>
+						<li style="padding-top: 10px;line-height: 30px">In 1D, <span style="color: crimson">charge pumping</span> dynamics!. Beyond 1D, <span style="color: crimson">circulation (localization?)</span>.</li>
+						<li style="padding-top: 10px;line-height: 30px">Finite trajectory in 2D in the thermodynamic limit, system is critical and trajectories are <span style="color: crimson;">fractals</span>.</li>
 					</ul>
 					<h4 style="margin-top: 1em">Acknowledgements</h4>
 					<p style="font-size: 0.6em; text-align: left">Collaborator: S. A. Trugman (LANL).</p>

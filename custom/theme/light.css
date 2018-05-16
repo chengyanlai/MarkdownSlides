@@ -5,22 +5,21 @@
  */
 
  /* NOTE: Find a replacement fot this remote font */
- @import url(https://fonts.googleapis.com/css?family=Droid+Serif);
  @import url('https://fonts.googleapis.com/css?family=Alice|Architects+Daughter|Ruda|Josefin+Sans|Kalam|Voltaire|Quicksand|Fira+Sans');
 
  /*********************************************
   * GLOBAL STYLES
   *********************************************/
  body {
-   background: #f7f2d3;
-   background: -moz-radial-gradient(center, circle cover, white 0%, #f7f2d3 100%);
-   background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, white), color-stop(100%, #f7f2d3));
-   background: -webkit-radial-gradient(center, circle cover, white 0%, #f7f2d3 100%);
-   background: -o-radial-gradient(center, circle cover, white 0%, #f7f2d3 100%);
-   background: -ms-radial-gradient(center, circle cover, white 0%, #f7f2d3 100%);
-   background: radial-gradient(center, circle cover, white 0%, #f7f2d3 100%);
-   background-color: #f7f3de;
- }
+  background: #f7f2d3;
+  background: -moz-radial-gradient(center, circle cover, white 0%, #f7f2d3 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, white), color-stop(100%, #f7f2d3));
+  background: -webkit-radial-gradient(center, circle cover, white 0%, #f7f2d3 100%);
+  background: -o-radial-gradient(center, circle cover, white 0%, #f7f2d3 100%);
+  background: -ms-radial-gradient(center, circle cover, white 0%, #f7f2d3 100%);
+  background: radial-gradient(center, circle cover, white 0%, #f7f2d3 100%);
+  background-color: #f7f3de;
+}
 
  .reveal {
    font-family: 'Fira Sans', sans-serif;

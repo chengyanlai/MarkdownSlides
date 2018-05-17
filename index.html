@@ -16,10 +16,10 @@
 
 		<link rel="stylesheet" href="css/reveal.css">
 		<!-- <link rel="stylesheet" href="css/theme/solarized.css" id="theme"> -->
-		 <!-- <link rel="stylesheet" href="custom/theme/sky.css" id="theme"> -->
-		 <link rel="stylesheet" href="custom/theme/light.css" id="theme">
+		<!-- <link rel="stylesheet" href="custom/theme/sky.css" id="theme"> -->
 		<link rel="stylesheet" href="custom/css/color.css">
 		<link rel="stylesheet" href="custom/css/columns.css">
+		<link rel="stylesheet" href="custom/theme/light.css" id="theme">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<!-- <link rel="stylesheet" href="lib/css/zenburn.css"> -->
@@ -496,13 +496,13 @@
 
 
 				<section style="text-align: left;">
-					<h6>Two-site problem</h6>
+					<h6 style="margin-top: 0px;padding-top: 0px">Two-site problem</h6>
 					<div class="row">
 						<div class="column forty">
-							<img class="fragment current-visible" data-fragment-index="1" style="position:absolute; margin-left: 5px; margin-right: 400px; left: 0; right: 0; width: 38%" src="figures/A1A2-1.png" alt="A1A2-1">
-							<img class="fragment current-visible" data-fragment-index="2" style="position:absolute; margin-left: 5px; margin-right: 400px; left: 0; right: 0; width: 38%" src="figures/A1A2-2.png" alt="A1A2-2">
-							<img class="fragment current-visible" data-fragment-index="3" style="position:absolute; margin-left: 5px; margin-right: 400px; left: 0; right: 0; width: 38%" src="figures/A1A2-3.png" alt="A1A2-3">
-							<img class="fragment" data-fragment-index="4" style="position:absolute; margin-left: 5px; margin-right: 400px; left: 0; right: 0; width: 38%" src="figures/A1A2-4.png" alt="A1A2-4">
+							<img class="fragment current-visible" data-fragment-index="1" style="position:absolute; margin-left: 5px; margin-right: 400px; left: 0; right: 0; width: 34%" src="figures/A1A2-1.png" alt="A1A2-1">
+							<img class="fragment current-visible" data-fragment-index="2" style="position:absolute; margin-left: 5px; margin-right: 400px; left: 0; right: 0; width: 34%" src="figures/A1A2-2.png" alt="A1A2-2">
+							<img class="fragment current-visible" data-fragment-index="3" style="position:absolute; margin-left: 5px; margin-right: 400px; left: 0; right: 0; width: 34%" src="figures/A1A2-3.png" alt="A1A2-3">
+							<img class="fragment" data-fragment-index="4" style="position:absolute; margin-left: 5px; margin-right: 400px; left: 0; right: 0; width: 34%" src="figures/A1A2-4.png" alt="A1A2-4">
 						</div>
 						<div class="column sixty" style="padding-left: 400px">
 							<p class="eq blue">$V_1\!=\!A_1\cos(\Omega t)$</p>
@@ -513,10 +513,10 @@
 					</div>
 					<div class="row">
 						<div class="column threequarter">
-							<p class="fragment" data-fragment-index="2" style="padding-top: 20px">$A_1\!=\!A_2$, it is <span class="darkblue">uniform</span>, because we use uniform distributed $\phi\in[0,2\pi)$.</p>
+							<p class="fragment" data-fragment-index="2" style="padding-top: 0px">$A_1\!=\!A_2$, it is <span class="darkblue">uniform</span>, because we use uniform distributed $\phi\in[0,2\pi)$.</p>
 							<p class="fragment" data-fragment-index="3">$A_1\!>>\!A_2$, <span class="darkblue">delta function</span>-like peak at $T_p/4$.</p>
 							<p class="fragment" data-fragment-index="4">$A_1\!\gtrsim\!A_2$, there are forbidden region (shaded) to make jump.</p>
-							<p class="fragment" data-fragment-index="5" style="padding-left: 120px">$t_1^\lessgtr\!=\!\Omega^{-1}\arccos(\pm A_2/A_1)$</p>
+							<p class="fragment" data-fragment-index="5" style="padding-left: 100px">$t_1^\lessgtr\!=\!\Omega^{-1}\arccos(\pm A_2/A_1)$</p>
 							<p class="fragment darkred" data-fragment-index="5" style="padding-left: 120px">$\mathcal{D}(t)=\int_0^{2\pi}\delta(V_1-V_2(\phi))d\phi,$</p>
 						</div>
 						<div class="column quarter">
@@ -526,7 +526,7 @@
 				</section>
 
 				<section>
-					<h3>Distribution of amplitudes $A_i$</h3>
+					<!-- <h3>Distribution of amplitudes $A_i$</h3> -->
 					<div class="row">
 						<div class="column half">
 							<h5>Time between jumps - $\Delta T$</h5>
@@ -544,8 +544,8 @@
 							<p>$a\sim\sqrt{T}$</p>
 						</div>
 						<div class="column threequarter" style="text-align: left;">
-							<p>$A_1\!=\!A_2$: <span class="red">uniform</span> distributed $\Delta T$ and smaller $T_s$ statistically!</p>
-							<p>$A_1\!\neq\!A_2$: <span class="red">non-analytic</span> $\Delta T$ distribution due to forbidden region for jumps and larger $T_s$ statistically!</p>
+							<p>$A_1\!=\!A_2$: <span style="color:crimson">uniform</span> distributed $\Delta T$ and smaller $T_s$ statistically!</p>
+							<p>$A_1\!\neq\!A_2$: <span style="color:crimson">non-analytic</span> $\Delta T$ distribution due to forbidden region for jumps and larger $T_s$ statistically!</p>
 							<p>Thermal distribution has analytic $\Delta T$ distribution, and small variances ($a$) are similar to uniform.</p>
 						</div>
 					</div>
@@ -561,14 +561,14 @@
 							<p class="fragment" data-fragment-index="1">$S_{uc}$: Size of unit cell.</p>
 							<p class="fragment" data-fragment-index="3" style="color: rgb(28,108,171)">Open boundary conditions and particle starts at edge.</p>
 							<p class="fragment" data-fragment-index="3" style="color: rgb(255,155,1)">Decision making at the vertex.</p>
-							<p class="fragment" data-fragment-index="4" style="font-size: 80%; color: mediumpurple">Q: Can the particle close and repeat the same trajectory?</p>
-							<p class="fragment" data-fragment-index="5" style="font-size: 80%; color:cadetblue">A: Close trajectory in $\tilde{N}_s$ unit cells!</p>
+							<p class="fragment" data-fragment-index="4" style="font-size: 25px; color: mediumpurple">Q: Can the particle close and repeat the same trajectory?</p>
+							<p class="fragment" data-fragment-index="5" style="font-size: 25px; color:cadetblue">A: Close trajectory in $\tilde{N}_s$ unit cells!</p>
 						</div>
 						<div class="column sixty">
-							<p class="fragment" data-fragment-index="7" style="color:cornflowerblue;font-size: 80%">Prediction: $p(\tilde{N}_s+1)\!=\!\frac{1}{2}p(\tilde{N}_s)$?!</p>
+							<p class="fragment" data-fragment-index="7" style="color:cornflowerblue;font-size: 25px">Prediction: $p(\tilde{N}_s+1)\!=\!\frac{1}{2}p(\tilde{N}_s)$?!</p>
 							<p class="fragment" data-fragment-index="8">$P(\tilde{N})=\int_{\tilde{N}}^{\tilde{N}^{max}_s} p(\tilde{N}_s) d\tilde{N}_s$</p>
-							<img class="fragment" data-fragment-index="8" width="100%" src="figures/Polygons-Data.png" alt="Polygon Data">
-							<p class="fragment" data-fragment-index="8" style="font-size: 80%; color:crimson">$P(\tilde{N})\sim e^{-\tilde{N}\ln2}$</p>
+							<img class="fragment" data-fragment-index="8" width="95%" src="figures/Polygons-Data.png" alt="Polygon Data">
+							<p class="fragment" data-fragment-index="8" style="font-size: 25px; color:crimson">$P(\tilde{N})\sim e^{-\tilde{N}\ln2}$</p>
 						</div>
 					</div>
 				</section>
@@ -610,6 +610,9 @@
 					{ src: 'plugin/math/math.js', async: true }
 				]
 			});
+			// Reveal.addEventListener( 'slidechanged', function( event ) {
+			// 	MathJax.Hub.Rerender();
+			// } );
 		</script>
 
 	</body>

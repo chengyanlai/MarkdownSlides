@@ -73,10 +73,10 @@
 							<div class="column half">
 								<img src="figures/intro/diffusion.jpg" alt="diffusion">
 								<p>Fick's law: $J=-D\nabla\psi$</p>
-								<p>$\langle x^2 \rangle = q_iDt$</p>
+								<p>$\langle r^2 \rangle = q_iD\tau$</p>
 							</div>
 							<div class="column half">
-								<img src="figures/intro/adiffusion.png" alt="Anomalous diffusion">
+								<img src="figures/intro/diffusion.png" alt="Anomalous diffusion">
 							</div>
 						</div>
 						<p class="fragment" style="color: cornflowerblue;font-size: 30px">The distribution of the particles tends to be uniform in time.</p>
@@ -85,22 +85,24 @@
 					<section>
 						<h2>Anderson localization</h2>
 						<div class="row">
-							<div class="fragment column half">
-								<img src="figures/intro/Anderson.jpg" alt="localization">
-								<ref>Credit: Akira Furusaki (RIKEN).</ref>
+							<div class="fragment column thirty" data-fragment-index="1">
+								<!-- <img src="figures/intro/Anderson.jpg" alt="localization"> -->
+								<img src="figures/intro/scatter.png" height="200px" alt="diffusion">
+								<!-- <ref>Credit: Akira Furusaki (RIKEN).</ref> -->
 								<p>Disorder: particles in <span style="color: cornflowerblue">random potentials</span>.</p>
 							</div>
-							<div class="fragment column half">
-								<img src="figures/intro/exp1.png" height="160px" alt="exp1">
-								<img src="figures/intro/exp2.png" height="160px" alt="exp2">
+							<div class="fragment column seventy" data-fragment-index="3">
+								<img src="figures/intro/exp1.png" height="200px" alt="exp1">
+								<img src="figures/intro/exp2.png" height="200px" alt="exp2">
+								<br>
 								<ref>Juliette Billy et al., Science <b>453</b>, 891 (2008).</ref>
-								<p style="font-size: 35px">Known results:</p>
-								<ul>
-									<li>$d\!=\!1,2$: localized</li>
-									<li>$d\geq3$: localized in strong disorder, diffusion otherwise.</li>
-								</ul>
 							</div>
 						</div>
+						<p  class="fragment" data-fragment-index="2" style="font-size: 35px">Known results:</p>
+						<ul class="fragment" data-fragment-index="2" >
+							<li>$d\!=\!1,2$: localized</li>
+							<li>$d\geq3$: localized in strong disorder, diffusion otherwise.</li>
+						</ul>
 					</section>
 
 					<section>
@@ -278,7 +280,7 @@
 					</section>
 
 					<section>
-						<h5 style="padding-left: 10px">12-site periodic chain</h5>
+						<h5 style="padding-left: 10px">12-site periodic chain: $T_p\!=\!300t_0$</h5>
 						<div class="row">
 							<div class="fragment column thirty" style="padding-left: 30px">
 								<h6 style="font-size: 90%;text-align: center">$A^\text{rms}\!=\!3.8\bar{t}$</h6>
@@ -311,7 +313,7 @@
 						<ul>
 							<li>Temperature $k_BT\!\sim\!\langle N_p\rangle\hbar\Omega$ and coupling $\lambda$ are independent.</li>
 							<li>Eigenstates and dynamics are simulated by Lanczos-based algorithm.</li>
-							<li>Small system size and <span class="blue">maximum phonon quanta $N^\text{max}_p$</span> due to unbounded phonon Hilbert space.</li>
+							<li>Small system size and <span class="blue">maximum phonon quanta $N^\text{max}_p$</span> due to unbound phonon Hilbert space.</li>
 						</ul>
 						<ol>
 							<li class="darkblue">Dynamics from excited states:
@@ -411,7 +413,7 @@
 
 					<section>
 						<h3>Infinite trajectory in thermodynamic limit?</h3>
-						<div class="row" style="text-align: left;padding-top: 30px">
+						<div class="row" style="text-align: left;padding-top: 10px">
 							<div class="column half">
 								<img class="fragment" data-fragment-index="1" src="figures/2DClassical.png" alt="2D Classical data">
 							</div>

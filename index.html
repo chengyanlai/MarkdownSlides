@@ -4,9 +4,9 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>BLAS - HTP</title>
+		<title>BLABS - HTP</title>
 
-		<meta name="description" content="BLAS - HTP">
+		<meta name="description" content="BLABS - HTP">
 		<meta name="author" content="Chen-Yen Lai">
 
 		<meta name="apple-mobile-web-app-capable" content="yes">
@@ -55,14 +55,14 @@
 				</section> -->
 				<section>
 					<!-- <section> -->
-						<h1 style="font-size: 1.2em; margin-top: 0.em">Dynamics of Holstein model in strong coupling and high temperature: diffusion or localization?</h1>
+						<h1 style="font-size: 1.2em; margin-top: 0.em">Dynamics of Holstein model in strong coupling and high temperature: charge pumping and localization</h1>
 						<h5 style="margin-bottom: 30px">Chen-Yen Lai</h5>
 						<h6 style="margin-bottom: 30px">T-4 & Center for Integrated Nanotechnologies</h6>
-						<ref>LA-UR-18-24308</ref>
+						<p>BLABS, May 21st 2018. (LA-UR-18-24308)</ref></p>
 						<div style="padding-top: 50px"></div>
-						<img src="figures/logos/CINT.gif" alt="ToOneBand-2" style="border:0px; box-shadow: 0 0 0; margin: 0 40px 0 40px" height="80px">
-						<img src="figures/logos/LANL.png" alt="ToOneBand-2" style="border:0px; box-shadow: 0 0 0; margin: 0 40px 0 40px" height="80px">
-						<img src="figures/logos/DOE.png" alt="ToOneBand-2" style="border:0px; box-shadow: 0 0 0; margin: 0 40px 0 40px" height="80px">
+						<img src="figures/logos/CINT.gif" alt="CINT" style="border:0px; box-shadow: 0 0 0; margin: 0 40px 0 40px" height="80px">
+						<img src="figures/logos/LANL.png" alt="LANL" style="border:0px; box-shadow: 0 0 0; margin: 0 40px 0 40px" height="80px">
+						<img src="figures/logos/DOE.png" alt="DOE" style="border:0px; box-shadow: 0 0 0; margin: 0 40px 0 40px" height="80px">
 					<!-- </section> -->
 				</section>
 
@@ -73,10 +73,10 @@
 							<div class="column half">
 								<img src="figures/intro/diffusion.jpg" alt="diffusion">
 								<p>Fick's law: $J=-D\nabla\psi$</p>
-								<p>$\langle x^2 \rangle = q_iDt$</p>
+								<p>$\langle r^2 \rangle = q_iDt$</p>
 							</div>
 							<div class="column half">
-								<img src="figures/intro/adiffusion.png" alt="Anomalous diffusion">
+								<img src="figures/intro/diffusion.png" alt="Anomalous diffusion">
 							</div>
 						</div>
 						<p class="fragment" style="color: cornflowerblue;font-size: 30px">The distribution of the particles tends to be uniform in time.</p>
@@ -85,22 +85,26 @@
 					<section>
 						<h2>Anderson localization</h2>
 						<div class="row">
-							<div class="fragment column half">
-								<img src="figures/intro/Anderson.jpg" alt="localization">
-								<ref>Credit: Akira Furusaki (RIKEN).</ref>
+							<div class="fragment column thirty" data-fragment-index="1">
+								<img src="figures/intro/scatter.png" height="200px" alt="localization">
+								<!-- <ref>Credit: Akira Furusaki (RIKEN).</ref> -->
 								<p>Disorder: particles in <span style="color: cornflowerblue">random potentials</span>.</p>
 							</div>
-							<div class="fragment column half">
-								<img src="figures/intro/exp1.png" height="160px" alt="exp1">
-								<img src="figures/intro/exp2.png" height="160px" alt="exp2">
+							<div class="fragment column seventy" data-fragment-index="3">
+								<img src="figures/intro/exp1.png" height="200px" alt="exp1">
+								<img src="figures/intro/exp2.png" height="200px" alt="exp2">
+								<br>
 								<ref>Juliette Billy et al., Science <b>453</b>, 891 (2008).</ref>
-								<p style="font-size: 35px">Known results:</p>
-								<ul>
-									<li>$d\!=\!1,2$: localized</li>
-									<li>$d\geq3$: localized in strong disorder, diffusion otherwise.</li>
-								</ul>
 							</div>
 						</div>
+						<p  class="fragment" data-fragment-index="2" style="font-size: 35px">Known results:</p>
+						<ul class="fragment" data-fragment-index="2" >
+							<li>$d\!=\!1,2$: localized</li>
+							<li>$d\geq3$: localized in strong disorder, diffusion otherwise.</li>
+						</ul>
+						<aside class="notes">
+							Parameters of experiments:
+						</aside>
 					</section>
 
 					<section>
@@ -162,13 +166,19 @@
 								<p>The transport features display a strong $\lambda$ and $T$ dependence.</p>
 							</div>
 						</div>
-
+						<aside class="notes">
+							Not sure the scale in temperature. Need to read the paper again.
+							They focus on incoherent metal.
+						</aside>
 					</section>
 				</section>
 
 				<section>
 					<section>
 						<h2 style="padding-top: 200px">The walk of the itinerant particle</h2>
+						<aside class="notes">
+							Just like Random walk and diffusion equation.
+						</aside>
 					</section>
 
 					<section>
@@ -178,8 +188,8 @@
 								<img class="fragment current-visible" data-fragment-index="2" src="figures/Holstein.png" width=80% alt="Holstein">
 								<img class="fragment current-visible" data-fragment-index="3" style="position:absolute; margin-left: 5px; margin-right: 400px; left: 0; right: 0; width: 38%" src="figures/TwoVs-0.png" alt="2vs-0">
 								<img class="fragment current-visible" data-fragment-index="4" style="position:absolute; margin-left: 5px; margin-right: 400px; left: 0; right: 0; width: 38%" src="figures/TwoVs-1.png" alt="2vs-1">
-								<img class="fragment current-visible" data-fragment-index="5" style="position:absolute; margin-left: 5px; margin-right: 400px; left: 0; right: 0; width: 38%" src="figures/TwoVs-2.png" alt="2vs-2">
-								<img class="fragment current-visible" data-fragment-index="6" style="position:absolute; margin-left: 5px; margin-right: 400px; left: 0; right: 0; width: 38%" src="figures/TwoVs-3.png" alt="2vs-3">
+								<img class="fragment current-visible" data-fragment-index="5" style="position:absolute; margin-left: 5px; margin-right: 400px; left: 0; right: 0; width: 38%" src="figures/TwoVs-3.png" alt="2vs-3">
+								<img class="fragment current-visible" data-fragment-index="6" style="position:absolute; margin-left: 5px; margin-right: 400px; left: 0; right: 0; width: 38%" src="figures/TwoVs-2.png" alt="2vs-2">
 								<img class="fragment" data-fragment-index="7" style="position:absolute; margin-left: 5px; margin-right: 400px; left: 0; right: 0; width: 38%" src="figures/TwoVs-4.png" alt="2vs-4">
 							</div>
 							<div class="column sixty">
@@ -192,8 +202,8 @@
 							</div>
 						</div>
 						<ul style="padding-top: 5px">
-							<li class="fragment" data-fragment-index="5">Itinerant particle jumps to the neighboring site as soon as avoided crossing occurs despite there is another crossing in the near future.</li>
-							<li class="fragment" data-fragment-index="6">Any two potentials, the next crossing is <span class="darkred">$T_p/2$</span> away, $t_3\!=\!t_1+T_p/2$!</li>
+							<li class="fragment" data-fragment-index="5">Any two potentials, the next crossing is <span class="darkred">$T_p/2$</span> away, $t_3\!=\!t_1+T_p/2$!</li>
+							<li class="fragment" data-fragment-index="6">Itinerant particle jumps to the neighboring site as soon as avoided crossing occurs despite there is another crossing in the near future.</li>
 						</ul>
 						<p class="fragment red" data-fragment-index="7" style="font-size: 35px;font-style: italic">Never jumps back if there is another neighbor.</li>
 					</section>
@@ -278,7 +288,7 @@
 					</section>
 
 					<section>
-						<h5 style="padding-left: 10px">12-site periodic chain</h5>
+						<h5 style="padding-left: 10px">12-site periodic chain: $T_p\!=\!300t_0$</h5>
 						<div class="row">
 							<div class="fragment column thirty" style="padding-left: 30px">
 								<h6 style="font-size: 90%;text-align: center">$A^\text{rms}\!=\!3.8\bar{t}$</h6>
@@ -329,17 +339,15 @@
 						<div class="row">
 							<div class="fragment column half" data-fragment-index="1">
 								<img src="figures/Excited-1.png" alt="Excited State 1">
-								<p>$\Omega t_0\!=\!0.6$, $\lambda\!=\!1.1\bar{t}$, and $\langle N_p\rangle\sim10$.</p>
+								<p style="font-size: 20px">$\Omega t_0\!=\!0.6$, $\lambda\!=\!1.1\bar{t}$, and $\langle N_p\rangle\sim5$.</p>
 							</div>
 							<div class="fragment column half" data-fragment-index="2">
 								<img src="figures/Excited-2.png" alt="Excited State 2">
-								<p>$\Omega t_0\!=\!0.6$, $\lambda\!=\!0.9\bar{t}$, and $\langle N_p\rangle\sim10$.</p>
+								<p style="font-size: 20px">$\Omega t_0\!=\!0.6$, $\lambda\!=\!0.9\bar{t}$, and $\langle N_p\rangle\sim5$.</p>
 							</div>
 						</div>
-						<ul>
-							<li class="fragment" data-fragment-index="2">Maximum density from site to site <span style="color:crimson">repeatedly</span>, and current densities have the <span style="color:crimson">same directions</span>.</li>
-						</ul>
-						<p class="fragment" style="font-size: 95%; color: mediumpurple;font-style: italic;padding-top: 5px">Like charge pumping!</p>
+						<p class="fragment" data-fragment-index="2">Maximum density from site to site <span style="color:crimson">repeatedly</span>, and current densities have the <span style="color:crimson">same directions</span>.</li>
+						<p class="fragment" style="font-size: 95%; color: mediumpurple;font-style: italic;padding-top: -10px">Like charge pumping!</p>
 					</section>
 
 					<section>
@@ -350,12 +358,10 @@
 							</div>
 							<div class="fragment column half" data-fragment-index="1">
 								<img src="figures/Coherent-2.png" alt="Coherent State 2">
+								<p>$\Omega t_0\!=\!0.6$, $\lambda\!=\!1.1\bar{t}$, and $\langle N_p\rangle\sim6$.</p>
 							</div>
 						</div>
-						<ul>
-							<li class="fragment" data-fragment-index="1">$\Omega t_0\!=\!0.6$, $\lambda\!=\!1.1\bar{t}$, and $\langle N_p\rangle\sim14$.</li>
-							<li class="fragment" data-fragment-index="2">Maximum density from site to site <span style="color:crimson">repeatedly</span>, and current densities have the <span style="color:crimson">same directions</span>.</li>
-						</ul>
+						<p class="fragment" data-fragment-index="2">Maximum density from site to site <span style="color:crimson">repeatedly</span>, and current densities have the <span style="color:crimson">same directions</span>.</p>
 						<p class="fragment" style="font-size: 95%; color: mediumpurple;font-style: italic;padding-top: 5px">This is NOT diffusion in some parameter regimes!!</p>
 					</section>
 				</section>
@@ -476,7 +482,7 @@
 						<h3>Are the trajectories fractals?</h3>
 						<div class="row">
 							<div class="column half">
-								<img class="fragment" data-fragment-index="2" src="figures/Trajectory.png" height="220px" alt="trajectories">
+								<img class="fragment" data-fragment-index="2" src="figures/Trajectory.png" height="200px" alt="trajectories">
 								<img class="fragment" data-fragment-index="4" src="figures/Fractal.png"  height="220px" alt="fractal">
 							</div>
 							<div class="column half">

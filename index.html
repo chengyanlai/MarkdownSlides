@@ -1,662 +1,731 @@
 <!doctype html>
 <html lang="en">
 
-	<head>
-		<meta charset="utf-8">
+  <head>
+    <meta charset="utf-8">
+    <!-- Need to change -->
+    <title>KIT - South</title>
 
-		<title>BLABS - HTP</title>
+    <meta name="description" content="KIT">
+    <!-- Need to change -->
+    <meta name="author" content="Chen-Yen Lai">
 
-		<meta name="description" content="BLABS - HTP">
-		<meta name="author" content="Chen-Yen Lai">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-		<meta name="apple-mobile-web-app-capable" content="yes">
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    <!-- The Following meta is for local web server.
+      The index.html must be inside the reveal.js folder and serve from there using `npm start`
+      Also the MathJax and custom file folder must be copied to reveal.js folder.
+    -->
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="custom/css/sky.css" id="theme">
+    <link rel="stylesheet" href="custom/css/two-columns.css">
+    <link rel="stylesheet" href="custom/css/color.css">
 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<!-- <link rel="stylesheet" href="css/theme/solarized.css" id="theme"> -->
-		<!-- <link rel="stylesheet" href="custom/theme/sky.css" id="theme"> -->
-		<link rel="stylesheet" href="custom/css/color.css">
-		<link rel="stylesheet" href="custom/css/columns.css">
-		<link rel="stylesheet" href="custom/theme/light.css" id="theme">
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
 
-		<!-- Theme used for syntax highlighting of code -->
-		<!-- <link rel="stylesheet" href="lib/css/zenburn.css"> -->
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
+  <body onload="date_location('KIT - Campus Süd')">
 
-		<!--[if lt IE 9]>
-		<script src="lib/js/html5shiv.js"></script>
-		<![endif]-->
-	</head>
+    <div class="reveal">
 
-	<body>
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides">
+        <section>
+          <h1 style="font-size: 1.3em">Quantum memory effects in ultracold quantum gases</h1>
+          <div class="rc-70-25">
+            <img src="custom/MiscFigs/TunnelView.jpg"  style="border:1px solid black" width="300px">
+            <img src="custom/MiscFigs/ShermanTree.jpg"  style="border:1px solid black" width="180px">
+          </div>
+          <div class="lc-70-25">
+            <h3 style="font-size: 1.2em">Chen-Yen Lai</h3>
+            <h4 style="font-size: 1.1em">University of California, Merced</h4>
+          </div>
+          <h6 style="font-size: 0.8em" id="date-location"></h6>
+          <img src="custom/MiscFigs/ucmerced.png"  style="border:1px solid black" width="600px">
+        </section>
 
-		<div class="reveal">
+        <section>
+          <h2>Outline</h2>
+          <ul>
+            <li style="padding-top: 1em">Introduction to cold atoms and memory effects.</li>
+            <li style="padding-top: 1em">Memory effects in non-interacting systems.<br>
+            <span style="color: brown"> Lattice transformation</span></li>
+            <li style="padding-top: 1em">Memory effects in interacting systems.<br>
+            <span style="color: brown"> Interaction driven transport</span></li>
+            <li style="padding-top: 1em">Summary</li>
+          </ul>
+        </section>
 
-			<!-- Any section element inside of this container is displayed as a slide -->
-			<div class="slides">
-				<!-- <section>
-					<h1>Los Alamos National Laboratory</h1>
-					<h2>Los Alamos National Laboratory</h2>
-					<h3>Los Alamos National Laboratory</h3>
-					<h4>Los Alamos National Laboratory</h4>
-					<h5>Los Alamos National Laboratory</h5>
-					<h6>Los Alamos National Laboratory</h6>
-					<p>Los Alamos National Laboratory</p>
-				</section> -->
-				<section>
-					<!-- <section> -->
-						<h1 style="font-size: 1.2em; margin-top: 0.em">Dynamics of Holstein model in strong coupling and high temperature: charge pumping and localization</h1>
-						<h5 style="margin-bottom: 30px">Chen-Yen Lai</h5>
-						<h6 style="margin-bottom: 30px">T-4 & Center for Integrated Nanotechnologies</h6>
-						<p>BLABS, May 21st 2018. (LA-UR-18-24308)</ref></p>
-						<div style="padding-top: 50px"></div>
-						<img src="figures/logos/CINT.gif" alt="CINT" style="border:0px; box-shadow: 0 0 0; margin: 0 40px 0 40px" height="80px">
-						<img src="figures/logos/LANL.png" alt="LANL" style="border:0px; box-shadow: 0 0 0; margin: 0 40px 0 40px" height="80px">
-						<img src="figures/logos/DOE.png" alt="DOE" style="border:0px; box-shadow: 0 0 0; margin: 0 40px 0 40px" height="80px">
-					<!-- </section> -->
-				</section>
+        <!-- Introduction -->
+        <section>
+          <section>
+            <h3>Ultra-Cold Atoms: Introduction - BEC</h3>
+            <div class="lc-45-45" style="height: 500px">
+              <figure>
+                <img src="custom/IntroFigs/SF-Mott.jpg" alt="SF-Mott" width="400px">
+                <figcaption style="font-size: 0.5em">M. Greiner et al., Nature <b>415</b>, 39 (2002).</figcaption>
+              </figure>
+              <h6 style="font-size: 0.8em">The superfluid-to-Mott insulator.</h6>
+            </div>
+            <div class="rc-45-45" style="height: 500px">
+              <figure>
+                <img src="custom/IntroFigs/BEC-Vortex.png" alt="SF-Mott" width="400px">
+                <figcaption style="font-size: 0.5em">K. W. Madison et al., Phys. Rev. Lett. <b>84</b>, 806 (2000).</figcaption>
+              </figure>
+              <h6 style="font-size: 0.8em">Stirred BEC.</h6>
+            </div>
+            <p>Bosons: $^{87}$Rb, $^{41}$K, $^{7}$Li, $^{133}$Cs, $^{174}$Yb ...</p>
+            <aside class="notes">
+               87Rb In the superfluid state the atoms are free to hop around the lattice. There is thus coherence between sites and upon release and expansion of the atomic cloud an atomic matter-wave interference pattern is observed.
+               b) In the Mott insulator state there is exactly one atom per site (Fock state) with no coherence between wells so that upon release and expansion no interference is observed.
+               J. Dalibard 87Rb 10^5 80nK 0 vortex and 1 vortex.
+            </aside>
+          </section>
 
-				<section>
-					<section>
-						<h2>Diffusion</h2>
-						<div class="row">
-							<div class="column half">
-								<img src="figures/intro/diffusion.jpg" alt="diffusion">
-								<p>Fick's law: $J=-D\nabla\psi$</p>
-								<p>$\langle r^2 \rangle = q_iDt$</p>
-							</div>
-							<div class="column half">
-								<img src="figures/intro/diffusion.png" alt="Anomalous diffusion">
-							</div>
-						</div>
-						<p class="fragment" style="color: cornflowerblue;font-size: 30px">The distribution of the particles tends to be uniform in time.</p>
-					</section>
+          <section>
+            <h3>Introduction - Fermions</h3>
+            <div class="lc-45-45" style="height: 500px">
+              <figure>
+                <img src="custom/IntroFigs/Fermion-Mott.png" alt="Fermion-Mott" width="400px">
+                <figcaption style="font-size: 0.5em">L. W. Cheuk er al., Phys. Rev. Lett. <b>116</b>, 235301 (2016)</figcaption>
+              </figure>
+              <h6 style="font-size: 0.8em">Fermion Mott insulating state</h6>
+            </div>
+            <div class="rc-45-45" style="height: 500px">
+              <p style="font-size: 0.95em">
+                Fermions: <br>$^{40}$K, $^{6}$Li, $^{171}$Yb, $^{173}$Yb, ...<p>
+              <p style="font-size: 0.9em;text-align: left"><br>More ...
+                <ul style="font-size: 0.9em">
+                  <li>Dipoles: $^{40}$K-$^{87}$Rb, $^{161}$Dy</li>
+                  <li>Rydberg atoms</li>
+                  <li>Cold ions</li>
+                </ul>
+            </div>
 
-					<section>
-						<h2>Anderson localization</h2>
-						<div class="row">
-							<div class="fragment column thirty" data-fragment-index="1">
-								<img src="figures/intro/scatter.png" height="200px" alt="localization">
-								<!-- <ref>Credit: Akira Furusaki (RIKEN).</ref> -->
-								<p>Disorder: particles in <span style="color: cornflowerblue">random potentials</span>.</p>
-							</div>
-							<div class="fragment column seventy" data-fragment-index="3">
-								<img src="figures/intro/exp1.png" height="200px" alt="exp1">
-								<img src="figures/intro/exp2.png" height="200px" alt="exp2">
-								<br>
-								<ref>Juliette Billy et al., Science <b>453</b>, 891 (2008).</ref>
-							</div>
-						</div>
-						<p  class="fragment" data-fragment-index="2" style="font-size: 35px">Known results:</p>
-						<ul class="fragment" data-fragment-index="2" >
-							<li>$d\!=\!1,2$: localized</li>
-							<li>$d\geq3$: localized in strong disorder, diffusion otherwise.</li>
-						</ul>
-						<aside class="notes">
-							Parameters of experiments: 17K atoms Rb87, 4mm long.
-						</aside>
-					</section>
+            <aside class="notes">
+              40K 541nm 2D Metallic U=2.6t(0.33x) Mott U=98t(12x) entropy per particle~k_b
+            </aside>
+          </section>
 
-					<section>
-						<h2>Quantum Hall system</h2>
-						<div class="row">
-							<div class="column half">
-								<img class="fragment" data-fragment-index="1" src="figures/intro/QHE.png" alt="QHE">
-								<img class="fragment" data-fragment-index="2" width="200px" src="figures/intro/qhe.gif" alt="qhe">
-								<img class="fragment" data-fragment-index="2" width="200px" src="figures/intro/lines.png" alt="qhe lines">
-								<br>
-								<ref class="fragment" data-fragment-index="2">Credit: David Tong, Univ. of Cambridge.</ref>
-							</div>
-							<div class="column half" style="padding-top: 40px;text-align: left;">
-								<p class="fragment" data-fragment-index="2" style="font-size: 30px">It is disorder system - Gaussian <span style="color: cornflowerblue">random potentials</span>.</p>
-								<p class="fragment" data-fragment-index="2" style="font-size: 30px">Equal potential lines - ponds, islands.</p>
-								<p class="fragment" data-fragment-index="3" style="font-size: 30px">In the presence of magnetic field - helical motion.</p>
-								<p class="fragment" data-fragment-index="4" style="color:crimson;font-size: 30px">Electrons has helical-like motion along equal potential lines.</p>
-							</div>
-						</div>
-					</section>
+          <section>
+            <h3>Introduction - Optical Lattice</h3>
+            <div class="fragment lc-45-45">
+              <figure>
+                <img src="custom/IntroFigs/OpticalLattice.png" alt="opticallattice" width="400px">
+                <figcaption style="font-size: 0.8em">
+                  Cubic<br><span style="font-size: 0.5em">
+                    D. Jakscha and P. Zoller, Ann. Phys. <b>315</b>, 52 (2005).<br>
+                    I. Bloch et al., Rev. Mod. Phys. <b>80</b>, 885 (2008).</span>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="fragment rc-45-45">
+              <ul style="font-size: 0.95em">
+                <li>Kagome, Honeycomb<br><span style="font-size: 0.5em">Gyu-Boong Jo et al., Phys. Rev. Lett. <b>108</b>, 045305 (2012); P. Soltan-Panahi et al., Nat. Phys. <b>7</b>, 434 (2011).</span> </li>
+                <li>Lieb <span style="font-size: 0.45em">S. Taie et al., Sci. Adv. <b>1</b>, 1500854 (2015).</span>
+                <img src="custom/IntroFigs/LiebExpV.png" alt="opticallattice" width="180px">
+                </li>
+                <li>Saw-Tooth<br><span style="font-size: 0.5em">Ting Zhang & Gyu-Boong Jo, Sci. Rep. <b>5</b>, 16044 (2015).</span> </li>
+              </ul>
+            </div>
 
-					<section>
-						<div class="row">
-							<div class="column half">
-								<h2>Holstein Model</h2>
-								<ref>T. Holstein, Ann. of Phys., <b>8</b>, 325 (1959).</ref>
-								<p style="padding-top: 20px">\begin{eqnarray}
-									H&=&-\overline{t}\sum_{\langle ij\rangle}(c^\dagger_ic_j+c^\dagger_jc_i)+\Omega\sum_ia^\dagger_ia_i\\
-									&&-\lambda\sum_ic^\dagger_ic_i(a^\dagger_i+a_i)
-								\end{eqnarray}</p>
-							</div>
-							<div class="column half">
-								<img src="figures/Holstein.png" alt="Holstein">
-							</div>
-						</div>
-						<ul>
-							<li>Itinerant particle <span style="color: rgb(208,34,36)">$\bar{t}$</span>.</li>
-							<li>Local optical phonons with single frequency <span style="color: rgb(141, 71, 153)">$\Omega$</span></li>
-							<li>Coupling <span style="color: rgb(68,165,65)">$\lambda$</span> to local fermion density $n_i$, ${X}_i\!\sim\!a^\dagger_i+a_i$ (SHM).</li>
-							<li><span class="blue">Only one itinerant particle in the system</span> (Polaron problem).</li>
-						</ul>
-					</section>
+            <aside class="notes">
+            </aside>
+          </section>
 
-					<section>
-						<div class="row">
-							<div class="column half">
-								<h3>Self-Trapping</h3>
-								<img src="figures/intro/SelfTrap.png" height="230px" alt="SelfTrp"><br>
-								<ref>Eric Jeckelmann and Steven R. White, PRB <b>57</b>, 6376 (1998).</ref>
-								<p>$\chi_{10,j}\!=\!\langle n_{10}(a^\dagger_j+a_j)\rangle/\langle n_{10} \rangle$</p>
-								<ul>
-									<li>Weak coupling: lattice deformation extends.</li>
-									<li>Strong coupling: localized</li>
-								</ul>
-							</div>
-							<div class="fragment column half">
-								<h3>Dynamics</h3>
-								<img src="figures/intro/PolaronDyn.png" height="280px" alt="Polaron dynamics"><br>
-								<ref>A. S. Mishchenko et al., PRL <b>114</b>, 146401 (2015).</ref>
-								<p>The transport features display a strong $\lambda$ and $T$ dependence.</p>
-							</div>
-						</div>
-						<aside class="notes">
-							In the saturation of mu regime.
-							They focus on incoherent metal.
-						</aside>
-					</section>
-				</section>
+          <section>
+            <h3>Introduction - Interactions</h3>
+            <div class="fragment lc-45-45">
+              <figure>
+                <img src="custom/IntroFigs/Feshbach.png" alt="Feshbach" width="400px">
+                <img src="custom/IntroFigs/HyperfineLevel.png" alt="HyperfineLevel" width="400px">
+                <figcaption style="font-size: 0.5em">
+                  F. Ferlaino, R. Grimm, Physics <b>3</b>, 9 (2010).<br>
+                  C. Chin et al., Rev. Mod. Phys. <b>82</b>, 1225 (2010).
+                </figcaption>
+              </figure>
+            </div>
+            <div class="fragment rc-45-45">
+              <ul style="font-size: 0.85em">
+                <li style="padding-top: 0.8em">Short distance collision between atoms.<br>
+                $g=\frac{4\pi\hbar^2a_s}{m}$,
+                $a_s(B)=a_{bg}(1-\frac{\Delta}{B-B_0})$.
+                </li>
+                <li style="padding-top: 0.8em">Boson: Single component  $s$-wave scattering.</li>
+                <li style="padding-top: 0.8em">Fermion: At least two-component due to Pauli exclusion.</li>
+              </ul>
+            </div>
+            <aside class="notes">
+              The shaded regime is for Efimov physics.
+              Delta indicate the resonance field.
+              6Li a b B_0=834.1 Delta=−300 a_bg=−1405.
+              p-wave is not fully developed yet.
+            </aside>
+          </section>
+        </section>
 
-				<section>
-					<section>
-						<h2 style="padding-top: 200px">The walk of the itinerant particle</h2>
-						<aside class="notes">
-							Just like Random walk and diffusion equation.
-						</aside>
-					</section>
+        <section>
+          <section>
+            <h2>Memory effects</h2>
+            <div class="lc-45-45" style="height:350px">
+              <figure class="fragment">
+                <img src="custom/CopyFigs/hysterisis_example.gif" alt="hysexp" width="400px">
+                <figcaption style="font-size: 0.8em;padding-top: -5.em">Ferromagnetic material</figcaption>
+              </figure>
+            </div>
+            <div class="rc-45-45" style="height:350px">
+              <figure class="fragment">
+                <img src="custom/CopyFigs/BatteryLiMemory.png" alt="LiBattery" width="400px">
+                <figcaption style="font-size: 0.8em;padding-top: -5.em">Batteries<br>
+                <span style="font-size: 0.4em">T. Sasaki,	Y. Ukyo	& P. Novák, Nature Mater. <b>12</b>, 569 (2013)</span>
+              </figure>
+            </div>
+            <div class="fragment", style="color: rgb(241, 64, 105)">
+              <span style="color: black">DRAM, memory form etc...</span><br>
+              Experience daily, but most of them are classical!
+            </div>
+          </section>
 
-					<section>
-						<h3>Classical Toy Model</h3>
-						<div class="row">
-							<div class="column forty">
-								<img class="fragment current-visible" data-fragment-index="2" src="figures/Holstein.png" width=80% alt="Holstein">
-								<img class="fragment current-visible" data-fragment-index="3" style="position:absolute; margin-left: 5px; margin-right: 400px; left: 0; right: 0; width: 38%" src="figures/TwoVs-0.png" alt="2vs-0">
-								<img class="fragment current-visible" data-fragment-index="4" style="position:absolute; margin-left: 5px; margin-right: 400px; left: 0; right: 0; width: 38%" src="figures/TwoVs-1.png" alt="2vs-1">
-								<img class="fragment current-visible" data-fragment-index="5" style="position:absolute; margin-left: 5px; margin-right: 400px; left: 0; right: 0; width: 38%" src="figures/TwoVs-3.png" alt="2vs-3">
-								<img class="fragment current-visible" data-fragment-index="6" style="position:absolute; margin-left: 5px; margin-right: 400px; left: 0; right: 0; width: 38%" src="figures/TwoVs-2.png" alt="2vs-2">
-								<img class="fragment" data-fragment-index="7" style="position:absolute; margin-left: 5px; margin-right: 400px; left: 0; right: 0; width: 38%" src="figures/TwoVs-4.png" alt="2vs-4">
-							</div>
-							<div class="column sixty">
-								<ul>
-									<li class="fragment" data-fragment-index="1">Itinerant particle $\Rightarrow$ Classical object.</li>
-									<li class="fragment" data-fragment-index="2">Phonons $\Rightarrow$ Local harmonic potential <br>$V_i(t)\!=\!\color{blue}{A_i}\cos(\frac{2\pi}{T_p}\color{red}t+\color{blue}{\phi_i})$ where period $T_p\!=\!2\pi/\Omega$.</li>
-									<li class="fragment" data-fragment-index="3">Itinerant particle sees on-site and neighboring time-dependent potentials.</li>
-									<li class="fragment" data-fragment-index="4">In adiabatic limit, hopping $\overline{t}$ causes <span class="darkred">avoided crossing</span>.</li>
-								</ul>
-							</div>
-						</div>
-						<ul style="padding-top: 5px">
-							<li class="fragment" data-fragment-index="5">Any two potentials, the next crossing is <span class="darkred">$T_p/2$</span> away, $t_3\!=\!t_1+T_p/2$!</li>
-							<li class="fragment" data-fragment-index="6">Itinerant particle jumps to the neighboring site as soon as avoided crossing occurs despite there is another crossing in the near future.</li>
-						</ul>
-						<p class="fragment red" data-fragment-index="7" style="font-size: 35px;font-style: italic">Never jumps back if there is another neighbor.</li>
-					</section>
+          <section>
+            <h2>Memory effects in Cold Atoms</h2>
+            <div class="lc-45-45">
+              <figure class="fragment">
+                <img src="custom/CopyFigs/StirBECRing1.png" alt="StirBECRing1" width="400px">
+                <img src="custom/CopyFigs/StirBECRing2.png" alt="StirBECRing2" width="400px">
+                <figcaption style="font-size: 0.8em;padding-top: -5.em">The atomic BEC resist the stiring<br>
+                  <span style="font-size: 0.4em">Stephen Eckel et al., Nature <b>506</b>, 200 (2014)</span>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="rc-45-45">
+              <figure class="fragment">
+                <img src="custom/CopyFigs/PersistantCurrent.png" alt="PersistantCurrent" height="400px">
+                <figcaption style="font-size: 0.8em;padding-top: -5.em">Hysterisis in non-interacting ultracold fermions<br>
+                <span style="font-size: 0.4em">M. Metcalf, <span style="color: red">C.-Y. Lai</span>, and C.-C. Chien, Phys. Rev. A <b>93</b>, 053617 (2016)</span>
+              </figure>
+            </div>
+            <aside class="notes">
+              JQI group, n is winding number start from 0. diff. panels for diff. strength of weak link.
 
-					 <section>
-						<h3>One dimensional (1D) periodic chain</h3>
-						<div class="row" style="padding-top: 15px">
-							<div class="column half">
-								<iframe data-src="movies/ThreeSite.mp4" height="400px" width="400px" alt="three-site-movie"></iframe>
-							</div>
-							<div class="column half">
-								<ul>
-									<li>Particle jumps to neighboring site due to the avoided crossing.</li>
-									<li>Travel along the same line style, solid, dashed, or dash-dotted.</li>
-									<li>Track the site index over time gives the <span style="color: darkblue">repeating position string (RPS).</span><br>
-											For example: $\color{blue}1\!-\!\color{green}2\!-\!\color{red}0\!-\!\color{blue}1\!-\!\color{green}2\!-\!\color{red}0\!-\!\cdots$</li>
-									<li>Jumps made back to starting point is system size <span class="darkred" style="font-size: 30px">$N_s\!=\!L$.</span></li>
-									<li>RPS is determined by initial conditions.</li>
-								</ul>
-								<p class="fragment" style="font-size: 40px; color: mediumpurple;font-style: italic;padding-top: 20px">This is NOT diffusion!!</p>
-							</div>
-						</div>
-					</section>
+              100 left 101 right, relaxation 0.1, 1, 10
+            </aside>
+          </section>
 
-					<section>
-						<h4>Compare to random walk</h4>
-						<div style="padding-top: 50px"></div>
-						<table class="fragment">
-							<tr>
-								<th></th>
-								<th>Random Walk</th>
-								<th>Our model</th>
-							</tr>
-							<tr>
-								<td style="font-size: 30px">Probability of jumping back</td>
-								<td>$\neq0$</td>
-								<td><span style="color: crimson">$=0$</span></td>
-							</tr>
-							<tr>
-								<td style="font-size: 30px">Visiting origin after N jumps</td>
-								<td>Distribution</td>
-								<td style="font-size: 29px"><span style="color: crimson">Exactly system size</span></td>
-							</tr>
-							<tr>
-								<td style="font-size: 30px">Position after N jumps</td>
-								<td style="font-size: 29px">$\langle x \rangle\!=\!0$; $\langle x^2 \rangle\!=\!N$</td>
-								<td style="font-size: 29px"><span style="color: crimson">$\langle x \rangle\!=\!N$</span></td>
-							</tr>
-							<tr>
-								<td style="font-size: 30px">Diffusion?</td>
-								<td style="font-size: 29px">Yes</td>
-								<td style="font-size: 29px"><span style="color: crimson">No</span></td>
-							</tr>
-						</table>
-						<p class="fragment" style="color:cornflowerblue; font-size: 40px;padding-top: 40px">Maybe: self avoiding walk?</p>
-					</section>
-				</section>
+          <section>
+            <h2>Why not electronics?</h2>
+            <ol>
+              <li>
+                <p style="color:blueviolet">Strong relaxation</p>
+                <p>$\frac{\partial f}{\partial t}=-\frac{f-f_{eq}}{\tau}$</p>
+                <p style="color:darkorange">Isolated in most cold atom systems.</p>
+              </li>
+              <li>
+                <p style="color:blueviolet">Time scale</p>
+                <p>Electric single (tunneling timescale $\sim10^{-15}s$) measured by electric probe.</p>
+                <p style="color:darkorange">Tunneling timescale $\sim10^{-3}s$ measured by optical probe.</p>
+              </li>
+            </ol>
+          </section>
 
-				<section>
-					<section>
-						<h2 style="padding-top: 200px">Semiclassical approach</h2>
-					</section>
+          <section>
+            <h2 style="font-size: 1.1em">Memory effects in non-interacting systems</h2>
+            <div class="fragment" style="height: 270px">
+              <h6>Steady state current exhibit no memory effects</h6>
+              <figure class="lc-45-45">
+                <img src="custom/CopyFigs/NoMemoryQSSC.png" alt="NoMemoryQSSC" height="200px">
+              </figure>
+              <div class="rc-45-45" style="font-size: 0.6em;text-align: left">
+                C.-C. Chien et al., <br>New J. Phys. <b>15</b>, 063026 (2013);<br>Phys. Rev. A <b>87</b>, 023609 (2013);<br>Phys. Rev. A <b>90</b>, 023624 (2014).
+              </div>
+            </div>
+            <div  class="fragment">
+            <h6>Seems to be general...</h6>
+              <div>
+                <p style="font-size: 0.4em; color:black">H. D. Cornean et. al., Ann. Henri Poincaré <b>15</b>, 1919 (2014).</p>
+                <blockquote style="font-size: 0.5em;color:brown">In contrast, in the non-interacting mesoscopic quantum transport one can show that the charge/energy current observables depend neither on the initial state of the sample, nor on the switching procedure.</blockquote>
+                <blockquote style="font-size: 0.6em;color: darkslateblue">The final bound state strongly depends on the history of the switching procedure.</blockquote>
+              </div>
+            </div>
+            <aside class="notes">
+              interation (mean field), gauge field, chemical potential.
+            </aside>
+          </section>
+        </section>
 
-					<section style="text-align: left;">
-						<h3>Itinerant particle as quantum wavefunction</h3>
-						<p style="paddin-top: 50px">
-							\begin{equation}
-								H=-\overline{t}\sum_{\langle ij\rangle}(c^\dagger_ic_j+c^\dagger_jc_i)+\sum_iV_i(t)c^\dagger_ic_i
-							\end{equation}
-						</p>
-						<div style="font-size: 40px">
-							<p>$V_i(t)\!=\!\color{blue}{A_i}\cos(\frac{2\pi}{T_p}t+\color{blue}{\phi_i})$ where period $T_p\!=\!2\pi/\Omega$ and $\phi_i\in[0,2\pi)$.</p>
-							<p>$H(t+T_p)\!=\!H(t)$ $\Rightarrow$ periodic driving system <span class="darkblue">(Floquet)</span>.</p>
-							<p>Given initial wavefunction, the dynamics are solved by $i\partial_t\psi=H\psi$.</p>
-							<p>Temperature and coupling are embedded in <span class="darkblue">$A^\text{rms}\gg\overline{t}$ for strong coupling and high temperature.</span></p>
-							<p>Small time step $\delta t\!=\!10^{-3}t_0$ and large phonon period $T_p$ as adiabatic limit.</p>
-							<ul class="fragment" style="padding-left: 30px">
-								<li>No restriction on <span class="green">jumping back</span>.</li>
-								<li>Effects on very close crossing of potentials.</li>
-							</ul>
-						</div>
-					</section>
+        <section>
+          <section>
+            <h2>How about flat band?</h2>
+            <div class="fragment lc-45-45">
+              <h4>Transport</h4>
+              <p style="font-size: 0.4em">H. D. Cornean et. al., Ann. Henri Poincaré <b>15</b>, 1919 (2014).</p>
+              <p>Voltage: $0\xrightarrow{t_r}V$.</p>
+              <p>Current: $0\rightarrow I$</p>
+              <p>      is independent from $t_r$.</p>
+              <p style="color:rgb(241, 64, 105)">The effect of $t_r$ appears on filling of bound state.</p>
+              <!--<p>Challenging task in solid state experiment.</p>-->
+            </div>
+            <div class="fragment rc-45-45">
+              <h4>Geometry Transformation</h4>
+              <p>Ramping: Tri. $\xrightarrow{t_r}$ Kagome</p>
+              <p>Existence of steady state?</p>
+              <p style="color:rgb(241, 64, 105)">The effect of $t_r$ appears on filling of flat-band?</p>
+              <p>Experimental accessible in cold-atom technique!</p>
+            </div>
+          </section>
 
-					<section>
-						<h5 style="padding-left: 10px">12-site periodic chain: $T_p\!=\!300t_0$</h5>
-						<div class="row">
-							<div class="fragment column thirty" style="padding-left: 30px">
-								<h6 style="font-size: 90%;text-align: center">$A^\text{rms}\!=\!3.8\bar{t}$</h6>
-								<iframe data-src="movies/12SiteChain-2.mp4" height="340px" width="450px" alt="Semi movie 2"></iframe>
-							   </div>
-							<div class="fragment column thirty" style="padding-left: 30px">
-								<h6 style="font-size: 90%;text-align: center">$A^\text{rms}\!=\!6.7\bar{t}$</h6>
-								<iframe data-src="movies/12SiteChain-5.mp4" height="340px" width="450px" alt="Semi movie 5"></iframe>
-							 </div>
-							<div class="fragment column thirty" style="padding-left: 30px">
-								<h6 style="font-size: 90%;text-align: center">$A^\text{rms}\!=\!21.8\bar{t}$</h6>
-								<iframe data-src="movies/12SiteChain-20.mp4" height="340px" width="450px" alt="Semi movie 20"></iframe>
-							 </div>
-						</div>
-						<p class="fragment" style="font-size: 115%; color: mediumpurple;font-style: italic;padding-top: 5px">Charge pumping in some parameter regimes!!</p>
-					</section>
-				</section>
+          <section>
+            <h2>Geometry Transformation</h2>
+            <h4>Triangular $\Rightarrow$ Kagome</h4>
+            <img src="custom/CopyFigs/ExpKagome.png" alt="ExpKagome" />
+            <!--<p>4-site unit cell.</p>-->
+            <p style="font-size: 0.6em">Gyu-Boong Jo et al., Phys. Rev. Lett. <b>108</b>, 045305 (2012)</p>
+          </section>
 
-				<section>
-					<section>
-						<h2 style="padding-top: 200px">Fully quantum mechanics</h2>
-					</section>
+          <section>
+            <h4>Triangular $\Rightarrow$ Square</h4>
+            <img src="custom/CopyFigs/ExpSquare.png" alt="ExpSquare" height="450px"/>
+            <p>The same wavelength and shift focus point.</p>
+            <p style="font-size: 0.4em">Leticia Tarruell et al., Nature (London) <b>483</b>, 302 (2012)</p>
+          </section>
+          </section>
+        </section>
 
-					<section>
-						<h3>Holstein model</h3>
-						<p>
-						\begin{equation}
-							H=-\overline{t}\sum_{\langle ij\rangle}(c^\dagger_ic_j+c^\dagger_jc_i)+\Omega\sum_ia^\dagger_ia_i-\lambda\sum_ic^\dagger_ic_i(a^\dagger_i+a_i)
-						\end{equation}</p>
-						<ul>
-							<li>Temperature $k_BT\!\sim\!\langle N_p\rangle\hbar\Omega$ and coupling $\lambda$ are independent.</li>
-							<li>Eigenstates and dynamics are simulated by Lanczos-based algorithm.</li>
-							<li>Small system size and <span class="blue">maximum phonon quanta $N^\text{max}_p$</span> due to unbounded phonon Hilbert space.</li>
-						</ul>
-						<ol>
-							<li class="darkblue">Dynamics from excited states:
-								<p style="font-size: 90%">$\vert\Psi(t\!=\!0)\rangle\!=\!\frac{1}{\sqrt{2}}(\vert \psi_m\rangle \!+\! \vert\psi_n\rangle)$ where $H\vert\psi_m\rangle\!=\!E_m\vert\psi_m\rangle$.
-								</p>
-							</li>
-							<li class="darkgreen">Dynamics from phonon coherent states:
-								<p style="font-size: 90%">$\vert\Psi(t=0)\rangle=\vert i_F;\alpha_0, \alpha_1, \alpha_2\rangle$ where $a\vert\alpha_i\rangle\!=\!\alpha_i\vert\alpha_i\rangle$, $\alpha_i\in C$.</p>
-							</li>
-						</ol>
-					</section>
+        <section>
+          <section>
+            <h3>Flat-band v.s. Dispersive band</h3>
+            <figure>
+              <img src="custom/RSpaceFigs/Potential.png" alt="Potential" width="750px"/>
+            </figure>
+            <div class="lc-30-60">
+              <figure>
+                <img src="custom/DataFigs/ramp.png" alt="ramp">
+              </figure>
+            </div>
+            <div class="rc-30-60">
+              <p style="text-align: center;font-size: 0.9em">Triangular $\overset{t_r}{\Rightarrow}$ Kagome (w/ flat-band)</p>
+              <p style="text-align: center;font-size: 0.7em">v.s.</p>
+              <p style="text-align: center;font-size: 0.9em">Triangular $\overset{t_r}{\Rightarrow}$ Square (dispersive)</p>
+            </div>
 
-					<section>
-						<h3>Excited States</h3>
-						<div class="row">
-							<div class="fragment column half" data-fragment-index="1">
-								<img src="figures/Excited-1.png" alt="Excited State 1">
-								<p style="font-size: 20px">$\Omega t_0\!=\!0.6$, $\lambda\!=\!1.1\bar{t}$, and $\langle N_p\rangle\sim5$.</p>
-							</div>
-							<div class="fragment column half" data-fragment-index="2">
-								<img src="figures/Excited-2.png" alt="Excited State 2">
-								<p style="font-size: 20px">$\Omega t_0\!=\!0.6$, $\lambda\!=\!0.9\bar{t}$, and $\langle N_p\rangle\sim5$.</p>
-							</div>
-						</div>
-						<p class="fragment" data-fragment-index="2">Maximum density from site to site <span style="color:crimson">repeatedly</span>, and current densities have the <span style="color:crimson">same directions</span>.</li>
-						<p class="fragment" style="font-size: 95%; color: mediumpurple;font-style: italic;padding-top: -10px">Like charge pumping!</p>
-					</section>
+            <aside class="notes">
+              4-site unit cell. remove D site to kagome. Cut A-D B-C to square.
+            </aside>
+          </section>
 
-					<section>
-						<h3>Phonon Coherent States</h3>
-						<div class="row">
-							<div class="fragment column half" data-fragment-index="1">
-								<img src="figures/Coherent-1.png" alt="Coherent State 1">
-							</div>
-							<div class="fragment column half" data-fragment-index="1">
-								<img src="figures/Coherent-2.png" alt="Coherent State 2">
-								<p>$\Omega t_0\!=\!0.6$, $\lambda\!=\!1.1\bar{t}$, and $\langle N_p\rangle\sim6$.</p>
-							</div>
-						</div>
-						<p class="fragment" data-fragment-index="2">Maximum density from site to site <span style="color:crimson">repeatedly</span>, and current densities have the <span style="color:crimson">same directions</span>.</p>
-						<p class="fragment" style="font-size: 95%; color: mediumpurple;font-style: italic;padding-top: 5px">This is NOT diffusion in some parameter regimes!!</p>
-					</section>
-				</section>
+          <section>
+              <h4>Approaches</h4>
+              <div class="rc-45-45">
+                <h6>Infinite system</h6>
+                <p style="text-align: center;font-size: 0.7em">Thermodynamic limit.</p>
+                <p style="text-align: center;font-size: 0.7em">Fillings of each band.</p>
+                <p style="text-align: center;font-size: 0.7em">Band theory for different $T$.</p>
+              </div>
+              <div class="lc-45-45">
+                <h6>Finite system</h6>
+                <p style="text-align: center;font-size: 0.7em">Cold atom system.</p>
+                <p style="text-align: center;font-size: 0.7em">No information on bands.</p>
+                <p style="text-align: center;font-size: 0.7em">Schödinger eq. @ $T=0$.</p>
+              </div>
+            <figure class="fragment">
+              <img src="custom/RSpaceFigs/Contour.png" alt="Contour" width="750px"/>
+              <figcaption style="font-size: 0.8em">
+                Average particle density in each sub-lattice.
+              </figcaption>
+            </figure>
 
-				<section>
-					<section>
-						<h2 style="padding-top: 200px">Beyond 1D Chain</h2>
-					</section>
+            <aside class="notes">
+              Band theory tells from the filling of flat band.
+              Real space tells from the residue density at D-site.
+            </aside>
+          </section>
 
-					<section>
-						<div class="row" style="padding-top: 5px">
-							<div class="column half">
-								<h3>$N$-leg ladder</h3>
-								<img src="figures/Ladder.png" alt="Ladder System">
-								<p>$L_x\!\gg\!L_y$ with PBC in both directions.</p>
-								<p class="fragment" data-fragment-index="1" style="font-size: 80%; color:mediumpurple">Q: Finite trajectory?</p>
-								<p class="fragment" data-fragment-index="3" style="font-size: 80%; color:cadetblue;padding-left: 50px">A: Yes, $N_s^\text{max}\!=\!2\!\times\!N_\text{bonds}$.</p>
-								<p class="fragment" data-fragment-index="1" style="font-size: 80%; color:mediumpurple">Q: Repeat the same trajectory?</p>
-								<p class="fragment" data-fragment-index="3" style="font-size: 80%; color:cadetblue;padding-left: 50px">A: Yes, past and future.</p>
-							</div>
-							<div class="fragment column half" data-fragment-index="2">
-								<h3>Semiclassical</h3>
-								   <iframe height="450px" width="225px" data-src="movies/Ladder.mp4" alt="ladder movie"></iframe>
-								<!-- <img height="450px" data-src="movies/Ladder.mp4" alt="ladder movie"> -->
-								<!-- <video height="450px" src="movies/Ladder.mp4" alt="ladder movie"> -->
-							 </div>
-						</div>
-					</section>
+          <section>
+            <h2>Emergence of steady state</h2>
+            <div class="rc-45-45" style="height: 450px">
+              <h4>Band theory</h4>
+              <figure>
+                <img src="custom/KSpaceFigs/KBand3.png" alt="KBandFermion" height="350px">
+              </figure>
+            </div>
+            <div class="lc-45-45" style="height: 450px">
+              <h4>Real space</h4>
+              <figure>
+                <img src="custom/RSpaceFigs/AveNd.png" alt="AveNd" height="350px">
+              </figure>
+            </div>
+            <div class="fragment" style="font-size: 0.9em">
+              <span style="color: rgb(241, 64, 105);font-size: 0.7em">Non-interacting fermions enter a steady state in isolated quantum system.</span><br>
+              <span style="color: rgb(71, 204, 115)">Memory effects appear in triangular $\Rightarrow$ kagome.</span>
+            </div>
 
-					 <section>
-						<h3>Classical</h3>
-						<p class="fragment" style="font-size: 80%; color:mediumpurple">Q: Probability of taking $N_s$ jumps to close trajectory $p(N_s)$?</p>
-						<p class="fragment" style="font-size: 70%; color:cadetblue;padding-left: 50px">$P(N)\!=\!\int_N^{N_s^\text{max}}p(N_s)dN_s$</p>
-						<div class="row">
-							<div class="fragment column half">
-								<h4 class="">v.s $L_x$ with $L_y\!=\!3$</h4>
-								<img src="figures/Ladder-Lx.png" alt="Ladder Lx">
-								<p>Short range trajectory: $P(N)\sim e^{-0.01N}$</p>
-							</div>
-							<div class="fragment column half">
-								<h4 class="">v.s $L_y$ with $L_x\!=\!100$</h4>
-								<img src="figures/Ladder-Ly.png" alt="Ladder Ly">
-								<p>$N^\text{avg}_s\sim L_y^{1.69}$</p>
-							</div>
-						</div>
-					</section>
-				</section>
+            <aside class="notes">
+              half filled fermions. 16x16
+              steady state are important to identity memory effect
+            </aside>
+          </section>
+        </section>
 
-				<section>
-					<section>
-						<h2 style="padding-top: 200px">Two dimensional (2D) lattice</h2>
-						<aside class="notes">
-							Lx = Ly = L
-						</aside>
-					</section>
+        <section>
+          <section>
+            <h3>No memory effects for BEC</h3>
+            <figure>
+              <img src="custom/DataFigs/GPAll.png", alt="GPAll" width="800px">
+            </figure>
+            <div style="font-size: 0.9em;text-align: left">
+              Flat band appears in higher energy, but BEC populates lower energy state.
+            </div>
+            <!--<div class="lc-45-45">
+              <figure>
+                <img src="custom/KSpaceFigs/KTempBoson.png" alt="KTempBoson" width="300px"/>
+              </figure>
+            </div>
+            <div class="rc-45-45" style="font-size: 0.9em;text-align: left">
+              Boson with finite temperature has small effect.<br>
+              Very difficult to measure in exp.
+            </div>-->
 
-					<section>
-						<div class="row">
-							<div class="column half">
-								<img data-src="movies/2D.gif" width=80% height=80% alt="2D-animation">
-							</div>
-							<div class="column half" style="text-align: left; padding-top: 10px">
-								<h3>Semiclassical</h3>
-								<p style="padding-top: 30px">$L_x=L_y=L$</p>
-								<p>Density contour $N_f(i_x, i_y, t)$ on an $6\times6$ square lattice.</p>
-								<p>Red marks are classical results.</p>
-								<p style="color: rgb(28,108,171);font-size: 90%;text-align: center">Repeatedly close trajectory matches the classical results!</p>
-								<p class="fragment" style="color: crimson;font-size: 90%;text-align: center;padding-top: 30px">Circulation (localization)!</p>
-							</div>
-						</div>
-						<aside class="notes">
-							like QHS.
-						</aside>
-					</section>
+            <aside class="notes">
+              GPE U=25.0 20 grid points.
+              All in GS not filled up to flat band.
+            </aside>
+          </section>
 
-					<section>
-						<h3>Classical - Critical Phenomenon?</h3>
-						<div class="row" style="text-align: left;padding-top: 30px">
-							<div class="column half">
-								<img class="fragment" data-fragment-index="1" src="figures/2DClassical.png" alt="2D Classical data">
-							</div>
-							<div class="column half">
-								<ul>
-									<li class="fragment" data-fragment-index="1">$N_s^\text{avg}\!=\!L^{1.6}$ power law!</li>
-									<li class="fragment" data-fragment-index="2">$\lim_{L\rightarrow\infty}P(L^2)\!\approx\!0$<br><span style="color: deepskyblue;padding: 120px 0px 0px 90px">$\Rightarrow$ Finite trajectory!!</span></li>
-									<li class="fragment" data-fragment-index="3">$P(N)\sim N^{-0.07}$ decays as <span style="color: deepskyblue">power law</span> initially with faster decay tail.</li>
-									<li class="fragment" data-fragment-index="3">The decay tail is finite size effect which can be improved by increasing size.</li>
-								</ul>
-								<p class="fragment" data-fragment-index="4" style="padding-top: 50px;font-size: 35px;text-align: center">System is <span style="color: crimson">critical!</span></p>
-							</div>
-						</div>
-					</section>
+          <section>
+            <h3>Temperature effect</h3>
+            <div class="lc-45-45" style="height: 450px">
+              <h4>Fermion</h4>
+              <figure>
+                <img src="custom/KSpaceFigs/KTempFermion.png" alt="KTempFermion" height="350px"/>
+              </figure>
+            </div>
+            <div class="rc-45-45" style="height: 450px">
+              <h4>Boson</h4>
+              <figure>
+                <img src="custom/KSpaceFigs/KTempBoson.png" alt="KTempBoson" height="350px"/>
+              </figure>
+            </div>
+            <div class="" style="font-size: 0.9em">
+              <span style="color: rgb(151, 54, 55)">Temperature washes out memory effects of fermions.</span><br>
+              <span style="color: rgb(2, 2, 2)">Memory effects vanish at high temperature in both statists - classical distribution.</span>
+            </div>
+          </section>
 
-					<section>
-						<h3>Fractals? (complexity)</h3>
-						<div class="row">
-							<div class="fragment column quarter" data-fragment-index="1">
-								<h6 style="font-size: 80%">Coast of Britain</h6>
-								<ref style="margin-top: 0; padding-top: 0;font-size: 30%">Benoit Mandelbrot, Science <b>156</b>, 636 (1967).</ref>
-								<img src="figures/intro/Britain.jpg" alt="Britain">
-								<p>
-									Unit $\rightarrow 0$ <br>
-									$\Downarrow$ <br>
-									Length $\rightarrow\infty$
-								</p>
-							</div>
-							<div class="fragment column quarter" data-fragment-index="2">
-								<h6 style="font-size: 80%">Koch Snowflake</h6>
-								<ref style="margin-top: 0; padding-top: 0;font-size: 30%">Credit: Larry Riddle, Agnes Scott College.</ref>
-								<img src="figures/intro/Koch.gif" height="360px" alt="Koch Snowflake">
-							</div>
-							<div class="column half">
-								<h6 class="fragment" data-fragment-index="3">Quantum Hall</h6>
-								<img class="fragment" data-fragment-index="3" src="figures/intro/QHE.png" alt="QHE">
-								<h6 class="fragment" data-fragment-index="4">Others ......</h6>
-								<ul class="fragment" data-fragment-index="4">
-									<li>2D percolation cluster (1.8958)</li>
-									<li>Self avoiding walk (4/3)</li>
-									<li>Broccoli, Cauliflower (2.7)</li>
-								</ul>
-							</div>
-						</div>
-					</section>
+          <section>
+            <h4>Filling Dependencies</h4>
+            <img src="custom/KSpaceFigs/KFilling.png" alt="KFilling" />
+            <ul>
+              <li>Fermionic system: optimal filling around $3/4$ at zero temperature</li>
+              <li>Bosonic system: Not scale up as filling increases at intermediate temperature</li>
+            </ul>
+          </section>
+          <aside class="notes">
+            the memory effects depends on the filling of flat  band the filling of nearby bands
+          </aside>
+        </section>
 
-					<section>
-						<h3>Are the trajectories fractals?</h3>
-						<div class="row">
-							<div class="column half">
-								<img class="fragment" data-fragment-index="2" src="figures/Trajectory.png" height="200px" alt="trajectories">
-								<img class="fragment" data-fragment-index="4" src="figures/Fractal.png"  height="220px" alt="fractal">
-							</div>
-							<div class="column half">
-								<ul>
-									<li class="fragment" data-fragment-index="1">Square: (Area)$\sim (\frac{\text{Perimeter}}{4})^{\color{red}2}$</li>
-									<li class="fragment" data-fragment-index="2">Trajectory can fit inside $L_\text{F}\times L_\text{F}$ square box.</li>
-									<li class="fragment" data-fragment-index="3">Given $N_s$, average box size.</li>
-									<li class="fragment" data-fragment-index="3"><span style="color: coral">$L_\text{F}\sim\frac{N_s}{4}$??</span> If yes, not fractal.</li>
-									<li class="fragment" data-fragment-index="5" style="padding-top: 20px">$L_\text{F}\sim N_s^{\color{red}{0.6}}$</li>
-									<li class="fragment" data-fragment-index="6">(Sites visited)$\sim N_s^{\color{red}{0.89}}$</li>
-								</ul>
-								<p class="fragment" data-fragment-index="6" style="color: deepskyblue;padding-top: 50px;font-size: 100%">trajectories are fractals!!</p>
-							</div>
-						</div>
-					</section>
-				</section>
+        <section>
+          <section>
+            <h3>Applications - Accelerometer</h3>
+            <img src="custom/DataFigs/Accel.png" alt="accelerometer" height="450px"/>
+            <h6>Probing acceleration and recording the rate.<br>(Suitable for ~ms time scale.)</h6>
+          </section>
+        </section>
 
-				<section>
-					<h2>Conclusion</h2>
-					<ul style="font-size: 0.6em; margin-top: 1em">
-						<li style="padding-top: 10px;line-height: 30px">In certain parameter regimes, the dynamics of Holstein model in strong coupling and high temperature is <span style="color:crimson">NOT diffusion!</span></li>
-						<li style="padding-top: 10px;line-height: 30px">In 1D, <span style="color: crimson">charge pumping</span> dynamics!. Beyond 1D, <span style="color: crimson">circulation (localization?)</span>.</li>
-						<li style="padding-top: 10px;line-height: 30px">Finite trajectory in 2D in the thermodynamic limit, system is critical and trajectories are <span style="color: crimson;">fractals</span>.</li>
-					</ul>
-					<h4 style="margin-top: 1em">Acknowledgements</h4>
-					<p style="font-size: 0.6em; text-align: left">Collaborator: <span style="color:darkorange">S. A. Trugman</span> (LANL).</p>
-					<p style="font-size: 0.6em; text-align: left">Funding: The center for integrated nanotechnologies (CINT), a DOE BES user facility.</p>
-					<p style="font-size: 0.6em; text-align: left">Computational resources: LANL Institutional Computing (IC) program.</p>
-				</section>
+        <section>
+          <section>
+            <h2>Memory effects in interacting system.</h2>
+          </section>
+
+          <section>
+            <h3>Fermi/Bose Hubbard model in 1D</h3>
+            <div style="font-size: 0.9em">
+              $\mathcal{H}=-J\sum_{\langle ij\rangle}(b^\dagger_ib_j+h.c.)+\mathcal{H}_{int}$
+            </div>
+            <div class="fragment lc-45-45" style="height: 400px">
+              <figure>
+                <img src="custom/HalfUFigs/illuGen.png" alt="HalfUSketch" width="500px">
+              </figure>
+            </div>
+            <div class="fragment rc-45-45" style="height: 400px">
+              <ul style="font-size: 0.9em">
+                <li>Begins with uniform potential and interaction.
+                  $\begin{cases}
+                  \text{Fermion  }U(i)n_{\uparrow,i}n_{\downarrow,i} \\
+                  \text{Boson  }\frac{U(i)}{2}n_{i}(n_{i}-1)
+                  \end{cases}$
+                </li>
+                <li>Change $U(i)$ to monitor dynamics.</li>
+                <li>Different initial state and switching scheme.</li>
+              </ul>
+            </div>
+            <div class="fragment" style="color:blue">
+              tDMRG simulation on $L=60$ lattice sites with $\chi\sim1000$ and truncation error $\sim10^{-7}$.
+            </div>
+          </section>
+
+          <section>
+            <h3>Quasi-Steady State Current (QSSC)</h3>
+            <figure>
+              <img src="custom/HalfUFigs/QSSC.png" alt="FMemTime" width="850px">
+              <figcaption style="font-size: 0.6em">BHM with $\bar{n}_B=1$ and $U=J$, $\Delta U=J$.</figcaption>
+            </figure>
+            <ul>
+              <li>QSSC is important to identify memory effects.</li>
+              <li>QSSC depends on the density profile.</li>
+              <li>No QSSC for non-interacting bosons.</li>
+            </ul>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>Memory effects of initial states</h2>
+            <figure class="fragment">
+              <img src="custom/HalfUFigs/illuMemInit.png" alt="illuMemInit" width="400px">
+            </figure>
+            <div class="fragment" style="font-size: 0.85em">
+              $\begin{cases}
+              \rvert G^s\rangle\text{ of }U^{small}\overset{\Delta U\text{ on left}}{\longrightarrow}\rvert G^s(t)\rangle \\
+              \rvert G^l\rangle\text{ of }U^{large}\overset{-\Delta U\text{ on right}}{\longrightarrow}\rvert G^l(t)\rangle
+              \end{cases}$ for the same $(U_L,U_R)$.
+            </div>
+            <div class="fragment" style="color: brown;padding-top: 0.3em">Different QSSC $\Rightarrow$ Memory of initial state.</div>
+          </section>
+
+          <section>
+            <h3>Fermion</h3>
+            <figure>
+              <img src="custom/HalfUFigs/FMemInit.png" alt="FMemInit" width="850px">
+            </figure>
+            <ul style="font-size: 0.8em">
+              <li>Distinct ground states for large $\Delta U$.</li>
+              <li>Half-filling has strongest effects, but turns to non-conducting .</li>
+            </ul>
+            <figure class="lc-70-25">
+              <img src="custom/HalfUFigs/BMemInit.png" alt="FMemInit" width="450px">
+            </figure>
+            <div class="rc-70-25">
+              <h3>Boson</h3>
+              <p style="font-size: 0.7em">
+                $\bar{n}_B=\frac{1}{2}$. Similar to Fermion. Generic effects!
+              </p>
+            </div>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>Memory effects of switching schemes</h2>
+            <figure class="fragment">
+              <img src="custom/HalfUFigs/illuMemTime.png" alt="illuMemInit" width="400px">
+            </figure>
+            <div class="fragment" style="font-size: 0.85em">
+              $\rvert G\rangle\text{ of }U\quad\Delta U\text{ on left}\begin{cases}
+              \overset{t_r=t_0}{\longrightarrow}\rvert G(t)\rangle\\
+              \overset{t_r=7t_0}{\longrightarrow}\rvert G^\prime(t)\rangle
+              \end{cases}
+              $
+            </div>
+            <div class="fragment" style="color: brown;padding-top: 0.3em">Different QSSC $\Rightarrow$ Memory of switching schemes.</div>
+          </section>
+
+          <section>
+            <div class="lc-70-25">
+              <h3>Fermion</h3>
+              <figure>
+                <img src="custom/HalfUFigs/FMemTime.png" alt="FMemTime" width="600px">
+              </figure>
+              <ul style="font-size: 0.8em">
+                <li>Half filling has strongest memory effect.</li>
+                <li>$U\downarrow$, $\Delta U\uparrow$ is favorable.</li>
+              </ul>
+            </div>
+            <div class="rc-70-25">
+              <h3>Boson</h3>
+              <figure>
+                <img src="custom/HalfUFigs/BMemTime.png" alt="BMemTime" width="600px">
+                <figcaption style="font-size: 0.7em">
+                  $\bar{n}_B=1/3$.<br> $U=2J$ and $\Delta U=4J$.
+                </figcaption>
+              </figure>
+            </div>
+          </section>
+        </section>
+
+        <section>
+          <h4>Conclusions</h4>
+          <ul style="font-size:0.7em">
+            <li>Memory effects are shown to exist in noninteracting quantum systems when a flat band emerges.</li>
+            <li>Zero temperature non-interacting fermionic system and bosonic system at intermediate temperature are better candidates, but not BEC.</li>
+            <li>Applications on <i>atomtronic</i> device - accelerometer and memory device.</li>
+            <li>QSSC exist in both fermionic and bosonic gases, except non-interacting boson.</li>
+            <li>Quantum memory effects for both initial states and switching schemes can be observed in both statists.</li>
+          </ul>
+          <h4 style="font-size:0.9em;padding-top: 0.1em">Acknowledgments</h4>
+          <p style="font-size:0.4em">
+            Collaborate with Chih-Chun Chien and Mekena Metcalf @ UC Merced.
+          </p>
+          <p style="font-size:0.4em">
+            Computational resources from Extreme Science and Engineering Discovery Environment (XSEDE),
+            and Merced Cluster.</p>
+          <p style="font-size:0.4em">We thank Gia-Wei Chern, Massimiliano Di Ventra, Dan Stamper-Kurn, Michael Zwolak, and YangQuan Chen for useful discussions.</p>
+          <h6 style="font-size: 0.6em">Phys. Rev. Applied <b>5</b>, 034001 (2016)</h6>
+        </section>
+
+        <!-- Spare slides -->
+        <section>
+          <h3>Quantum memory effect atomic memory</h3>
+          <img src="custom/DataFigs/QMEAMSmall.png" alt="qmean" height="500px"/>
+          <p style="font-size: 0.4em">Y. S. Patil et. al., Phys. Rev. A <b>90</b>, 033422 (2014). S. T. Wang et al., Phys. Rev. Lett. <b>113</b>, 033002 (2014).</p>
+        </section>
+
+        <section>
+          <section>
+            <!--<img src="custom/DataFigs/LT.png" alt="lt" height="250px"/>-->
+            <!--<img src="custom/DataFigs/ramp.png" alt="ramp" height="250px"/>-->
+            <p style="font-size:0.8em">
+              $$
+              \mathcal{H}_{tb}({\bf k}) = \sum_{\bf k}\Psi^\dagger({\bf k}) h_{\mu\nu}({\bf k})\Psi({\bf k})
+              $$
+            </p>
+            <div class="lc-45-45">
+              <p>
+              Triangular $\xrightarrow{t_r}$ Kagome
+              </p>
+              <p style="font-size:0.55em">
+                $$
+                h({\bf k}, t)=\left( \begin{array}{cccc}
+                0 && M_1 && M_2 && \color{red}{M_3^*} \\
+                M_1 && 0 && M_3 && \color{red}{M_2^*} \\
+                M_2 && M_3 && 0 && \color{red}{M_1^*} \\
+                \color{red}{M_3^*} && \color{red}{M_2^*} && \color{red}{M_1^*} &&  \color{blue}{\gamma(t,t_r)}\Delta_d\\
+                \end{array} \right)
+                $$
+              </p>
+            </div>
+            <div class="rc-45-45">
+              <p style="font-size:0.8em">$M_\alpha=-2\bar{t} \cos({\bf k\cdot n_\alpha})$</p>
+              <p style="font-size:0.8em">$M^*_\alpha=[1-\gamma(t,t_r)]M_\alpha$</p>
+              <p style="font-size:0.8em">$0\leq\color{blue}{\gamma(t,t_r)}\leq1$ is called ramping function</p>
+            </div>
+            <aside class="notes">
+              mention about the bound state and flat-band, and the sites A, B, C, and D.
+            </aside>
+          </section>
+
+          <section>
+            <h4>Method</h4>
+            <h3 style="font-size:1.3em">Correlation Matrix & Equation of Motion</h3>
+            <p style="font-size: 0.8em">$\mathcal{C}_{\mu\nu}({\bf k})=\langle c_\mu^\dagger({\bf k}) c_\nu({\bf k})\rangle$</p>
+            <p style="font-size: 0.8em">$$i\hbar\partial_t\mathcal{C}_{\mu\nu}({\bf k})=\langle[c_{\mu}^\dagger c_{\nu}, H_{tb}({\bf k},t)]\rangle$$</p>
+            <h3  style="font-size: 1.1em">Initial condition with temperature $T$</h3>
+            <p style="font-size: 0.8em">$
+              \frac{N_{tot}}{N_{lattice}}\!=\!\sum_{\beta, {\bf k}}\langle c^\dagger_\beta({\bf k})c_\beta({\bf k})\rangle
+              \!=\!\sum_{\beta, {\bf k}}\{\exp((E_{\beta}({\bf k})-\mu)/k_BT)+1\}^{-1}
+              $
+            </p>
+            <p>initial correlation matrix can be inferred from $\mathcal{C}_{\mu,\nu}({\bf k})\!=\!\sum_{\beta, \beta^\prime}(U^\dagger)_{\beta \mu}\langle c^\dagger_\beta({\bf k})c_{\beta^\prime}({\bf k})\rangle U_{\nu\beta^\prime}$</p>
+          </section>
+        </section>
+
+        <section>
+          <h3>No QSSC for non-interacting boson</h3>
+          <figure>
+            <img src="custom/HalfUFigs/NoSteady.png" alt="NoSteady" />
+            <figcaption>Due to infinite compressibility!!</figcaption>
+          </figure>
+        </section>
+      </div><!-- class="slides" -->
+
+    </div><!-- class="reveal" -->
+
+    <script>
+      // return date-location
+      function date_location(location)
+      {
+        var monthNamesLong = [
+          "January", "February", "March",
+          "April", "May", "June", "July",
+          "August", "September", "October",
+          "November", "December"
+        ];
+        var monthNames = [
+          "Jan", "Feb", "Mar",
+          "Apr", "May", "Jun", "Jul",
+          "Aug", "Sep", "Oct",
+          "Nov", "Dec"
+        ];
+        var date = new Date();
+        var day = date.getDate();
+        var monthIndex = date.getMonth();
+        var year = date.getFullYear();
+        var my_date = monthNames[monthIndex] + ' ' + day + ' ' + year;
+        document.getElementById('date-location').innerHTML = my_date + " @ " + location;
+      }
+    </script>
+    <!-- The Following meta is for local web server.
+      The index.html must be inside the reveal.js folder and serve from there using `npm start`
+      Also the MathJax and custom file folder must be copied to reveal.js folder.
+    -->
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+    <script src="MathJax/MathJax.js?config=TeX-AMS_HTML&delayStartupUntil=configured" type="text/javascript"></script>
+    <script>
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'fade', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: 'plugin/zoom-js/zoom.js', async: true },
+          { src: 'plugin/notes/notes.js', async: true }
+        ]
+      });
 
 
+      // Setup MathJax
+      MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+            processEscapes: true
+          }
+      });
+      MathJax.Hub.Queue(function() {
+          $(MathJax.Hub.getAllJax()).map(function(index, elem) {
+              return(elem.SourceElement());
+          }).parent().addClass('has-jax');
+      });
 
-				<section>
-					<section style="text-align: left;">
-						<h6 style="margin-top: 0px;padding-top: 0px">Two-site problem</h6>
-						<div class="row">
-							<div class="column forty">
-								<img class="fragment current-visible" data-fragment-index="1" style="position:absolute; margin-left: 5px; margin-right: 400px; left: 0; right: 0; width: 34%" src="figures/A1A2-1.png" alt="A1A2-1">
-								<img class="fragment current-visible" data-fragment-index="2" style="position:absolute; margin-left: 5px; margin-right: 400px; left: 0; right: 0; width: 34%" src="figures/A1A2-2.png" alt="A1A2-2">
-								<img class="fragment current-visible" data-fragment-index="3" style="position:absolute; margin-left: 5px; margin-right: 400px; left: 0; right: 0; width: 34%" src="figures/A1A2-3.png" alt="A1A2-3">
-								<img class="fragment" data-fragment-index="4" style="position:absolute; margin-left: 5px; margin-right: 400px; left: 0; right: 0; width: 34%" src="figures/A1A2-4.png" alt="A1A2-4">
-							</div>
-							<div class="column sixty" style="padding-left: 400px">
-								<p><span class="eq blue">$V_1\!=\!A_1\cos(\Omega t)$</span>; <span class="eq red">$V_2\!=\!A_2\cos(\Omega t \!-\! \phi)$</p>
-								<p class="fragment" data-fragment-index="1" style="font-size: 90%; color: mediumpurple">Q: Particle starts from site-1, what is the distribution function of $t_1$ v.s $\phi$?</p>
-								<p class="fragment" data-fragment-index="6" style="font-size: 90%; color: mediumorchid">A: Exactly like density of states of free electron in 1D lattice!</p>
-							</div>
-						</div>
-						<div class="row">
-							<div class="column threequarter">
-								<p class="fragment" data-fragment-index="2" style="padding-top: 15px">$A_1\!=\!A_2$, it is <span class="darkblue">uniform</span>, because we use uniform distributed $\phi\in[0,2\pi)$.</p>
-								<p class="fragment" data-fragment-index="3">$A_1\!>>\!A_2$, <span class="darkblue">delta function</span>-like peak at $T_p/4$.</p>
-								<p class="fragment" data-fragment-index="4">$A_1\!\gtrsim\!A_2$, there are forbidden region (shaded) to make jump.</p>
-								<p class="fragment" data-fragment-index="5" style="padding-left: 100px">$t_1^\lessgtr\!=\!\Omega^{-1}\arccos(\pm A_2/A_1)$</p>
-								<p class="fragment darkred" data-fragment-index="5" style="padding-left: 120px">$\mathcal{D}(t)=\int_0^{2\pi}\delta(V_1-V_2(\phi))d\phi,$</p>
-							</div>
-							<div class="column quarter">
-								<img class="fragment" data-fragment-index="6" src="figures/Dt.png" alt="Dt">
-							</div>
-						</div>
-					</section>
+      MathJax.Hub.Configured();
+    </script>
 
-					<section>
-						<!-- <h3>Distribution of amplitudes $A_i$</h3> -->
-						<div class="row">
-							<div class="column half">
-								<h5>Time between jumps - $\Delta T$</h5>
-								<img src="figures/1DdT.png" alt="1DdT">
-							</div>
-							<div class="column half">
-								<h5>Duration to circulate - $T_s$</h5>
-								<img src="figures/1DTs.png" alt="1DTs">
-							</div>
-						</div>
-						<div class="row">
-							<div class="column quarter">
-								<p>Thermal distribution</p>
-								<p>$\sqrt{\frac{2}{\pi}}\frac{x^2e^{-x^2/(2a^2)}}{a^3}$</p>
-								<p>$a\sim\sqrt{T}$</p>
-							</div>
-							<div class="column threequarter" style="text-align: left;">
-								<p>$A_1\!=\!A_2$: <span style="color:crimson">uniform</span> distributed $\Delta T$ and smaller $T_s$ statistically!</p>
-								<p>$A_1\!\neq\!A_2$: <span style="color:crimson">non-analytic</span> $\Delta T$ distribution due to forbidden region for jumps and larger $T_s$ statistically!</p>
-								<p>Thermal distribution has analytic $\Delta T$ distribution, and small variances ($a$) are similar to uniform.</p>
-							</div>
-						</div>
-					</section>
-
-					<section>
-						<img src="figures/ClassicalSupport2D.png" alt="2d Support">
-					</section>
-
-					<section>
-						<h3>Chain of polygons</h3>
-						<div class="row">
-							<div class="column forty" style="text-align: left;">
-								<img class="fragment current-visible" data-fragment-index="1" style="position:absolute; margin-left: 5px; margin-right: 400px; left: 0; right: 0; width: 38%" src="figures/Polygons-1.png" alt="Polygons-1">
-								<img class="fragment" data-fragment-index="3" style="position:absolute; margin-left: 5px; margin-right: 400px; left: 0; right: 0; width: 38%" src="figures/Polygons-2.png" alt="Polygons-2">
-								<p class="fragment" data-fragment-index="1" style="padding-top: 100px">$L_{uc}$: Number of unit cells.</p>
-								<p class="fragment" data-fragment-index="1">$S_{uc}$: Size of unit cell.</p>
-								<p class="fragment" data-fragment-index="3" style="color: rgb(28,108,171)">Open boundary conditions and particle starts at edge.</p>
-								<p class="fragment" data-fragment-index="3" style="color: rgb(255,155,1)">Decision making at the vertex.</p>
-								<p class="fragment" data-fragment-index="4" style="font-size: 25px; color: mediumpurple">Q: Can the particle close and repeat the same trajectory?</p>
-								<p class="fragment" data-fragment-index="5" style="font-size: 25px; color:cadetblue">A: Close trajectory in $\tilde{N}_s$ unit cells!</p>
-							</div>
-							<div class="column sixty">
-								<p class="fragment" data-fragment-index="7" style="color:cornflowerblue;font-size: 25px">Prediction: $p(\tilde{N}_s+1)\!=\!\frac{1}{2}p(\tilde{N}_s)$?!</p>
-								<p class="fragment" data-fragment-index="8">$P(\tilde{N})=\int_{\tilde{N}}^{\tilde{N}^{max}_s} p(\tilde{N}_s) d\tilde{N}_s$</p>
-								<img class="fragment" data-fragment-index="8" width="95%" src="figures/Polygons-Data.png" alt="Polygon Data">
-								<p class="fragment" data-fragment-index="8" style="font-size: 25px; color:crimson">$P(\tilde{N})\sim e^{-\tilde{N}\ln2}$</p>
-							</div>
-						</div>
-					</section>
-				</section>
-
-				<section>
-					<section>
-						<h3>Semiclassical with different initial conditions</h3>
-						<img src="figures/SemiSupportChain.png" height="400px" alt="Semi Chain">
-					</section>
-
-					<section>
-						<h3>Semiclassical with different initial conditions</h3>
-						<img src="figures/SemiSupport2D.png" height="400px" alt="Semi 2D">
-					</section>
-				</section>
-<!-- End of slides -->
-			</div>
-		</div>
-
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
-
-		<script>
-			// More info https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				controls: true,
-				progress: true,
-				history: true,
-				center: false,
-				width: 960,// 16:9 aspect ratio
-				height: 540,
-
-				transition: 'slide', // none/fade/slide/convex/concave/zoom
-
-				math: {
-					mathjax: 'MathJax/MathJax.js',// Local MathJax
-					// mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
-					// config: 'TeX-AMS_HTML-full'  // See MathJax/config or http://docs.mathjax.org/en/latest/config-files.html
-					config: 'TeX-AMS_SVG-full'// This solve the problem of the large font-size of MathJax.
-				},
-
-				// More info https://github.com/hakimel/reveal.js#dependencies
-				dependencies: [
-					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					// { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					// { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-					// { src: 'plugin/search/search.js', async: true },
-					// { src: 'plugin/zoom-js/zoom.js', async: true },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/math/math.js', async: true }
-				]
-			});
-		</script>
-
-	</body>
+  </body>
 </html>

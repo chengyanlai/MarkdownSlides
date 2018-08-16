@@ -4,9 +4,9 @@
   <head>
     <meta charset="utf-8">
     <!-- Need to change -->
-    <title>KIT - South</title>
+    <title>Quantum Memory Effect</title>
 
-    <meta name="description" content="KIT">
+    <meta name="description" content="QME">
     <!-- Need to change -->
     <meta name="author" content="Chen-Yen Lai">
 
@@ -40,41 +40,38 @@
     <![endif]-->
   </head>
 
-  <body onload="date_location('KIT - Campus Süd')">
+  <body onload="date_location('IAMS')">
 
     <div class="reveal">
 
       <!-- Any section element inside of this container is displayed as a slide -->
       <div class="slides">
         <section>
-          <h1 style="font-size: 1.3em">Quantum memory effects in ultracold quantum gases</h1>
-          <div class="rc-70-25">
-            <img src="figures/MiscFigs/TunnelView.jpg"  style="border:1px solid black" width="300px">
-            <img src="figures/MiscFigs/ShermanTree.jpg"  style="border:1px solid black" width="180px">
-          </div>
-          <div class="lc-70-25">
-            <h3 style="font-size: 1.2em">Chen-Yen Lai</h3>
-            <h4 style="font-size: 1.1em">University of California, Merced</h4>
-          </div>
+          <h1 style="font-size: 1.3em">Quantify quantum memory effects in cold atom systems</h1>
+          <h3 style="font-size: 1.2em">Chen-Yen Lai</h3>
+          <h4 style="font-size: 1.1em;padding-top: 50px">T-4 & CINT, Los Alamos National Laboratory</h4>
           <h6 style="font-size: 0.8em" id="date-location"></h6>
-          <img src="figures/MiscFigs/ucmerced.png"  style="border:1px solid black" width="600px">
+          <img src="figures/logos/DOE.png" style="border:0px;box-shadow: 0 0 0;padding-top: 30px" height="120px">
+          <img src="figures/logos/LANL.png" style="border:0px;box-shadow: 0 0 0" height="120px">
+          <img src="figures/logos/CINT.gif" style="border:0px;box-shadow: 0 0 0" height="120px">
         </section>
 
         <section>
           <h2>Outline</h2>
           <ul>
-            <li style="padding-top: 1em">Introduction to cold atoms and memory effects.</li>
-            <li style="padding-top: 1em">Memory effects in non-interacting systems.<br>
-            <span style="color: brown"> Lattice transformation</span></li>
-            <li style="padding-top: 1em">Memory effects in interacting systems.<br>
-            <span style="color: brown"> Interaction driven transport</span></li>
+            <li style="padding-top: 1em">Introductions and Myth</li>
+            <li style="padding-top: 1em">Persistent current: relaxation</li>
+            <li style="padding-top: 1em">Lattice transformation: flat band</li>
+            <!-- <span style="color: brown"> Lattice transformation and persistent current</span></li> -->
+            <li style="padding-top: 1em">Quantum transport: interaction</li>
+            <!-- <span style="color: brown"> Interaction driven transport</span></li> -->
             <li style="padding-top: 1em">Summary</li>
           </ul>
         </section>
 
-        <!-- Introduction -->
-        <section>
-          <section>
+        <!-- Cold Atom Introduction -->
+        <!-- <section> -->
+          <!-- <section>
             <h3>Ultra-Cold Atoms: Introduction - BEC</h3>
             <div class="lc-45-45" style="height: 500px">
               <figure>
@@ -178,7 +175,7 @@
               p-wave is not fully developed yet.
             </aside>
           </section>
-        </section>
+        </section> -->
 
         <section>
           <section>
@@ -203,23 +200,25 @@
           </section>
 
           <section>
-            <h2>Memory effects in Cold Atoms</h2>
-            <div class="lc-45-45">
-              <figure class="fragment">
-                <img src="figures/CopyFigs/StirBECRing1.png" alt="StirBECRing1" width="400px">
-                <img src="figures/CopyFigs/StirBECRing2.png" alt="StirBECRing2" width="400px">
-                <figcaption style="font-size: 0.8em;padding-top: -5.em">The atomic BEC resist the stiring<br>
-                  <span style="font-size: 0.4em">Stephen Eckel et al., Nature <b>506</b>, 200 (2014)</span>
-                </figcaption>
-              </figure>
+            <h2>Memory effects in Cold Atom Exp.</h2>
+            <div class="row" style="padding-top: 30px;height: 380px">
+              <div class="column half">
+                <img src="figures/CopyFigs/StirBECRing1.png" alt="StirBECRing1" height="350px">
+                <p>The atomic BEC resist the stiring</p>
+              </div>
+              <div class="column half">
+                <img src="figures/CopyFigs/StirBECRing2.png" alt="StirBECRing2" height="350px">
+                <ref>Stephen Eckel et al., Nature <b>506</b>, 200 (2014)</ref>
+              </div>
             </div>
-            <div class="rc-45-45">
+            <div class="fragment" style="color:chocolate">Hysteresis loop of winding number!!</div>
+            <!-- <div class="rc-45-45">
               <figure class="fragment">
                 <img src="figures/CopyFigs/PersistantCurrent.png" alt="PersistantCurrent" height="400px">
                 <figcaption style="font-size: 0.8em;padding-top: -5.em">Hysterisis in non-interacting ultracold fermions<br>
                 <span style="font-size: 0.4em">M. Metcalf, <span style="color: red">C.-Y. Lai</span>, and C.-C. Chien, Phys. Rev. A <b>93</b>, 053617 (2016)</span>
               </figure>
-            </div>
+            </div> -->
             <aside class="notes">
               JQI group, n is winding number start from 0. diff. panels for diff. strength of weak link.
 
@@ -228,23 +227,25 @@
           </section>
 
           <section>
-            <h2>Why not electronics?</h2>
+            <h2>Advantage in cold atom systems</h2>
             <ol>
               <li>
-                <p style="color:blueviolet">Strong relaxation</p>
+                <p style="color:blueviolet; font-size: 30pt">Isolated</p>
                 <p>$\frac{\partial f}{\partial t}=-\frac{f-f_{eq}}{\tau}$</p>
-                <p style="color:darkorange">Isolated in most cold atom systems.</p>
+                <p style="color:darkorange">Most materials have strong relaxation</p>
               </li>
               <li>
-                <p style="color:blueviolet">Time scale</p>
+                <p style="color:blueviolet; font-size: 30pt">Ultra-fast</p>
                 <p>Electric single (tunneling timescale $\sim10^{-15}s$) measured by electric probe.</p>
                 <p style="color:darkorange">Tunneling timescale $\sim10^{-3}s$ measured by optical probe.</p>
               </li>
             </ol>
           </section>
+        </section>
 
-          <section>
-            <h2 style="font-size: 1.1em">Memory effects in non-interacting systems</h2>
+        <!-- <section> -->
+          <!-- <section>
+            <h2 style="font-size: 1.1em">What quantity reveals memory effect?</h2>
             <div class="fragment" style="height: 270px">
               <h6>Steady state current exhibit no memory effects</h6>
               <figure class="lc-45-45">
@@ -266,61 +267,79 @@
               interation (mean field), gauge field, chemical potential.
             </aside>
           </section>
+        </section> -->
+
+        <section>
+          <section>
+            <h1 style="font-size: 50px; padding-top:200px">Memory effect from relaxation</h1>
+          </section>
         </section>
 
         <section>
           <section>
-            <h2>How about flat band?</h2>
-            <div class="fragment lc-45-45">
-              <h4>Transport</h4>
-              <p style="font-size: 0.4em">H. D. Cornean et. al., Ann. Henri Poincaré <b>15</b>, 1919 (2014).</p>
-              <p>Voltage: $0\xrightarrow{t_r}V$.</p>
-              <p>Current: $0\rightarrow I$</p>
-              <p>      is independent from $t_r$.</p>
-              <p style="color:rgb(241, 64, 105)">The effect of $t_r$ appears on filling of bound state.</p>
-              <!--<p>Challenging task in solid state experiment.</p>-->
+            <h1 style="font-size: 50px; padding-top:200px">Memory effect from flat band effect</h1>
+          </section>
+
+          <section>
+            <h2>Lattice transformation</h2>
+            <div class="row" style="padding-top: 50px">
+              <div class="fragment column half">
+                <h4>Transport</h4>
+                <p style="font-size: 0.4em">H. D. Cornean et. al., Ann. Henri Poincaré <b>15</b>, 1919 (2014).</p>
+                <p>Voltage: $0\xrightarrow{t_r}V$.</p>
+                <p>Current: $0\rightarrow I$</p>
+                <p>      is <span style="color:sienna">independent</span> of $t_r$.</p>
+                <p style="color:rgb(241, 64, 105)">The effect of $t_r$ appears on filling of bound state.</p>
+              </div>
+              <div class="fragment column half">
+                <h4>Geometry Transformation</h4>
+                <p>Ramping: Tri. $\xrightarrow{t_r}$ Kagome</p>
+                <p style="color:sienna">Observable?</p>
+                <p style="color:sienna">Existence of steady state?</p>
+                <p style="color:sienna">The effect of $t_r$ appears on filling of flat-band?</p>
+                <p>Experimental accessible in cold-atom technique!</p>
+              </div>
             </div>
-            <div class="fragment rc-45-45">
-              <h4>Geometry Transformation</h4>
-              <p>Ramping: Tri. $\xrightarrow{t_r}$ Kagome</p>
-              <p>Existence of steady state?</p>
-              <p style="color:rgb(241, 64, 105)">The effect of $t_r$ appears on filling of flat-band?</p>
-              <p>Experimental accessible in cold-atom technique!</p>
-            </div>
+            <p class="fragment" style="color:orangered;padding-top: 50px;font-size: 40px">Can flat band act like a bound state in dynamics?</p>
           </section>
 
           <section>
             <h2>Geometry Transformation</h2>
-            <h4>Triangular $\Rightarrow$ Kagome</h4>
-            <img src="figures/CopyFigs/ExpKagome.png" alt="ExpKagome" />
-            <!--<p>4-site unit cell.</p>-->
-            <p style="font-size: 0.6em">Gyu-Boong Jo et al., Phys. Rev. Lett. <b>108</b>, 045305 (2012)</p>
+            <div class="row">
+              <div class="column half">
+                <h4>Triangular $\Rightarrow$ Kagome</h4>
+                <img src="figures/CopyFigs/ExpKagome.png" alt="ExpKagome" />
+                <p style="font-size: 0.4em">Gyu-Boong Jo et al., Phys. Rev. Lett. <b>108</b>, 045305 (2012)</p>
+              </div>
+              <div class="column half">
+                <h4>Triangular $\Rightarrow$ Square</h4>
+                <img src="figures/CopyFigs/ExpSquare.png" alt="ExpSquare" height="350px"/>
+                <p>The same wavelength and shift focus point.</p>
+                <p style="font-size: 0.4em">Leticia Tarruell et al., Nature (London) <b>483</b>, 302 (2012)</p>
+              </div>
+            </div>
           </section>
 
-          <section>
-            <h4>Triangular $\Rightarrow$ Square</h4>
-            <img src="figures/CopyFigs/ExpSquare.png" alt="ExpSquare" height="450px"/>
-            <p>The same wavelength and shift focus point.</p>
-            <p style="font-size: 0.4em">Leticia Tarruell et al., Nature (London) <b>483</b>, 302 (2012)</p>
-          </section>
-          </section>
         </section>
 
         <section>
           <section>
-            <h3>Flat-band v.s. Dispersive band</h3>
-            <figure>
-              <img src="figures/RSpaceFigs/Potential.png" alt="Potential" width="750px"/>
-            </figure>
-            <div class="lc-30-60">
-              <figure>
-                <img src="figures/DataFigs/ramp.png" alt="ramp">
-              </figure>
-            </div>
-            <div class="rc-30-60">
-              <p style="text-align: center;font-size: 0.9em">Triangular $\overset{t_r}{\Rightarrow}$ Kagome (w/ flat-band)</p>
-              <p style="text-align: center;font-size: 0.7em">v.s.</p>
-              <p style="text-align: center;font-size: 0.9em">Triangular $\overset{t_r}{\Rightarrow}$ Square (dispersive)</p>
+            <h2>Observable - Density</h2>
+            <div class="row" style="height: 0px">
+              <div class="column threequarter">
+                <figure>
+                  <img src="figures/RSpaceFigs/Potential.png" alt="Potential" height="200px"/>
+                </figure>
+            <p style="text-align: center;font-size: 0.7em">Triangular $\overset{t_r}{\Rightarrow}$ Kagome (w/ flat-band)</p>
+            <p style="text-align: center;font-size: 0.7em">v.s.</p>
+            <p style="text-align: center;font-size: 0.7em">Triangular $\overset{t_r}{\Rightarrow}$ Square (dispersive)</p>
+              </div>
+              <div class="fragment column quarter">
+                <figure>
+                  <img src="figures/DataFigs/ramp.png" alt="ramp" height="300px">
+                </figure>
+                <p style="font-size: 35px;color: sienna">Does density distribution depend on $t_r$?</p>
+              </div>
             </div>
 
             <aside class="notes">
@@ -329,25 +348,26 @@
           </section>
 
           <section>
-              <h4>Approaches</h4>
-              <div class="rc-45-45">
-                <h6>Infinite system</h6>
-                <p style="text-align: center;font-size: 0.7em">Thermodynamic limit.</p>
-                <p style="text-align: center;font-size: 0.7em">Fillings of each band.</p>
-                <p style="text-align: center;font-size: 0.7em">Band theory for different $T$.</p>
-              </div>
-              <div class="lc-45-45">
+            <h2>Approaches</h2>
+            <div class="row">
+              <div class="fragment column half">
                 <h6>Finite system</h6>
                 <p style="text-align: center;font-size: 0.7em">Cold atom system.</p>
                 <p style="text-align: center;font-size: 0.7em">No information on bands.</p>
                 <p style="text-align: center;font-size: 0.7em">Schödinger eq. @ $T=0$.</p>
+                <p style="text-align: center;font-size: 0.7em;padding-top:20px; color: sienna">Filling at each sublattice.</p>
+                <figure class="">
+                  <img src="figures/RSpaceFigs/Contour.png" alt="Contour" width="450px"/>
+                </figure>
               </div>
-            <figure class="fragment">
-              <img src="figures/RSpaceFigs/Contour.png" alt="Contour" width="750px"/>
-              <figcaption style="font-size: 0.8em">
-                Average particle density in each sub-lattice.
-              </figcaption>
-            </figure>
+              <div class="fragment column half">
+                <h6>Infinite system</h6>
+                <p style="text-align: center;font-size: 0.7em">Thermodynamic limit.</p>
+                <p style="text-align: center;font-size: 0.7em">Fillings of each band.</p>
+                <p style="text-align: center;font-size: 0.7em">Band theory for different $T$.</p>
+                <!-- <p style="text-align: center;font-size: 0.7em;padding-top:20px; color: sienna">Filling at each band.</p> -->
+              </div>
+            </div>
 
             <aside class="notes">
               Band theory tells from the filling of flat band.
@@ -357,17 +377,19 @@
 
           <section>
             <h2>Emergence of steady state</h2>
-            <div class="rc-45-45" style="height: 450px">
-              <h4>Band theory</h4>
-              <figure>
-                <img src="figures/KSpaceFigs/KBand3.png" alt="KBandFermion" height="350px">
-              </figure>
-            </div>
-            <div class="lc-45-45" style="height: 450px">
-              <h4>Real space</h4>
-              <figure>
-                <img src="figures/RSpaceFigs/AveNd.png" alt="AveNd" height="350px">
-              </figure>
+            <div class="row">
+              <div class="column half" style="height: 370px">
+                <h4>Band theory</h4>
+                <figure>
+                  <img src="figures/KSpaceFigs/KBand3.png" alt="KBandFermion" height="300px">
+                </figure>
+              </div>
+              <div class="column half" style="height: 370px">
+                <h4>Real space</h4>
+                <figure>
+                  <img src="figures/RSpaceFigs/AveNd.png" alt="AveNd" height="300px">
+                </figure>
+              </div>
             </div>
             <div class="fragment" style="font-size: 0.9em">
               <span style="color: rgb(241, 64, 105);font-size: 0.7em">Non-interacting fermions enter a steady state in isolated quantum system.</span><br>
@@ -383,22 +405,13 @@
 
         <section>
           <section>
-            <h3>No memory effects for BEC</h3>
+            <h2>No memory effects for BEC</h2>
             <figure>
               <img src="figures/DataFigs/GPAll.png", alt="GPAll" width="800px">
             </figure>
-            <div style="font-size: 0.9em;text-align: left">
+            <div style="font-size: 0.7em;text-align: left">
               Flat band appears in higher energy, but BEC populates lower energy state.
             </div>
-            <!--<div class="lc-45-45">
-              <figure>
-                <img src="figures/KSpaceFigs/KTempBoson.png" alt="KTempBoson" width="300px"/>
-              </figure>
-            </div>
-            <div class="rc-45-45" style="font-size: 0.9em;text-align: left">
-              Boson with finite temperature has small effect.<br>
-              Very difficult to measure in exp.
-            </div>-->
 
             <aside class="notes">
               GPE U=25.0 20 grid points.
@@ -407,29 +420,27 @@
           </section>
 
           <section>
-            <h3>Temperature effect</h3>
-            <div class="lc-45-45" style="height: 450px">
-              <h4>Fermion</h4>
-              <figure>
-                <img src="figures/KSpaceFigs/KTempFermion.png" alt="KTempFermion" height="350px"/>
-              </figure>
+            <h2>Temperature effect</h2>
+            <div class="row">
+              <div class="column half" style="height: 350px">
+                <figure>
+                  <img src="figures/KSpaceFigs/KTempFermion.png" alt="KTempFermion" height="320px"/>
+                </figure>
+              </div>
+              <div class="column half">
+                <figure>
+                  <img src="figures/KSpaceFigs/KTempBoson.png" alt="KTempBoson" height="320px"/>
+                </figure>
+              </div>
             </div>
-            <div class="rc-45-45" style="height: 450px">
-              <h4>Boson</h4>
-              <figure>
-                <img src="figures/KSpaceFigs/KTempBoson.png" alt="KTempBoson" height="350px"/>
-              </figure>
-            </div>
-            <div class="" style="font-size: 0.9em">
-              <span style="color: rgb(151, 54, 55)">Temperature washes out memory effects of fermions.</span><br>
-              <span style="color: rgb(2, 2, 2)">Memory effects vanish at high temperature in both statists - classical distribution.</span>
-            </div>
+              <p style="font-size: 0.7em;color: rgb(151, 54, 55)">Temperature washes out memory effects of fermions.</p>
+              <p style="font-size: 0.7em;padding-top: 5px;color: rgb(2, 2, 2)">Memory effects vanish at high temperature in both statists.</p>
           </section>
 
           <section>
-            <h4>Filling Dependencies</h4>
+            <h2>Filling Dependencies</h2>
             <img src="figures/KSpaceFigs/KFilling.png" alt="KFilling" />
-            <ul>
+            <ul style="font-size: 25px">
               <li>Fermionic system: optimal filling around $3/4$ at zero temperature</li>
               <li>Bosonic system: Not scale up as filling increases at intermediate temperature</li>
             </ul>
@@ -439,17 +450,11 @@
           </aside>
         </section>
 
-        <section>
-          <section>
-            <h3>Applications - Accelerometer</h3>
-            <img src="figures/DataFigs/Accel.png" alt="accelerometer" height="450px"/>
-            <h6>Probing acceleration and recording the rate.<br>(Suitable for ~ms time scale.)</h6>
-          </section>
-        </section>
+
 
         <section>
           <section>
-            <h2>Memory effects in interacting system.</h2>
+            <h1 style="font-size: 50px; padding-top:200px">Memory effect from interaction effect</h1>
           </section>
 
           <section>
@@ -463,7 +468,7 @@
               </figure>
             </div>
             <div class="fragment rc-45-45" style="height: 400px">
-              <ul style="font-size: 0.9em">
+              <ul style="font-size: 0.7em">
                 <li>Begins with uniform potential and interaction.
                   $\begin{cases}
                   \text{Fermion  }U(i)n_{\uparrow,i}n_{\downarrow,i} \\
@@ -590,9 +595,18 @@
 
         <!-- Spare slides -->
         <section>
-          <h3>Quantum memory effect atomic memory</h3>
-          <img src="figures/DataFigs/QMEAMSmall.png" alt="qmean" height="500px"/>
-          <p style="font-size: 0.4em">Y. S. Patil et. al., Phys. Rev. A <b>90</b>, 033422 (2014). S. T. Wang et al., Phys. Rev. Lett. <b>113</b>, 033002 (2014).</p>
+
+          <section>
+            <h3>Applications - Accelerometer</h3>
+            <img src="figures/DataFigs/Accel.png" alt="accelerometer" height="450px"/>
+            <h6>Probing acceleration and recording the rate.<br>(Suitable for ~ms time scale.)</h6>
+          </section>
+
+          <section>
+            <h3>Quantum memory effect atomic memory</h3>
+            <img src="figures/DataFigs/QMEAMSmall.png" alt="qmean" height="500px"/>
+            <p style="font-size: 0.4em">Y. S. Patil et. al., Phys. Rev. A <b>90</b>, 033422 (2014). S. T. Wang et al., Phys. Rev. Lett. <b>113</b>, 033002 (2014).</p>
+          </section>
         </section>
 
         <section>
@@ -685,47 +699,40 @@
     -->
     <script src="lib/js/head.min.js"></script>
     <script src="js/reveal.js"></script>
-    <script src="MathJax/MathJax.js?config=TeX-AMS_HTML&delayStartupUntil=configured" type="text/javascript"></script>
-    <script>
-      // Full list of configuration options available at:
-      // https://github.com/hakimel/reveal.js#configuration
-      Reveal.initialize({
-        controls: true,
-        progress: true,
-        history: true,
-        center: true,
+    <!-- <script src="MathJax/MathJax.js?config=TeX-AMS_HTML&delayStartupUntil=configured" type="text/javascript"></script> -->
 
-        transition: 'fade', // none/fade/slide/convex/concave/zoom
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: false,
+				width: 960,// 16:9 aspect ratio
+				height: 540,
 
-        // Optional reveal.js plugins
-        dependencies: [
-          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-          { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-          { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-          { src: 'plugin/zoom-js/zoom.js', async: true },
-          { src: 'plugin/notes/notes.js', async: true }
-        ]
-      });
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
 
+				math: {
+					mathjax: 'MathJax/MathJax.js',// Local MathJax
+					// mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+					// config: 'TeX-AMS_HTML-full'  // See MathJax/config or http://docs.mathjax.org/en/latest/config-files.html
+					config: 'TeX-AMS_SVG-full'// This solve the problem of the large font-size of MathJax.
+				},
 
-      // Setup MathJax
-      MathJax.Hub.Config({
-          tex2jax: {
-            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-            displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
-            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
-            processEscapes: true
-          }
-      });
-      MathJax.Hub.Queue(function() {
-          $(MathJax.Hub.getAllJax()).map(function(index, elem) {
-              return(elem.SourceElement());
-          }).parent().addClass('has-jax');
-      });
-
-      MathJax.Hub.Configured();
-    </script>
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					// { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					// { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					// { src: 'plugin/search/search.js', async: true },
+					// { src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/math/math.js', async: true }
+				]
+			});
+		</script>
 
   </body>
 </html>

@@ -40,7 +40,7 @@
     <![endif]-->
   </head>
 
-  <body onload="date_location('IAMS')">
+  <body onload="date_location('APS Four Corners Section')">
 
     <div class="reveal">
 
@@ -51,21 +51,19 @@
           <h3 style="font-size: 1.2em">Chen-Yen Lai</h3>
           <h4 style="font-size: 1.1em;padding-top: 50px">T-4 & CINT, Los Alamos National Laboratory</h4>
           <h6 style="font-size: 0.8em" id="date-location"></h6>
-          <img src="figures/logos/DOE.png" style="border:0px;box-shadow: 0 0 0;padding-top: 30px" height="120px">
-          <img src="figures/logos/LANL.png" style="border:0px;box-shadow: 0 0 0" height="120px">
+          <img src="figures/logos/DOE.png" style="border:0px;box-shadow: 0 0 0;padding-right: 40px" height="90px">
+          <img src="figures/logos/LANL.png" style="border:0px;box-shadow: 0 0 0;padding-right: 40px" height="120px">
           <img src="figures/logos/CINT.gif" style="border:0px;box-shadow: 0 0 0" height="120px">
         </section>
 
         <section>
           <h2>Outline</h2>
           <ul>
-            <li style="padding-top: 1em">Introductions and Myth</li>
-            <li style="padding-top: 1em">Persistent current: relaxation</li>
-            <li style="padding-top: 1em">Lattice transformation: flat band</li>
-            <!-- <span style="color: brown"> Lattice transformation and persistent current</span></li> -->
-            <li style="padding-top: 1em">Quantum transport: interaction</li>
-            <!-- <span style="color: brown"> Interaction driven transport</span></li> -->
-            <li style="padding-top: 1em">Summary</li>
+            <li style="padding-top: 0.5em">Introductions and Motivation</li>
+            <li style="padding-top: 0.5em">Persistent current: Relaxation</li>
+            <li style="padding-top: 0.5em">Lattice transformation: Flat band</li>
+            <li style="padding-top: 0.5em">Quantum transport: Interaction</li>
+            <li style="padding-top: 0.5em">Summary</li>
           </ul>
         </section>
 
@@ -232,12 +230,16 @@
               <li>
                 <p style="color:blueviolet; font-size: 30pt">Isolated</p>
                 <p>$\frac{\partial f}{\partial t}=-\frac{f-f_{eq}}{\tau}$</p>
-                <p style="color:darkorange">Most materials have strong relaxation</p>
+                <p style="color:black">Most materials have strong relaxation</p>
               </li>
               <li>
                 <p style="color:blueviolet; font-size: 30pt">Ultra-fast</p>
                 <p>Electric single (tunneling timescale $\sim10^{-15}s$) measured by electric probe.</p>
                 <p style="color:darkorange">Tunneling timescale $\sim10^{-3}s$ measured by optical probe.</p>
+              </li>
+              <li>
+                <p style="color:blueviolet; font-size: 30pt">Versatility</p>
+                <!-- <p style="color:darkorange">.</p> -->
               </li>
             </ol>
           </section>
@@ -273,6 +275,19 @@
           <section>
             <h1 style="font-size: 50px; padding-top:200px">Memory effect from relaxation</h1>
           </section>
+
+          <section>
+            <h2>Two-Level Paramagnet</h2>
+            <div class="row" style="padding-top: 20px">
+              <div class="column threequarter">
+                <img class="fragment" data-fragment-index=1 src="figures/PSFigs/2Lv-1.png" alt="2levelseqm" width="250px" />
+                <img class="fragment" src="figures/PSFigs/2Lv-1.png" alt="2levelseqm" width="250px" />
+              </div>
+              <div class="column quarter">
+                <img class="fragment" src="figures/PSFigs/2LvT.png" alt="2levelstau" height=650px />
+              </div>
+            </div>
+          </section>
         </section>
 
         <section>
@@ -281,7 +296,7 @@
           </section>
 
           <section>
-            <h2>Lattice transformation</h2>
+            <h2>Lattice transformation: Why?</h2>
             <div class="row" style="padding-top: 50px">
               <div class="fragment column half">
                 <h4>Transport</h4>
@@ -584,13 +599,13 @@
           </ul>
           <h4 style="font-size:0.9em;padding-top: 0.1em">Acknowledgments</h4>
           <p style="font-size:0.4em">
-            Collaborate with Chih-Chun Chien and Mekena Metcalf @ UC Merced.
+            Collaborate with Chih-Chun Chien (UCMerced) and Mekena Metcalf (Sandia NL).
           </p>
           <p style="font-size:0.4em">
             Computational resources from Extreme Science and Engineering Discovery Environment (XSEDE),
             and Merced Cluster.</p>
           <p style="font-size:0.4em">We thank Gia-Wei Chern, Massimiliano Di Ventra, Dan Stamper-Kurn, Michael Zwolak, and YangQuan Chen for useful discussions.</p>
-          <h6 style="font-size: 0.6em">Phys. Rev. Applied <b>5</b>, 034001 (2016)</h6>
+          <h6 style="font-size: 0.6em">Phys. Rev. A <b>93</b>, 053617 (2016);Phys. Rev. Applied <b>5</b>, 034001 (2016);Phys. Rev. A <b>96</b>, 033628 (2017)</h6>
         </section>
 
         <!-- Spare slides -->

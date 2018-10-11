@@ -243,6 +243,10 @@
               </li>
             </ol>
           </section>
+
+          <section>
+            <h2>Myth?</h2>
+          </section>
         </section>
 
         <!-- <section> -->
@@ -274,29 +278,81 @@
         <section>
           <section>
             <h1 style="font-size: 50px; padding-top:200px">Memory effect from relaxation</h1>
+            <h5>Phys. Rev. A <b>93</b>, 053617 (2016)</h5>
           </section>
 
           <section>
             <h2>Two-Level Paramagnet</h2>
-            <div class="row" style="padding-top: 20px">
-              <div class="column threequarter">
-                <img class="fragment" data-fragment-index=1 src="figures/PSFigs/2Lv-1.png" alt="2levelseqm" width="250px" />
-                <img class="fragment" src="figures/PSFigs/2Lv-1.png" alt="2levelseqm" width="250px" />
+            <div class="row" style="padding-top: 10px">
+              <div class="column onethird">
+                <img class="fragment current-visible" data-fragment-index="2" style="position:absolute; margin-left: 5px; margin-right: 400px; left: 40px; right: 0; width: 38%" src="figures/PSFigs/2Lv-1.png" alt="1">
+                <img class="fragment current-visible" data-fragment-index="3" style="position:absolute; margin-left: 5px; margin-right: 400px; left: 40px; right: 0; width: 38%" src="figures/PSFigs/2Lv-2.png" alt="2vs-0">
+                <img class="fragment" data-fragment-index="4" style="position:absolute; margin-left: 5px; margin-right: 400px; left: 50px; right: 0; width: 30%" src="figures/PSFigs/2LvT.png" alt="1">
               </div>
+              <div class="column twothird" style="text-align: left">
+                <p class="fragment" data-fragment-index="2">Equilibrium: $m=-\vec{\mu}\cdot\vec{B}$</p>
+                <p class="fragment" data-fragment-index="3">Dynamics:</p>
+                <p class="fragment" data-fragment-index="3" style="padding-left: 20pt ;font-size: 15pt">$B(t)=B_0\sin(\omega t)$</p>
+                <p class="fragment" data-fragment-index="3">Relaxation:</p>
+                <p class="fragment" data-fragment-index="3" style="padding-left: 20pt ;font-size: 25pt">$\frac{dm(t)}{dt}\!=\!-\frac{m(t)-m_{eqm}(t)}{\tau}$</p>
+                <p class="fragment" data-fragment-index="4" style="color:crimson;font-size: 28pt;padding-top: 20px">Hysteresis: Spin is lag due to relaxation!!</p>
+
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <h2>Persistant Current</h2>
+            <div class="row" style="padding-top: 10px">
               <div class="column quarter">
-                <img class="fragment" src="figures/PSFigs/2LvT.png" alt="2levelstau" height=650px />
+                <img class="fragment current-visible" data-fragment-index="2" style="position:absolute; margin-left: 5px; margin-right: 400px; left: 40px; right: 0; width: 38%" src="figures/PSFigs/PSi.png" alt="1">
+                <img class="fragment" data-fragment-index="3" style="position:absolute; margin-left: 5px; margin-right: 400px; top:130px; left: 40px; right: 0; width: 38%" src="figures/PSFigs/PSRing.png" alt="1">
+                <p class="fragment" data-fragment-index="3">$N_{tot}\!=\!100\quad$  $N_{tot}\!=\!101$</p>
+              </div>
+              <div class="column three quarter" style="text-align: left">
+                <p class="fragment" data-fragment-index="2">Fermi gas in a ring trap. <ref>Phys. Rev. Lett. 95, 063201 (2005)</ref></p>
+                <p class="fragment" data-fragment-index="3">Current from each level:</p>
+                <p class="fragment" data-fragment-index="3" style="padding-left: 90px">$j_n = J_0[n+\color{red}{\phi(t)}]$</p>
+                <p class="fragment" data-fragment-index="3">Total Current: $J = \sum_nf_nj_n$</p>
+                <p class="fragment" data-fragment-index="3" style="padding-left: 90px">$f_n$: Population of level-$n$</p>
+                <p class="fragment" data-fragment-index="3">Relaxation:</p>
+                <p class="fragment" data-fragment-index="3" style="padding-left: 20pt ;font-size: 25pt">$\frac{df_n(t)}{dt}\!=\!-\frac{f_n(t)-f_{n,eqm}(t)}{\tau}$</p>
+                <p class="fragment" data-fragment-index="3" style="padding-left: 90px">$f_{n,eqm}$: Fermi-Dirac</p>
+                <p class="fragment" data-fragment-index="4" style="color:crimson;font-size: 20pt;padding-top: 20px">$\tau\sim10^{-14}$ in metals! <ref>Phys. Rev.
+                    Lett. <b>75</b>, 4702 (1995)</ref></p>
+              </div>
+          </section>
+
+          <section>
+            <div class="row" style="padding-top: 0px">
+              <div class="fragment column half">
+                <h3>Dissipated Energy</h3>
+                <p>$E=\oint Jd\phi$</p>
+                <img  style="width: 70%" src="figures/PSFigs/EDiss.png" alt="1">
+                <p>Small $\tau$: $J$ follows $\phi$</p>
+                <p>Large $\tau$: Memory of initial state</p>
+              </div>
+              <div class="fragment column half">
+                <h3>Temperature</h3>
+                <img  style="width: 70%" src="figures/PSFigs/PST.png" alt="1">
+                <p>Cooled down to $1\%$ of the Fermi energy.</p>
+                <p>Close to current limit of Bose-Fermi mixture. <ref>Phys. Rev. Lett. <b>90</b>, 030404 (2003)</ref></p>
               </div>
             </div>
           </section>
         </section>
 
+
+
+
         <section>
           <section>
             <h1 style="font-size: 50px; padding-top:200px">Memory effect from flat band effect</h1>
+            <h5>Phys. Rev. Applied <b>5</b>, 034001 (2016)</h5>
           </section>
 
           <section>
-            <h2>Lattice transformation: Why?</h2>
+            <h2>Why Flat Band?</h2>
             <div class="row" style="padding-top: 50px">
               <div class="fragment column half">
                 <h4>Transport</h4>
@@ -335,9 +391,6 @@
             </div>
           </section>
 
-        </section>
-
-        <section>
           <section>
             <h2>Observable - Density</h2>
             <div class="row" style="height: 0px">
@@ -416,23 +469,6 @@
               steady state are important to identity memory effect
             </aside>
           </section>
-        </section>
-
-        <section>
-          <section>
-            <h2>No memory effects for BEC</h2>
-            <figure>
-              <img src="figures/DataFigs/GPAll.png", alt="GPAll" width="800px">
-            </figure>
-            <div style="font-size: 0.7em;text-align: left">
-              Flat band appears in higher energy, but BEC populates lower energy state.
-            </div>
-
-            <aside class="notes">
-              GPE U=25.0 20 grid points.
-              All in GS not filled up to flat band.
-            </aside>
-          </section>
 
           <section>
             <h2>Temperature effect</h2>
@@ -451,18 +487,6 @@
               <p style="font-size: 0.7em;color: rgb(151, 54, 55)">Temperature washes out memory effects of fermions.</p>
               <p style="font-size: 0.7em;padding-top: 5px;color: rgb(2, 2, 2)">Memory effects vanish at high temperature in both statists.</p>
           </section>
-
-          <section>
-            <h2>Filling Dependencies</h2>
-            <img src="figures/KSpaceFigs/KFilling.png" alt="KFilling" />
-            <ul style="font-size: 25px">
-              <li>Fermionic system: optimal filling around $3/4$ at zero temperature</li>
-              <li>Bosonic system: Not scale up as filling increases at intermediate temperature</li>
-            </ul>
-          </section>
-          <aside class="notes">
-            the memory effects depends on the filling of flat  band the filling of nearby bands
-          </aside>
         </section>
 
 
@@ -470,62 +494,72 @@
         <section>
           <section>
             <h1 style="font-size: 50px; padding-top:200px">Memory effect from interaction effect</h1>
+            <h5>Phys. Rev. A <b>96</b>, 033628 (2017)</h5>
           </section>
 
           <section>
-            <h3>Fermi/Bose Hubbard model in 1D</h3>
+            <h2>Fermi/Bose Hubbard model in 1D</h2>
             <div style="font-size: 0.9em">
               $\mathcal{H}=-J\sum_{\langle ij\rangle}(b^\dagger_ib_j+h.c.)+\mathcal{H}_{int}$
             </div>
-            <div class="fragment lc-45-45" style="height: 400px">
-              <figure>
-                <img src="figures/HalfUFigs/illuGen.png" alt="HalfUSketch" width="500px">
-              </figure>
+            <div class="row" style="height: 0px">
+              <div class="column half">
+                <figure>
+                  <img src="figures/HalfUFigs/illuGen.png" alt="HalfUSketch" width="500px">
+                </figure>
+              </div>
+              <div class="column half">
+                <ul style="font-size: 0.7em;padding-top: 20px">
+                  <li>Begins with uniform potential and interaction.
+                    $\begin{cases}
+                    \text{Fermion  }U(i)n_{\uparrow,i}n_{\downarrow,i} \\
+                    \text{Boson  }\frac{U(i)}{2}n_{i}(n_{i}-1)
+                    \end{cases}$
+                  </li>
+                  <li>Change $U(i)$ to monitor dynamics.</li>
+                  <li>Different initial state and switching scheme.</li>
+                </ul>
+              </div>
             </div>
-            <div class="fragment rc-45-45" style="height: 400px">
-              <ul style="font-size: 0.7em">
-                <li>Begins with uniform potential and interaction.
-                  $\begin{cases}
-                  \text{Fermion  }U(i)n_{\uparrow,i}n_{\downarrow,i} \\
-                  \text{Boson  }\frac{U(i)}{2}n_{i}(n_{i}-1)
-                  \end{cases}$
-                </li>
-                <li>Change $U(i)$ to monitor dynamics.</li>
-                <li>Different initial state and switching scheme.</li>
-              </ul>
-            </div>
-            <div class="fragment" style="color:blue">
+            <!-- <div class="fragment" style="color:blue">
               tDMRG simulation on $L=60$ lattice sites with $\chi\sim1000$ and truncation error $\sim10^{-7}$.
-            </div>
+            </div> -->
           </section>
 
           <section>
-            <h3>Quasi-Steady State Current (QSSC)</h3>
+            <h2>Quasi-Steady State Current (QSSC)</h2>
             <figure>
               <img src="figures/HalfUFigs/QSSC.png" alt="FMemTime" width="850px">
               <figcaption style="font-size: 0.6em">BHM with $\bar{n}_B=1$ and $U=J$, $\Delta U=J$.</figcaption>
             </figure>
-            <ul>
+            <ul style="font-size: 28px">
               <li>QSSC is important to identify memory effects.</li>
               <li>QSSC depends on the density profile.</li>
               <li>No QSSC for non-interacting bosons.</li>
             </ul>
           </section>
-        </section>
 
-        <section>
           <section>
             <h2>Memory effects of initial states</h2>
-            <figure class="fragment">
-              <img src="figures/HalfUFigs/illuMemInit.png" alt="illuMemInit" width="400px">
-            </figure>
-            <div class="fragment" style="font-size: 0.85em">
-              $\begin{cases}
-              \rvert G^s\rangle\text{ of }U^{small}\overset{\Delta U\text{ on left}}{\longrightarrow}\rvert G^s(t)\rangle \\
-              \rvert G^l\rangle\text{ of }U^{large}\overset{-\Delta U\text{ on right}}{\longrightarrow}\rvert G^l(t)\rangle
-              \end{cases}$ for the same $(U_L,U_R)$.
+            <div class="row" style="padding-top: 10px">
+              <div class="column half">
+                <figure class="fragment">
+                  <img src="figures/HalfUFigs/illuMemInit.png" alt="illuMemInit" width="400px">
+                </figure>
+              </div>
+              <div class="column half">
+                <div class="fragment" style="font-size: 0.85em">
+                  $\begin{cases}
+                  \rvert G^s\rangle\text{ of }U^{small} \\
+                  \qquad\overset{\color{green}{\Delta U\text{ on left}}}{\longrightarrow}\rvert G^s(t)\rangle \\
+                  \rvert G^l\rangle\text{ of }U^{large} \\
+                  \qquad\overset{\color{orange}{-\Delta U\text{ on right}}}{\longrightarrow}\rvert G^l(t)\rangle
+                  \end{cases}$
+                </div>
+                <p class="fragment" style="color:darkcyan">To reach the same $(U_L,U_R)$.</p>
+              </div>
             </div>
-            <div class="fragment" style="color: brown;padding-top: 0.3em">Different QSSC $\Rightarrow$ Memory of initial state.</div>
+            <div class="fragment" style="color: brown;padding-top: 40px">Different QSSC $\Rightarrow$ Memory of initial state.</div>
           </section>
 
           <section>
@@ -536,45 +570,39 @@
             <ul style="font-size: 0.8em">
               <li>Distinct ground states for large $\Delta U$.</li>
               <li>Half-filling has strongest effects, but turns to non-conducting .</li>
+              <li>Similar finding for boson. It's Generic!!</li>
             </ul>
-            <figure class="lc-70-25">
-              <img src="figures/HalfUFigs/BMemInit.png" alt="FMemInit" width="450px">
-            </figure>
-            <div class="rc-70-25">
-              <h3>Boson</h3>
-              <p style="font-size: 0.7em">
-                $\bar{n}_B=\frac{1}{2}$. Similar to Fermion. Generic effects!
-              </p>
-            </div>
           </section>
-        </section>
 
-        <section>
           <section>
             <h2>Memory effects of switching schemes</h2>
-            <figure class="fragment">
-              <img src="figures/HalfUFigs/illuMemTime.png" alt="illuMemInit" width="400px">
-            </figure>
-            <div class="fragment" style="font-size: 0.85em">
-              $\rvert G\rangle\text{ of }U\quad\Delta U\text{ on left}\begin{cases}
-              \overset{t_r=t_0}{\longrightarrow}\rvert G(t)\rangle\\
-              \overset{t_r=7t_0}{\longrightarrow}\rvert G^\prime(t)\rangle
-              \end{cases}
-              $
+            <div class="row" style="padding-top: 10px">
+              <div class="column half">
+                <figure class="fragment">
+                  <img src="figures/HalfUFigs/illuMemTime.png" alt="illuMemInit" width="400px">
+                </figure>
+              </div>
+              <div class="column half">
+                <div class="fragment" style="font-size: 0.85em;padding-top: 25px">
+                  $\rvert G\rangle\text{ of }U\\
+                  \Delta U\text{ on left}\begin{cases}
+                  \overset{t_r=t_0}{\longrightarrow}\rvert G(t)\rangle\\
+                  \overset{t_r=7t_0}{\longrightarrow}\rvert G^\prime(t)\rangle
+                  \end{cases}
+                  $
+                </div>
+              </div>
             </div>
-            <div class="fragment" style="color: brown;padding-top: 0.3em">Different QSSC $\Rightarrow$ Memory of switching schemes.</div>
+            <div class="fragment" style="color: brown;padding-top: 40px">Different QSSC $\Rightarrow$ Memory of switching schemes.</div>
           </section>
 
           <section>
             <div class="lc-70-25">
               <h3>Fermion</h3>
               <figure>
-                <img src="figures/HalfUFigs/FMemTime.png" alt="FMemTime" width="600px">
+                <img src="figures/HalfUFigs/FMemTime.png" alt="FMemTime" width="400px">
               </figure>
-              <ul style="font-size: 0.8em">
-                <li>Half filling has strongest memory effect.</li>
-                <li>$U\downarrow$, $\Delta U\uparrow$ is favorable.</li>
-              </ul>
+              <p>Half filling, $U\downarrow$, $\Delta U\uparrow$ is favorable.</p>
             </div>
             <div class="rc-70-25">
               <h3>Boson</h3>
@@ -591,13 +619,22 @@
         <section>
           <h4>Conclusions</h4>
           <ul style="font-size:0.7em">
-            <li>Memory effects are shown to exist in noninteracting quantum systems when a flat band emerges.</li>
-            <li>Zero temperature non-interacting fermionic system and bosonic system at intermediate temperature are better candidates, but not BEC.</li>
-            <li>Applications on <i>atomtronic</i> device - accelerometer and memory device.</li>
-            <li>QSSC exist in both fermionic and bosonic gases, except non-interacting boson.</li>
-            <li>Quantum memory effects for both initial states and switching schemes can be observed in both statists.</li>
+            <li>Relaxation: <ref style="color:crimson">Phys. Rev. A <b>93</b>, 053617 (2016)</ref></li>
+            <ul style="font-size:0.6em">
+              <li>Magnetization/Persistant current lags due to relaxation.</li>
+            </ul>
+            <li>Flat Band: <ref style="color:crimson">Phys. Rev. Applied <b>5</b>, 034001 (2016)</ref></li>
+            <ul style="font-size:0.6em">
+              <li>Memory of density distribution are shown to exist in noninteracting quantum systems when a flat band emerges.</li>
+              <li>Zero temperature non-interacting fermionic system and bosonic system at intermediate temperature are better candidates, but not BEC.</li>
+            </ul>
+            <li>Interaction: <ref style="color:crimson">Phys. Rev. A <b>96</b>, 033628 (2017)</ref></li>
+            <ul style="font-size:0.6em">
+              <li>Steady-state currents exist in both fermionic and bosonic gases, except non-interacting boson.</li>
+              <li>Quantum memory effects for both initial states and switching schemes can be observed.</li>
+            </ul>
           </ul>
-          <h4 style="font-size:0.9em;padding-top: 0.1em">Acknowledgments</h4>
+          <h4 style="font-size:0.9em;padding-top: 30px">Acknowledgments</h4>
           <p style="font-size:0.4em">
             Collaborate with Chih-Chun Chien (UCMerced) and Mekena Metcalf (Sandia NL).
           </p>
@@ -605,21 +642,49 @@
             Computational resources from Extreme Science and Engineering Discovery Environment (XSEDE),
             and Merced Cluster.</p>
           <p style="font-size:0.4em">We thank Gia-Wei Chern, Massimiliano Di Ventra, Dan Stamper-Kurn, Michael Zwolak, and YangQuan Chen for useful discussions.</p>
-          <h6 style="font-size: 0.6em">Phys. Rev. A <b>93</b>, 053617 (2016);Phys. Rev. Applied <b>5</b>, 034001 (2016);Phys. Rev. A <b>96</b>, 033628 (2017)</h6>
         </section>
+
+
+
 
         <!-- Spare slides -->
         <section>
+          <section>
+            <h2>Filling Dependencies</h2>
+            <img src="figures/KSpaceFigs/KFilling.png" alt="KFilling" />
+            <ul style="font-size: 25px">
+              <li>Fermionic system: optimal filling around $3/4$ at zero temperature</li>
+              <li>Bosonic system: Not scale up as filling increases at intermediate temperature</li>
+            </ul>
+            <aside class="notes">
+              the memory effects depends on the filling of flat  band the filling of nearby bands
+            </aside>
+          </section>
+
+          <section>
+            <h2>No memory effects for BEC</h2>
+            <figure>
+              <img src="figures/DataFigs/GPAll.png", alt="GPAll" width="800px">
+            </figure>
+            <div style="font-size: 0.7em;text-align: left">
+              Flat band appears in higher energy, but BEC populates lower energy state.
+            </div>
+
+            <aside class="notes">
+              GPE U=25.0 20 grid points.
+              All in GS not filled up to flat band.
+            </aside>
+          </section>
 
           <section>
             <h3>Applications - Accelerometer</h3>
-            <img src="figures/DataFigs/Accel.png" alt="accelerometer" height="450px"/>
-            <h6>Probing acceleration and recording the rate.<br>(Suitable for ~ms time scale.)</h6>
+            <img src="figures/DataFigs/Accel.png" alt="accelerometer" height="350px"/>
+            <p>Probing acceleration and recording the rate.<br>(Suitable for ~ms time scale.)</p>
           </section>
 
           <section>
             <h3>Quantum memory effect atomic memory</h3>
-            <img src="figures/DataFigs/QMEAMSmall.png" alt="qmean" height="500px"/>
+            <img src="figures/DataFigs/QMEAMSmall.png" alt="qmean" height="380px"/>
             <p style="font-size: 0.4em">Y. S. Patil et. al., Phys. Rev. A <b>90</b>, 033422 (2014). S. T. Wang et al., Phys. Rev. Lett. <b>113</b>, 033002 (2014).</p>
           </section>
         </section>

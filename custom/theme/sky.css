@@ -368,7 +368,7 @@ body {
 
 @media print {
   .slide-background {
-    background-color: #bad5db !important;
+    background-color: #d0dddf !important;
     -webkit-print-color-adjust: exact;
   }
 }

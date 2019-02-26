@@ -55,10 +55,10 @@
 				</section> -->
 				<section>
 					<!-- <section> -->
-						<h1 style="font-size: 1.2em; margin-top: 0.em">Dynamics of Holstein model in strong coupling and high temperature: charge pumping and localization</h1>
+						<h1 style="font-size: 1.2em; margin-top: 0.em">Microscopic dynamics in the Holstein model at high-temperature: Absence of diffusion</h1>
 						<h5 style="margin-bottom: 30px">Chen-Yen Lai</h5>
 						<h6 style="margin-bottom: 30px">T-4 & Center for Integrated Nanotechnologies</h6>
-						<p>BLABS, May 21st 2018. (LA-UR-18-24308)</ref></p>
+						<p>Boston, Mar 6th 2019. (LA-UR-18-24308)</ref></p>
 						<div style="padding-top: 50px"></div>
 						<img src="figures/logos/CINT.gif" alt="CINT" style="border:0px; box-shadow: 0 0 0; margin: 0 40px 0 40px" height="80px">
 						<img src="figures/logos/LANL.png" alt="LANL" style="border:0px; box-shadow: 0 0 0; margin: 0 40px 0 40px" height="80px">
@@ -67,7 +67,7 @@
 				</section>
 
 				<section>
-					<section>
+					<!-- <section>
 						<h2>Diffusion</h2>
 						<div class="row">
 							<div class="column half">
@@ -80,14 +80,13 @@
 							</div>
 						</div>
 						<p class="fragment" style="color: cornflowerblue;font-size: 30px">The distribution of the particles tends to be uniform in time.</p>
-					</section>
+					</section> -->
 
-					<section>
+					<!-- <section>
 						<h2>Anderson localization</h2>
 						<div class="row">
 							<div class="fragment column thirty" data-fragment-index="1">
 								<img src="figures/intro/scatter.png" height="200px" alt="localization">
-								<!-- <ref>Credit: Akira Furusaki (RIKEN).</ref> -->
 								<p>Disorder: particles in <span style="color: cornflowerblue">random potentials</span>.</p>
 							</div>
 							<div class="fragment column seventy" data-fragment-index="3">
@@ -105,9 +104,9 @@
 						<aside class="notes">
 							Parameters of experiments: 17K atoms Rb87, 4mm long.
 						</aside>
-					</section>
+					</section> -->
 
-					<section>
+					<!-- <section>
 						<h2>Quantum Hall system</h2>
 						<div class="row">
 							<div class="column half">
@@ -124,7 +123,7 @@
 								<p class="fragment" data-fragment-index="4" style="color:crimson;font-size: 30px">Electrons has helical-like motion along equal potential lines.</p>
 							</div>
 						</div>
-					</section>
+					</section> -->
 
 					<section>
 						<div class="row">
@@ -151,20 +150,24 @@
 					<section>
 						<div class="row">
 							<div class="column half">
-								<h3>Self-Trapping</h3>
-								<img src="figures/intro/SelfTrap.png" height="230px" alt="SelfTrp"><br>
-								<ref>Eric Jeckelmann and Steven R. White, PRB <b>57</b>, 6376 (1998).</ref>
-								<p>$\chi_{10,j}\!=\!\langle n_{10}(a^\dagger_j+a_j)\rangle/\langle n_{10} \rangle$</p>
-								<ul>
-									<li>Weak coupling: lattice deformation extends.</li>
-									<li>Strong coupling: localized</li>
-								</ul>
-							</div>
-							<div class="fragment column half">
-								<h3>Dynamics</h3>
+								<h4>Diffusion?</h4>
 								<img src="figures/intro/PolaronDyn.png" height="280px" alt="Polaron dynamics"><br>
 								<ref>A. S. Mishchenko et al., PRL <b>114</b>, 146401 (2015).</ref>
 								<p>The transport features display a strong $\lambda$ and $T$ dependence.</p>
+							</div>
+							<div class="fragment column half">
+								<h4>High temperature</h4>
+								<p style="font-size: 24px">
+									The phonons are acting like SHO.<br>
+									Quantum: Coherent state.<br>
+									$\vert\alpha\rangle\!=\!e^{-\frac{1}{2}\vert\alpha\vert^2}\sum_n\frac{(\alpha a^\dagger)^n}{n!}\vert0\rangle$<br>
+									Semiclassical: Time-dependent potential $V_0\sin\Omega t$.
+								</p>
+								<h4>Strong coupling</h4>
+								<p style="font-size: 24px">
+									Localized itinerant particle.
+								</p>
+								<p style="font-size: 24px; color: crimson;margin-top: 60px">Single itinerant particle scatters by local phonon modes $\Rightarrow$ diffusion dynamics.</p>
 							</div>
 						</div>
 						<aside class="notes">
@@ -175,15 +178,15 @@
 				</section>
 
 				<section>
-					<section>
+					<!-- <section>
 						<h2 style="padding-top: 200px">The walk of the itinerant particle</h2>
 						<aside class="notes">
 							Just like Random walk and diffusion equation.
 						</aside>
-					</section>
+					</section> -->
 
 					<section>
-						<h3>Classical Toy Model</h3>
+						<h3>Semi-classical Toy Model</h3>
 						<div class="row">
 							<div class="column forty">
 								<img class="fragment current-visible" data-fragment-index="2" src="figures/Holstein.png" width=80% alt="Holstein">
@@ -236,7 +239,7 @@
 							<tr>
 								<th></th>
 								<th>Random Walk</th>
-								<th>Our model</th>
+								<th>Holstein</th>
 							</tr>
 							<tr>
 								<td style="font-size: 30px">Probability of jumping back</td>
@@ -264,9 +267,9 @@
 				</section>
 
 				<section>
-					<section>
+					<!-- <section>
 						<h2 style="padding-top: 200px">Semiclassical approach</h2>
-					</section>
+					</section> -->
 
 					<section style="text-align: left;">
 						<h3>Itinerant particle as quantum wavefunction</h3>
@@ -279,7 +282,7 @@
 							<p>$V_i(t)\!=\!\color{blue}{A_i}\cos(\frac{2\pi}{T_p}t+\color{blue}{\phi_i})$ where period $T_p\!=\!2\pi/\Omega$ and $\phi_i\in[0,2\pi)$.</p>
 							<p>$H(t+T_p)\!=\!H(t)$ $\Rightarrow$ periodic driving system <span class="darkblue">(Floquet)</span>.</p>
 							<p>Given initial wavefunction, the dynamics are solved by $i\partial_t\psi=H\psi$.</p>
-							<p>Temperature and coupling are embedded in <span class="darkblue">$A^\text{rms}\gg\overline{t}$ for strong coupling and high temperature.</span></p>
+							<p>Temperature and coupling are embedded in <span class="darkblue">$A^\text{rms}\gg\overline{t}$ for high temperature.</span></p>
 							<p>Small time step $\delta t\!=\!10^{-3}t_0$ and large phonon period $T_p$ as adiabatic limit.</p>
 							<ul class="fragment" style="padding-left: 30px">
 								<li>No restriction on <span class="green">jumping back</span>.</li>
@@ -309,9 +312,9 @@
 				</section>
 
 				<section>
-					<section>
+					<!-- <section>
 						<h2 style="padding-top: 200px">Fully quantum mechanics</h2>
-					</section>
+					</section> -->
 
 					<section>
 						<h3>Holstein model</h3>
@@ -324,7 +327,10 @@
 							<li>Eigenstates and dynamics are simulated by Lanczos-based algorithm.</li>
 							<li>Small system size and <span class="blue">maximum phonon quanta $N^\text{max}_p$</span> due to unbounded phonon Hilbert space.</li>
 						</ul>
-						<ol>
+						<p style="font-size: 34px;margin-top: 40px;color: crimson">Dynamics from phonon coherent states:<br>
+							<span style="font-size: 90%;margin-top: 20px">$\vert\Psi(t=0)\rangle=\vert i_F;\alpha_0, \alpha_1, \alpha_2\rangle$ where $a\vert\alpha_i\rangle\!=\!\alpha_i\vert\alpha_i\rangle$, $\alpha_i\in C$.</span>
+						</p>
+						<!-- <ol>
 							<li class="darkblue">Dynamics from excited states:
 								<p style="font-size: 90%">$\vert\Psi(t\!=\!0)\rangle\!=\!\frac{1}{\sqrt{2}}(\vert \psi_m\rangle \!+\! \vert\psi_n\rangle)$ where $H\vert\psi_m\rangle\!=\!E_m\vert\psi_m\rangle$.
 								</p>
@@ -332,10 +338,10 @@
 							<li class="darkgreen">Dynamics from phonon coherent states:
 								<p style="font-size: 90%">$\vert\Psi(t=0)\rangle=\vert i_F;\alpha_0, \alpha_1, \alpha_2\rangle$ where $a\vert\alpha_i\rangle\!=\!\alpha_i\vert\alpha_i\rangle$, $\alpha_i\in C$.</p>
 							</li>
-						</ol>
+						</ol> -->
 					</section>
 
-					<section>
+					<!-- <section>
 						<h3>Excited States</h3>
 						<div class="row">
 							<div class="fragment column half" data-fragment-index="1">
@@ -349,7 +355,7 @@
 						</div>
 						<p class="fragment" data-fragment-index="2">Maximum density from site to site <span style="color:crimson">repeatedly</span>, and current densities have the <span style="color:crimson">same directions</span>.</li>
 						<p class="fragment" style="font-size: 95%; color: mediumpurple;font-style: italic;padding-top: -10px">Like charge pumping!</p>
-					</section>
+					</section> -->
 
 					<section>
 						<h3>Phonon Coherent States</h3>
@@ -359,12 +365,26 @@
 							</div>
 							<div class="fragment column half" data-fragment-index="1">
 								<img src="figures/Coherent-2.png" alt="Coherent State 2">
-								<p>$\Omega t_0\!=\!0.6$, $\lambda\!=\!1.1\bar{t}$, and $\langle N_p\rangle\sim6$.</p>
 							</div>
+							<p class="fragment" data-fragment-index="1">$\Omega t_0\!=\!0.6$, $\lambda\!=\!1.1\bar{t}$, and $\langle N_p\rangle\sim6$.</p>
 						</div>
 						<p class="fragment" data-fragment-index="2">Maximum density from site to site <span style="color:crimson">repeatedly</span>, and current densities have the <span style="color:crimson">same directions</span>.</p>
-						<p class="fragment" style="font-size: 95%; color: mediumpurple;font-style: italic;padding-top: 5px">This is NOT diffusion in some parameter regimes!!</p>
+						<p class="fragment" style="font-size: 95%; color: mediumpurple;font-style: italic;padding-top: 5px">This is NOT diffusion!!</p>
 					</section>
+				</section>
+
+				<section>
+					<h2>Conclusion</h2>
+					<ul style="font-size: 0.6em; margin-top: 1em">
+						<li style="padding-top: 10px;line-height: 20px">The microscopic dynamics of Holstein model is studied in high temperature as <span style="color:crimson">semi-classical, quantum electron, fully quantum model</span>.</li>
+						<li style="padding-top: 10px;line-height: 20px">In certain parameter regimes, the dynamics of Holstein model in high temperature is <span style="color:crimson">NOT diffusion!</span></li>
+						<li style="padding-top: 10px;line-height: 20px">In 1D, <span style="color: crimson">charge pumping</span> dynamics!. Beyond 1D, <span style="color: crimson">circulation (localization?)</span>.</li>
+						<li style="padding-top: 10px;line-height: 20px">Finite trajectory in 2D in the thermodynamic limit, system is critical and trajectories are <span style="color: crimson;">fractals</span>.</li>
+					</ul>
+					<h4 style="margin-top: 1em">Acknowledgements</h4>
+					<p style="font-size: 0.6em; text-align: left">Collaborator: <span style="color:darkorange">S. A. Trugman</span> (LANL).</p>
+					<p style="font-size: 0.6em; text-align: left">Funding: The center for integrated nanotechnologies (CINT), a DOE BES user facility.</p>
+					<p style="font-size: 0.6em; text-align: left">Computational resources: LANL Institutional Computing (IC) program.</p>
 				</section>
 
 				<section>
@@ -507,19 +527,6 @@
 							</div>
 						</div>
 					</section>
-				</section>
-
-				<section>
-					<h2>Conclusion</h2>
-					<ul style="font-size: 0.6em; margin-top: 1em">
-						<li style="padding-top: 10px;line-height: 30px">In certain parameter regimes, the dynamics of Holstein model in strong coupling and high temperature is <span style="color:crimson">NOT diffusion!</span></li>
-						<li style="padding-top: 10px;line-height: 30px">In 1D, <span style="color: crimson">charge pumping</span> dynamics!. Beyond 1D, <span style="color: crimson">circulation (localization?)</span>.</li>
-						<li style="padding-top: 10px;line-height: 30px">Finite trajectory in 2D in the thermodynamic limit, system is critical and trajectories are <span style="color: crimson;">fractals</span>.</li>
-					</ul>
-					<h4 style="margin-top: 1em">Acknowledgements</h4>
-					<p style="font-size: 0.6em; text-align: left">Collaborator: <span style="color:darkorange">S. A. Trugman</span> (LANL).</p>
-					<p style="font-size: 0.6em; text-align: left">Funding: The center for integrated nanotechnologies (CINT), a DOE BES user facility.</p>
-					<p style="font-size: 0.6em; text-align: left">Computational resources: LANL Institutional Computing (IC) program.</p>
 				</section>
 
 

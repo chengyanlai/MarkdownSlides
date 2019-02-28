@@ -6,7 +6,7 @@
 
 		<title>MM18 - TR-XAS</title>
 
-		<meta name="description" content="MM18 - TR-XAS">
+		<meta name="description" content="MM19 - TR-ARPES-EFHM">
 		<meta name="author" content="Chen-Yen Lai">
 
 		<meta name="apple-mobile-web-app-capable" content="yes">
@@ -55,8 +55,7 @@
 				</section> -->
 
 				<section>
-					<h1 style="font-size: 1.2em; margin-top: 0.em">Time-resolved x-ray absorption spectroscopy in one-dimensional strongly correlated systems</h1>
-					<h4 style="margin-bottom: 30px">(TR-XAS)</h4>
+					<h1 style="font-size: 1.2em; margin-top: 0.em">Non-equilibrium dynamics of spin and charge correlation in strongly correlated systems from pump-probe spectroscopy</h1>
 					<h5 style="margin-bottom: 30px">Chen-Yen Lai</h5>
 					<h6 style="margin-bottom: 30px">Los Alamos National Laboratory</h6>
 					<!-- <p style="margin-bottom: 30px">
@@ -65,12 +64,12 @@
 					<img src="figures/logos/CINT.gif" alt="ToOneBand-2" style="border:0px; box-shadow: 0 0 0; margin: 0 40px 0 40px" height="80px">
 					<img src="figures/logos/LANL.png" alt="ToOneBand-2" style="border:0px; box-shadow: 0 0 0; margin: 0 40px 0 40px" height="80px">
 					<img src="figures/logos/DOE.png" alt="ToOneBand-2" style="border:0px; box-shadow: 0 0 0; margin: 0 40px 0 40px" height="80px">
-					<ref>LA-UR-17-29749</ref>
+					<ref>LA-UR-18-30001</ref>
 				</section>
 
 				<section>
 					<section>
-						<h2>X-ray absorption spectroscopy (XAS)</h2>
+						<h2 style="font-size: 34px">Angle-Resolved PhotoEmission Spectroscopy</h2>
 						<div class="row">
 							<div class="column twenty" data-fragment-index="1" style="padding-top: 60px">
 								<img src="figures/intro/XAS.png" alt="xas_illu">
@@ -96,7 +95,7 @@
 					</section>
 
 					<section>
-						<h2>Why time-resolved?</h2>
+						<h2>Time-resolved ARPES?</h2>
 						<div class="row">
 							<div class="fragment column half" data-fragment-index="1">
 								<img src="figures/intro/TR_RIXS.png" alt="tr-rixs">
@@ -127,6 +126,10 @@
 						</div>
 						<aside class="notes">1. Irridates. 2. Mental-insulator transition. 3. Quasi-2d chalcogenide crystal.
 						</aside>
+					</section>
+
+					<section>
+						<h2>Extended Fermi Hubbard Model</h2>
 					</section>
 				</section>
 
@@ -206,10 +209,10 @@
 						<h3 style="font-size: 1em; padding-top: 100px">from non-equilibrium state</h3>
 					</section>
 					<section>
-						<h4 style="text-align: left; font-size: 0.9em; margin-top: 0">Pump pulse before X-ray photon</h4>
+						<h4 style="text-align: left; font-size: 0.9em; margin-top: 0">Ultrafast pump pulse driven systems</h4>
 						<div class="row">
 							<div class="column thirty-five">
-								<img src="figures/xas/Cartoon.png" alt="cartoon" width="90%">
+								<img src="figures/trARPES-EFHM/PumpProbe.png" alt="cartoon" width="90%">
 								<img src="figures/xas/Pulse.png" alt="Pulse" width="90%">
 							</div>
 							<div class="column sixty-five" style="padding-top: 25px">
@@ -219,8 +222,8 @@
 								<eq>$A(t)=A_0e^{-(t-t_d)^2/\tau^2}\cos[\Omega(t-t_d)+\phi]$</eq>
 								<p style="font-size:0.6em; color: steelblue">$\tau$: Width of the pulse (number of pump cycles)</p>
 								<p style="font-size:0.6em; color: tomato">$t_d$: Time delay for vanished pulse at $t=0$</p>
-								<h5 style="font-size: 0.9em; margin-top: 0.50em; margin-bottom: 0.5em">TR-XAS</h5>
-								<eq>$\vert \Psi(t=0)\rangle = c^\dagger_{ch}e^{i\mathcal{H}_{\text{pump}}t^\prime}\vert GS\rangle$</eq>
+								<h5 style="font-size: 0.9em; margin-top: 0.50em; margin-bottom: 0.5em">TR-ARPES</h5>
+								<eq>$\vert \Psi(t=0)\rangle = e^{i\mathcal{H}_{\text{pump}}t^\prime}\vert GS\rangle$</eq>
 							</div>
 						</div>
 						<p style="font-size: 0.9em;color:chocolate">Different frequency and strength of influence. </p>
@@ -265,13 +268,9 @@
 					<h2>Conclusion and outlook</h2>
 					<ul style="font-size: 0.6em; margin-top: 1em">
 						<li>(Far-from-)Equilibrium X-ray absorption spectrum (XAS) in 1D strongly correlated systems can be studied by MPS in time domain.</li>
-						<li>Core hole effect are important and reveal in XAS.</li>
-						<li>Equilibrium XAS reveals the one particle excitation and the existence of charge gap at the half-filling.</li>
-						<li>Rich feature from TR-XAS and different influence are studied.</li>
-						<!-- <li>Stay tuned!! Different time-delay? THz pules? -->
 					</ul>
 					<h4 style="margin-top: 0.5em">Acknowledgements</h4>
-					<p style="font-size: 0.6em; text-align: left">Collaborator: Jian-Xin Zhu (LANL), Jhih-Shih You (Leibniz), Marton Kanasz-Nagy, and Eugene Demler (Harvard).</p>
+					<p style="font-size: 0.6em; text-align: left">Collaborator: Jian-Xin Zhu (LANL).</p>
 					<p style="font-size: 0.6em; text-align: left">Funding: The center for integrated nanotechnologies (CINT), a DOE BES user facility.</p>
 					<p style="font-size: 0.6em; text-align: left">Computational resources: LANL Institutional Computing (IC) program.</p>
 				</section>

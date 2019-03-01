@@ -4,9 +4,9 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>MM18 - TR-XAS</title>
+		<title>MM19 - EFHM</title>
 
-		<meta name="description" content="MM19 - TR-ARPES-EFHM">
+		<meta name="description" content="MM19 - EFHM">
 		<meta name="author" content="Chen-Yen Lai">
 
 		<meta name="apple-mobile-web-app-capable" content="yes">
@@ -70,7 +70,7 @@
 				<section>
 					<section>
 						<h2 style="font-size: 34px">Angle-Resolved PhotoEmission Spectroscopy</h2>
-						<div class="row">
+						<!-- <div class="row">
 							<div class="column twenty" data-fragment-index="1" style="padding-top: 60px">
 								<img src="figures/intro/XAS.png" alt="xas_illu">
 								<ref>RMP <b>83</b>, 705 (2011)</ref>
@@ -91,17 +91,17 @@
 										<li style="margin-left: 20px">Resonant inelastic x-ray scattering (RIXS)</li>
 									</ul>
 							</div>
-						</div>
+						</div> -->
 					</section>
 
 					<section>
-						<h2>Time-resolved ARPES?</h2>
+						<h2 style="font-size: 44px;margin-top: 0">Dynamics of electronic properties and orders!</h2>
 						<div class="row">
 							<div class="fragment column half" data-fragment-index="1">
-								<img src="figures/intro/TR_RIXS.png" alt="tr-rixs">
+								<img src="figures/intro/TR_RIXS.png" alt="tr-rixs" width="75%">
 								<p style="padding: 0 0 0 0; margin-top: 0">
-									<span style="font-size: 0.9em">Magnetic quasiparticle spectrum on Sr$_2$IrO$_4$</span>
-									<ref>Nat. Mat. <b>15</b>, 601 (2016).</ref>
+									<p style="font-size: 0.5em">Magnetic quasiparticle spectrum on Sr$_2$IrO$_4$<br>
+									<ref>Nat. Mat. <b>15</b>, 601 (2016).</ref></p>
 								</p>
 
 								<div class="row">
@@ -109,8 +109,9 @@
 										<img src="figures/intro/PerovskiteManganite.png" alt="PerovskiteManganite" width="65%">
 									</div>
 									<div class="column half" style="padding-top: 15px">
-										<span style="font-size: 0.5em">Photo-induced insulator–metal dynamics in PCMO.</span>
-										<ref style="font-size: 0.4em">Nat. Mat. <b>6</b>, 643 (2007)</ref>
+										<p style="font-size: 0.5em">Photo-induced insulator–metal dynamics in PCMO.<br>
+										<ref>Nat. Mat. <b>6</b>, 643 (2007)</ref>
+										</p>
 									</div>
 								</div>
 
@@ -121,7 +122,7 @@
 									<span style="font-size: 0.75em">Hidden order of 1T-TaS$_2$</span>
 									<ref>Science <b>344</b>, 177 (2014)</ref>
 								</p>
-								<h6 class="fragment" data-fragment-index="3" style="font-size: 0.8em">Dynamics of electronic properties!</h6>
+								<!-- <h6 class="fragment" data-fragment-index="3" style="font-size: 0.8em"></h6> -->
 							</div>
 						</div>
 						<aside class="notes">1. Irridates. 2. Mental-insulator transition. 3. Quasi-2d chalcogenide crystal.
@@ -129,75 +130,38 @@
 					</section>
 
 					<section>
-						<h2>Extended Fermi Hubbard Model</h2>
-					</section>
-				</section>
-
-				<section>
-					<section>
-						<h2 style="padding-top: 150px">Equilibrium XAS</h2>
-						<h3 style="font-size: 1em; padding-top: 100px">from equilibrium ground state</h3>
-					</section>
-
-					<section style="margin: 0" data-transition="fade-in none-out">
-						<h4>Original two-band model</h4>
-						<img src="figures/xas/OneBandIllu-0.png" alt="ToOneBand-1" style="border:0px" width="90%">
-					</section>
-					<section data-transition="none-in none-out">
-						<h4>Original two-band model</h4>
-						<img src="figures/xas/OneBandIllu-1.png" alt="ToOneBand-1" style="border:0px" width="90%">
-					</section>
-					<section data-transition="none-in none-out">
-						<h4>Single band model with single X-ray photon event</h4>
-						<img src="figures/xas/OneBandIllu-2.png" alt="ToOneBand-2" style="border:0px" width="90%">
-						<ul class="fragment" style="font-size: 0.7em">
-							<li>Fermi Hubbard model in 1D (w/o core hole)
-								<p style="font-size: 0.8em">$\mathcal{H}_{\text{FHM}}=-J\sum_{\langle ij \rangle,\sigma}(c^\dagger_{i\sigma}c_{j\sigma}+h.c.)+U\sum_in_{i\uparrow}n_{i\downarrow}\quad\Rightarrow\quad\mathcal{H}_{\text{FHM}}\vert GS\rangle=E_0\vert GS\rangle$</p>
-							</li>
-							<li>X-ray photon excites one electron from valance band to conduction band, and create a core hole which has effective attractive potential.
-								<p style="font-size: 0.8em">$\vert\Psi(t=0)\rangle=c^\dagger_{ch}\vert GS\rangle;\quad\quad\mathcal{H}(t\geq0)=\mathcal{H}_{\text{FHM}}$<span style="color: lightcoral">$-V_{\text{ch}}n_{ch}$</span>.</p>
-							</li>
-						</ul>
-						<aside class="notes">
-						</aside>
-					</section>
-
-					<section>
-						<h3>How to calculate XAS?</h2>
-						<div class="" style="margin-top: 0.2em">
-							<h4 style="text-align: left; font-size: 0.7em">Effective one band model in 1D</h4>
-							<p style="font-size: 0.5em">$\mathcal{H}_{\text{FHM}}\vert GS\rangle=E_0\vert GS\rangle\quad$ obtained by DMRG (MPS) with <span style="color: chocolate">fixed filling $\bar{n}_f=\frac{N_\uparrow}{L}$</span></p>
-							<p style="font-size: 0.5em">$\vert\Psi(t=0)\rangle=c^\dagger_{ch}\vert GS\rangle\quad$ can be done in MPS formula</p>
-							<p style="font-size: 0.5em">$\mathcal{H}(t)=-J\sum_{\langle ij \rangle,\sigma}(c^\dagger_{i\sigma}c_{j\sigma}+h.c.)+U\sum_in_{i\uparrow}n_{i\downarrow}$<span style="color: chocolate">$-V_{\text{ch}}n_{ch}$</span></p>
-						</div>
-						<div class="fragment" style="margin-top: 0.2em">
-							<h4 style="text-align: left; font-size: 0.7em">XAS spectrum</h4>
-							<p style="font-size: 0.6em">
-								\begin{eqnarray}
-									I_{\text{XAS}}(\omega)&\propto&\sum_\sigma\sum_f \vert\langle f \vert c_{ch,\sigma}^\dagger \vert 0 \rangle\vert^2 \delta(E_f-E_0-\hbar\omega)\\
-									&=& \frac{1}{\pi}\sum_\sigma\text{Im}\left[ -i\int_0^\infty dt e^{i(\hbar\omega+E_0)t}e^{-\color{red}\Gamma t} \color{green}{\langle GS \vert c_{ch,\sigma} }\color{blue}{e^{-i\mathcal{H}t} c_{ch,\sigma}^\dagger \vert GS \rangle} \right].
-								\end{eqnarray}
-								<span style="color: brown">Non-equilibrium quench dynamics can be solved by TEBD (tDMRG)!</span>
-							</p>
-							<ref>PRB <b>72</b> 020404 (2005), Ann. of Phy. <b>326</b> 96 (2011), PRA <b>96</b> 033628 (2017)</ref>
-						</div>
-					</section>
-
-					<section>
 						<div class="row">
-							<div class="column thirty-five">
-								<img src="figures/xas/EqmXAS-2.png" alt="EqmXAS">
+							<div class="column half">
+								<h4>Time-resolved X-ray absorption spectroscopy</h4>
+								<ref>C-Y Lai and J-X, Zhu, arXiv:1808.08243</ref>
+								<img src="figures/trARPES-EFHM/TRXAS.png" alt="TRXAS" width="90%">
+								<p>Metallic droplet induced by dynamically emerged core hole.</p>
 							</div>
-							<div class="column sixty">
-								<h3>XAS for equilibrium state</h3>
-								<ul style="font-size: 0.7em">
-									<li style="padding-top: 15px; line-height: 1.4em;">The double-(triple-)peak structure emerges from the core hole effect.</li>
-									<li style="padding-top: 25px; line-height: 1.4em;color: blue">Single particle $\omega\sim -V_{ch}$ core hole effect!</li>
-									<li style="padding-top: 15px; line-height: 1.4em;color: red">Doubly occupied $\omega\sim U-2V_{ch}$.</li>
-									<li style="padding-top: 15px; line-height: 1.4em;">Empty $\omega\sim0$ (inset).</li>
-									<li style="padding-top: 15px; line-height: 1.4em;">Half-filled: insulating state $\Rightarrow$ dominant doubly occupied signal.</li>
-									<li style="padding-top: 15px; line-height: 1.4em;">Away from half-filling: metallic state $\Rightarrow$ strongest signal at single particle.</li>
-								</ul>
+							<div class="column half">
+								<h4>Driven Kondo Insulator</h4>
+								<ref>W. Zhu and J-X Zhu, arXiv:1811.12334</ref>
+								<p style="font-size: 20px;color:darkmagenta">Session P07.00010</p>
+								<img src="figures/trARPES-EFHM/Kondo.png" alt="Kondo" width="50%">
+							</div>
+						</div>
+					</section>
+
+					<section>
+						<h2>Extended Fermi Hubbard Model</h2>
+						<p style="font-size: 30px">$\mathcal{H}\!=\!-J\sum_{\langle ij\rangle,\sigma}(c^\dagger_{i\sigma}c_{j\sigma}+h.c.)\!+\!U\sum_in_{i\uparrow}n_{i\downarrow}+V\sum_{\langle ij\rangle}n_in_j$</p>
+						<div class="row" style="padding-top: 10px">
+							<div class="column half">
+								<h4 style="font-size: 30px">Phase diagram</h4>
+								<img src="figures/trARPES-EFHM/EFHM_Phase.png" alt="PhaseDiagram", width="75%">
+								<p style="margin-top: -20px"><ref>PRL 92, 246404 (2004); PRL 99, 206403 (2007)</ref></p>
+							</div>
+							<div class="column half">
+								<h4 style="font-size: 30px">Order Parameters</h4>
+								<p>$\hat{O}_k\!=\!\frac{1}{L^2}\sum_i\sum_j(-1)^j\hat{O}_i\hat{O}_{i+j}$</p>
+								<p style="padding-top: 10px">$k\!=$SDW, $\hat{O}_i\!=\!n_i$</p>
+								<p style="padding-top: 10px">$k\!=$CDW, $\hat{O}_i\!=\!n_{i\uparrow}-n_{i\downarrow}$</p>
+								<p style="padding-top: 10px">$k\!=$BOW, $\hat{O}_i\!=\!\sum_\sigma(c^\dagger_{i\sigma}c_{i+1\sigma}+h.c.)$</p>
+								<p class="fragment" style="color:chocolate;font-size: 34px">Photoinduced orders between competing phases?</p>
 							</div>
 						</div>
 					</section>
@@ -205,69 +169,68 @@
 
 				<section>
 					<section>
-						<h2 style="padding-top: 150px">Time-resolved XAS</h2>
-						<h3 style="font-size: 1em; padding-top: 100px">from non-equilibrium state</h3>
-					</section>
-					<section>
-						<h4 style="text-align: left; font-size: 0.9em; margin-top: 0">Ultrafast pump pulse driven systems</h4>
+						<h4 style="text-align: left; font-size: 0.9em; margin-top: 0">Photoinduced order: Ultrafast pump pulse driven systems</h4>
 						<div class="row">
 							<div class="column thirty-five">
 								<img src="figures/trARPES-EFHM/PumpProbe.png" alt="cartoon" width="90%">
 								<img src="figures/xas/Pulse.png" alt="Pulse" width="90%">
 							</div>
 							<div class="column sixty-five" style="padding-top: 25px">
-								<h5 style="font-size: 0.9em; margin-bottom: 0.2em">Pump pulse Hamiltonian</h5>
-								<eq style="font-size: 0.55em">$\mathcal{H}_{\text{pump}}=-J\sum_{\langle ij \rangle,\sigma}$(<span style="color: red">$e^{iA(t)}$</span>$c^\dagger_{i\sigma}c_{j\sigma}+h.c.)+U\sum_in_{i\uparrow}n_{i\downarrow}$</eq>
-								<h5 style="font-size: 0.8em">Gaussian pulse</h5>
+								<h5 style="font-size: 0.8em; margin-bottom: 0.2em">Pump pulse Hamiltonian</h5>
+								<eq style="font-size: 0.55em">$\mathcal{H}_{\text{pump}}=-J\sum_{\langle ij \rangle,\sigma}$(<span style="color: red">$e^{iA(t)}$</span>$c^\dagger_{i\sigma}c_{j\sigma}+h.c.)$</eq>
+								<h5 style="font-size: 0.8em; margin-top: 20px">Gaussian pulse</h5>
 								<eq>$A(t)=A_0e^{-(t-t_d)^2/\tau^2}\cos[\Omega(t-t_d)+\phi]$</eq>
 								<p style="font-size:0.6em; color: steelblue">$\tau$: Width of the pulse (number of pump cycles)</p>
-								<p style="font-size:0.6em; color: tomato">$t_d$: Time delay for vanished pulse at $t=0$</p>
-								<h5 style="font-size: 0.9em; margin-top: 0.50em; margin-bottom: 0.5em">TR-ARPES</h5>
-								<eq>$\vert \Psi(t=0)\rangle = e^{i\mathcal{H}_{\text{pump}}t^\prime}\vert GS\rangle$</eq>
+								<p style="font-size: 0.6em; color:tomato">$t_d$: Time delay for vanished pulse at $t=0$</p>
+								<p style="font-size: 0.7em; color:chocolate; margin-top: 30px">Different frequency and strength of influence. </p>
+								<p style="font-size: 0.6em">$\vert\Psi(t)\rangle\!=\!e^{-i(\mathcal{H}_{pump}+\mathcal{H}_{int})t}\vert\Psi(t\rightarrow-\infty)\rangle$</p>
 							</div>
 						</div>
-						<p style="font-size: 0.9em;color:chocolate">Different frequency and strength of influence. </p>
 						<aside class="notes"></aside>
 					</section>
 
 					<section>
-						<h3>Dilute gas : $\bar{n}_f=1/6$</h3>
-						<div class="row">
-							<div class="column sixty">
-								<img src="figures/xas/trXAS16.png" alt="trxas16">
-							</div>
-							<div class="column forty">
-								<p style="font-size: 0.6em">$A_0=1$ and $\Omega t_0=3$.</p>
-								<p style="text-align: left; padding-left: 10px; padding-top: 30px">New feature from the pump pulse.</p>
-								<p style="text-align: left; padding-left: 10px; padding-top: 10px">Both peaks of doubly-occupied and single particle diminished.</p>
-								<p style="text-align: left; padding-left: 10px; padding-top: 10px">Stronger influence is needed for strong coupling and the energy shift.</p>
-							</div>
-						</div>
-						<aside class="notes">J=1eV, t0=16fs. Shifting and </aside>
+						<h3>SDW side ($U=9J$, $V=3J$)</h3>
+						<img src="figures/trARPES-EFHM/W3U9.png" alt="W3U9">
+						<ul style="font-size: 28px">
+							<li>Both SDW and BOW orders are suppressed.</li>
+							<li>The charge order gets enhanced.</li>
+							<li>Stronger response near $\Omega\!=\!6J$ (optical gap).</li>
+						</ul>
 					</section>
 
 					<section>
-							<h3>Half-filling : $\bar{n}_f=1/2$</h3>
-							<div class="row">
-								<div class="column forty">
-									<img src="figures/xas/HalfFilled.png" alt="HalfFilled" width="90%">
-								</div>
-								<div class="column sixty">
-									<p style="font-size: 0.6em">$\tau=2t_0$, $t_d=6t_0$, $\Omega t_0=3$, and $V_{ch}=3J$.</p>
-									<ul style="font-size: 0.7em">
-										<li style="padding-top:20px">In Eqm., the strongest signal $\omega$ is corresponding to the doubly occupied (charge gap).</li>
-										<li style="padding-top:20px">The weight of the doubly occupied peak are diminished by the pump pulse.</li>
-										<li style="padding-top:20px">Under the same influence, the charge gap gets destroyed easier as coupling becomes stronger.</li>
-									</ul>
-								</div>
-							</div>
-						</section>
+						<h3>Within BOW regime ($U=6J$, $V=3J$)</h3>
+						<img src="figures/trARPES-EFHM/W3U6.png" alt="W3U6">
+						<ul style="font-size: 28px">
+							<li>Both SDW and BOW orders are suppressed.</li>
+							<li>The charge order gets strongly enhanced.</li>
+							<li>Stronger response near $\Omega\!=\!J$.</li>
+						</ul>
+					</section>
+
+					<section>
+						<h3>CDW side ($U=3J$, $V=3J$)</h3>
+						<img src="figures/trARPES-EFHM/W3U3.png" alt="W3U3">
+						<ul style="font-size: 28px">
+							<li>Both CDW order is suppressed.</li>
+							<li>The BOW gets enhanced.</li>
+							<li>Stronger response near $\Omega\!=\!6J$.</li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+						<h4 style="text-align: left; font-size: 0.9em; margin-top: 0">(Non-) Equilibrium spectral function</h4>
 				</section>
 
 				<section>
 					<h2>Conclusion and outlook</h2>
 					<ul style="font-size: 0.6em; margin-top: 1em">
-						<li>(Far-from-)Equilibrium X-ray absorption spectrum (XAS) in 1D strongly correlated systems can be studied by MPS in time domain.</li>
+						<li>Photo-induced charge order in extended Hubbard model at large $U$.</li>
+						<li>Possible photo-enhanced bond order in extended Hubbard model near CDW edge as the pump pulse drives the state into part of excited states.</li>
+						<li>(Out-of-) Equilibrium angle-resolved spectroscopy in 1D strongly correlated systems can be studied by MPS in time domain.</li>
+						<li>Stay tuned: Observation from <span style="color: crimson">T</span>ime-<span style="color: crimson">R</span>esolved, <span style="color: crimson">A</span>ngle-<span style="color: crimson">R</span>esolved <span style="color: crimson">P</span>hoto<span style="color: crimson">E</span>mission <span style="color: crimson">S</span>pectroscopy?</li>
 					</ul>
 					<h4 style="margin-top: 0.5em">Acknowledgements</h4>
 					<p style="font-size: 0.6em; text-align: left">Collaborator: Jian-Xin Zhu (LANL).</p>

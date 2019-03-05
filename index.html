@@ -70,38 +70,36 @@
 				<section>
 					<section>
 						<h2 style="font-size: 34px">Angle-Resolved PhotoEmission Spectroscopy</h2>
-						<!-- <div class="row">
-							<div class="column twenty" data-fragment-index="1" style="padding-top: 60px">
-								<img src="figures/intro/XAS.png" alt="xas_illu">
-								<ref>RMP <b>83</b>, 705 (2011)</ref>
-							</div>
-							<div class="column seventy-five">
-								<h6 class="" data-fragment-index="1" style="padding-top: 20px">Core-level Photoemission Spectroscopy</h6>
-								<ul class="" data-fragment-index="1" style="padding-top: 20px; font-size: 0.7em">
-									Measurements of the local electronic properties
-									<li style="margin-left: 20px">Local Chemical Shift</li>
-									<li style="margin-left: 20px">Many-body Interactions</li>
-									<li style="margin-left: 20px">Magnetic Exchange</li>
-									<li style="margin-left: 20px">Spin-Orbit</li>
+						<img src="figures/trARPES-EFHM/ARPES.png" alt="ARPES">
+
+						<div class="row">
+							<div class="column half">
+								<h4>Three-step model</h4>
+								<ul style="font-size: 30px">
+									<li>Optical excitation of electron</li>
+									<li>Dynamics of excited electron</li>
+									<li>Escape of the photoelectron</li>
 								</ul>
-								<h5 class="fragment" data-fragment-index="2" style="padding-top: 15px">Families:</h6>
-								<ul class="fragment" data-fragment-index="2" style="padding-top: 5px; font-size: 0.7em">
-										<li style="margin-left: 20px">X-ray emission spectroscopy (XES)</li>
-										<li style="margin-left: 20px">Nonresonant inelastic x-ray scattering (NIXS)</li>
-										<li style="margin-left: 20px">Resonant inelastic x-ray scattering (RIXS)</li>
-									</ul>
+								<p><ref>RMP 75, 473 (2003); EPL 115, 27001 (2016)</ref></p>
 							</div>
-						</div> -->
+							<div class="fragment column half">
+								<h4>Capability</h4>
+								<ul style="font-size: 30px">
+									<li>Spin-ARPES</li>
+									<li>Time-resolved ARPES</li>
+								</ul>
+							</div>
+						</div>
 					</section>
 
 					<section>
 						<h2 style="font-size: 44px;margin-top: 0">Dynamics of electronic properties and orders!</h2>
 						<div class="row">
 							<div class="fragment column half" data-fragment-index="1">
-								<img src="figures/intro/TR_RIXS.png" alt="tr-rixs" width="75%">
+								<img src="figures/trARPES-EFHM/TRARPES.png" alt="tr-rixs" width="75%">
 								<p style="padding: 0 0 0 0; margin-top: 0">
-									<p style="font-size: 0.5em">Magnetic quasiparticle spectrum on Sr$_2$IrO$_4$<br>
-									<ref>Nat. Mat. <b>15</b>, 601 (2016).</ref></p>
+									<p style="font-size: 0.5em">Photoexcited superconducting state of Bi2212<br>
+									<ref>PRL 99, 197001 (2007).</ref></p>
 								</p>
 
 								<div class="row">
@@ -122,7 +120,6 @@
 									<span style="font-size: 0.75em">Hidden order of 1T-TaS$_2$</span>
 									<ref>Science <b>344</b>, 177 (2014)</ref>
 								</p>
-								<!-- <h6 class="fragment" data-fragment-index="3" style="font-size: 0.8em"></h6> -->
 							</div>
 						</div>
 						<aside class="notes">1. Irridates. 2. Mental-insulator transition. 3. Quasi-2d chalcogenide crystal.
@@ -221,7 +218,18 @@
 				</section>
 
 				<section>
-						<h4 style="text-align: left; font-size: 0.9em; margin-top: 0">(Non-) Equilibrium spectral function</h4>
+					<h4 style="text-align: left; font-size: 0.9em; margin-top: 0">(Non-) Equilibrium spectral function</h4>
+					<p>$A(p,q,t_f,t_i)\!=\!\langle\Psi(t_i)\vert\{c^\dagger_p(t_f),c_q(t_i)\}\vert\Psi(t_i)\rangle$</p>
+					<p>$A(k,\omega)\!=\!N_s^{-1}\sum_{p,q=1}^{N_s}e^{ik(p-q)}\int_{t_i}^{t_f}dte^{i\omega t-\Gamma t}A(p,q,t_f,t_i)$</p>
+					<div class="fragment row">
+						<div class="column sixty">
+							<img src="figures/trARPES-EFHM/AkwU6.4.png" alt="Akw" width="80%">
+						</div>
+						<div class="column thirty-five">
+							<p>$V\!=\!3J$, $U\!=\!6.4J$</p>
+							<p>$\Omega=J$, $A_0\!=\!0.05$</p>
+						</div>
+					</div>
 				</section>
 
 				<section>

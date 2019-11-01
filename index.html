@@ -4,9 +4,9 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>Git</title>
+		<title>M20-Kondo</title>
 
-		<meta name="description" content="Group Meeting - Git">
+		<meta name="description" content="MM20 - Kondo">
 		<meta name="author" content="Chen-Yen Lai">
 
 		<meta name="apple-mobile-web-app-capable" content="yes">
@@ -17,6 +17,7 @@
 		<link rel="stylesheet" href="css/reveal.css">
 		<!-- <link rel="stylesheet" href="css/theme/solarized.css" id="theme"> -->
 		<!-- <link rel="stylesheet" href="custom/theme/light.css" id="theme"> -->
+		<!-- <link rel="stylesheet" href="custom/theme/sky.css" id="theme"> -->
 		<link rel="stylesheet" href="custom/theme/light.css" id="theme">
 		<link rel="stylesheet" href="custom/css/color.css">
 		<link rel="stylesheet" href="custom/css/muticolumn.css">
@@ -45,165 +46,76 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section>
-					<section>
-						<h1 style="font-size: 1.5em; margin-top: 0.em">Git Introduction</h1>
-						<h4 style="font-size: 1.em; margin-top: 0.em;padding-top: 1em;line-height: 2em">Everything you need to know before fork/pull request(pr)</h4>
-						<h5 style="margin-bottom: 30px; margin-top: 50px">Chen-Yen Lai</h5>
-						<!-- <h6 style="margin-bottom: 30px"> -->
-							<!-- T-4 & CINT -->
-						<!-- </h6> -->
-					</section>
-
-					<section>
-						<h3>What is Git and a little history ...</h3>
-						<ul>
-							<li>Free version control software created by Linus Torvalds.</li>
-							<li>Designed to be collaborative, and everything can be local (distributed).</li>
-							<li>To maintain linux kernel repository (repo) which has commits closed to 1M. </li>
-							<li>Sending patches $\Rightarrow$ BitKeeper $\Rightarrow$ Development of Git.</li>
-							<li>Installation</li>
-						</ul>
-					</section>
-
-					<section>
-						<h4 style="margin-top: 0em;padding-top:0em">Things to be covered ...</h4>
-						<img src="figures/GitDemo/all.png" alt="all" height=400px>
-					</section>
+					<h1 style="font-size: 1.2em; margin-top: 0.em">Competing Energy Scales and Quasiparticle Dynamics in a Driven Kondo Impurity</h1>
+					<h5 style="margin-bottom: 10px; margin-top: 40px">Chen-Yen Lai</h5>
+					<h6 style="margin-bottom: 5px;font-size: 20pt;">
+						Center for Integrated Nanotechnologies and Theoretical Division
+					</h6>
+					<p>Denver, Mar  2020. (LA-UR-19-30761)</ref></p>
+					<div style="padding-top: 40px"></div>
+					<img src="figures/logos/CINT.gif" alt="CINT" style="border:0px; box-shadow: 0 0 0; margin: 0 40px 0 40px" height="80px">
+					<img src="figures/logos/LANL.png" alt="LANL" style="border:0px; box-shadow: 0 0 0; margin: 0 40px 0 40px" height="80px">
+					<img src="figures/logos/DOE.png" alt="DOE" style="border:0px; box-shadow: 0 0 0; margin: 0 40px 0 40px" height="80px">
 				</section>
 
 				<section>
 					<section>
-						<h4>Starting a local repo ...... </h4>
-						<div class='multiCol'>
-								<div class='col'>
-								<img src="figures/GitDemo/local.png" alt="local" height=300px>
+						<h3 style="margin: 5px 0 55px 0">Model and Bath Discretization</h3>
+						<h5 style="text-align: left;padding-left: 60px; margin: -30px 0 0 0">Bose-Fermi-Anderson impurity model</h5>
+						<p style="text-align: left;padding-left: 100px">$H_{f}=-J\sum_\sigma\sum_{i=1}^{L-1}(c^\dagger_{i\sigma}c_{i+1\sigma}+h.c.)-V_f\sum_\sigma(c^\dagger_{0\sigma}c_{1\sigma}+h.c.)+U_fn_{0\uparrow}n_{0\downarrow}$</p>
+						<p style="text-align: left;padding-left: 100px">$H_{b}=\sum_q\omega_q\phi^\dagger_{q}\phi_{q}$</p>
+						<p style="text-align: left;padding-left: 100px">$H_{int}=\tilde{g}S_z\sum_q(\phi^\dagger_{-q}+\phi_{q})$, where $S_z=\frac12(n_{0\uparrow}-n_{0\downarrow})$.</p>
+						<div class="multiCol">
+							<div class="col">
+								<h6 style="font-size: 28px; text-align: left;padding-left: 60px; margin: 20px 0 0 0">Bosonic Bath:</h6>
+								<p style="text-align: left;padding-left: 100px">$B(\omega)=\begin{cases}
+									B_0\omega_0(\frac{\omega}{\omega_0})^s\quad 0<\omega<\omega_0, \\
+									0\quad\text{otherwise}.
+									\end{cases}$</p>
 							</div>
-							<div class='fragment col'>
-								<ol style="margin-bottom: 0em; margin-top: 0px">
-									<li>Choose a folder in which git will track everything inside.</li>
-									<li>Initialize it - <span style="font-style: italic;color:crimson">git init .</span> which creates a folder <span style="font-style:italic;color:darkblue">.git</span>.</li>
-									<li>Stage the file(s) - <span style="font-style: italic;color:crimson">git add [file]</span>.</li>
-									<li>Commit to the repo - <span style="font-style: italic;color:crimson">git commit</span>.</li>
-									<li>Check status and log.</li>
-								</ol>
-								<h6 class="fragment" style="padding-left: 100px;margin-top: 20px">Demo ...</h6>
-							</div>
-						</div>
-					</section>
-
-					<section>
-						<h4 style="margin-top: 1em; margin-bottom: 10px">What does git keep tracking? ..... good and bad practice </h4>
-						<ul>
-							<li>Plain text is best! codes, $\LaTeX$, markdown, html ...</li>
-							<li>Frequently changed binary is not good! pdf, docx, tar ...</li>
-							<li>Everything once committed will remain in the repo, even it is deleted afterwards.</li>
-						</ul>
-						<h4 style="margin-bottom: 10px; margin-top: 1em">Other tricks not mentioned ...</h4>
-						<ul>
-							<li>Check difference - <span style="font-style: italic;color:crimson">git diff</span></li>
-							<li>Amend commit - <span style="font-style: italic;color:crimson">git commit --amend</span></li>
-							<li>Configuration - <span style="font-style: italic;color:crimson">git config [--global] (properties)</span></li>
-							<li>Ignore files - local <span style="font-style: italic;color:darkmagenta">.gitignore</span> file</li>
-						</ul>
-					</section>
-
-					<section>
-						<h3>Branch</h3>
-						<div class='multiCol'>
-							<div class='col'>
-								<img src="figures/GitDemo/branch.png" alt="branch" height=300px>
-							</div>
-							<div class='col'>
-								<ul class='fragment'>
-									<li>Branch is cheap in git - only changes are recorded.</li>
-									<li>Stay away from stable code for production.</li>
-									<li>Module development (issue) specific branch.</li>
-									<li>Up-to-date master branch.</li>
-								</ul>
-								<h6 class="fragment" style="padding-left: 100px;margin-top: 20px">Demo ...</h6>
-							</div>
-						</div>
-					</section>
-				</section>
-
-				<section>
-					<section>
-						<h4>Working with remote server ...... </h4>
-						<div class='multiCol'>
-							<div class='col'>
-								<img src="figures/GitDemo/remote.png" alt="remote" height=300px>
-							</div>
-							<div class='col'>
-								<ul class='fragment'>
-									<li>Online service - <a href="https://github.com">GitHub</a>, <a href="https://bitbucket.org/product">BitBucket</a> and <a href="https://about.gitlab.com/">GitLab</a>.</li>
-									<li>Create a repo online and setup the remote at local repo<br>
-										<span style="font-style: italic;color:crimson">git remote add origin (url)</span><br>
-										<span style="font-style: italic;color:crimson">git push -u origin master</span><br>
-									</li>
-									<li>Get the repo somewhere else (e.g. cluster)
-										<span style="font-style: italic;color:crimson">git clone (url) [name]</span>
-									</li>
-									<li>origin is updated, but local not<br>
-										<span style="font-style: italic;color:crimson">git pull</span>
-								</ul>
-								<h6 class="fragment" style="padding-left: 100px;margin-top: 20px">Demo ...</h6>
-							</div>
-						</div>
-					</section>
-
-					<section>
-						<h4>Things to keep in mind ...</h4>
-						<ul>
-							<li>Commits is local only, and required to push to remote.</li>
-							<li>Each branch is required to setup upstream to remote and push.</li>
-							<li>Sometimes pull will results in conflict.</li>
-						</ul>
-					</section>
-				</section>
-
-				<section>
-					<section>
-						<h4 style="margin-top: 30px;margin-bottom: 20px">Working with upstream (someone else) repo ...... </h4>
-						<div class='multiCol'>
-							<div class='col'>
-								<img src="figures/GitDemo/upstream.png" alt="upstream" height=300px>
-							</div>
-							<div class='col'>
-								<h3 style="margin-top: 0em; margin-bottom: 0em">Fork</h3>
+							<div class="col">
+								<h6 style="font-size: 28px; text-align: left;padding-left: 60px; margin: 20px 0 0 0">Discretization</h6>
 								<ul>
-									<li>You don't own the repo and you only have read access.</li>
-									<li>You want to contribute or simply want to implement it for your own usage.</li>
-									<li>Fork is one time step in the web interface.</li>
-									<li>Setup upstream and it allows you to update from it.</li>
+									<li>Logarithmic space of $\omega$.</li>
+									<li>Standard Lanczos technique to 1D chain.</li>
 								</ul>
-								<h6 class="fragment" style="padding-left: 100px;margin-top: 20px">Demo ...</h6>
 							</div>
 						</div>
+						<img src="figures/Kondo/Lattice.png" alt="1d-lattice">
+					</section>
+
+					<!-- <section>
+						<h3>Phase Diagram in equilibrium</h3>
+					</section> -->
+
+					<section>
+						<h3 style="margin: 5px 0 55px 0">Signatures in Equilibrium</h3>
+						<p>$L_b\!=\!10$ and $L_f\!=\!30$</p>
+						<img src="figures/Kondo/BFAEqm.png" alt="BFA-Eqm1">
 					</section>
 
 					<section>
-						<h4>Make your life easier ...</h4>
-						<ul>
-							<li>Setup upstream remote so you can make it up-to-date with original repo.<br>
-								<span style="font-style: italic;color:crimson">git remote add upstream (their url)</span>
-							</li>
-							<li>Working on a branch instead of master, so you can always pull from upstream.<br>
-								<span style="font-style: italic;color:crimson">git pull upstream master</span></li>
-							<li>Regularly merge from upstream and your master branch to your working branch.<br>
-								<span style="font-style: italic;color:crimson">git merge master</span>
-							</li>
-						</ul>
-						<h6 class="fragment" style="padding-left: 100px;margin-top: 20px">Demo ...</h6>
+						<h3 style="margin: 5px 0 55px 0">Local Density of States</h3>
+						<p>$L_b\!=\!14$, $L_f\!=\!42$, $U\!=\!8J$, $V_f\!=\!J$</p>
+						<img src="figures/Kondo/DOS.png" alt="dos" width="450px">
 					</section>
 				</section>
 
 				<section>
 					<section>
-						<h4>Tired of command line ...... </h4>
-						<a href="https://www.gitkraken.com/git-client">GitKraken</a>
+						<h3>Pump Pulse Effect</h3>
+						<h5 style="text-align: left;padding-left: 40px; margin: -30px 0 0 0">Time-dependent Pieles phase on  electrons</h5>
+						<p style="text-align: left;padding-left: 30px;line-height: 50px;">$H_{f}(t)=-J\color{red}{e^{iA(t)}}\sum_\sigma\sum_{i=1}^{L-1}(c^\dagger_{i\sigma}c_{i+1\sigma}+h.c.)-V_f\color{red}{e^{iA(t)}}\sum_\sigma(c^\dagger_{0\sigma}c_{1\sigma}+h.c.)+U_fn_{0\uparrow}n_{0\downarrow}$<br>
+						$H_b$ and $H_{int}$ unchanged.<br>
+						The Pieles phase is a semiclassical form of the pulse field:<br>
+						$A(t)=A_0e^{-t^2/2\tau^2}\cos\Omega t,$
+						</p>
+					</section>
 
-						<h4 class="fragment" data-fragment-index="1">Finally, let's work on TDIV/TBM3_rev</h4>
-						<h6 class="fragment" data-fragment-index="1" style="padding-left: 100px;margin-top: 20px">Demo ...</h6>
+					<section>
+						<h3 style="margin: 5px 0 55px 0">Fidelity of the wave function</h3>
+						<p>$\Omega\!=\!4J$ and $\tau\!=\!0.5$</p>
+						<img src="figures/Kondo/Ft.png" alt="Fidelity" width="450px">
 					</section>
 				</section>
 

@@ -16,8 +16,8 @@
 
 		<link rel="stylesheet" href="css/reveal.css">
 		<!-- <link rel="stylesheet" href="css/theme/solarized.css" id="theme"> -->
-		<!-- <link rel="stylesheet" href="custom/theme/light.css" id="theme"> -->
-		<link rel="stylesheet" href="custom/theme/sky.css" id="theme">
+		<link rel="stylesheet" href="custom/theme/light.css" id="theme">
+		<!-- <link rel="stylesheet" href="custom/theme/sky.css" id="theme"> -->
 		<link rel="stylesheet" href="custom/css/color.css">
 		<link rel="stylesheet" href="custom/css/columns.css">
 
@@ -259,6 +259,148 @@
 								</div>
 							</div>
 						</section>
+				</section>
+
+
+				<section>
+					<section>
+						<h3 style="margin: 5px 0 15px 0">Collapse and Revival of the Kondo State</h3>
+						<div class="multiCol">
+							<div class="col">
+								<img src="figures/Kondo/ExpFig1.png" alt="fig1" width=450px>
+								<p>Kondo coherent time $\approx8ps$ for CeCu$_6$.</p>
+								<p>Echo pulse near $6ps$.</p>
+							</div>
+							<div class="col">
+								<img src="figures/Kondo/ExpFig2.png" alt="fig2" width=450px>
+								<p>Left: Kondo weight vanishes near quantum critical point.</p>
+								<p>Right: Kondo scale remain constant.</p>
+							</div>
+						</div>
+						<ref>Nat. Phys. 14 1103 (2018).</ref>
+					</section>
+
+					<section>
+						<h3 style="margin: 5px 0 15px 0">Quantum Impurity Models of Kondo Physics</h3>
+						<p style="color:crimson">Single impurity interact with itinerant free fermions and bosonic bath.</p>
+						<div class="multiCol">
+							<div class="col">
+								<ul>
+									<li>Fermion bath and impurity: Kondo coherence.</li>
+									<li>Bosonic bath and impurity: Spin fluctuation.</li>
+								</ul>
+								<img src="figures/Kondo/DOSExample.png" alt="dos example">
+								<p>Consequences: Absence or presence of Kondo coherence or Critical behavior.</p>
+							</div>
+							<div class="col">
+								<div style="padding-left:60px">
+									<img src="figures/Kondo/QIM.png" alt="qim" width=350px>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<section>
+						<h3 style="margin: 5px 0 55px 0">Model and Bath Discretization</h3>
+						<h5 style="text-align: left;padding-left: 20px; margin: -30px 0 0 0">Bose-Fermi-Anderson impurity model</h5>
+						<p style="text-align: left;padding-left: 40px">$H_{f}=-J\sum_\sigma\sum_{i=1}^{L-1}(c^\dagger_{i\sigma}c_{i+1\sigma}+h.c.)-V_f\sum_\sigma(d^\dagger_{\sigma}c_{1\sigma}+h.c.)+U_f(n_{d\uparrow}-\frac12)(n_{d\downarrow}-\frac12)$</p>
+						<p style="text-align: left;padding-left: 40px">$H_{b}=\sum_q\omega_q\phi^\dagger_{q}\phi_{q}$</p>
+						<p style="text-align: left;padding-left: 40px">$H_{int}={g}S_z\sum_q(\phi^\dagger_{-q}+\phi_{q})$, where $S_z=\frac12(n_{d\uparrow}-n_{d\downarrow})$.</p>
+						<div class="multiCol">
+							<div class="col">
+								<h6 style="font-size: 28px; text-align: left;padding-left: 60px; margin: 20px 0 0 0">Bosonic Bath:</h6>
+								<p style="text-align: left;padding-left: 100px">$B(\omega)=\begin{cases}
+									B_0\omega_0(\frac{\omega}{\omega_0})^s\quad 0<\omega<\omega_0, \\
+									0\quad\text{otherwise}.
+									\end{cases}$</p>
+							</div>
+							<div class="col">
+								<h6 style="font-size: 28px; text-align: left;padding-left: 60px; margin: 20px 0 0 0">Discretization</h6>
+								<ul>
+									<li>Logarithmic space: $\omega_0\Lambda^{-m}$.</li>
+									<li>Standard Lanczos technique to 1D chain.</li>
+								</ul>
+							</div>
+						</div>
+						<img src="figures/Kondo/BFAChain.png" alt="1d-lattice">
+					</section>
+
+					<!-- <section>
+						<h3>Phase Diagram in equilibrium</h3>
+					</section> -->
+
+					<section>
+						<h3 style="margin: 5px 0 15px 0">Signatures in Equilibrium</h3>
+						<!-- <p></p> -->
+						<img src="figures/Kondo/BFAEqmS08.png" alt="BFA-Eqm1", width=600px>
+						<p style="text-align: left">$L_b\!=\!18$ and $L_f\!=\!54$; Kondo energy $\propto V^2_f/U_f$.</p>
+						<p style="text-align: left">Larger $B_0$ $\Rightarrow$ stronger coupling to bosonic degrees of freedom.</p>
+						<p style="text-align: left">$X_{-1} = \langle b_{-1} + b^\dagger_{-1} \rangle$: oscillation of the bosonic mode next to the impurity.</p>
+					</section>
+
+					<!-- <section>
+						<h3 style="margin: 5px 0 25px 0">Local Density of States</h3>
+						<p>$L_b\!=\!14$, $L_f\!=\!42$, $U\!=\!8J$, $V_f\!=\!J$</p>
+						<div class="multiCol">
+							<div class="col">
+								<img src="figures/Kondo/DOS.png" alt="dos" width="450px">
+							</div>
+							<div>
+								<ul>
+									<li>$\rho(\omega=0)=0.5$</li>
+									<li>FWHM gives an estimation of Kondo energy scale</li>
+								</ul>
+							</div>
+						</div>
+					</section> -->
+				</section>
+
+				<section>
+					<section>
+						<h3>Pump Pulse Effect</h3>
+						<h5 style="text-align: left;padding-left: 40px; margin: -30px 0 0 0">Time-dependent Peierls phase on  hopping of electrons</h5>
+						<p style="text-align: left;padding-left: 100px;line-height: 50px;">$H_{f}(t)=-J\color{red}{e^{iA(t)}}\sum_\sigma\sum_{i=1}^{L-1}(c^\dagger_{i\sigma}c_{i+1\sigma}+h.c.)-V_f\color{red}{e^{iA(t)}}\sum_\sigma(d^\dagger_{\sigma}c_{1\sigma}+h.c.)\\\qquad\quad+U_f(n_{d\uparrow}-\frac12)(n_{d\downarrow}-\frac12)$<br>
+						$H_b$ and $H_{int}$ unchanged.<br>
+						The Pieles phase is a semiclassical form of the pulse field:<br>
+						$A(t)=A_0e^{-(t-t_d)^2/2\tau^2}\cos\Omega (t-t_d)$.
+						</p>
+					</section>
+
+					<section>
+						<h3 style="margin: 5px 0 25px 0">Fidelity of the wave function</h3>
+						<p>$\Omega\!=\!4J$ and $\tau\!=\!0.5$</p>
+						<img src="figures/Kondo/Ft.png" alt="Fidelity" width="700px">
+						<p>
+							On the localized side, the system is more robust against the pump pulse.
+						</p>
+					</section>
+
+					<section>
+						<h3 style="margin: 5px 0 25px 0">Post-pulse Signatures</h3>
+						<img src="figures/Kondo/BFADynU8V1W4A08Poster.png" alt="">
+						<ul>
+							<li>Stronger oscillation from Kondo coherent states and the period depends on both $U_f$ and $V_f$.</li>
+							<li>From the localized side, both correlation recover back to equilibrium value quickly.</li>
+						</ul>
+					</section>
+
+					<section>
+						<h3 style="margin: 5px 0 25px 0">Post-pulse Signatures (continued)</h3>
+						<img src="figures/Kondo/BFADynU8V1W4ComparePoster.png" alt="">
+						<ul>
+							<li>The period of oscillation doesn't strongly depend on pump pulse frequency (certain range), intensity, the bosonic bath ($s$) and the coupling $B_0$.</li>
+							<li>As the system moves toward localized side (large $B_0$), the amplitude becomes smaller.</li>
+						</ul>
+					</section>
+
+					<!-- <section>
+						<h3 style="margin: 100px 0 25px 0">Working in progress</h3>
+						<ul>
+							<li>What is the relevant quantity which related to the reflectivity measurement?</li>
+							<li>What is the D.O.S in the non-equilibrium condition?</li>
+							<li>How does the quantity $\vert X_{-1}(t)\vert$ evolve in time?</li>
+						</ul>
+					</section> -->
 				</section>
 
 				<section>

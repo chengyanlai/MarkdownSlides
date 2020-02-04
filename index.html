@@ -99,9 +99,9 @@
 					<section>
 						<h3 style="margin: 5px 0 55px 0">Model and Bath Discretization</h3>
 						<h5 style="text-align: left;padding-left: 20px; margin: -30px 0 0 0">Bose-Fermi-Anderson impurity model</h5>
-						<p style="text-align: left;padding-left: 40px">$H_{f}=-J\sum_\sigma\sum_{i=1}^{L-1}(c^\dagger_{i\sigma}c_{i+1\sigma}+h.c.)-V_f\sum_\sigma(c^\dagger_{0\sigma}c_{1\sigma}+h.c.)+U_f(n_{0\uparrow}-\frac12)(n_{0\downarrow}-\frac12)$</p>
+						<p style="text-align: left;padding-left: 40px">$H_{f}=-J\sum_\sigma\sum_{i=1}^{L-1}(c^\dagger_{i\sigma}c_{i+1\sigma}+h.c.)-V_f\sum_\sigma(d^\dagger_{\sigma}c_{1\sigma}+h.c.)+U_f(n_{d\uparrow}-\frac12)(n_{d\downarrow}-\frac12)$</p>
 						<p style="text-align: left;padding-left: 40px">$H_{b}=\sum_q\omega_q\phi^\dagger_{q}\phi_{q}$</p>
-						<p style="text-align: left;padding-left: 40px">$H_{int}=\tilde{g}S_z\sum_q(\phi^\dagger_{-q}+\phi_{q})$, where $S_z=\frac12(n_{0\uparrow}-n_{0\downarrow})$.</p>
+						<p style="text-align: left;padding-left: 40px">$H_{int}={g}S_z\sum_q(\phi^\dagger_{-q}+\phi_{q})$, where $S_z=\frac12(n_{d\uparrow}-n_{d\downarrow})$.</p>
 						<div class="multiCol">
 							<div class="col">
 								<h6 style="font-size: 28px; text-align: left;padding-left: 60px; margin: 20px 0 0 0">Bosonic Bath:</h6>
@@ -118,7 +118,7 @@
 								</ul>
 							</div>
 						</div>
-						<img src="figures/Kondo/Lattice.png" alt="1d-lattice">
+						<img src="figures/Kondo/BFAChain.png" alt="1d-lattice">
 					</section>
 
 					<!-- <section>
@@ -127,14 +127,14 @@
 
 					<section>
 						<h3 style="margin: 5px 0 15px 0">Signatures in Equilibrium</h3>
-						<p>$L_b\!=\!18$ and $L_f\!=\!54$</p>
-						<img src="figures/Kondo/BFAEqm.png" alt="BFA-Eqm1">
-						<p style="text-align: left">Kondo energy $\propto V^2_f/U_f$.</p>
+						<!-- <p></p> -->
+						<img src="figures/Kondo/BFAEqmS08.png" alt="BFA-Eqm1", width=600px>
+						<p style="text-align: left">$L_b\!=\!18$ and $L_f\!=\!54$; Kondo energy $\propto V^2_f/U_f$.</p>
 						<p style="text-align: left">Larger $B_0$ $\Rightarrow$ stronger coupling to bosonic degrees of freedom.</p>
 						<p style="text-align: left">$X_{-1} = \langle b_{-1} + b^\dagger_{-1} \rangle$: oscillation of the bosonic mode next to the impurity.</p>
 					</section>
 
-					<section>
+					<!-- <section>
 						<h3 style="margin: 5px 0 25px 0">Local Density of States</h3>
 						<p>$L_b\!=\!14$, $L_f\!=\!42$, $U\!=\!8J$, $V_f\!=\!J$</p>
 						<div class="multiCol">
@@ -148,17 +148,17 @@
 								</ul>
 							</div>
 						</div>
-					</section>
+					</section> -->
 				</section>
 
 				<section>
 					<section>
 						<h3>Pump Pulse Effect</h3>
 						<h5 style="text-align: left;padding-left: 40px; margin: -30px 0 0 0">Time-dependent Peierls phase on  hopping of electrons</h5>
-						<p style="text-align: left;padding-left: 100px;line-height: 50px;">$H_{f}(t)=-J\color{red}{e^{iA(t)}}\sum_\sigma\sum_{i=1}^{L-1}(c^\dagger_{i\sigma}c_{i+1\sigma}+h.c.)-V_f\color{red}{e^{iA(t)}}\sum_\sigma(c^\dagger_{0\sigma}c_{1\sigma}+h.c.)\\\qquad\quad+U_f(n_{0\uparrow}-\frac12)(n_{0\downarrow}-\frac12)$<br>
+						<p style="text-align: left;padding-left: 100px;line-height: 50px;">$H_{f}(t)=-J\color{red}{e^{iA(t)}}\sum_\sigma\sum_{i=1}^{L-1}(c^\dagger_{i\sigma}c_{i+1\sigma}+h.c.)-V_f\color{red}{e^{iA(t)}}\sum_\sigma(d^\dagger_{\sigma}c_{1\sigma}+h.c.)\\\qquad\quad+U_f(n_{d\uparrow}-\frac12)(n_{d\downarrow}-\frac12)$<br>
 						$H_b$ and $H_{int}$ unchanged.<br>
 						The Pieles phase is a semiclassical form of the pulse field:<br>
-						$A(t)=A_0e^{-t^2/2\tau^2}\cos\Omega t,$
+						$A(t)=A_0e^{-(t-t_d)^2/2\tau^2}\cos\Omega (t-t_d)$.
 						</p>
 					</section>
 
@@ -166,17 +166,57 @@
 						<h3 style="margin: 5px 0 25px 0">Fidelity of the wave function</h3>
 						<p>$\Omega\!=\!4J$ and $\tau\!=\!0.5$</p>
 						<img src="figures/Kondo/Ft.png" alt="Fidelity" width="700px">
+						<p>
+							On the localized side, the system is more robust against the pump pulse.
+						</p>
 					</section>
 
 					<section>
+						<h3 style="margin: 5px 0 25px 0">Post-pulse Signatures</h3>
+						<img src="figures/Kondo/BFADynU8V1W4A08Poster.png" alt="">
+						<ul>
+							<li>Stronger oscillation from Kondo coherent states and the period depends on both $U_f$ and $V_f$.</li>
+							<li>From the localized side, both correlation recover back to equilibrium value quickly.</li>
+						</ul>
+					</section>
+
+					<section>
+						<h3 style="margin: 5px 0 25px 0">Post-pulse Signatures (continued)</h3>
+						<img src="figures/Kondo/BFADynU8V1W4ComparePoster.png" alt="">
+						<ul>
+							<li>The period of oscillation doesn't strongly depend on pump pulse frequency (certain range), intensity, the bosonic bath ($s$) and the coupling $B_0$.</li>
+							<li>As the system moves toward localized side (large $B_0$), the amplitude becomes smaller.</li>
+						</ul>
+					</section>
+
+					<!-- <section>
 						<h3 style="margin: 100px 0 25px 0">Working in progress</h3>
 						<ul>
 							<li>What is the relevant quantity which related to the reflectivity measurement?</li>
 							<li>What is the D.O.S in the non-equilibrium condition?</li>
 							<li>How does the quantity $\vert X_{-1}(t)\vert$ evolve in time?</li>
 						</ul>
-					</section>
+					</section> -->
 				</section>
+
+
+				<!-- <section>
+					<section>
+						<img src="figures/Kondo/RawCompareA0.png" alt="">
+					</section>
+					<section>
+						<img src="figures/Kondo/RawCompareB0.png" alt="">
+					</section>
+					<section>
+						<img src="figures/Kondo/RawCompareOmega.png" alt="">
+					</section>
+					<section>
+						<img src="figures/Kondo/RawCompareS.png" alt="">
+					</section>
+					<section>
+						<img src="figures/Kondo/RawCompareUV.png" alt="">
+					</section>
+				</section> -->
 
 			</div>
 

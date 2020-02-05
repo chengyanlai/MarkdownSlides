@@ -178,12 +178,27 @@
 
 					<section>
 						<h4 style="margin: 5px 0 0px 0; font-size: 40px;">Ultrafast pump-probe technique: probing</h4>
-						<div class="multiCol" style="margin: 10px 0 0 0">
+
+						<div class="multiCol" style="margin: 0px 0 0 0">
+							<div class="col" style="width: 60%">
+								<p style="font-size: 24px; padding-top: 10px;color:darkgreen">Time- and angle-resolved photoemission spectroscopy (trARPES)</p>
+								<ul style="margin: 0px 0 0 0;">
+									<li>Momentum selectivity in time domain</li>
+									<li>Electronic pseudotemperature from the nodal states</li>
+								</ul>
+								<ref>S. Parham et al, Phys. Rev. X <b>7</b>, 041013 (2017)</ref>
+							</div>
+							<div class="col" style="width: 40%">
+								<img src="figures/DrivenQuantumMatter/intro/PhysRevX.7.041013.png" alt="" height=200px>
+							</div>
+						</div>
+
+						<div class="multiCol" style="margin: 0px 0 0 0">
 							<div class="col" style="width: 40%">
 								<img src="figures/DrivenQuantumMatter/intro/TR_RIXS.png" alt="" height=200px>
 							</div>
 							<div class="col" style="width: 60%">
-								<p style="font-size: 24px; padding-top: 10px">Resonant Inelastic x-ray Spectroscopy (RIXS)</p>
+								<p style="font-size: 24px; padding-top: 10px">Time-resolved Resonant Inelastic x-ray Spectroscopy (trRIXS)</p>
 								<ul style="margin: 0px 0 0 0;">
 									<li>Probe the momentum and energy dependence of the electronic and magnetic correlations</li>
 									<li>Non-thermal 2D magnetic correlation</li>
@@ -191,20 +206,62 @@
 								<ref>M. P. M. Dean et al, Nat. Mat. <b>15</b>, 601 (2016)</ref>
 							</div>
 						</div>
+
 						<aside class="notes">Suppres magnetic long range order. 2d correlation and fluence dependent 3d correlation.</aside>
+					</section>
+
+					<section>
+						<h4 style="margin: 5px 0 0px 0; font-size: 40px;">Theory: Driven unconventional superconductor</h4>
+
+						<div class="multiCol" style="margin: 10px 0 0 0">
+							<div class="col" style="width: 60%">
+								<p style="font-size: 24px; padding-top: 30px;color:darkgreen">Mean-Field analysis of competition between $d$-wave superconductivity and AFM</p>
+								<ul style="margin: 0px 0 0 0;">
+									<li>Underdoped, optimal doping, and over doped.</li>
+									<li>Both order parameters oscillating at low field.</li>
+									<li>D-wave order parameter driven into changing sign (photo-induced $\pi$ Josephson junction).</li>
+									<li>Sensitive to pulse strength: tunability!</li>
+								</ul>
+								<ref>J.-X. Zhu, B. Fauseweh, <span style="color:darkred">C.-Y. Lai</span>, and Wei Zhu, in preparation.</ref>
+							</div>
+							<div class="col" style="width: 35%">
+								<img src="figures/DrivenQuantumMatter/intro/PumpDwaveSC.png" alt="" height=420px>
+							</div>
+						</div>
+
+					</section>
+
+					<section>
+						<h1 style="margin: 5px 0 20px 0">Outline</h1>
+						<ol>
+							<li style="font-size: 30px; color:darkmagenta">Non-equilibrium x-ray absorption spectrum</li>
+							<ul style="padding-left: 10px; font-size: 26px;">
+								<li>Effective single band model</li>
+								<li>Equilibrium spectrum</li>
+								<li>Ultrafast pump-probe setting</li>
+							</ul>
+							<li style="font-size: 30px; color:darkmagenta">Dynamical response of Bose-Fermi Anderson model</li>
+							<ul style="padding-left: 10px; font-size: 26px;">
+								<li>Motivation and modeling</li>
+								<li>Competing energy scale in equilibrium</li>
+								<li>Dynamical response and implications</li>
+							</ul>
+							<li style="font-size: 36px; color:darkmagenta">Summary</li>
+						</ol>
 					</section>
 				</section>
 
 				<section>
 					<section>
-						<h2>X-ray absorption spectroscopy (XAS)</h2>
-						<div class="row">
-							<div class="column twenty" data-fragment-index="1" style="padding-top: 60px">
-								<img src="figures/intro/XAS.png" alt="xas_illu">
-								<ref>RMP <b>83</b>, 705 (2011)</ref>
+						<h2 style="margin: 5px 0 20px 0">X-ray absorption spectroscopy (XAS)</h2>
+
+						<div class="multiCol" style="margin: 0px 0 0 0">
+							<div class="col" style="width: 20%">
+								<img src="figures/intro/XAS.png" alt="xas_illu" height=360px>
+								<ref><br>Rev. Mod. Phys. <b>83</b>, 705 (2011)</ref>
 							</div>
-							<div class="column seventy-five">
-								<h6 class="" data-fragment-index="1" style="padding-top: 20px">Core-level Photoemission Spectroscopy</h6>
+							<div class="col" style="width: 60%">
+								<h6 class="" data-fragment-index="1" style="margin: 0 0 0 0">Core-level Photoemission Spectroscopy</h6>
 								<ul class="" data-fragment-index="1" style="padding-top: 20px; font-size: 0.7em">
 									Measurements of the local electronic properties
 									<li style="margin-left: 20px">Local Chemical Shift</li>
@@ -212,55 +269,15 @@
 									<li style="margin-left: 20px">Magnetic Exchange</li>
 									<li style="margin-left: 20px">Spin-Orbit</li>
 								</ul>
-								<h5 class="fragment" data-fragment-index="2" style="padding-top: 15px">Families:</h6>
-								<ul class="fragment" data-fragment-index="2" style="padding-top: 5px; font-size: 0.7em">
-										<li style="margin-left: 20px">X-ray emission spectroscopy (XES)</li>
-										<li style="margin-left: 20px">Nonresonant inelastic x-ray scattering (NIXS)</li>
-										<li style="margin-left: 20px">Resonant inelastic x-ray scattering (RIXS)</li>
-									</ul>
+								<h6 class="fragment" data-fragment-index="2" style="margin: 5px 0 0 0">Theory:</h6>
+								<ul class="fragment" data-fragment-index="2" style="padding-top: 0px; font-size: 0.7em">
+										<li style="margin-left: 20px">Core level and valance (conduction) band</li>
+										<li style="margin-left: 20px">Dominant matrix elements (Franck–Condon principle)</li>
+										<!-- <li style="margin-left: 20px"></li> -->
+								</ul>
+								<h5 class="fragment" data-fragment-index="2" style="margin: 5px 0 0 0; text-align: center;">Effective model??</h5>
 							</div>
 						</div>
-					</section>
-
-					<section>
-						<h2>Why time-resolved?</h2>
-						<div class="row">
-							<div class="fragment column half" data-fragment-index="1">
-								<img src="figures/intro/TR_RIXS.png" alt="tr-rixs">
-								<p style="padding: 0 0 0 0; margin-top: 0">
-									<span style="font-size: 0.9em">Magnetic quasiparticle spectrum on Sr$_2$IrO$_4$</span>
-									<ref>Nat. Mat. <b>15</b>, 601 (2016).</ref>
-								</p>
-
-								<div class="row">
-									<div class="column half">
-										<img src="figures/intro/PerovskiteManganite.png" alt="PerovskiteManganite" width="65%">
-									</div>
-									<div class="column half" style="padding-top: 15px">
-										<span style="font-size: 0.5em">Photo-induced insulator–metal dynamics in PCMO.</span>
-										<ref style="font-size: 0.4em">Nat. Mat. <b>6</b>, 643 (2007)</ref>
-									</div>
-								</div>
-
-							</div>
-							<div class="column half">
-								<img class="fragment" data-fragment-index="2" src="figures/intro/TantalumDisulfide.png" alt="TaS2" width="55%">
-								<p class="fragment" data-fragment-index="2" style="padding: 0 0 0 0; margin-top: 0">
-									<span style="font-size: 0.75em">Hidden order of 1T-TaS$_2$</span>
-									<ref>Science <b>344</b>, 177 (2014)</ref>
-								</p>
-								<h6 class="fragment" data-fragment-index="3" style="font-size: 0.8em">Dynamics of electronic properties!</h6>
-							</div>
-						</div>
-						<aside class="notes">1. Irridates. 2. Mental-insulator transition. 3. Quasi-2d chalcogenide crystal.
-						</aside>
-					</section>
-				</section>
-
-				<section>
-					<section>
-						<h2 style="padding-top: 150px">Equilibrium XAS</h2>
-						<h3 style="font-size: 1em; padding-top: 100px">from equilibrium ground state</h3>
 					</section>
 
 					<section style="margin: 0" data-transition="fade-in none-out">
@@ -404,45 +421,25 @@
 								<p>Right: Kondo scale remain constant.</p>
 							</div>
 						</div>
-						<ref>Nat. Phys. 14 1103 (2018).</ref>
+						<ref>Wetli et al, Nat. Phys. 14 1103 (2018).</ref>
 					</section>
 
 					<section>
-						<h3 style="margin: 5px 0 15px 0">Quantum Impurity Models of Kondo Physics</h3>
-						<p style="color:crimson">Single impurity interact with itinerant free fermions and bosonic bath.</p>
-						<div class="multiCol">
-							<div class="col">
-								<ul>
-									<li>Fermion bath and impurity: Kondo coherence.</li>
-									<li>Bosonic bath and impurity: Spin fluctuation.</li>
-								</ul>
-								<img src="figures/Kondo/DOSExample.png" alt="dos example">
-								<p>Consequences: Absence or presence of Kondo coherence or Critical behavior.</p>
-							</div>
-							<div class="col">
-								<div style="padding-left:60px">
-									<img src="figures/Kondo/QIM.png" alt="qim" width=350px>
-								</div>
-							</div>
-						</div>
-					</section>
-
-					<section>
-						<h3 style="margin: 5px 0 55px 0">Model and Bath Discretization</h3>
-						<h5 style="text-align: left;padding-left: 20px; margin: -30px 0 0 0">Bose-Fermi-Anderson impurity model</h5>
-						<p style="text-align: left;padding-left: 40px">$H_{f}=-J\sum_\sigma\sum_{i=1}^{L-1}(c^\dagger_{i\sigma}c_{i+1\sigma}+h.c.)-V_f\sum_\sigma(d^\dagger_{\sigma}c_{1\sigma}+h.c.)+U_f(n_{d\uparrow}-\frac12)(n_{d\downarrow}-\frac12)$</p>
+						<h3 style="margin: 5px 0 5px 0">Model and Bath Discretization</h3>
+						<h5 style="text-align: left;padding-left: 20px; margin: 5px 0 0 0;font-size: 28px;">Bose-Fermi-Anderson impurity model</h5>
+						<p style="text-align: left;padding-left: 10px">$H_{f}=-J\color{red}{e^{iA(t)}}\sum_{\sigma,i}(c^\dagger_{i\sigma}c_{i+1\sigma}+h.c.)-V_f\color{red}{e^{iA(t)}}\sum_\sigma(d^\dagger_{\sigma}c_{1\sigma}+h.c.)+U_f(n_{d\uparrow}-\frac12)(n_{d\downarrow}-\frac12)$</p>
 						<p style="text-align: left;padding-left: 40px">$H_{b}=\sum_q\omega_q\phi^\dagger_{q}\phi_{q}$</p>
-						<p style="text-align: left;padding-left: 40px">$H_{int}={g}S_z\sum_q(\phi^\dagger_{-q}+\phi_{q})$, where $S_z=\frac12(n_{d\uparrow}-n_{d\downarrow})$.</p>
+						<p style="text-align: left;padding-left: 40px">$H_{int}={g}S_d^z\sum_q(\phi^\dagger_{-q}+\phi_{q})$, where $S_d^z=\frac12(n_{d\uparrow}-n_{d\downarrow})$.</p>
 						<div class="multiCol">
 							<div class="col">
-								<h6 style="font-size: 28px; text-align: left;padding-left: 60px; margin: 20px 0 0 0">Bosonic Bath:</h6>
+								<h6 style="font-size: 28px; text-align: left;padding-left: 30px; margin: 20px 0 0 0">Bosonic Bath:</h6>
 								<p style="text-align: left;padding-left: 100px">$B(\omega)=\begin{cases}
 									B_0\omega_0(\frac{\omega}{\omega_0})^s\quad 0<\omega<\omega_0, \\
 									0\quad\text{otherwise}.
 									\end{cases}$</p>
 							</div>
 							<div class="col">
-								<h6 style="font-size: 28px; text-align: left;padding-left: 60px; margin: 20px 0 0 0">Discretization</h6>
+								<h6 style="font-size: 28px; text-align: left;padding-left: 30px; margin: 10px 0 0 0">Discretization</h6>
 								<ul>
 									<li>Logarithmic space: $\omega_0\Lambda^{-m}$.</li>
 									<li>Standard Lanczos technique to 1D chain.</li>
@@ -452,38 +449,55 @@
 						<img src="figures/Kondo/BFAChain.png" alt="1d-lattice">
 					</section>
 
-					<!-- <section>
-						<h3>Phase Diagram in equilibrium</h3>
-					</section> -->
-
 					<section>
-						<h3 style="margin: 5px 0 15px 0">Signatures in Equilibrium</h3>
-						<!-- <p></p> -->
-						<img src="figures/Kondo/BFAEqmS08.png" alt="BFA-Eqm1", width=600px>
-						<p style="text-align: left">$L_b\!=\!18$ and $L_f\!=\!54$; Kondo energy $\propto V^2_f/U_f$.</p>
-						<p style="text-align: left">Larger $B_0$ $\Rightarrow$ stronger coupling to bosonic degrees of freedom.</p>
-						<p style="text-align: left">$X_{-1} = \langle b_{-1} + b^\dagger_{-1} \rangle$: oscillation of the bosonic mode next to the impurity.</p>
+						<h3 style="margin: 2px 0 0 0">Competing orders in equilibrium</h3>
+						<div class="multiCol">
+							<div class="col" style="width: 40%; padding: 20px 0 0 40px;">
+								<p style="margin: 0 0 0 0">$L_b\!=\!18$ $L_f\!=\!54$ $s=0.8$ $\omega_0\!=\!3J$</p>
+								<p style="margin: 40px 0 0 0">Small $B_0$: <span style="color:darkviolet">Kondo coherence</span></p>
+								<img src="figures/DrivenQuantumMatter/bfa/KondoState.png" alt="">
+								<p style="margin: 40px 0 0 0">Large $B_0$: <span style="color:darkviolet">Localized</span></p>
+								<img src="figures/DrivenQuantumMatter/bfa/LocalizedState.png" alt="">
+							</div>
+							<div class="col" style="width: 55%">
+								<img src="figures/Kondo/BFAEqmS08.png" alt="BFA-Eqm1", width=550px>
+							</div>
+						</div>
+						<p style="text-align: left; padding-left: 160px;margin-top: 0;">Curie constant $\vert S_d^z\vert$ becomes finite in large $B_0$.</p>
+						<p style="text-align: left; padding-left: 160px;">$X_{-1} = \langle b_{-1} + b^\dagger_{-1} \rangle$: effective magnetic field to the impurity.</p>
+						<aside class="notes">different response from either side of the critical point</aside>
 					</section>
 
-					<!-- <section>
-						<h3 style="margin: 5px 0 25px 0">Local Density of States</h3>
-						<p>$L_b\!=\!14$, $L_f\!=\!42$, $U\!=\!8J$, $V_f\!=\!J$</p>
+					<section>
+						<h3 style="margin: 2px 0 0 0">Connection to experiments</h3>
 						<div class="multiCol">
-							<div class="col">
-								<img src="figures/Kondo/DOS.png" alt="dos" width="450px">
-							</div>
-							<div>
+							<div class="col" style="width: 50%">
+								<h6 style="margin: 2px 0 0 0;text-align: center;">Experiment (CeCU$_{6-x}$Au$_x$)</h6>
+								<div style="padding-left: 80px;">
+									<img src="figures/DrivenQuantumMatter/bfa/NatPhys.14.1103_Phase.png" alt="" height=250px>
+								</div>
 								<ul>
-									<li>$\rho(\omega=0)=0.5$</li>
-									<li>FWHM gives an estimation of Kondo energy scale</li>
+									<li>Finite temperature</li>
+									<li>Control parameter: chemical doping.</li>
+								</ul>
+							</div>
+							<div class="col" style="width: 50%">
+								<h6 style="margin: 2px 0 0 0;text-align: center;">Theory (BFA)</h6>
+								<div style="padding-left: 80px;">
+									<img src="figures/DrivenQuantumMatter/bfa/TheoryPhase.png" alt="" height=250px>
+								</div>
+								<ul>
+									<li>Zero-temperature</li>
+									<li>Control parameter: $B_0$ ($U_f$ and $V_f$).</li>
 								</ul>
 							</div>
 						</div>
-					</section> -->
+
+					</section>
 				</section>
 
 				<section>
-					<section>
+					<!-- <section>
 						<h3>Pump Pulse Effect</h3>
 						<h5 style="text-align: left;padding-left: 40px; margin: -30px 0 0 0">Time-dependent Peierls phase on  hopping of electrons</h5>
 						<p style="text-align: left;padding-left: 100px;line-height: 50px;">$H_{f}(t)=-J\color{red}{e^{iA(t)}}\sum_\sigma\sum_{i=1}^{L-1}(c^\dagger_{i\sigma}c_{i+1\sigma}+h.c.)-V_f\color{red}{e^{iA(t)}}\sum_\sigma(d^\dagger_{\sigma}c_{1\sigma}+h.c.)\\\qquad\quad+U_f(n_{d\uparrow}-\frac12)(n_{d\downarrow}-\frac12)$<br>
@@ -491,20 +505,21 @@
 						The Pieles phase is a semiclassical form of the pulse field:<br>
 						$A(t)=A_0e^{-(t-t_d)^2/2\tau^2}\cos\Omega (t-t_d)$.
 						</p>
-					</section>
+					</section> -->
 
 					<section>
-						<h3 style="margin: 5px 0 25px 0">Fidelity of the wave function</h3>
-						<p>$\Omega\!=\!4J$ and $\tau\!=\!0.5$</p>
-						<img src="figures/Kondo/Ft.png" alt="Fidelity" width="700px">
+						<h3 style="margin: 5px 0 5px 0">Fidelity of the wave function</h3>
+						<p style="margin: 5px 0 5px 0">$\vert F(t) \vert\!=\!\vert\langle\psi(t)|\psi(t\!=\!0)\vert$ with $\Omega\!=\!4J$ and $\tau\!=\!0.5$</p>
+						<img src="figures/Kondo/Ft.png" alt="Fidelity" width="650px">
 						<p>
 							On the localized side, the system is more robust against the pump pulse.
 						</p>
 					</section>
 
 					<section>
-						<h3 style="margin: 5px 0 25px 0">Post-pulse Signatures</h3>
-						<img src="figures/Kondo/BFADynU8V1W4A08Poster.png" alt="">
+						<h3 style="margin: 5px 0 5px 0">Post-pulse Signatures</h3>
+						<p style="margin: 5px 0 5px 0">$L\!=\!10(b)+30(f)$ with $A_0\!=\!1.2$, $\Omega\!=\!4J$ and $\tau\!=\!0.5$</p>
+						<img src="figures/Kondo/BFADynU8V1W4A08Poster.png" alt="" width=800px>
 						<ul>
 							<li>Stronger oscillation from Kondo coherent states and the period depends on both $U_f$ and $V_f$.</li>
 							<li>From the localized side, both correlation recover back to equilibrium value quickly.</li>
@@ -523,19 +538,49 @@
 
 				<section>
 					<h2 style="margin: 5px 0 5px 0">Conclusion and outlook</h2>
-					<ul style="font-size: 0.6em">
-						<li>(Far-from-)Equilibrium X-ray absorption spectrum (XAS) in 1D strongly correlated systems can be studied by MPS in time domain.</li>
-						<li>Core hole effect are important and reveal in XAS.</li>
-						<li>Equilibrium XAS reveals the one particle excitation and the existence of charge gap at the half-filling.</li>
-						<li>Rich feature from TR-XAS and different influence are studied.</li>
-						<!-- <li>Stay tuned!! Different time-delay? THz pules? -->
-					</ul>
-					<h4 style="margin: 20px 0 5px 0"">Acknowledgements</h4>
-					<p style="font-size: 0.6em; text-align: left">Collaborator: Jian-Xin Zhu (LANL), Jhih-Shih You (Leibniz), Marton Kanasz-Nagy, and Eugene Demler (Harvard).</p>
-					<p style="font-size: 0.6em; text-align: left">Funding: LD-RD (LANL); Center for Integrated Nanotechnologies (CINT), a DOE BES user facility.</p>
-					<p style="font-size: 0.6em; text-align: left">Computational resources: LANL Institutional Computing (IC) program.</p>
+					<ol>
+						<li>Nonequilibrium XAS  <ref style="font-size: 16px"><span style="color:darkred">C.-Y. Lai</span> and J.-X. Zhu, Phys. Rev. Lett. <b>122</b>, 207401 (2019)</ref></li>
+						<ul style="font-size: 0.8em;margin:0 0 0 0">
+							<li>(Non-)Equilibrium X-ray absorption spectrum (XAS) in 1D strongly correlated systems.</li>
+							<li>Core hole effects play an important role in strongly correlated systems.</li>
+							<li>Resonance between pump frequency and the Mott gap from the changes of weight.</li>
+							<li>A novel state, metallic droplet, emerges under pump-probe setting.</li>
+						</ul>
+						<li>Dynamical response of BFA model  <ref style="font-size: 16px"><span style="color:darkred">C.-Y. Lai</span>, Qimiao Si and J.-X. Zhu, in preparation.</ref></li>
+						<ul style="font-size: 0.8em;margin:0 0 0 0">
+							<li>Competing energy scale in equilibrium by varying the coupling parameter.</li>
+							<li>Kondo energy scale seems to be vanished as the system approaches to the localized state.</li>
+						</ul>
+					</ol>
+					<h4 style="margin: 15px 0 5px 0"">Acknowledgements</h4>
+					<p style="font-size: 0.5em; text-align: left">Collaborator: Jian-Xin Zhu (LANL), Jhih-Shih You (Leibniz), Marton Kanasz-Nagy, and Eugene Demler (Harvard).</p>
+					<p style="font-size: 0.5em; text-align: left">Funding: LD-RD (LANL); Center for Integrated Nanotechnologies (CINT), a DOE BES user facility.</p>
+					<p style="font-size: 0.5em; text-align: left">Computational resources: LANL Institutional Computing (IC) program.</p>
 				</section>
 
+				<section>
+
+					<section>
+						<h3 style="margin: 5px 0 15px 0">Quantum Impurity Models of Kondo Physics</h3>
+						<p style="color:crimson">Single impurity interact with itinerant free fermions and bosonic bath.</p>
+						<div class="multiCol">
+							<div class="col" style="width: 55%">
+								<ul style="margin: 10px 0 0 0">
+									<li>Fermion bath: Kondo coherence.</li>
+									<li>Bosonic bath: Spin fluctuation.</li>
+								</ul>
+								<img src="figures/Kondo/DOSExample.png" alt="dos example">
+								<p>Consequences: Absence/Presence of Kondo coherence or Critical behavior.</p>
+							</div>
+							<div class="col" style="width: 40%">
+								<div style="padding-left:60px">
+									<img src="figures/Kondo/QIM.png" alt="qim" width=350px>
+								</div>
+							</div>
+						</div>
+					</section>
+
+				</section>
 			</div>
 
 		</div>

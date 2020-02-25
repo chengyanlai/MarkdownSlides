@@ -45,138 +45,187 @@
 
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
-				<!-- <section>
+				<section>
 					<h1 style="font-size: 1.2em; margin-top: 0.em">Competing Energy Scales and Quasiparticle Dynamics in a Driven Kondo Impurity System</h1>
-					<h5 style="margin-bottom: 10px; margin-top: 40px">Chen-Yen Lai</h5>
+					<h5 style="margin-bottom: 5px; margin-top: 40px">Jian-Xin Zhu</h5>
 					<h6 style="margin-bottom: 5px;font-size: 20pt;">
 						Center for Integrated Nanotechnologies and Theoretical Division
 					</h6>
-					<p>Denver, Mar  2020. (LA-UR-19-30761)</ref></p>
+					<p style="padding: 40px 0 0 0">Denver, Mar  2020. (LA-UR-19-30761)</ref></p>
 					<div style="padding-top: 40px"></div>
 					<img src="figures/logos/CINT.gif" alt="CINT" style="border:0px; box-shadow: 0 0 0; margin: 0 40px 0 40px" height="80px">
 					<img src="figures/logos/LANL.png" alt="LANL" style="border:0px; box-shadow: 0 0 0; margin: 0 40px 0 40px" height="80px">
-					<img src="figures/logos/DOE.png" alt="DOE" style="border:0px; box-shadow: 0 0 0; margin: 0 40px 0 40px" height="80px">
-				</section> -->
-
-				<section>
-					<h3 style="margin: 5px 0 15px 0">Collapse and Revival of the Kondo State</h3>
-					<div class="multiCol">
-						<div class="col">
-							<img src="figures/Kondo/ExpFig1.png" alt="fig1" width=450px>
-							<p>Kondo coherent time $\approx8ps$ for CeCu$_6$.</p>
-							<p>Echo pulse near $6ps$.</p>
-						</div>
-						<div class="col">
-							<img src="figures/Kondo/ExpFig2.png" alt="fig2" width=450px>
-							<p>Left: Kondo weight vanishes near quantum critical point.</p>
-							<p>Right: Kondo scale remain constant.</p>
-						</div>
-					</div>
-					<ref>Nat. Phys. 14 1103 (2018).</ref>
+					<img src="figures/logos/LDRD.jpg" alt="DOE" style="border:0px; box-shadow: 0 0 0; margin: 0 40px 0 40px" height="80px">
 				</section>
 
 				<section>
 					<section>
-						<h3 style="margin: 5px 0 15px 0">Quantum Impurity Models of Kondo Physics</h3>
-						<p style="color:crimson">Single impurity interact with itinerant free fermions and bosonic bath.</p>
+						<h3 style="margin: 2px 0 0 0">Competing Energy Scales and Quasiparticle Dynamics in a Driven Kondo Impurity System</h3>
+						<div class="multiCol">
+							<div class="col" style="width: 50%">
+								<h6 style="margin: 2px 0 0 0;text-align: center;">Experiment (CeCU$_{6-x}$Au$_x$)</h6>
+								<div style="padding-left: 80px;">
+									<img src="figures/DrivenQuantumMatter/bfa/NatPhys.14.1103_Phase.png" alt="" height=250px>
+								</div>
+								<ul>
+									<li>Finite temperature</li>
+									<li>Control parameter: chemical doping $x$.</li>
+								</ul>
+							</div>
+							<div class="col fragment" style="width: 50%">
+								<ul style="line-height: 40px;margin: 60px 0 0 0 ">
+									<li>Multi-orbital physics: <br>$d$-orbital: itinerant electron<br>$f$-orbital: local moment</li>
+									<li>Competing orders: <br>Spin fluctuation (RKKY)<br>Kondo coherence</li>
+								</ul>
+							</div>
+						</div>
+					</section>
+
+					<section>
+						<h3 style="margin: 5px 0 5px 0">Collapse and Revival of the Kondo State</h3>
 						<div class="multiCol">
 							<div class="col">
-								<ul>
-									<li>Fermion bath and impurity: Kondo coherence.</li>
-									<li>Bosonic bath and impurity: Spin fluctuation.</li>
-								</ul>
-								<img src="figures/Kondo/DOSExample.png" alt="dos example">
-								<p>Consequences: Absence or presence of Kondo coherence or Critical behavior.</p>
+								<img src="figures/Kondo/ExpFig1.png" alt="fig1" height=250px>
+								<h6 style="margin:0 0 0 0;font-size: 28px;">The echo from Kondo energy?</h6>
+								<p>Kondo coherent time $\approx8ps$ for CeCu$_6$.</p>
+								<p>Echo pulse near $6ps$.</p>
 							</div>
 							<div class="col">
+								<img src="figures/Kondo/ExpFig2.png" alt="fig2" height=250px>
+								<h6 style="margin:0 0 0 0;font-size: 28px;">Conflict results?</h6>
+								<p>Kondo weight <span style="color:dodgerblue">vanishes</span> near critical point.</p>
+								<p>Kondo scale <span style="color:dodgerblue">remain constant</span> !</p>
+							</div>
+						</div>
+						<ref>Wetli et al, Nat. Phys. <b>14</b>, 1103 (2018).</ref>
+					</section>
+
+					<section>
+						<h3 style="margin: 5px 0 15px 0; font-size: 42px;">Quantum Impurity Models of Kondo Physics</h3>
+						<p style="color:crimson">Single impurity interact with itinerant free fermions and bosonic bath.</p>
+						<div class="multiCol">
+							<div class="col" style="width: 55%">
+								<ul style="margin: 10px 0 0 20px">
+									<li>Fermion bath: Kondo coherence.</li>
+									<li>Bosonic bath: Spin fluctuation.</li>
+								</ul>
+								<img src="figures/Kondo/DOSExample.png" alt="dos example">
+							</div>
+							<div class="col fragment" style="width: 40%">
 								<div style="padding-left:60px">
 									<img src="figures/Kondo/QIM.png" alt="qim" width=350px>
 								</div>
 							</div>
 						</div>
+						<p style="margin:0 0 0 0; font-size: 28px;">Characterization of the bath is important</p>
+						<ul style="margin: 5px 0 0 10px">
+							<li>Zero DOS near low energy.</li>
+							<li>Finite DOS near low eneryg.</li>
+							<li>Finite but vanish at zero energy: critical?</li>
+						</ul>
 					</section>
+				</section>
 
+
+				<section>
 					<section>
-						<h3 style="margin: 5px 0 55px 0">Model and Bath Discretization</h3>
-						<h5 style="text-align: left;padding-left: 20px; margin: -30px 0 0 0">Bose-Fermi-Anderson impurity model</h5>
-						<p style="text-align: left;padding-left: 40px">$H_{f}=-J\sum_\sigma\sum_{i=1}^{L-1}(c^\dagger_{i\sigma}c_{i+1\sigma}+h.c.)-V_f\sum_\sigma(d^\dagger_{\sigma}c_{1\sigma}+h.c.)+U_f(n_{d\uparrow}-\frac12)(n_{d\downarrow}-\frac12)$</p>
+						<h3 style="margin: 5px 0 5px 0">Model and Bath Discretization</h3>
+						<h5 style="text-align: left;padding-left: 20px; margin: 5px 0 0 0;font-size: 28px;">Bose-Fermi-Anderson impurity model</h5>
+						<p style="text-align: left;padding-left: 40px">$H_{f}=-J\sum_{\sigma,i}(c^\dagger_{i\sigma}c_{i+1\sigma}+h.c.)-V_f\sum_\sigma(d^\dagger_{\sigma}c_{1\sigma}+h.c.)$</p>
+						<p style="text-align: left;padding-left: 480px">$+U_f(n_{d\uparrow}-\frac12)(n_{d\downarrow}-\frac12)$</p>
 						<p style="text-align: left;padding-left: 40px">$H_{b}=\sum_q\omega_q\phi^\dagger_{q}\phi_{q}$</p>
-						<p style="text-align: left;padding-left: 40px">$H_{int}={g}S_z\sum_q(\phi^\dagger_{-q}+\phi_{q})$, where $S_z=\frac12(n_{d\uparrow}-n_{d\downarrow})$.</p>
-						<div class="multiCol">
+						<p style="text-align: left;padding-left: 40px">$H_{int}={g}S_d^z\sum_q(\phi^\dagger_{-q}+\phi_{q})$, where $S_d^z=\frac12(n_{d\uparrow}-n_{d\downarrow})$.</p>
+						<div class="multiCol fragment">
 							<div class="col">
-								<h6 style="font-size: 28px; text-align: left;padding-left: 60px; margin: 20px 0 0 0">Bosonic Bath:</h6>
-								<p style="text-align: left;padding-left: 100px">$B(\omega)=\begin{cases}
+								<h6 style="font-size: 28px; text-align: left;padding-left: 30px; margin: 10px 0 0 0">Bosonic Bath:</h6>
+								<p style="text-align: left;padding-left: 10px">$B(\omega)=\begin{cases}
 									B_0\omega_0(\frac{\omega}{\omega_0})^s\quad 0<\omega<\omega_0, \\
 									0\quad\text{otherwise}.
 									\end{cases}$</p>
 							</div>
 							<div class="col">
-								<h6 style="font-size: 28px; text-align: left;padding-left: 60px; margin: 20px 0 0 0">Discretization</h6>
+								<h6 style="font-size: 28px; text-align: left;padding-left: 30px; margin: 10px 0 0 0">Discretization</h6>
 								<ul>
-									<li>Logarithmic space of $\omega$.</li>
+									<li>Logarithmic space: $\omega_0\Lambda^{-m}$.</li>
 									<li>Standard Lanczos technique to 1D chain.</li>
 								</ul>
 							</div>
 						</div>
-						<img src="figures/Kondo/BFAChain.png" alt="1d-lattice">
+						<img class="fragment" src="figures/DrivenQuantumMatter/bfa/BFAChain.png" alt="1d-lattice">
 					</section>
-
-					<!-- <section>
-						<h3>Phase Diagram in equilibrium</h3>
-					</section> -->
 
 					<section>
-						<h3 style="margin: 5px 0 15px 0">Signatures in Equilibrium</h3>
-						<!-- <p></p> -->
-						<img src="figures/Kondo/BFAEqmS08.png" alt="BFA-Eqm1", width=600px>
-						<p style="text-align: left">$L_b\!=\!18$ and $L_f\!=\!54$; Kondo energy $\propto V^2_f/U_f$.</p>
-						<p style="text-align: left">Larger $B_0$ $\Rightarrow$ stronger coupling to bosonic degrees of freedom.</p>
-						<p style="text-align: left">$X_{-1} = \langle b_{-1} + b^\dagger_{-1} \rangle$: oscillation of the bosonic mode next to the impurity.</p>
+						<h3 style="margin: 0px 0 5px 0">Competing orders in equilibrium</h3>
+						<div class="multiCol" style="margin: 0 0 0 0; padding: 0 0 0 0">
+							<div class="col" style="width: 25%; padding: 20px 0 0 0px;">
+								<p style="margin: 0 0 0 0">$L\!=\!18(b)\!+\!54(f)$, $s=0.8$, $\omega_0\!=\!3J$</p>
+							</div>
+							<div class="col" style="width: 75%">
+								<img src="figures/DrivenQuantumMatter/bfa/BFAEqmU8S08.png" alt="BFA-Eqm1", width=550px>
+							</div>
+						</div>
+
+						<div class="multiCol" style="margin: 0 0 0 0; padding: 0 0 0 0">
+							<div class="col" style="width: 48%;">
+								<p style="margin: 0px 0 0 0">Small $B_0$: <span style="color:darkviolet">Kondo coherence</span></p>
+								<img src="figures/DrivenQuantumMatter/bfa/KondoState.png" alt="" width=400px>
+							</div>
+							<div class="col" style="width: 48%;">
+								<p style="margin: 0px 0 0 0">Large $B_0$: <span style="color:darkviolet">Localized</span></p>
+								<img src="figures/DrivenQuantumMatter/bfa/LocalizedState.png" alt="" width=400px>
+							</div>
+						</div>
+						<p style="text-align: left; padding-left: 120px;margin-top: 0;">Curie constant $\vert S_d^z\vert$ becomes finite in large $B_0$.</p>
+						<p style="text-align: left; padding-left: 120px;">$X_{-1} = \langle b_{-1} + b^\dagger_{-1} \rangle$: effective magnetic field to the impurity.</p>
+						<aside class="notes">different response from either side of the critical point</aside>
 					</section>
 
-					<!-- <section>
-						<h3 style="margin: 5px 0 25px 0">Local Density of States</h3>
-						<p>$L_b\!=\!14$, $L_f\!=\!42$, $U\!=\!8J$, $V_f\!=\!J$</p>
+					<section>
+						<h3 style="margin: 2px 0 0 0">Connection to experiments</h3>
 						<div class="multiCol">
-							<div class="col">
-								<img src="figures/Kondo/DOS.png" alt="dos" width="450px">
-							</div>
-							<div>
+							<div class="col fragment" style="width: 50%">
+								<h6 style="margin: 2px 0 0 0;text-align: center;">Experiment (CeCU$_{6-x}$Au$_x$)</h6>
+								<div style="padding-left: 30px;">
+									<img src="figures/DrivenQuantumMatter/bfa/NatPhys.14.1103_Phase.png" alt="" height=250px>
+								</div>
 								<ul>
-									<li>$\rho(\omega=0)=0.5$</li>
-									<li>FWHM gives an estimation of Kondo energy scale</li>
+									<li>Finite temperature</li>
+									<li>Control parameter: chemical doping.</li>
+								</ul>
+							</div>
+							<div class="col fragment" style="width: 50%">
+								<h6 style="margin: 2px 0 0 0;text-align: center;">Theory (BFA)</h6>
+								<div style="padding-left: 80px;">
+									<img src="figures/DrivenQuantumMatter/bfa/TheoryPhase.png" alt="" height=250px>
+								</div>
+								<ul>
+									<li>Zero-temperature</li>
+									<li>Control parameter: $B_0$ ($U_f$ and $V_f$).</li>
 								</ul>
 							</div>
 						</div>
-					</section> -->
+					</section>
 				</section>
 
 				<section>
 					<section>
-						<h3>Pump Pulse Effect</h3>
-						<h5 style="text-align: left;padding-left: 40px; margin: -30px 0 0 0">Time-dependent Peierls phase on  hopping of electrons</h5>
-						<p style="text-align: left;padding-left: 100px;line-height: 50px;">$H_{f}(t)=-J\color{red}{e^{iA(t)}}\sum_\sigma\sum_{i=1}^{L-1}(c^\dagger_{i\sigma}c_{i+1\sigma}+h.c.)-V_f\color{red}{e^{iA(t)}}\sum_\sigma(d^\dagger_{\sigma}c_{1\sigma}+h.c.)\\\qquad\quad+U_f(n_{d\uparrow}-\frac12)(n_{d\downarrow}-\frac12)$<br>
-						$H_b$ and $H_{int}$ unchanged.<br>
-						The Pieles phase is a semiclassical form of the pulse field:<br>
-						$A(t)=A_0e^{-(t-t_d)^2/2\tau^2}\cos\Omega (t-t_d)$.
-						</p>
-					</section>
-
-					<section>
-						<h3 style="margin: 5px 0 25px 0">Fidelity of the wave function</h3>
-						<p>$\Omega\!=\!4J$ and $\tau\!=\!0.5$</p>
-						<img src="figures/Kondo/Ft.png" alt="Fidelity" width="700px">
-						<p>
-							On the localized side, the system is more robust against the pump pulse.
-						</p>
-					</section>
+						<h3 style="margin: 5px 0 5px 0">Dynamics from pump pulse</h3>
+						<p style="text-align: left;padding: 20px 0 0 10px;line-height: 50px; font-size: 20px;">$H_{f}(t)=-J\sum_\sigma\sum_{i=1}^{L-1}(\color{red}{e^{iA(t)}}c^\dagger_{i\sigma}c_{i+1\sigma}+h.c.)-V_f\sum_\sigma(\color{red}{e^{iA(t)}}d^\dagger_{\sigma}c_{1\sigma}+h.c.)+U_f(n_{d\uparrow}-\frac12)(n_{d\downarrow}-\frac12)$<br>
+							$H_b$ and $H_{int}$ unchanged, and $A(t)=A_0e^{-(t-t_d)^2/2\tau^2}\cos\Omega (t-t_d)$.
+							</p>
+							<div class="fragment">
+								<img src="figures/Kondo/Ft.png" alt="Fidelity" width="600px">
+								<p style="margin: 5px 0 5px 0; font-size: 18px;">$\vert F(t) \vert\!=\!\vert\langle\psi(t)|\psi(t\!=\!0)\rangle\vert$ with $\Omega\!=\!4J$ and $\tau\!=\!0.5t_0$</p>
+							</div>
+						</section>
 
 					<section>
 						<h3 style="margin: 5px 0 25px 0">Post-pulse Signatures</h3>
-						<img src="figures/Kondo/BFADynU8V1W4A08Poster.png" alt="">
+						<p style="margin: 5px 0 5px 0">$L\!=\!10(b)+30(f)$ with $A_0\!=\!1.2$, $\Omega\!=\!4J$ and $\tau\!=\!0.5t_0$</p>
+						<img src="figures/Kondo/BFADynU8V1W4A08Poster.png" alt="" width=800px>
 						<ul>
 							<li>Stronger oscillation from Kondo coherent states and the period depends on both $U_f$ and $V_f$.</li>
-							<li>From the localized side, both correlation recover back to equilibrium value quickly.</li>
+							<li>From the localized side, both correlations recover back to equilibrium value quickly.</li>
 						</ul>
 					</section>
 
@@ -188,35 +237,19 @@
 							<li>As the system moves toward localized side (large $B_0$), the amplitude becomes smaller.</li>
 						</ul>
 					</section>
-
-					<!-- <section>
-						<h3 style="margin: 100px 0 25px 0">Working in progress</h3>
-						<ul>
-							<li>What is the relevant quantity which related to the reflectivity measurement?</li>
-							<li>What is the D.O.S in the non-equilibrium condition?</li>
-							<li>How does the quantity $\vert X_{-1}(t)\vert$ evolve in time?</li>
-						</ul>
-					</section> -->
 				</section>
 
-
-				<!-- <section>
-					<section>
-						<img src="figures/Kondo/RawCompareA0.png" alt="">
-					</section>
-					<section>
-						<img src="figures/Kondo/RawCompareB0.png" alt="">
-					</section>
-					<section>
-						<img src="figures/Kondo/RawCompareOmega.png" alt="">
-					</section>
-					<section>
-						<img src="figures/Kondo/RawCompareS.png" alt="">
-					</section>
-					<section>
-						<img src="figures/Kondo/RawCompareUV.png" alt="">
-					</section>
-				</section> -->
+				<section>
+					<h2 style="margin: 5px 0 5px 0; font-size: 38px;">Conclusion</h2>
+					<ul style="font-size: 24px;margin:0 0 0 0">
+						<li>Competing energy scale in equilibrium by varying the coupling parameter.</li>
+						<li>Kondo energy scale seems to be vanished as the system approaches to the critical point and localized state.</li>
+					</ul>
+					<h2 style="margin: 15px 0 5px 0; font-size: 38px;"">Acknowledgements</h2>
+					<p style="font-size: 24px; text-align: left; padding: 5px 0 0 60px">Collaborator: Chen-Yen Lai (LANL), Qimiao Si (Rice U.).</p>
+					<p style="font-size: 24px; text-align: left; padding: 5px 0 0 60px">Funding: LANL LD-RD Office; Center for Integrated Nanotechnologies, a DOE BES user facility; Institutional Computing (IC) program.
+					<p style="font-size: 24px; text-align: left; padding: 5px 0 0 60px">Computation resources: Institutional Computing (IC) program.
+				</section>
 
 			</div>
 

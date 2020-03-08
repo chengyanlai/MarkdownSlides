@@ -56,12 +56,11 @@
 				</section> -->
 
 				<section>
-					<h1 style="font-size: 1.2em; margin-top: 0.em">Nonequilibrium Dynamics in Strongly Correlated Systems: Emerging Phenomena and Competing Orders</h1>
+					<h1 style="font-size: 1.2em; margin-top: 0.em">Emerging Phenomena and Competing Orders from Nonequilibrium Dynamics in Strongly Correlated Systems</h1>
 					<h4 style="margin: 60px 0 0 0">Chen-Yen Lai</h4>
 					<h5 style="margin: 30px 0 60px 0">Los Alamos National Laboratory</h5>
 					<img src="figures/logos/CINT.gif" alt="ToOneBand-2" style="border:0px; box-shadow: 0 0 0; margin: 0 40px 0 40px" height="80px">
 					<img src="figures/logos/LANL.png" alt="ToOneBand-2" style="border:0px; box-shadow: 0 0 0; margin: 0 40px 0 40px" height="80px">
-					<!-- <img src="figures/logos/DOE.png" alt="ToOneBand-2" style="border:0px; box-shadow: 0 0 0; margin: 0 40px 0 40px" height="80px"> -->
 					<img src="figures/logos/LDRD.jpg" alt="ToOneBand-2" style="border:0px; box-shadow: 0 0 0; margin: 0 40px 0 40px" height="80px">
 				</section>
 
@@ -249,44 +248,6 @@
 
 						<aside class="notes">Supress magnetic long range order. 2d correlation and fluence dependent 3d correlation.</aside>
 					</section>
-				<!-- </section>
-
-				<section>
-					<section>
-						<h4 style="margin: 10px 0 0px 0; font-size: 40px;">Theory: Driven Kondo lattice model</h4>
-						<div class="multiCol" style="margin: 10px 0 0 0">
-							<div class="col" style="width: 55%; padding: 10px 0 0 80px;">
-								<img src="figures/DrivenQuantumMatter/intro/Kondo_F.png" alt="" height=300px>
-							</div>
-							<div class="col" style="width: 45%; padding: 10px 0 0 50px">
-								<img src="figures/DrivenQuantumMatter/intro/Kondo_Spectral.png" alt="" height=300px>
-							</div>
-						</div>
-						<ul>
-							<li>Kondo coherence collapse seen from the nonequilibrium spectral function (trARPES)</li>
-							<li>Corresponding High Harmonic Generation (HHG) characterization</li>
-						</ul>
-						<ref>W. Zhu, A. Chacon, and J.-X. Zhu, arXiv. 1811.12334</ref>
-					</section>
-
-					<section>
-						<h4 style="margin: 20px 0 0px 0; font-size: 40px;">Theory: Driven unconventional superconductor</h4>
-						<div class="multiCol" style="margin: 10px 0 0 0">
-							<div class="col" style="width: 55%">
-								<p style="font-size: 24px; padding-top: 30px;color:darkgreen">Mean-field analysis of competition between $d$-wave superconductivity and AFM</p>
-								<ul style="margin: 0px 0 0 0;">
-									<li>Under doped, optimal doping, and over doped.</li>
-									<li>Both order parameters oscillating at low field.</li>
-									<li>D-wave order parameter driven into changing sign (<span style="color:crimson">photo-induced $\pi$ Josephson junction</span>).</li>
-									<li>Sensitive to pulse strength: tunability!</li>
-								</ul>
-								<ref>B. Fauseweh, <span style="color:darkred">C.-Y. Lai</span>, and J.-X. Zhu, in preparation.</ref>
-							</div>
-							<div class="col" style="width: 35%">
-								<img src="figures/DrivenQuantumMatter/intro/PumpDwaveSC.png" alt="" height=420px>
-							</div>
-						</div>
-					</section> -->
 
 					<section>
 						<h1 style="margin: 5px 0 20px 0">Outline</h1>
@@ -550,7 +511,7 @@
 									<img src="figures/DrivenQuantumMatter/xas/XASL40N32DiffA.png" alt="dw and dW illustration" height=200px>
 								</div>
 								<ul style="margin: 0 0 0 0; line-height: 35px;">
-									<li>Stronger change of weight and energy of the peaks around <span style="color:forestgreen">$\Omega\!=\!U+2J$</span></li>
+									<li>Stronger change of weight and energy of the peaks around <span style="color:forestgreen">$\Omega\!=\!U-2J$</span></li>
 									<li>Also happens away from half filling.</li>
 								</ul>
 							</div>
@@ -758,7 +719,7 @@
 				<section>
 					<section>
 						<h3 style="margin: 5px 0 5px 0">Dynamics from pump pulse</h3>
-						<p style="text-align: left;padding-left: 10px;line-height: 50px;">$H_{f}(t)=-J\sum_\sigma\sum_{i=1}^{L-1}(\color{red}{e^{iA(t)}}c^\dagger_{i\sigma}c_{i+1\sigma}+h.c.)-V_f\color{red}{e^{iA(t)}}\sum_\sigma(d^\dagger_{\sigma}c_{1\sigma}+h.c.)\\\qquad\quad+U_f(n_{d\uparrow}-\frac12)(n_{d\downarrow}-\frac12)$<br>
+						<p style="text-align: left;padding-left: 10px;line-height: 50px;">$H_{f}(t)=-J\sum_\sigma\sum_{i=1}^{L-1}(\color{red}{e^{iA(t)}}c^\dagger_{i\sigma}c_{i+1\sigma}+h.c.)-V_f\sum_\sigma(\color{red}{e^{iA(t)}}d^\dagger_{\sigma}c_{1\sigma}+h.c.)\\\qquad\quad+U_f(n_{d\uparrow}-\frac12)(n_{d\downarrow}-\frac12)$<br>
 							$H_b$ and $H_{int}$ unchanged, and $A(t)=A_0e^{-(t-t_d)^2/2\tau^2}\cos\Omega (t-t_d)$.
 							</p>
 							<div class="fragment">
@@ -845,6 +806,47 @@
 							<li>Restricted Boltzmann Machine reinforce algorithm.</li>
 							<li>Quantum computing algorithm for simulating tensor network state.</li>
 						</ol>
+					</section>
+				</section>
+
+
+
+
+				<section>
+					<section>
+						<h4 style="margin: 10px 0 0px 0; font-size: 40px;">Theory: Driven Kondo lattice model</h4>
+						<div class="multiCol" style="margin: 10px 0 0 0">
+							<div class="col" style="width: 55%; padding: 10px 0 0 80px;">
+								<img src="figures/DrivenQuantumMatter/intro/Kondo_F.png" alt="" height=300px>
+							</div>
+							<div class="col" style="width: 45%; padding: 10px 0 0 50px">
+								<img src="figures/DrivenQuantumMatter/intro/Kondo_Spectral.png" alt="" height=300px>
+							</div>
+						</div>
+						<ul>
+							<li>Kondo coherence collapse seen from the nonequilibrium spectral function (trARPES)</li>
+							<li>Corresponding High Harmonic Generation (HHG) characterization</li>
+						</ul>
+						<ref>W. Zhu, A. Chacon, and J.-X. Zhu, arXiv. 1811.12334</ref>
+					</section>
+
+					<section>
+						<h4 style="margin: 20px 0 0px 0; font-size: 40px;">Theory: Driven unconventional superconductor</h4>
+						<div class="multiCol" style="margin: 10px 0 0 0">
+							<div class="col" style="width: 55%">
+								<p style="font-size: 24px; padding-top: 30px;color:darkgreen">Mean-field analysis of competition between $d$-wave superconductivity and AFM</p>
+								<ul style="margin: 0px 0 0 0;">
+									<li>Under doped, optimal doping, and over doped.</li>
+									<li>Both order parameters oscillating at low field.</li>
+									<li>D-wave order parameter driven into changing sign (<span style="color:crimson">photo-induced $\pi$ Josephson junction</span>).</li>
+									<li>Sensitive to pulse strength: tunability!</li>
+								</ul>
+								<ref>B. Fauseweh, <span style="color:darkred">C.-Y. Lai</span>, and J.-X. Zhu, in preparation.</ref>
+							</div>
+							<div class="col" style="width: 35%">
+								<img src="figures/DrivenQuantumMatter/intro/PumpDwaveSC.png" alt="" height=420px>
+							</div>
+						</div>
 					</section>
 				</section>
 			</div>
